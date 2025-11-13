@@ -35,13 +35,21 @@ def clean_text(s: str) -> str:
 
 def extract_pdf_path(file_field: str) -> str | None:
     """Return the path to a .pdf file from a Better BibTeX file field."""
-    parts = [p.strip() for p in file_field.split(":")]
+    if not file_field:
+        return None
+
+    # Better BibTeX often separates multiple files with ';'
+    parts = [p.strip() for p in file_field.split(";")]
     for p in parts:
         if p.lower().endswith(".pdf"):
             return p
+
+    # fallback
     if file_field.lower().endswith(".pdf"):
         return file_field.strip()
+
     return None
+
 
 def md5sum(path: Path) -> str:
     """Compute MD5 checksum for file contents."""
