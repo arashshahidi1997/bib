@@ -1,3 +1,5 @@
 # Figures to extract
-@battaglia_2004_HippocampalSharp
-@he__SelfSupervised
+
+- @kajikawa_2022_StatesRipples
+- @battaglia_2004_HippocampalSharp
+- @sirota_2003_CommunicationNeocortex
