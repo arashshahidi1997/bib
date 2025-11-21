@@ -26,3 +26,116 @@ And then datalad push --to origin and update here.
 ## On the Server
 The `pixecog.bib` file is updated by running the `code/merge.py` script, which merges all source bibliography files from the `metadata/` subdirectory.
 
+---
+
+# 📘 **Figure Extraction Workflow — Short Version**
+
+This workflow extracts figures from scientific papers using a **priority approach**:
+
+1. **Try online HTML sources first** (publisher, PubMed → PMC)
+2. **Fall back to PDF extraction** using `pdffigures2`
+3. Select the best result and expose it as `preferred/`
+
+Everything is driven by **Snakemake**, **BibTeX**, and a simple **Markdown list**.
+
+---
+
+## 🗂️ Directory Structure
+
+```
+pixecog/bib/
+  pixecog.bib             # references with doi + PDF path
+  extract-figures.md      # list of @citekeys to process
+  figures/
+    <citekey>/
+      online/             # HTML-scraped figures (if found)
+      pdffigures2/        # PDF-extracted figures
+      preferred/          # symlink to best source
+  code/
+    figconfig.py          # parse citekeys from markdown
+    download_figures.py   # fetch figures from online
+  Snakefile
+```
+
+---
+
+## ⚙️ Components
+
+### **1. Markdown config (`extract-figures.md`)**
+
+List of citekeys like:
+
+```markdown
+- @kajikawa_2022_StatesRipples
+- @battaglia_2004_HippocampalSharp
+```
+
+### **2. BibTeX (`pixecog.bib`)**
+
+Provides:
+
+* `doi = {...}`
+* `file = {bib/pdfs/...pdf}` → local PDF path
+* optional `pmcid = {...}`
+
+### **3. Online Downloader**
+
+`download_figures.py`:
+
+* Tries multiple URLs (DOI → PubMed → PMC)
+* Follows full-text/PMC links
+* Scrapes `<figure><img>` elements
+* Saves to `figures/<key>/online/figs/`
+
+### **4. PDF Extractor**
+
+Snakemake rule calling:
+
+```
+pdffigures -i 300 ...
+```
+
+Outputs into:
+
+```
+figures/<key>/pdffigures2/
+```
+
+### **5. Merge Step**
+
+Chooses:
+
+* `online/` if images found
+* otherwise `pdffigures2/`
+
+Creates:
+
+```
+figures/<key>/preferred/   (symlink)
+```
+
+---
+
+## 🧬 Snakemake Flow
+
+1. **download_figures** → `online/`
+2. **extract_figures** → `pdffigures2/`
+3. **merge_figures** → `preferred/`
+4. **all** → processes everything listed in markdown
+
+---
+
+## 🎯 Final Outcome
+
+For every paper in `extract-figures.md` you get:
+
+```
+figures/<citekey>/preferred/figs/
+```
+
+This contains the **best available figures**:
+
+* scraped online if possible
+* otherwise extracted from PDFs
+
+Fully automated, reproducible, and citation-driven.

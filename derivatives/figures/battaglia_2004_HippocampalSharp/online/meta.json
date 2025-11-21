@@ -1,0 +1,53 @@
+{
+  "source": "online",
+  "doi": "10.1101/lm.73504",
+  "pmcid": null,
+  "figures": [
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/eaf2/534698/d1649bd0c180/84559-02f1_4o_rev1.jpg",
+      "file": "figure_1.jpg"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/eaf2/534698/57c779f6bd42/84559-02f2_1o.jpg",
+      "file": "figure_2.jpg"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/eaf2/534698/7e0efe145c16/84559-02f3_4o_rev1.jpg",
+      "file": "figure_3.jpg"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/eaf2/534698/5d58c16a946b/84559-02f4_1o_rev1.jpg",
+      "file": "figure_4.jpg"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/eaf2/534698/39f8b6d5a6a8/84559-02f5_1o.jpg",
+      "file": "figure_5.jpg"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/eaf2/534698/6379efeca025/84559-02f6_1o.jpg",
+      "file": "figure_6.jpg"
+    }
+  ],
+  "tried_urls": [
+    "https://doi.org/10.1101/lm.73504",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=10.1101/lm.73504",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC534698/"
+  ],
+  "trace": [
+    {
+      "url": "https://doi.org/10.1101/lm.73504",
+      "final_url": "https://learnmem.cshlp.org/content/11/6/697",
+      "status": "html"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=10.1101/lm.73504",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/15576887/",
+      "status": "html"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC534698/",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC534698/",
+      "status": "html"
+    }
+  ]
+}

@@ -1,0 +1,1131 @@
+Downloaded from 
+
+learnmem.cshlp.org
+
+ on February 14, 2023 - Published by 
+
+Cold Spring Harbor Laboratory Press
+
+Sleep & Memory/Research
+
+Hippocampal sharp wave bursts coincide with
+neocortical “up-state” transitions
+
+Francesco P. Battaglia,1 Gary R. Sutherland, and Bruce L. McNaughton2
+Arizona Research Laboratories–Division of Neural Systems, Memory, and Aging, University of Arizona,
+Tucson, Arizona 85724, USA
+
+The sleeping neocortex shows nested oscillatory activity in different frequency ranges, characterized by fluctuations
+between “up-states” and “down-states.” High-density neuronal ensemble recordings in rats now reveal the interaction
+between synchronized activity in the hippocampus and neocortex: Electroencephalographic sharp waves in the
+hippocampus were more probable during down-states than during up-states, and tended to coincide with transitions
+from down-states to up-states. The form of cortical activity fluctuations and their interactions with sharp waves
+depend on sleep depth: In deeper sleep stages, characterized by strong neocortical oscillation in the delta range or
+slower (∼0.8–4 Hz), sharp-wave-triggered peri-event time histograms (PETH) are consistent with a longer duration for
+down-states than for up-states.
+In lighter sleep, the sharp-wave-triggered PETH suggested longer up-states than
+down-states. These results highlight the interplay in the hippocampal/neocortical loop: Decreased neocortical input
+during down-states may be a factor in generation of sharp waves. In turn, sharp waves may facilitate down-to-up
+transitions. This interplay may reflect joint memory trace reactivation in the hippocampus and in the neocortex,
+possibly contributing to consolidation of long-term memory: Off-line reactivation of recent neural activity patterns in
+the hippocampus occurs during 50–100-msec electroencephalographic sharp waves, corresponding to pyramidal-cell
+population bursts. The neocortical up-states starting in correspondence with sharp waves may be influenced by the
+reactivated information carried by the hippocampal sharp wave.
+
+Brain activity during sleep or idle periods may be crucial for
+memory processes (Plihal and Born 1999; Stickgold et al. 2000;
+Sutherland and McNaughton 2000; Maquet 2001). Hypotheses
+descending from David Marr’s theory of memory (Marr 1970)
+assume that information acquired during a waking period is re-
+activated in the hippocampus during sleep episodes, leading to a
+reactivation and consequent consolidation (i.e., reorganization
+and strengthening) of the neocortical memory trace (Pavlides
+and Winson 1989; Wilson and McNaughton 1994; Skaggs and
+McNaughton 1996; Kudrimoti et al. 1999; Louie and Wilson
+2001; Hoffman and McNaughton 2002; Ribeiro et al. 2004). The
+intracortical connections created as the outcome of this trace-
+reactivation process would provide the link between memory
+items stored in different cortical areas (Marr 1970) and support
+long-term memory, in a hippocampus-independent manner.
+
+During slow wave sleep, the neocortex engages in largely
+synchronized activity patterns, with alternation of periods of
+generalized elevated activity (“up-states”) and depressed activity
+(“down-states”) (e.g., Steriade and Buzsaki 1990; Cowan and Wil-
+son 1994; Timofeev et al. 2001; Petersen et al. 2003). This process
+appears to be a network phenomenon that originates in the neo-
+cortex. Up-states are supported by excitatory intracortical con-
+nections (Steriade et al. 1993; Sanchez-Vives and McCormick
+2000) balanced by an increased activity of inhibitory interneu-
+rons (Timofeev et al. 2001). The positive feedback induced by
+these recurrent connections makes the cortical network capable
+of sustaining coherent activity fluctuations at several time scales,
+from the slow (<1 Hz), regular oscillations observed in ketamine-
+
+1Present address: CNRS–Laboratoire de Physiologie de la Perception
+et de l’Action, Collège de France 11 Pl. Marcelin Berthelot, 75005
+Paris, France.
+2Corresponding author.
+E-mail bruce@nsma.arizona.edu; fax (520) 626-2618.
+Article and publication are at http://www.learnmem.org/cgi/doi/10.1101/
+lm.73504.
+
+anesthetized animals (Steriade et al. 1993; Destexhe et al. 1999),
+to the more irregular, slow (∼1 Hz) fluctuations seen in the un-
+anesthetized animal (Timofeev et al. 2001; Petersen et al. 2003)
+and also in human surface electroencephalogram (Achermann
+and Borbely 1997), to the activity in the faster delta frequency
+range (2–4 Hz, e.g., Ball et al. 1977). The slower end of this
+frequency range is often referred to as “up/down-state fluctua-
+tions.” Such activities in different frequency domains can actu-
+ally coexist in a coordinate fashion: for example, delta oscilla-
+tions are especially prominent during up-states, with each up-
+state encompassing several delta cycles, and the amplitude of
+delta declining from the beginning to the end of the up-states.
+The concomitant hippocampal EEG pattern, termed large
+irregular activity (LIA), is characterized by short (50–150 msec)
+episodes of coherent burst firing, accompanied by dendritic
+sharp wave (SPW) LFPs and high-frequency LFP oscillations in
+the CA1 pyramidal layer (100–200 Hz, ripple oscillations) (O’Keefe
+and Nadel 1978; Buzsaki et al. 1992; Csicsvari et al. 2000), amidst
+relatively suppressed activity. SPWs occur at random intervals
+with a mean frequency of ∼1 Hz during LIA, and appear to be
+generated in CA3, the portion of the hippocampus richest in
+recurrent connections (Ishizuka et al. 1990).
+
+SPWs influence the firing of neurons in the entorhinal cor-
+tex (the major cortical efferent of the hippocampus) (Chrobak and
+Buzsaki 1994, 1996), and are weakly correlated with the occur-
+rence of thalamocortical spindle oscillations (Siapas and Wilson
+1998), which are also related to the occurrence of up-states (Ste-
+riade 2000). Sirota et al. (2003) showed that cortical oscillations
+in somatosensory cortex and hippocampal activity are related on
+the short time scale: Ripple events are associated with cortical
+discharges occurring 50–100 msec earlier. Moreover, they
+showed that both spindle and delta oscillations affect hippocam-
+pal activity, with hippocampal synaptic inputs phase-locked to
+the cortical oscillations, possibly influencing the generation of
+SPWs.
+
+11:697–704 ©2004 by Cold Spring Harbor Laboratory Press ISSN 1072-0502/04; www.learnmem.org
+
+Learning & Memory
+www.learnmem.org
+
+697
+
+ 
+Downloaded from 
+
+learnmem.cshlp.org
+
+ on February 14, 2023 - Published by 
+
+Cold Spring Harbor Laboratory Press
+
+Battaglia et al.
+
+global cortical activity at slow time scales
+and hippocampal sharp waves, which is the
+subject of the present work.
+
+Some of these results have been pre-
+sented in an abstract format (Battaglia et al.
+2001).
+
+Results
+To establish the relationship between SPWs
+and neocortical activity, multiple single
+unit activity was recorded from an array of
+144 independently positionable electrodes
+chronically implanted on three rats. The
+electrode array spanned about two-thirds of
+the dorsal surface of the neocortex, includ-
+ing anterior cingulate, primary and second-
+ary motor, somatosensory, dorsal parietal,
+retrosplenial, and visual areas (Fig. 1A). At
+the same time, the left CA1 pyramidal layer
+EEG (Fig. 2) was recorded from one elec-
+trode.
+
+Figure 1 Recording location and yield of isolated units from a particularly successful recording
+session. Average yield per session was approximately 50 neurons. (A) Outline of the cortical struc-
+tures spanned by the electrode array, as implanted on rats 1 and 2. The array on rat 3 was placed
+symmetrically over the midline. Electrode locations are represented by black dots. Colors indicate
+neocortical areas; (purple) visual; (green) somatosensory; (yellow) retrosplenial; (orange) motor
+and anterior cingulate. Calibration bar, 1 mm. (This figure was adapted from Zilles 1985 with
+permission from Springer © 1985.) (B) Graph of 96 simultaneously recorded neocortical single unit
+waveforms, plotted at locations of the corresponding recording electrodes. Calibration bar, 150 µV.
+
+Hippocampal memory trace reactivation is strongest during
+SPWs (Kudrimoti et al. 1999), indicating that trace reactivation
+might, indeed, reflect the information stored in the CA3 synaptic
+matrix (McNaughton 1983; Buzsaki 1989; Shen and McNaugh-
+ton 1996). Hippocampal SPWs, therefore, are a possible mecha-
+nism for the transfer of reactivated memories to the neocortex,
+and for the organization of coordinated cortical retrieval and
+consolidation (Hoffman and McNaughton 2002). These consid-
+erations motivated the investigation of the relationship between
+
+During recording sessions, rats 1 and 2
+slept or rested for two periods (Rest 1 and
+Rest 2) of 25–40 min. Between these peri-
+ods, they performed a behavioral task. Rat 3
+was only recorded during one rest period of
+25–40 min in each session and did not per-
+form a behavioral task. Only the rest period data were analyzed
+for this report. Up to 96 cells were recorded simultaneously (Fig.
+1B; total 2812 cells, in 61 sessions; 2298 from rat 1, 288 from rat
+2, 226 from rat 3). Some of the cells may have been recorded from
+more than once across sessions, given that not all electrodes were
+moved every day (firing rate: mean: 1.94 (cid:1) 2.89 Hz; min: 0.005
+Hz, max: 31.06 Hz).
+
+Neocortical neuronal activity exhibited coherent fluctua-
+tions spanning all of the recorded areas. Spectral analysis of the
+total spike activity revealed discrete bouts
+of oscillations in the spindle range and in
+the delta/slow range during most of the re-
+corded rest sessions (see, e.g., Fig. 3A).
+These episodes of oscillations accounted for
+35% of the total recording time.
+
+During troughs of slow/delta oscilla-
+tions, generalized neuronal silence was of-
+ten observed for a duration of ∼200–400
+msec (Figs. 2 and 3B,C). The same degree of
+synchrony was observed across the sampled
+recorded areas during spindle oscillations
+(data not shown). Fluctuations on a longer
+time scale were also present, and were re-
+flected in the autocorrelogram of the global
+population activity, which decayed with a
+time constant of 2.4 (cid:1) 0.5 sec (Fig. 3D).
+“Up-states” were defined arbitrarily as those
+1-sec periods in which the number of “ac-
+tive” cells (one or more spikes) exceeded
+the 95% confidence threshold, computed
+from the randomly and independently
+shuffled interval series of all cells (see Mate-
+rials and Methods). In all, 15.2% (cid:1) 4.3% of
+the intervals in Rest 1 and 13.0% (cid:1) 3.0% in
+Rest 2 exceeded this threshold, with activity
+in at least 58.3% (cid:1) 5.0% and 57.5% (cid:1) 5.1%
+of neurons, respectively. The recording ses-
+sion with the smallest effect yielded 7.6%
+of above-threshold intervals (p < 0.0001).
+
+Figure 2 Example of simultaneous recording of hippocampal LFPs and 84 neocortical single
+units. This is a 10-sec excerpt from a rest period showing: LFP trace from the CA1 pyramidal layer,
+bandpass (100–300 Hz) filtered, with SPW/ripple complexes (top); the global average cortical firing
+rate (middle); and raster plot containing the spike trains from the simultaneously recorded cells
+(bottom). Cortical firing shows oscillations in the delta range (2–3 Hz) synchronized across all the
+sampled cortical areas. During the troughs of these oscillations, neuronal activity was often com-
+pletely suppressed.
+
+698
+
+Learning & Memory
+www.learnmem.org
+
+ 
+Downloaded from 
+
+learnmem.cshlp.org
+
+ on February 14, 2023 - Published by 
+
+Cold Spring Harbor Laboratory Press
+
+Sharp waves and cortical “up-state” transitions
+
+Figure 3 Global fluctuations of cortical activity and hippocampal sharp waves. (A) Power spectral density analysis of 700 sec of cortical activity. The
+power spectrum of combined instantaneous firing rate for the 84 recorded cells was estimated using a sliding 5-sec window. Episodes of coordinated
+oscillations in the spindle range (indicated by the s) and in the delta/slow range (indicated by the d) are visible. (B) Enlargement of the 100-sec period
+between the white dashed lines in A, showing delta oscillations. (C) Average instantaneous cortical firing rate during the same interval. The interval
+between the two red lines is the same as depicted in Figure 2. Note that the absolute values of the firing rates are different from Figure 2 because a larger
+smoothing parameter was used. (D) Autocorrelogram of the total activity of the recorded neocortical population. In each recording session, the spikes
+from all the recorded cells were pooled into a single binned time series that was used to compute the autocorrelation function. The normalization was
+chosen such that the asymptotic value of the autocorrelation coincides with the population average firing rate per cell. The data shown are an
+across-session average. The decline of the autocorrelogram was fit with an exponential function with a time constant of 2.4 (cid:1) 0.5 sec. Time bin, 200
+msec. (E) Autocorrelogram of the time of occurrence of SPWs. There is a decay from t = 0 to the baseline, that can be approximated with an exponential
+function with a time constant of 5.5 (cid:1) 0.06 sec. This indicates that SPWs do not occur as a Poisson process with a constant rate throughout the
+recording sessions.
+
+The sharp-wave-triggered Peri-event time histograms (PETH)
+of the global cortical activity showed that SPW events were ac-
+companied by a brief burst of neocortical firing (Fig. 4). PETHs
+computed during periods of identified delta/slow oscillations
+were different from those computed during periods in which no
+delta/slow oscillations were present. During delta/slow oscilla-
+
+tions (Fig. 4A,B), sharp wave events were preceded by a dip in
+average cortical firing lasting for ∼500 msec. The average cortical
+firing was at the baseline level immediately before the dip. After
+the sharp wave event, the average cortical firing was increased,
+and slowly decayed to baseline with a time constant of the order
+of 3 sec. In epochs that did not include delta/slow oscillations,
+
+Learning & Memory
+www.learnmem.org
+
+699
+
+ 
+Downloaded from 
+
+learnmem.cshlp.org
+
+ on February 14, 2023 - Published by 
+
+Cold Spring Harbor Laboratory Press
+
+Battaglia et al.
+
+an increase in SPW frequency at the transi-
+tion, which started 1–2 sec ahead of the
+transition.
+
+To estimate the proportion of indi-
+vidual cells exhibiting statistically signifi-
+cant modulation around SPWs, the firing
+rates before, during, and after each SPW
+event were compared with an estimate of
+the SPW-independent firing rates (Fig. 5;
+Table 1), for both delta/slow epochs and
+non-delta/slow epochs. For all intervals,
+there was an elevated number of signifi-
+cantly (two-tailed t-test, p < 0.05) up- or
+down-modulated (or both) cells. The pro-
+portion of up- and down-modulated cells
+was in most cases different from chance; the
+significance of such differences was tested
+by a binomial sign test, whose results are
+reported in Table 1. The delta/slow epochs
+showed similar numbers of up- and down-
+modulated cells before the sharp waves
+(consistent lack of deviation from baseline
+observed in the PETH prior to sharp waves),
+and larger numbers of up-modulated cells at
+the sharp wave times and in the subsequent
+interval (consistent with the long-lasting
+increase from baseline registered in the
+PETH). At the time of the sharp waves, there
+were significantly fewer down-modulated
+cells than chance. In non-delta/slow ep-
+ochs, there was an elevated number of
+down-modulated cells in the pre-SPW inter-
+vals, a prevalence of up-modulated cells at
+sharp wave times, and similar numbers of
+up- and down-modulated cells in the inter-
+val following the sharp waves. The pattern
+was similar in each of the experimental ani-
+mals (Table 1). To assess whether these ef-
+fects were localized in only some of the re-
+corded cortical areas, the 12 (cid:3) 12 electrode
+array was divided into nine square regions
+(3 (cid:3) 3). The number of SPW-modulated
+cells was above chance in all regions studied
+both in delta/slow epochs and non-delta/
+slow epochs, although there were regional
+differences (p < 0.02, (cid:1)2 test). The effects
+seemed to be strongest in the cortical re-
+gions spanning the midline, but further
+study would be required to rule out vari-
+ables other than region in the generation of
+this effect. The z-scores for sharp wave-
+modulation of individual cells in the two
+rest periods were only moderately corre-
+lated (r = 0.48 in the interval corresponding
+to SPWs, and lower in the other intervals), indicating that differ-
+ent ensembles were activated during different SPW events.
+
+The probability of SPW occurrence also fluctuated weakly
+on time scales comparable to those of neocortical slow oscilla-
+tions, as shown by the autocorrelogram of SPW times, which
+decays with a time constant of 5.51 (cid:1) 0.06 sec (Fig. 3E).
+
+Dicussion
+The three main results of this study are the observation of deeply
+synchronized fluctuations in neuronal firing in the delta/slow
+frequency range across almost the entire neocortex, an observa-
+
+Figure 4 SPW interaction with neocortical neural activity. (A) Peri-event time histogram (PETH)
+of cortical population activity during the periods of identified global oscillations in the delta/slow
+range, centered on hippocampal sharp wave events. A transient increase in firing rate was evident
+at the time of the sharp waves. On the long time scale, the firing rate was larger after the sharp
+wave event. Firing rate showed a short lasting dip right before (200–400 msec) the SPW, probably
+related to the in-phase occurrence of delta oscillation, and was at baseline level shortly before that.
+After the SPW events, average cortical firing rate showed a much longer decay, spanning several
+seconds (error bars = SEM; bin size, 100 msec). (B) Same PETH, with an expanded scale, illustrating
+both the fast dip before SPWs and the transient increase at the time of SPWs (bin size, 20 msec).
+(C) Sharp-wave-triggered PETH (bin size, 100 msec) of cortical firing during periods in which
+oscillations in the delta/slow range were absent. The transient increase at SPW time was still
+present, albeit of smaller amplitude, but there was no fast dip preceding SPWs. A prolonged period
+of increasingly negative modulation was observed for several seconds leading up to the sharp
+waves. After SPWs, the return to baseline was relatively fast. (D) Same PETH shown on an enlarged
+scale (bin size, 20 msec). Note that, because the shapes of the PETH functions represent averages
+over many SPW events, they do not necessarily reflect the shape of individual events (see Fig. 6 for
+further explanation). (E) PETH of SPW event occurrence, centered on the down-to-up-state tran-
+sitions in the total cortical spike activity, showing increased SPW probability around such transi-
+tions. Note that the baseline value was higher on the left-hand side of the PETH than on the
+right-hand side, signaling that sharp waves were more frequent during the down-states than
+during the up-states.
+
+the sharp wave-triggered PETH of cortical firing exhibited differ-
+ent features (Fig. 4C,D): Although there was still a transient in-
+crease at the time of the sharp wave event (albeit not as strong as
+during delta/slow oscillations), no “fast” dip was observed pre-
+ceding sharp waves. Instead, an exponential decline in average
+activity was observed preceding the sharp wave, with a time con-
+stant of the order of seconds. Baseline firing resumed shortly after
+sharp waves. Conversely, the generation of SPW events was af-
+fected by the neocortical state (Fig. 4E): the frequency of sharp
+wave occurrence was higher during “down-states” (1.12 (cid:1) 0.22
+(cid:2)6) than during “up-states” (0.77 (cid:1) 0.20 Hz). The
+Hz; p < 10
+“down/up” transition-centered PETH of SPW events also revealed
+
+700
+
+Learning & Memory
+www.learnmem.org
+
+ 
+Downloaded from 
+
+learnmem.cshlp.org
+
+ on February 14, 2023 - Published by 
+
+Cold Spring Harbor Laboratory Press
+
+Sharp waves and cortical “up-state” transitions
+
+tween neocortical firing and sharp waves in the entorhinal cor-
+tex, which are tightly related to the hippocampal ones (Chrobak
+and Buzsaki 1996), because of their smaller sample size. The ef-
+fect was nevertheless observed in a large fraction of the cells, thus
+it could not be attributed to a modulation of a small subset of
+cells (Fig. 5). These two facts taken together suggest that differ-
+ent, relatively small, groups of cells are recruited by each sharp
+wave episode. The small size of this group may reflect the sparse
+coding of information in neocortical modules, and may be partly
+caused by the high inhibitory pressure in the entorhinal cortex
+(Pelletier et al. 2004). The correlation between hippocampal and
+neocortical dynamics was also evident when the change in sharp
+wave frequency associated with cortical activity states was con-
+sidered: sharp wave events were 20%–30% more likely in corre-
+spondence with down-to-up transitions compared with baseline
+(Fig. 4E). Sharp waves were also more likely during down-states
+than during up-states.
+
+The intracellular physiology literature has introduced the
+concept of “up” and “down” states as membrane potential fluc-
+tuations between two well-defined levels. In fact, in some regions
+or experimental conditions, the membrane potential fluctua-
+tions are bimodal in nature (e.g., as observed in the striatum by
+Wilson and Groves 1981). Bimodal fluctuations of membrane
+potential have been observed in intracellular recordings in anes-
+thetized and naturally sleeping animals (Timofeev et al. 2001;
+Petersen et al. 2003) in the delta range, with frequencies corre-
+sponding to those of the population firing rate oscillations
+shown here. The picture emerging from population firing rates is,
+however, somewhat different: The population firing rate during
+delta/slow oscillations did not show bimodality, as the oscilla-
+tions are characterized by an abrupt upward transition and a
+slower decline (see, e.g., Fig. 2). This might be owing to a gradual
+loss in coherence across neocortical cells (perhaps because of dif-
+ferent durations of up-states in different neocortical networks) or
+to firing rate adaptation, which may slow down cell firing as the
+cortex remains in an up-state. Nevertheless, the data are consis-
+tent with the conclusion that sharp waves were correlated with
+discrete transitions from relatively low to relatively high states of
+activity. The precise shape of the sharp-wave-triggered PETH de-
+pends on the current dynamical state of the neocortex: During
+delta/slow oscillations, the PETH stays at baseline until few hun-
+dreds of milliseconds from the sharp wave, whereas, following
+the sharp waves, it decays back to baseline in a few seconds,
+starting from a more elevated value. In periods without delta/
+slow oscillations, the PETH is basically flat after the sharp wave,
+but exhibits a slowly increasing depression leading to up the
+sharp wave (2–3 sec).
+
+One possible scenario that would produce this pattern is
+depicted in Figure 6. In this oversimplified scheme, transitions
+between up-states and down-states are described by a Markov
+process, so that the state durations follow an exponential distri-
+bution, and at least a fraction of the sharp waves coincide with
+the down-to-up transitions, the others being distributed ran-
+domly in time. If the up-state has a much shorter mean duration
+than the down-state, the sharp wave-triggered PETH of cortical
+activity has a shape similar to that observed during delta oscilla-
+tions. If down-states are shorter than up-states, the PETH re-
+sembles that observed in no-delta/slow periods. Thus, whereas
+the abrupt increase in firing at the time of the sharp wave event
+is observed in both cases (in the model, because of the assump-
+tion of coincidence of sharp waves and down/up transitions), the
+difference in the shape of the PETH in these two dynamical re-
+gimes appears to reflect a different relative duration of up- and
+down-states, as might be expected in deeper or more superficial
+sleep stages, possibly because of cholinergic modulation of leak-
+age K+ conductances (Compte et al. 2003).
+
+Learning & Memory
+www.learnmem.org
+
+701
+
+Figure 5 Single unit activity modulation by SPWs. (A) Percentage of
+cells with firing rates that were significantly (p < 0.05) up-modulated
+(white bars) or down-modulated (black bars) in intervals centered on, or
+surrounding, the SPWs, as they were detected by the thresholding algo-
+rithm during the periods of identified global delta/slow cortical oscilla-
+tions. The firing rates in 500-msec intervals spanning from 1500 to 1000
+msec before the SPW (first pair of bars), from 700 to 200 msec before the
+SPW (second pair), the 500 msec after the SPW (fourth pair) and in the
+intervals between the beginnings and ends of SPWs (third pair), were
+compared with intervals of the same length starting 10 sec after each
+SPW. A large percentage of cells was up-modulated at the time of SPWs
+and 500 msec thereafter. At the time of the SPW, the number of down-
+modulated cells was actually significantly lower than the chance value of
+2.5%. In the intervals before the SPW there were similar proportions of
+up-modulated and down-modulated cells. (B) Same comparison for the
+periods of time without global delta/slow oscillations. A large percentage
+of cells was down-modulated before the SPWs. A large proportion of cells
+was up-modulated at the time of the SPW, whereas similar proportions of
+cells were up- and down-modulated in the +500-msec interval. The
+dashed line here and in A represents the 2.5% chance level. A fraction of
+modulated cells close to that chance level would be attained if there were
+no statistical relationship between sharp waves and cortical firing, as in
+that case the intervals considered and the controls 10 sec later could be
+considered random time intervals with respect to the cortical firing (*:
+fraction of modulated cells different from chance level; p < 0.00001). (C)
+Schematic representation of the intervals used for the comparisons in A.
+The intervals used for the (cid:2)1000 msec (500 msec), (cid:2)200 msec (500
+msec), SPW (beginning and ends detected by thresholding), and +500
+msec (500 sec), and the corresponding control intervals are displayed.
+
+tion that extends previously published results (Destexhe et al.
+1999), of the existence of longer time-scale fluctuations in
+nonanesthetized animals, and, most importantly, of the relation-
+ship between these cortical phenomena and hippocampal sharp
+waves. A coupling between cortical delta rhythm and sharp
+waves was previously demonstrated by Sirota et al. (2003) in so-
+matosensory cortex. It is shown here that longer time-scale co-
+herent fluctuations in cortical activity, namely, the transitions
+between what have been referred to as “down-states” and “up-
+states” were correlated with an increased probability of occur-
+rence of sharp waves in the hippocampus (Fig. 4E), and sharp
+waves were more likely to occur during down-states than during
+up-states. Because the coupling between cortical activity and hip-
+pocampal activity is of a probabilistic nature, there was no one-
+to-one correspondence between cortical transitions and sharp
+waves, which explains why the modulation observed in the
+PETHs is relatively small. The small size of the effect may have
+prevented Pelletier et al. (2004) from observing a relation be-
+
+ 
+Downloaded from 
+
+learnmem.cshlp.org
+
+ on February 14, 2023 - Published by 
+
+Cold Spring Harbor Laboratory Press
+
+Battaglia et al.
+
+Table 1. Detail of the numbers of up- and down-modulated cells during delta/slow and non-delta/slow epochs
+
+(cid:4)1000 msec
+
+(cid:4)200 msec
+
+SPW
+
++500 msec
+
+Rat 1, N = 2298
+
+Delta/slow up-modulated
+Delta/slow down-modulated
+Non-delta/slow up-modulated
+Non-delta/slow down-modulated
+
+135 (5.9%, p < 0.00001)
+118 (5.1%, p < 0.00001)
+
+48 (2.0%, n.s.)
+
+188 (8.1%, p < 0.00001)
+
+152 (6.6%, p < 0.00001)
+168 (7.3%, p < 0.00001)
+90 (3.9%, p < 0.00005)
+203 (8.8%, p < 0.00001)
+
+333 (14.5%, p < 0.00001)
+
+32 (1.4%, p < 0.001)
+139 (6.0%, p < 0.00001)
+
+59 (2.6%, n.s.)
+
+376 (16.36%, p < 0.00001)
+97 (4.2%, p < 0.00001)
+100 (4.45, p < 0.00001)
+140 (6.0%, p < 0.00001)
+
+Rat 2, N = 288
+
+Delta/slow up-modulated
+Delta/slow down-modulated
+Non-delta/slow up-modulated
+Non-delta/slow down-modulated
+
+14 (4.9%, p < 0.02)
+17 (5.9%, p < 0.0005)
+18 (6.2%, p < 0.00005)
+
+8 (2.8%, n.s.)
+
+8 (2.8%, n.s.)
+
+26 (9.0%, p < 0.00001)
+12 (4.1%, n.s.)
+27 (9.4%, p < 0.00001)
+
+13 (4.5%, p < 0.05)
+
+5 (1.7%, n.s.)
+
+19 (6.6%, p < 0.00001)
+
+7 (2.4%, n.s.)
+
+28 (9.7%, p < 0.00001)
+18 (6.2%, p < 0.00005)
+16 (5.5%, p < 0.001)
+11 (3.8%, n.s.)
+
+Rat 3, N = 226
+
+Delta/slow up-modulated
+Delta/slow down-modulated
+Non-delta/slow up-modulated
+Non-delta/slow down-modulated
+
+Total, N = 2812
+
+5 (2.2%, n.s.)
+8 (3.5%)
+5 (2.2%, n.s.)
+
+1 (0.04%, p < 0.05)
+
+30 (13.2%, p < 0.00001)
+
+34 (15.0%, p < 0.00001)
+
+12 (5.3%, p < 0.01)
+15 (6.6%, p < 0.00001)
+
+0 (0.0%, p < 0.02)
+
+1 (0.04%, p < 0.05)
+
+21 (9.3%, p < 0.00001)
+
+25 (11.0%, p < 0.00001)
+
+10 (4.4% n.s., p = 0.06)
+
+8 (3.5%, n.s.)
+
+2 (0.09%, n.s.)
+
+5 (2.2% , n.s.)
+
+Delta/slow up-modulated
+Delta/slow down-modulated
+Non-delta/slow up-modulated
+Non-delta/slow down-modulated
+
+154 (5.5%, p < 0.00001)
+143 (5.1%, p < 0.00001)
+
+71 (2.5%, n.s.)
+
+206 (7.3%, p < 0.00001)
+
+161 (5.7%, p < 0.00001)
+206 (7.3%, p < 0.00001)
+117 (4.1%, p < 0.00001)
+238 (8.4%, p < 0.00001)
+
+376 (13.4%, p < 0.00001)
+37 (1.3%, p < 0.00001)
+179 (6.3%, p < 0.00001)
+
+68 (2.4%, n.s.)
+
+438 (15.6%, p < 0.00001)
+116 (4.1%, p < 0.00001)
+141 (5.0%, p < 0.00001)
+156 (5.5%, p < 0.00001)
+
+The numbers of cells whose rates were modulated up and down (p < 0.05, two-tailed t-test) and the fractions of the total are shown for each of the three
+experimental animals and for the totals. The p-values are relative to the significance of the difference between the measured fraction of modulated cells
+and the chance level of 2.5% (binomial, z-test).
+
+At present, there is no clear evidence for a causal relation-
+ship between these phenomena, even though a modulation in
+the neocortical EEG has been shown to precede sharp wave
+events by 50–100 msec (Sirota et al. 2003). Subtle changes in
+neocortical input, related to the slow fluctuations, may affect the
+probability of triggering an SPW in the hippocampus. More spe-
+cifically, a decrease in cortical input might lead to hyperpolar-
+ization and low spike rates of CA3 cells, and to a de-inactivation
+of Ca++ channels (Buzsaki et al. 1992), leading to higher excit-
+ability of the hippocampal neurons. A sharp wave event may
+then be triggered by some fluctuation in the hippocampal input
+(e.g., by a neocortical transition to an up-state). On the other
+hand, it has been observed (Lewis and O’Donnell 2000) that
+stimulation of hippocampus or the ventral tegmental area can
+trigger up-states. Thus, the appropriate framework to describe the
+hippocampal/neocortical interactions might well be that of a
+closed loop, with causal relationships actually going both ways.
+During down-states, the cortex may have a role in mediating the
+increase in excitability in the hippocampus, which may lead to
+sharp waves, which could explain the increased sharp wave fre-
+quency during down-states. The burst discharge associated to a
+sharp wave in the CA3 network may converge on a stored
+memory state, making that memorized information available to
+the neocortex (Shen and McNaughton 1996). Both the neocor-
+tex, especially at the end of a down-state (Compte et al. 2003),
+and the hippocampus are in an extremely excitable state, prone
+to explode in coherent, self-sustained activations. Therefore,
+they can readily follow the input coming from the other struc-
+ture: The hippocampal drive during a sharp wave could increase
+the probability of a transition from a down-state to an up-state.
+Conversely, as mentioned above, the neocortical down/up tran-
+sition may provide the triggering input causing the sharp wave.
+Common inputs from other brain structures may influence the
+generation of these related events in the hippocampus and neo-
+cortex.
+
+The set of network relationships highlighted in the present
+study might be relevant to the memory consolidation process:
+Sharp waves, reflecting the stored patterns of hippocampal activ-
+
+702
+
+Learning & Memory
+www.learnmem.org
+
+ity (Kudrimoti et al. 1999), could elicit coordinated retrieval of
+corresponding activity configurations stored in the neocortex
+that are indexed by the hippocampal cue (for review, see Mc-
+
+Figure 6 Qualitative picture of the interaction between up-state and
+down-state transitions in cortical firing and hippocampal sharp waves
+and how the apparently gradual trends in the average PETH functions
+shown in Figure 4 can be accounted for by averaging over fluctuations in
+discrete states with variable durations. In these numerical simulations, the
+cortical state transitions occur randomly, according to a two-state
+Markov process, whose parameters represent the mean life of each state,
+and cortical firing rates are assumed to be constant within a given state.
+(A) In this situation, the mean life of the up-states is much shorter (3 sec)
+than the mean duration of the down-states (20 sec). If at least some
+proportion of the SPW occurs in correspondence with the down-to-up
+transition, the SPW-triggered PETH of cortical firing would look like the
+one in B, which resembles what is observed during the periods domi-
+nated by delta/slow oscillations, at least in terms of the long time scale
+behavior (long decline after the SPW, mostly flat before; see Fig. 4). (C) In
+the scenario in which the down-state is much shorter (3 sec) than the
+up-state (20 sec), the SPW-triggered, cortical PETH would look like the
+one in D, which is reminiscent of what is observed in the periods without
+delta/slow oscillations (long-lasting exponential trough leading to the
+SPWs, small modulation after the SPWs). The calibration bar in A and C
+represents 20 sec.
+
+ 
+Downloaded from 
+
+learnmem.cshlp.org
+
+ on February 14, 2023 - Published by 
+
+Cold Spring Harbor Laboratory Press
+
+Naughton et al. 2003). The neocortical input may, in turn, influ-
+ence the memory content retrieved by the hippocampus at that
+time.
+
+Materials and Methods
+
+Electrode array and surgical procedures
+The animals were treated according to NIH guidelines and ap-
+proved IACUC protocols. Rats were anesthetized with sodium
+pentobarbital (40 mg/kg), and a square craniotomy was opened
+to accommodate the 8-mm square, 12 (cid:3) 12 guide cannulae array
+(Hoffman and McNaughton 2002). The dura was left intact, and
+the array was isolated from the dura surface by a layer of biocom-
+patible silastic (Dow Corning). The coordinates were bregma AP
++2.6 mm (anterior side), AP (cid:2)5.2 mm (back), DL (cid:2)2.4 mm (left),
+DL +5.4 mm (right) (Fig. 1A). The cannulae contained 75-µm
+stainless steel electrodes, tapered to a fine tip (FHC). The unin-
+sulated rear part of the electrodes made electrical contact with
+the cannulae, which, in turn, were connected to a circuit board
+that provided the connections between the cannulae and the
+buffer preamplifiers (Neuralynx). The implant was anchored to
+the skull with jeweler’s screws and dental cement. After surgery,
+the electrodes were pushed through the insulation layer and the
+dura to the brain surface by means of a 0.006-inch wire push-rod,
+connected to a digital micromanipulator, which was inserted in
+the top end of the cannulae. Once every few recording sessions,
+a subset of the electrodes was advanced to new locations, search-
+ing for new units in the neocortex, while a custom-written pro-
+gram kept track of the depth of the electrodes. A few electrodes
+were advanced to the CA1 pyramidal layer for LFP recording.
+
+Electrophysiological recording procedures
+For single unit recordings, the signal coming from the buffer
+preamplifiers was differentially amplified, referred to an elec-
+trode in a quiet location in the white matter, and band-pass
+filtered between 600 Hz and 6 kHz. Whenever the signal ex-
+ceeded a threshold, a spike waveform was acquired at 25 kHz
+(duration 1.3 msec) and recorded on the hard disk (Cheetah re-
+cording system; Neuralynx, Inc.). LFPs were filtered between 1 Hz
+and 475 Hz and continuously recorded at 1.6 kHz. The acquired
+waveforms were sorted off-line using a semiautomated clustering
+algorithm (BBClust, P. Lipa, unpubl.) based on the waveform
+amplitude, and the wave-shape principal components, and suc-
+cessively refined manually with custom-written software
+(MClust, A.D. Redish, unpubl.).
+
+Recording session protocol
+For rats 1 and 2, during each recording session, rats were allowed
+to rest and/or sleep for two sessions of 25/40 min, while electro-
+physiological data were recorded. In between these sessions, the
+rats ran for food back and forth on a circular track. The two
+reward sites were separated by a barrier so that the rat had to
+alternate directions on the track. Along the track, many multi-
+modal sensory cues were placed: odors, floor coverings with dif-
+ferent textures, rods that hit the whiskers while the rat was pass-
+ing by, and an earphone playing music. Only the data from the
+rest sessions were used for this work. Rat 3 was allowed to rest
+and/or sleep for 25/40 min during electrophysiological record-
+ings, and did not perform any behavioral task.
+
+Up-state detection
+For this analysis, only 28 sessions with 40 or more recorded cells
+were considered. Spike-trains were binned in 1-sec intervals. For
+each interval, the number of active cells (i.e., cells that fired at
+least one spike in the interval) was computed. If that number
+exceeded a threshold, an up-state was detected. The threshold
+was computed as the 95th percentile of the distribution, com-
+puted from randomly and independently shuffled spike trains.
+The threshold was therefore a value representative of the ex-
+pected amount of fluctuation in the total activity in spike trains
+
+Sharp waves and cortical “up-state” transitions
+
+with similar firing rates, but in which the coherence across cells
+was disrupted.
+
+Sharp wave detection
+The CA1 pyramidal layer LFP was filtered in the ripple oscillation
+frequency domain (100–300 Hz). SPW events were detected by
+means of a thresholding algorithm. Suprathreshold events closer
+to each other than 100 msec were merged, and events shorter
+than 50 msec were discarded. For neocortical activity PETH cal-
+culations, SPW timestamps were computed as the times of the
+highest peaks in the ripple oscillation within the SPW events.
+
+Spectral analysis of cortical activity
+The combined spike train from all the recorded cortical cells in
+each session was transformed into a time series by a 5-msec time
+window binning. The power spectrum of the resulting time series
+was estimated by means of multitaper analysis (Mitra and Pesa-
+ran 1999; Percival and Walden 2002), in a sliding time window
+with a width of ∼10 sec. The aggregate power in the 0.8– 4 Hz as
+a function of time was used as an index of oscillatory activity in
+the delta/slow range. Epochs in which this index exceeded a
+manually defined threshold area are considered as delta/slow os-
+cillation periods.
+
+Acknowledgments
+We thank K. Bohne, K. Poneta, L. Gronenberg, J. Lammers, S.
+Cowen, M. Tatsuno, and K. Hoffman for help with running the
+experiments; K. Stengel (Neuralynx, Inc.) for technical assistance;
+and A. Fuglevand, K. Gothard, and K. Hoffman for suggestions
+on the manuscript. This work is supported by NIH, MH46823,
+and MH01565. F.P.B. was partially funded by HFSP LT150/99B.
+G.R.S. was partially funded by NIH NIGMS 5 T32 GM08400.
+
+References
+Achermann, P. and Borbely, A.A. 1997. Low-frequency (<1 Hz)
+
+oscillations in the human sleep electroencephalogram. Neuroscience
+81: 213–222.
+
+Ball, G.J., Gloor, P., and Schaul, N. 1977. The cortical
+
+electromicrophysiology of pathological delta waves in the
+electroencephalogram of cats. Electroencephalogr. Clin. Neurophysiol.
+43: 346–361.
+
+Battaglia, F.P, Sutherland, G.R., and McNaughton, B.L. 2001.
+Widespread modulation of neocortical cell activity during
+hippocampal sharp waves. Soc. Neurosci. Abs. 27: 643.16.
+
+Buzsaki, G. 1989. Two-stage model of memory trace formation: A role
+
+for “noisy” brain states. Neuroscience 31: 551–570.
+
+Buzsaki, G., Horvath, Z., Urioste, R., Hetke, J., and Wise, K. 1992.
+
+High-frequency network oscillation in the hippocampus. Science
+256: 1025–1027.
+
+Chrobak, J.J. and Buzsaki, G. 1994. Selective activation of deep layer
+
+(V-VI) retrohippocampal cortical neurons during hippocampal sharp
+waves in the behaving rat. J. Neurosci. 14: 6160–6170.
+
+. 1996. High-frequency oscillations in the output networks of the
+hippocampal–entorhinal axis of the freely behaving rat. J. Neurosci.
+16: 3056–3066.
+
+Compte, A., Sanchez-Vives, M.V., McCormick, D.A., and Wang, X.J.
+
+2003. Cellular and network mechanisms of slow oscillatory activity
+(<1 Hz) and wave propagations in a cortical network model. J.
+Neurophysiol. 89: 2707–2725.
+
+Cowan, R.L. and Wilson, C.J. 1994. Spontaneous firing patterns and
+
+axonal projections of single corticostriatal neurons in the rat medial
+agranular cortex. J. Neurophysiol. 71: 17–32.
+
+Csicsvari, J., Hirase, H., Mamiya, A., and Buzsaki, G. 2000. Ensemble
+
+patterns of hippocampal CA3-CA1 neurons during sharp
+wave-associated population events. Neuron 28: 585–594.
+
+Destexhe, A., Contreras, D., and Steriade, M. 1999. Spatiotemporal
+
+analysis of local field potentials and unit discharges in cat cerebral
+cortex during natural wake and sleep states. J. Neurosci.
+19: 4595–4608.
+
+Hoffman, K.L. and McNaughton, B.L. 2002. Coordinated reactivation of
+
+distributed memory traces in primate neocortex. Science
+297: 2070–2073.
+
+Ishizuka, N., Weber, J., and Amaral, D.G. 1990. Organization of
+
+intrahippocampal projections originating from CA3 pyramidal cells
+in the rat. J. Comp. Neurol. 295: 580–623.
+
+Learning & Memory
+www.learnmem.org
+
+703
+
+ 
+Downloaded from 
+
+learnmem.cshlp.org
+
+ on February 14, 2023 - Published by 
+
+Cold Spring Harbor Laboratory Press
+
+Battaglia et al.
+
+Kudrimoti, H.S., Barnes, C.A., and McNaughton, B.L. 1999. Reactivation
+
+of hippocampal cell assemblies: Effects of behavioral state,
+experience, and EEG dynamics. J. Neurosci. 19: 4090–4101.
+
+Lewis, B.L. and O’Donnell, P. 2000. Ventral tegmental area afferents to
+the prefrontal cortex maintain membrane potential ‘up’ states in
+pyramidal neurons via D(1) dopamine receptors. Cereb. Cortex.
+10: 1168–1175.
+
+Louie, K. and Wilson, M.A. 2001. Temporally structured replay of awake
+hippocampal ensemble activity during rapid eye movement sleep.
+Neuron 29: 145–156.
+
+Maquet, P. 2001. The role of sleep in learning and memory. Science
+
+294: 1048–1052.
+
+Marr, D. 1970. A theory for cerebral neocortex. Proc. R Soc. Lond. B Biol.
+
+Sci. 176: 161–234.
+
+McNaughton, B.L. 1983. Comments in hippocampus symposium panel
+
+discussion. In Neurobiology of the hippocampus (ed. W. Siefert), p. 610.
+Academic Press, New York.
+
+McNaughton, B.L., Barnes, C.A., Battaglia, F.P., Bower, M.R., Cowen,
+S.L., Ekstrom, A.D., Gerrard, J.L., Hoffman, K.L., Houston, F.P.,
+Karten, Y., et al. 2003. Off-line reprocessing of recent memory and
+its role in memory consolidation: A progress report. In Sleep and
+brain plasticity (eds. P. Maquet et al.), pp. 225–246. Oxford
+University Press, Oxford, UK.
+
+Mitra, P.P. and Pesaran, B. 1999. Analysis of dynamic brain imaging
+
+data. Biophys. J. 76: 691–708.
+
+O’Keefe, J. and Nadel, L. 1978. The hippocampus as a cognitive map.
+
+Oxford University Press, Oxford.
+
+Pavlides, C. and Winson, J. 1989. Influences of hippocampal place cell
+
+firing in the awake state on the activity of these cells during
+subsequent sleep episodes. J. Neurosci. 9: 2907–2918.
+Pelletier, J.G., Apergis, J., and Paré, D. 2004. Low probability
+
+transmission of neocortical and entorhinal impulses through the
+perirhinal cortex. J. Neurophysiol. 91: 2079–2089.
+
+Percival, D.B. and Walden, A.T. 2002. Spectral analysis for physical
+applications. Cambridge University Press, Cambridge, UK.
+
+Petersen, C.C., Hahn, T.T., Mehta, M., Grinvald, A., and Sakmann, B.
+
+2003. Interaction of sensory responses with spontaneous
+depolarization in layer 2/3 barrel cortex. Proc. Natl. Acad. Sci.
+100: 13638–13643.
+
+Plihal, W. and Born, J. 1999. Effects of early and late nocturnal sleep on
+
+priming and spatial memory. Psychophysiology 36: 571–582.
+Ribeiro, S., Gervasoni, D., Soares, E.S., Zhou, Y., Lin, S.C., Pantoja, J.,
+
+neuronal reverberation during slow-wave sleep in multiple forebrain
+areas. PLoS Biol. 2: E24.
+
+Sanchez-Vives, M.V. and McCormick, D.A. 2000. Cellular and network
+mechanisms of rhythmic recurrent activity in neocortex. Nat.
+Neurosci. 3: 1027–1034.
+
+Shen, B. and McNaughton, B.L. 1996. Modeling the spontaneous
+reactivation of experience-specific hippocampal cell assembles
+during sleep. Hippocampus 6: 685–692.
+
+Siapas, A.G. and Wilson, M.A. 1998. Coordinated interactions between
+
+hippocampal ripples and cortical spindles during slow-wave sleep.
+Neuron 21: 1123–1128.
+
+Sirota, A., Csicsvari, J., Buhl, D., and Buzsaki, G. 2003. Communication
+between neocortex and hippocampus during sleep in rodents. Proc.
+Natl. Acad. Sci. 100: 2065–2069.
+
+Skaggs, W.E. and McNaughton, B.L. 1996. Replay of neuronal firing
+sequences in rat hippocampus during sleep following spatial
+experience. Science 271: 1870–1873.
+
+Steriade, M. 2000. Corticothalamic resonance, states of vigilance and
+
+mentation. Neuroscience 101: 243–276.
+
+Steriade, M. and Buzsaki, G. 1990. Parallel activation of thalamic and
+cortical neurons by brainstem and basal forebrain cholinergic
+systems. In Brain cholinergic systems (eds. M. Steriade and D. Biesold),
+pp. 3–64. Oxford University Press, Oxford, UK.
+
+Steriade, M., Nunez, A., and Amzica, F. 1993. A novel slow (<1 Hz)
+oscillation of neocortical neurons in vivo: Depolarizing and
+hyperpolarizing components. J. Neurosci. 13: 3252–3265.
+
+Stickgold, R., James, L., and Hobson, J.A. 2000. Visual discrimination
+learning requires sleep after training. Nat. Neurosci. 3: 1237–1238.
+Sutherland, G.R. and McNaughton, B. 2000. Memory trace reactivation
+in hippocampal and neocortical neuronal ensembles. Curr. Opin.
+Neurobiol. 10: 180–186.
+
+Timofeev, I., Grenier, F., and Steriade, M. 2001. Disfacilitation and
+
+active inhibition in the neocortex during the natural sleep-wake
+cycle: An intracellular study. Proc. Natl. Acad. Sci. 98: 1924–1929.
+
+Wilson, C.J. and Groves, P.M. 1981. Spontaneous firing patterns of
+identified spiny neurons in the rat neostriatum. Brain Res.
+220: 67–80.
+
+Wilson, M.A. and McNaughton, B.L. 1994. Reactivation of hippocampal
+
+ensemble memories during sleep. Science 265: 676–679.
+Zilles, K. 1985. The cortex of the rat. Springer-Verlag, New York.
+
+Larine, M., and Nicolelis, M.A. 2004. Long-lasting novelty-inducing
+
+Received December 22, 2003; accepted in revised form July 7, 2004.
+
+704
+
+Learning & Memory
+www.learnmem.org
+
+ 
+Downloaded from 
+
+learnmem.cshlp.org
+
+ on February 14, 2023 - Published by 
+
+Cold Spring Harbor Laboratory Press
+
+Hippocampal sharp wave bursts coincide with neocortical
+''up-state'' transitions
+
+Francesco P. Battaglia, Gary R. Sutherland and Bruce L. McNaughton
+
+Learn. Mem. 
+Access the most recent version at doi:
+
+2004, 
+
+ 11:
+
+10.1101/lm.73504
+
+References
+
+This article cites 36 articles, 14 of which can be accessed free at:
+http://learnmem.cshlp.org/content/11/6/697.full.html#ref-list-1
+
+License
+
+Email Alerting
+Service
+
+Receive free email alerts when new articles cite this article - sign up in the box at the
+top right corner of the article or 
+
+click here.
+
+Cold Spring Harbor Laboratory Press
+
+ 
+  
+  
+  
+  
+ 
+  
+  
+ 
+ 
+

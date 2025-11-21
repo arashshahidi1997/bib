@@ -1,0 +1,15 @@
+[online] citekey=kajikawa_2022_StatesRipples, doi=10.7554/eLife.69596, pmcid=None
+[online] initial URL candidates:
+  - https://doi.org/10.7554/eLife.69596
+  - https://pubmed.ncbi.nlm.nih.gov/?term=10.7554/eLife.69596
+[online] GET https://doi.org/10.7554/eLife.69596 -> 200, content-type=text/html; charset=utf-8, final=https://elifesciences.org/articles/69596
+[online] 8 candidate image URLs from https://elifesciences.org/articles/69596
+[online] https://iiif.elifesciences.org/lax/69596%2Felife-69596-fig1-v1.tif/full/617,/0/default.jpg -> derivatives/figures/kajikawa_2022_StatesRipples/online/figs/figure_1.jpg
+[online] https://iiif.elifesciences.org/lax/69596%2Felife-69596-fig2-v1.tif/full/617,/0/default.jpg -> derivatives/figures/kajikawa_2022_StatesRipples/online/figs/figure_2.jpg
+[online] https://iiif.elifesciences.org/lax/69596%2Felife-69596-fig3-v1.tif/full/617,/0/default.jpg -> derivatives/figures/kajikawa_2022_StatesRipples/online/figs/figure_3.jpg
+[online] https://iiif.elifesciences.org/lax/69596%2Felife-69596-fig4-v1.tif/full/617,/0/default.jpg -> derivatives/figures/kajikawa_2022_StatesRipples/online/figs/figure_4.jpg
+[online] https://iiif.elifesciences.org/lax/69596%2Felife-69596-fig5-v1.tif/full/617,/0/default.jpg -> derivatives/figures/kajikawa_2022_StatesRipples/online/figs/figure_5.jpg
+[online] https://iiif.elifesciences.org/lax/69596%2Felife-69596-fig6-v1.tif/full/617,/0/default.jpg -> derivatives/figures/kajikawa_2022_StatesRipples/online/figs/figure_6.jpg
+[online] https://iiif.elifesciences.org/lax/69596%2Felife-69596-fig7-v1.tif/full/617,/0/default.jpg -> derivatives/figures/kajikawa_2022_StatesRipples/online/figs/figure_7.jpg
+[online] https://iiif.elifesciences.org/lax/69596%2Felife-69596-fig8-v1.tif/full/617,/0/default.jpg -> derivatives/figures/kajikawa_2022_StatesRipples/online/figs/figure_8.jpg
+[online] total figures downloaded for kajikawa_2022_StatesRipples: 8

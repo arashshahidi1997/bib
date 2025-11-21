@@ -1,0 +1,10 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+MissingInputException in rule all in file "/home/arash/Documents/Science/Research/Projects/pixecog/bib/Snakefile", line 39:
+Missing input files for rule all:
+    affected files:
+        fulltext/sirota_2003_CommunicationNeocortex/online.txt
+        fulltext/battaglia_2004_HippocampalSharp/online.txt
+        fulltext/kajikawa_2022_StatesRipples/online.txt

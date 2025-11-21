@@ -1,0 +1,39 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+download_figures        1
+total                   2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Nov 21 15:18:39 2025]
+localrule download_figures:
+    output: figures/battaglia_2004_HippocampalSharp/online
+    log: figures/battaglia_2004_HippocampalSharp/download.log
+    jobid: 1
+    reason: Missing output files: figures/battaglia_2004_HippocampalSharp/online
+    wildcards: key=battaglia_2004_HippocampalSharp
+    resources: tmpdir=/tmp
+[Fri Nov 21 15:18:43 2025]
+Finished jobid: 1 (Rule: download_figures)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Nov 21 15:18:43 2025]
+localrule all:
+    input: pixecog.bib, figures/battaglia_2004_HippocampalSharp/online, figures/kajikawa_2022_StatesRipples/online, figures/sirota_2003_CommunicationNeocortex/online
+    jobid: 0
+    reason: Rules with a run or shell declaration but no output are always executed.
+    resources: tmpdir=/tmp
+[Fri Nov 21 15:18:43 2025]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Complete log(s): /home/arash/Documents/Science/Research/Projects/pixecog/bib/.snakemake/log/2025-11-21T151839.524251.snakemake.log

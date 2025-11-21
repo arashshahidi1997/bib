@@ -1,0 +1,63 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count
+-----------------  -------
+all                      1
+download_fulltext        3
+total                    4
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Research/Projects/pixecog/bib
+Execute 1 jobs...
+[Fri Nov 21 16:01:18 2025]
+localrule download_fulltext:
+    output: fulltext/battaglia_2004_HippocampalSharp/online
+    jobid: 4
+    reason: Missing output files: fulltext/battaglia_2004_HippocampalSharp/online
+    wildcards: key=battaglia_2004_HippocampalSharp
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Fri Nov 21 16:01:20 2025]
+Finished jobid: 4 (Rule: download_fulltext)
+1 of 4 steps (25%) done
+Execute 1 jobs...
+[Fri Nov 21 16:01:20 2025]
+localrule download_fulltext:
+    output: fulltext/kajikawa_2022_StatesRipples/online
+    jobid: 5
+    reason: Missing output files: fulltext/kajikawa_2022_StatesRipples/online
+    wildcards: key=kajikawa_2022_StatesRipples
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Fri Nov 21 16:01:21 2025]
+Finished jobid: 5 (Rule: download_fulltext)
+2 of 4 steps (50%) done
+Execute 1 jobs...
+[Fri Nov 21 16:01:21 2025]
+localrule download_fulltext:
+    output: fulltext/sirota_2003_CommunicationNeocortex/online
+    jobid: 6
+    reason: Missing output files: fulltext/sirota_2003_CommunicationNeocortex/online
+    wildcards: key=sirota_2003_CommunicationNeocortex
+    resources: tmpdir=/tmp
+[Fri Nov 21 16:01:23 2025]
+Finished jobid: 6 (Rule: download_fulltext)
+3 of 4 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Nov 21 16:01:23 2025]
+localrule all:
+    input: pixecog.bib, figures/battaglia_2004_HippocampalSharp/online, figures/kajikawa_2022_StatesRipples/online, figures/sirota_2003_CommunicationNeocortex/online, fulltext/battaglia_2004_HippocampalSharp/online, fulltext/kajikawa_2022_StatesRipples/online, fulltext/sirota_2003_CommunicationNeocortex/online
+    jobid: 0
+    reason: Rules with a run or shell declaration but no output are always executed.
+    resources: tmpdir=/tmp
+[Fri Nov 21 16:01:23 2025]
+Finished jobid: 0 (Rule: all)
+4 of 4 steps (100%) done
+Complete log(s): /home/arash/Documents/Science/Research/Projects/pixecog/bib/.snakemake/log/2025-11-21T160118.603710.snakemake.log

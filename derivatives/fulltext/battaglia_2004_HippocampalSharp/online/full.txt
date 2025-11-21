@@ -1,0 +1,138 @@
+Hippocampal sharp wave bursts coincide with neocortical “up-state” transitions
+Skip to main page content
+HOME
+ABOUT
+ARCHIVE
+SUBMIT
+SUBSCRIBE
+ADVERTISE
+ALERTS
+CONTACT
+HELP
+Search for Keyword:
+GO
+Advanced Search
+Hippocampal sharp wave bursts coincide with neocortical
+                  “up-state” transitions
+Francesco P. Battaglia
+1
+,
+Gary R. Sutherland
+,  and
+Bruce L. McNaughton
+2
+Arizona Research Laboratories-Division of Neural Systems, Memory, and
+                              Aging, University of Arizona, Tucson, Arizona 85724, USA
+Abstract
+The sleeping neocortex shows nested oscillatory activity in different
+                     frequency ranges, characterized by fluctuations between
+                     “up-states” and “down-states.” High-density neuronal
+                     ensemble recordings in rats now reveal the interaction between synchronized
+                     activity in the hippocampus and neocortex: Electroencephalographic sharp waves
+                     in the hippocampus were more probable during down-states than during
+                     up-states, and tended to coincide with transitions from down-states to
+                     up-states. The form of cortical activity fluctuations and their interactions
+                     with sharp waves depend on sleep depth: In deeper sleep stages, characterized
+                     by strong neocortical oscillation in the delta range or slower (∼0.8-4
+                     Hz), sharp-wave-triggered peri-event time histograms (PETH) are consistent
+                     with a longer duration for down-states than for up-states. In lighter sleep,
+                     the sharp-wave-triggered PETH suggested longer up-states than down-states.
+                     These results highlight the interplay in the hippocampal/neocortical loop:
+                     Decreased neocortical input during down-states may be a factor in generation
+                     of sharp waves. In turn, sharp waves may facilitate down-to-up transitions.
+                     This interplay may reflect joint memory trace reactivation in the hippocampus
+                     and in the neocortex, possibly contributing to consolidation of long-term
+                     memory: Off-line reactivation of recent neural activity patterns in the
+                     hippocampus occurs during 50-100-msec electroencephalographic sharp waves,
+                     corresponding to pyramidal-cell population bursts. The neocortical up-states
+                     starting in correspondence with sharp waves may be influenced by the
+                     reactivated information carried by the hippocampal sharp wave.
+Footnotes
+Article and publication are at
+                           http://www.learnmem.org/cgi/doi/10.1101/lm.73504.
+↵
+1
+Present address: CNRS-Laboratoire de Physiologie de la Perception et de
+                              l'Action, Collège de France 11 Pl. Marcelin Berthelot, 75005 Paris,
+                              France.
+Accepted July 7, 2004.
+Received December 22, 2003.
+Cold Spring Harbor Laboratory Press
+CiteULike
+Delicious
+Digg
+Facebook
+Reddit
+Twitter
+What's this?
+« Previous
+|
+Next Article »
+Table of Contents
+This Article
+doi:
+10.1101/lm.73504
+Learn. Mem.
+2004.
+11:
+697-704
+Cold Spring Harbor Laboratory Press
+»
+Abstract
+Free
+Full Text
+Free
+Full Text (PDF)
+Free
+Article Category
+Sleep & Memory/Research Papers
+Services
+Alert me when this article is cited
+Alert me if a correction is posted
+Similar articles in this journal
+Similar articles in Web of Science
+Similar articles in PubMed
+Download to citation manager
+Permissions
+Citing Articles
+Load citing article information
+Citing articles via Web of Science
+Citing articles via Google Scholar
+Google Scholar
+Articles by  Battaglia, F. P.
+Articles by  McNaughton, B. L.
+Search for related content
+PubMed/NCBI
+PubMed citation
+Articles by  Battaglia, F. P.
+Articles by  McNaughton, B. L.
+Share
+CiteULike
+Delicious
+Digg
+Facebook
+Reddit
+Twitter
+What's this?
+Current Issue
+Nov/Dec 2025, 32 (11-12)
+Alert me to new issues of
+Learning & Memory
+Archive
+Author Information
+Subscriptions
+E-mail Alerts & RSS Feeds
+Home
+About
+Archive
+Submit
+Subscribe
+Advertise
+Alerts
+Contact
+Help
+Copyright © 2025 by Cold Spring Harbor Laboratory Press
+Print ISSN:
+1072-0502-01
+Online ISSN:
+1549-5485

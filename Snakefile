@@ -39,8 +39,10 @@ bib_db = parse_file(str(BIB))
 rule all:
     input:
         "pixecog.bib",
-        expand("figures/{key}/online", key=CITEKEYS),
-        expand("figures/{key}/pdffigures2", key=CITEKEYS)
+        expand("derivatives/figures/{key}/online", key=CITEKEYS),
+        expand("derivatives/fulltext/{key}/online", key=CITEKEYS),
+        expand("derivatives/fulltext/{key}/pdf", key=CITEKEYS)
+        # expand("figures/{key}/pdffigures2", key=CITEKEYS)
         # We treat the whole pdffigures2 output dir as a "directory" target
     shell:
         "echo 'All done!'"
@@ -66,11 +68,11 @@ rule extract_figures:
     input:
         pdf=lambda wc: pdf_for_key(wc.key)
     output:
-        directory("figures/{key}/pdffigures2")
+        directory("derivatives/figures/{key}/pdffigures2")
     params:
         dpi=300
     shell:
-        r"""
+        """
         mkdir -p {output}/figs
 
         pdffigures \
@@ -83,8 +85,25 @@ rule extract_figures:
 
 rule download_figures:
     output:
-        out_dir = directory("figures/{key}/online"),
-    params: 
-        citekey = lambda wc: wc.key
+        out_dir = directory("derivatives/figures/{key}/online")
+    log: "derivatives/figures/{key}/download.log"
     shell:
-        "python code/download_figures.py {params.citekey} {output.out_dir}"
+        "python code/download_figures.py {wildcards.key} {output.out_dir} > {log} 2>&1"
+
+rule download_fulltext:
+    output:
+        directory("derivatives/fulltext/{key}/online")
+    shell:
+        """
+        mkdir -p {output}
+        python code/download_fulltext.py {wildcards.key} {output}
+        """
+
+rule extract_fulltext_pdf:
+    output:
+        directory("derivatives/fulltext/{key}/pdf")
+    shell:
+        """
+        mkdir -p {output}
+        python code/pdf_fulltext.py {wildcards.key} {output}
+        """
