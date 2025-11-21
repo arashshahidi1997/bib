@@ -1,0 +1,10 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+MissingInputException in rule download_figures in file "/home/arash/Documents/Science/Research/Projects/pixecog/bib/Snakefile", line 83:
+Missing input files for rule download_figures:
+    output: figures/kajikawa_2022_StatesRipples/online
+    wildcards: key=kajikawa_2022_StatesRipples
+    affected files:
+        kajikawa_2022_StatesRipples

@@ -1,0 +1,49 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+extract_figures        3
+total                  4
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Research/Projects/pixecog/bib
+Execute 1 jobs...
+[Fri Nov 21 14:21:15 2025]
+localrule extract_figures:
+    output: figures/battaglia_2004_HippocampalSharp/preferred
+    jobid: 1
+    reason: Missing output files: figures/battaglia_2004_HippocampalSharp/preferred
+    wildcards: key=battaglia_2004_HippocampalSharp
+    resources: tmpdir=/tmp
+Select jobs to execute...
+RuleException:
+CalledProcessError in file "/home/arash/Documents/Science/Research/Projects/pixecog/bib/Snakefile", line 57:
+Command 'set -euo pipefail;  python code/get_figures_for_paper.py battaglia_2004_HippocampalSharp' returned non-zero exit status 1.
+[Fri Nov 21 14:21:17 2025]
+Error in rule extract_figures:
+    message: None
+    jobid: 1
+    output: figures/battaglia_2004_HippocampalSharp/preferred
+    shell:
+        python code/get_figures_for_paper.py battaglia_2004_HippocampalSharp
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Fri Nov 21 14:21:17 2025]
+Error in rule extract_figures:
+    message: None
+    jobid: 1
+    output: figures/battaglia_2004_HippocampalSharp/preferred
+    shell:
+        python code/get_figures_for_paper.py battaglia_2004_HippocampalSharp
+        (command exited with non-zero exit code)
+Complete log(s): /home/arash/Documents/Science/Research/Projects/pixecog/bib/.snakemake/log/2025-11-21T142115.536202.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

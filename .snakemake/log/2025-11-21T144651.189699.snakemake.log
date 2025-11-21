@@ -1,0 +1,6 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+WorkflowError:
+Unable to obtain modification time of file figures/battaglia_2004_HippocampalSharp/preferred although it existed before. It could be that a concurrent process has deleted it while Snakemake was running.

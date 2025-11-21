@@ -10,3 +10,4 @@ def get_citekeys(md_path: str | Path):
     text = md_path.read_text(encoding="utf-8")
     keys = set(re.findall(r'@([\w:-]+)', text))
     return sorted(keys)
+

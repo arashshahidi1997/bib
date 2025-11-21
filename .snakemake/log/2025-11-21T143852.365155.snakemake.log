@@ -1,0 +1,53 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+download_figures        2
+merge_figures           2
+total                   5
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Research/Projects/pixecog/bib
+Execute 1 jobs...
+[Fri Nov 21 14:38:52 2025]
+localrule download_figures:
+    input: pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf
+    output: figures/kajikawa_2022_StatesRipples/online
+    jobid: 5
+    reason: Missing output files: figures/kajikawa_2022_StatesRipples/online; Code has changed since last execution
+    wildcards: key=kajikawa_2022_StatesRipples
+    resources: tmpdir=/tmp
+Shell command: python code/download_figures.py pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf 'figures/kajikawa_2022_StatesRipples/online'
+RuleException:
+CalledProcessError in file "/home/arash/Documents/Science/Research/Projects/pixecog/bib/Snakefile", line 88:
+Command 'set -euo pipefail;  python code/download_figures.py pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf 'figures/kajikawa_2022_StatesRipples/online'' returned non-zero exit status 1.
+[Fri Nov 21 14:38:52 2025]
+Error in rule download_figures:
+    message: None
+    jobid: 5
+    input: pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf
+    output: figures/kajikawa_2022_StatesRipples/online
+    shell:
+        python code/download_figures.py pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf 'figures/kajikawa_2022_StatesRipples/online'
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Fri Nov 21 14:38:52 2025]
+Error in rule download_figures:
+    message: None
+    jobid: 5
+    input: pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf
+    output: figures/kajikawa_2022_StatesRipples/online
+    shell:
+        python code/download_figures.py pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf 'figures/kajikawa_2022_StatesRipples/online'
+        (command exited with non-zero exit code)
+Complete log(s): /home/arash/Documents/Science/Research/Projects/pixecog/bib/.snakemake/log/2025-11-21T143852.365155.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

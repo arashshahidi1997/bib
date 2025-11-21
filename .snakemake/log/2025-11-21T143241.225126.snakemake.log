@@ -1,0 +1,89 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+download_figures        2
+extract_figures         2
+merge_figures           3
+total                   8
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Research/Projects/pixecog/bib
+Execute 1 jobs...
+[Fri Nov 21 14:32:41 2025]
+localrule extract_figures:
+    input: pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf
+    output: figures/kajikawa_2022_StatesRipples/pdffigures2
+    jobid: 6
+    reason: Missing output files: figures/kajikawa_2022_StatesRipples/pdffigures2; Code has changed since last execution
+    wildcards: key=kajikawa_2022_StatesRipples
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Fri Nov 21 14:32:53 2025]
+Finished jobid: 6 (Rule: extract_figures)
+1 of 8 steps (12%) done
+Execute 1 jobs...
+[Fri Nov 21 14:32:53 2025]
+localrule extract_figures:
+    input: pdfs/Sirota et al_2003_Communication between neocortex and hippocampus during sleep in rodents.pdf
+    output: figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    jobid: 9
+    reason: Missing output files: figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    wildcards: key=sirota_2003_CommunicationNeocortex
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Fri Nov 21 14:32:55 2025]
+Finished jobid: 9 (Rule: extract_figures)
+2 of 8 steps (25%) done
+Execute 1 jobs...
+[Fri Nov 21 14:32:55 2025]
+localrule merge_figures:
+    input: figures/battaglia_2004_HippocampalSharp/online, figures/battaglia_2004_HippocampalSharp/pdffigures2
+    output: figures/battaglia_2004_HippocampalSharp/preferred
+    jobid: 1
+    reason: Missing output files: figures/battaglia_2004_HippocampalSharp/preferred; Set of input files has changed since last execution; Code has changed since last execution; Params have changed since last execution: Union of exclusive params before and now across all output: before: 'battaglia_2004_HippocampalSharp' now: <nothing exclusive> 
+    wildcards: key=battaglia_2004_HippocampalSharp
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Fri Nov 21 14:32:57 2025]
+Finished jobid: 1 (Rule: merge_figures)
+3 of 8 steps (38%) done
+Execute 1 jobs...
+[Fri Nov 21 14:32:57 2025]
+localrule download_figures:
+    output: figures/sirota_2003_CommunicationNeocortex/online
+    jobid: 8
+    reason: Missing output files: figures/sirota_2003_CommunicationNeocortex/online
+    wildcards: key=sirota_2003_CommunicationNeocortex
+    resources: tmpdir=/tmp
+RuleException:
+CalledProcessError in file "/home/arash/Documents/Science/Research/Projects/pixecog/bib/Snakefile", line 87:
+Command 'set -euo pipefail;  code/download_figures.py' returned non-zero exit status 127.
+[Fri Nov 21 14:32:57 2025]
+Error in rule download_figures:
+    message: None
+    jobid: 8
+    output: figures/sirota_2003_CommunicationNeocortex/online
+    shell:
+        code/download_figures.py
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Fri Nov 21 14:32:57 2025]
+Error in rule download_figures:
+    message: None
+    jobid: 8
+    output: figures/sirota_2003_CommunicationNeocortex/online
+    shell:
+        code/download_figures.py
+        (command exited with non-zero exit code)
+Complete log(s): /home/arash/Documents/Science/Research/Projects/pixecog/bib/.snakemake/log/2025-11-21T143241.225126.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

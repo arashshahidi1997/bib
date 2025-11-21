@@ -1,0 +1,180 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+download_figures        3
+extract_figures         3
+merge_figures           3
+total                  10
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Research/Projects/pixecog/bib
+Execute 1 jobs...
+[Fri Nov 21 14:41:52 2025]
+localrule extract_figures:
+    input: pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf
+    output: figures/kajikawa_2022_StatesRipples/pdffigures2
+    jobid: 6
+    reason: Missing output files: figures/kajikawa_2022_StatesRipples/pdffigures2
+    wildcards: key=kajikawa_2022_StatesRipples
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p figures/kajikawa_2022_StatesRipples/pdffigures2/figs
+
+        pdffigures \
+          -i 300 \
+          -m figures/kajikawa_2022_StatesRipples/pdffigures2/figs/ \
+          -d figures/kajikawa_2022_StatesRipples/pdffigures2/data_ \
+          -s figures/kajikawa_2022_StatesRipples/pdffigures2/stats.json \
+          'pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf'
+        
+Select jobs to execute...
+[Fri Nov 21 14:42:04 2025]
+Finished jobid: 6 (Rule: extract_figures)
+1 of 10 steps (10%) done
+Execute 1 jobs...
+[Fri Nov 21 14:42:04 2025]
+localrule extract_figures:
+    input: pdfs/Battaglia et al_2004_Hippocampal sharp wave bursts coincide with neocortical “up-state” transitions.pdf
+    output: figures/battaglia_2004_HippocampalSharp/pdffigures2
+    jobid: 3
+    reason: Missing output files: figures/battaglia_2004_HippocampalSharp/pdffigures2
+    wildcards: key=battaglia_2004_HippocampalSharp
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p figures/battaglia_2004_HippocampalSharp/pdffigures2/figs
+
+        pdffigures \
+          -i 300 \
+          -m figures/battaglia_2004_HippocampalSharp/pdffigures2/figs/ \
+          -d figures/battaglia_2004_HippocampalSharp/pdffigures2/data_ \
+          -s figures/battaglia_2004_HippocampalSharp/pdffigures2/stats.json \
+          'pdfs/Battaglia et al_2004_Hippocampal sharp wave bursts coincide with neocortical “up-state” transitions.pdf'
+        
+Select jobs to execute...
+[Fri Nov 21 14:42:08 2025]
+Finished jobid: 3 (Rule: extract_figures)
+2 of 10 steps (20%) done
+Execute 1 jobs...
+[Fri Nov 21 14:42:08 2025]
+localrule extract_figures:
+    input: pdfs/Sirota et al_2003_Communication between neocortex and hippocampus during sleep in rodents.pdf
+    output: figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    jobid: 9
+    reason: Missing output files: figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    wildcards: key=sirota_2003_CommunicationNeocortex
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p figures/sirota_2003_CommunicationNeocortex/pdffigures2/figs
+
+        pdffigures \
+          -i 300 \
+          -m figures/sirota_2003_CommunicationNeocortex/pdffigures2/figs/ \
+          -d figures/sirota_2003_CommunicationNeocortex/pdffigures2/data_ \
+          -s figures/sirota_2003_CommunicationNeocortex/pdffigures2/stats.json \
+          'pdfs/Sirota et al_2003_Communication between neocortex and hippocampus during sleep in rodents.pdf'
+        
+Select jobs to execute...
+[Fri Nov 21 14:42:11 2025]
+Finished jobid: 9 (Rule: extract_figures)
+3 of 10 steps (30%) done
+Execute 1 jobs...
+[Fri Nov 21 14:42:11 2025]
+localrule download_figures:
+    output: figures/kajikawa_2022_StatesRipples/online
+    jobid: 5
+    reason: Missing output files: figures/kajikawa_2022_StatesRipples/online
+    wildcards: key=kajikawa_2022_StatesRipples
+    resources: tmpdir=/tmp
+Shell command: python code/download_figures.py kajikawa_2022_StatesRipples figures/kajikawa_2022_StatesRipples/online
+Select jobs to execute...
+[Fri Nov 21 14:42:12 2025]
+Finished jobid: 5 (Rule: download_figures)
+4 of 10 steps (40%) done
+Execute 1 jobs...
+[Fri Nov 21 14:42:12 2025]
+localrule merge_figures:
+    input: figures/kajikawa_2022_StatesRipples/online, figures/kajikawa_2022_StatesRipples/pdffigures2
+    output: figures/kajikawa_2022_StatesRipples/preferred
+    jobid: 4
+    reason: Missing output files: figures/kajikawa_2022_StatesRipples/preferred; Input files updated by another job: figures/kajikawa_2022_StatesRipples/pdffigures2, figures/kajikawa_2022_StatesRipples/online
+    wildcards: key=kajikawa_2022_StatesRipples
+    resources: tmpdir=/tmp
+Shell command: None
+Select jobs to execute...
+[Fri Nov 21 14:42:14 2025]
+Finished jobid: 4 (Rule: merge_figures)
+5 of 10 steps (50%) done
+Execute 1 jobs...
+[Fri Nov 21 14:42:14 2025]
+localrule download_figures:
+    output: figures/sirota_2003_CommunicationNeocortex/online
+    jobid: 8
+    reason: Missing output files: figures/sirota_2003_CommunicationNeocortex/online
+    wildcards: key=sirota_2003_CommunicationNeocortex
+    resources: tmpdir=/tmp
+Shell command: python code/download_figures.py sirota_2003_CommunicationNeocortex figures/sirota_2003_CommunicationNeocortex/online
+Select jobs to execute...
+[Fri Nov 21 14:42:15 2025]
+Finished jobid: 8 (Rule: download_figures)
+6 of 10 steps (60%) done
+Execute 1 jobs...
+[Fri Nov 21 14:42:15 2025]
+localrule merge_figures:
+    input: figures/sirota_2003_CommunicationNeocortex/online, figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    output: figures/sirota_2003_CommunicationNeocortex/preferred
+    jobid: 7
+    reason: Missing output files: figures/sirota_2003_CommunicationNeocortex/preferred; Input files updated by another job: figures/sirota_2003_CommunicationNeocortex/online, figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    wildcards: key=sirota_2003_CommunicationNeocortex
+    resources: tmpdir=/tmp
+Shell command: None
+Select jobs to execute...
+[Fri Nov 21 14:42:17 2025]
+Finished jobid: 7 (Rule: merge_figures)
+7 of 10 steps (70%) done
+Execute 1 jobs...
+[Fri Nov 21 14:42:17 2025]
+localrule download_figures:
+    output: figures/battaglia_2004_HippocampalSharp/online
+    jobid: 2
+    reason: Missing output files: figures/battaglia_2004_HippocampalSharp/online
+    wildcards: key=battaglia_2004_HippocampalSharp
+    resources: tmpdir=/tmp
+Shell command: python code/download_figures.py battaglia_2004_HippocampalSharp figures/battaglia_2004_HippocampalSharp/online
+[Fri Nov 21 14:42:18 2025]
+Finished jobid: 2 (Rule: download_figures)
+8 of 10 steps (80%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Nov 21 14:42:18 2025]
+localrule merge_figures:
+    input: figures/battaglia_2004_HippocampalSharp/online, figures/battaglia_2004_HippocampalSharp/pdffigures2
+    output: figures/battaglia_2004_HippocampalSharp/preferred
+    jobid: 1
+    reason: Missing output files: figures/battaglia_2004_HippocampalSharp/preferred; Input files updated by another job: figures/battaglia_2004_HippocampalSharp/pdffigures2, figures/battaglia_2004_HippocampalSharp/online
+    wildcards: key=battaglia_2004_HippocampalSharp
+    resources: tmpdir=/tmp
+Shell command: None
+[Fri Nov 21 14:42:20 2025]
+Finished jobid: 1 (Rule: merge_figures)
+9 of 10 steps (90%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Nov 21 14:42:20 2025]
+localrule all:
+    input: pixecog.bib, figures/battaglia_2004_HippocampalSharp/preferred, figures/kajikawa_2022_StatesRipples/preferred, figures/sirota_2003_CommunicationNeocortex/preferred
+    jobid: 0
+    reason: Rules with a run or shell declaration but no output are always executed.
+    resources: tmpdir=/tmp
+Shell command: echo 'All done!'
+[Fri Nov 21 14:42:20 2025]
+Finished jobid: 0 (Rule: all)
+10 of 10 steps (100%) done
+Complete log(s): /home/arash/Documents/Science/Research/Projects/pixecog/bib/.snakemake/log/2025-11-21T144152.014578.snakemake.log

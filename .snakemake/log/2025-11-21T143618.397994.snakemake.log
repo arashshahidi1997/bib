@@ -1,0 +1,49 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+download_figures        2
+merge_figures           2
+total                   5
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Research/Projects/pixecog/bib
+Execute 1 jobs...
+[Fri Nov 21 14:36:18 2025]
+localrule download_figures:
+    output: figures/sirota_2003_CommunicationNeocortex/online
+    jobid: 8
+    reason: Missing output files: figures/sirota_2003_CommunicationNeocortex/online
+    wildcards: key=sirota_2003_CommunicationNeocortex
+    resources: tmpdir=/tmp
+RuleException:
+CalledProcessError in file "/home/arash/Documents/Science/Research/Projects/pixecog/bib/Snakefile", line 87:
+Command 'set -euo pipefail;  code/download_figures.py' returned non-zero exit status 126.
+[Fri Nov 21 14:36:18 2025]
+Error in rule download_figures:
+    message: None
+    jobid: 8
+    output: figures/sirota_2003_CommunicationNeocortex/online
+    shell:
+        code/download_figures.py
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Fri Nov 21 14:36:18 2025]
+Error in rule download_figures:
+    message: None
+    jobid: 8
+    output: figures/sirota_2003_CommunicationNeocortex/online
+    shell:
+        code/download_figures.py
+        (command exited with non-zero exit code)
+Complete log(s): /home/arash/Documents/Science/Research/Projects/pixecog/bib/.snakemake/log/2025-11-21T143618.397994.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

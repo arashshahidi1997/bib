@@ -1,0 +1,155 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+download_figures        3
+extract_figures         3
+merge_figures           3
+total                  10
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Research/Projects/pixecog/bib
+Execute 1 jobs...
+[Fri Nov 21 14:47:09 2025]
+localrule extract_figures:
+    input: pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf
+    output: figures/kajikawa_2022_StatesRipples/pdffigures2
+    jobid: 6
+    reason: Missing output files: figures/kajikawa_2022_StatesRipples/pdffigures2
+    wildcards: key=kajikawa_2022_StatesRipples
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p figures/kajikawa_2022_StatesRipples/pdffigures2/figs
+
+        pdffigures \
+          -i 300 \
+          -m figures/kajikawa_2022_StatesRipples/pdffigures2/figs/ \
+          -d figures/kajikawa_2022_StatesRipples/pdffigures2/data_ \
+          -s figures/kajikawa_2022_StatesRipples/pdffigures2/stats.json \
+          'pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf'
+        
+Select jobs to execute...
+[Fri Nov 21 14:47:22 2025]
+Finished jobid: 6 (Rule: extract_figures)
+1 of 10 steps (10%) done
+Execute 1 jobs...
+[Fri Nov 21 14:47:22 2025]
+localrule extract_figures:
+    input: pdfs/Battaglia et al_2004_Hippocampal sharp wave bursts coincide with neocortical “up-state” transitions.pdf
+    output: figures/battaglia_2004_HippocampalSharp/pdffigures2
+    jobid: 3
+    reason: Missing output files: figures/battaglia_2004_HippocampalSharp/pdffigures2
+    wildcards: key=battaglia_2004_HippocampalSharp
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p figures/battaglia_2004_HippocampalSharp/pdffigures2/figs
+
+        pdffigures \
+          -i 300 \
+          -m figures/battaglia_2004_HippocampalSharp/pdffigures2/figs/ \
+          -d figures/battaglia_2004_HippocampalSharp/pdffigures2/data_ \
+          -s figures/battaglia_2004_HippocampalSharp/pdffigures2/stats.json \
+          'pdfs/Battaglia et al_2004_Hippocampal sharp wave bursts coincide with neocortical “up-state” transitions.pdf'
+        
+Select jobs to execute...
+[Fri Nov 21 14:47:25 2025]
+Finished jobid: 3 (Rule: extract_figures)
+2 of 10 steps (20%) done
+Execute 1 jobs...
+[Fri Nov 21 14:47:25 2025]
+localrule extract_figures:
+    input: pdfs/Sirota et al_2003_Communication between neocortex and hippocampus during sleep in rodents.pdf
+    output: figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    jobid: 9
+    reason: Missing output files: figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    wildcards: key=sirota_2003_CommunicationNeocortex
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p figures/sirota_2003_CommunicationNeocortex/pdffigures2/figs
+
+        pdffigures \
+          -i 300 \
+          -m figures/sirota_2003_CommunicationNeocortex/pdffigures2/figs/ \
+          -d figures/sirota_2003_CommunicationNeocortex/pdffigures2/data_ \
+          -s figures/sirota_2003_CommunicationNeocortex/pdffigures2/stats.json \
+          'pdfs/Sirota et al_2003_Communication between neocortex and hippocampus during sleep in rodents.pdf'
+        
+Select jobs to execute...
+[Fri Nov 21 14:47:28 2025]
+Finished jobid: 9 (Rule: extract_figures)
+3 of 10 steps (30%) done
+Execute 1 jobs...
+[Fri Nov 21 14:47:28 2025]
+localrule download_figures:
+    output: figures/kajikawa_2022_StatesRipples/online
+    jobid: 5
+    reason: Missing output files: figures/kajikawa_2022_StatesRipples/online
+    wildcards: key=kajikawa_2022_StatesRipples
+    resources: tmpdir=/tmp
+Shell command: python code/download_figures.py kajikawa_2022_StatesRipples figures/kajikawa_2022_StatesRipples/online
+Select jobs to execute...
+[Fri Nov 21 14:47:30 2025]
+Finished jobid: 5 (Rule: download_figures)
+4 of 10 steps (40%) done
+Execute 1 jobs...
+[Fri Nov 21 14:47:30 2025]
+localrule merge_figures:
+    input: figures/kajikawa_2022_StatesRipples/online, figures/kajikawa_2022_StatesRipples/pdffigures2
+    output: figures/kajikawa_2022_StatesRipples/preferred
+    jobid: 4
+    reason: Missing output files: figures/kajikawa_2022_StatesRipples/preferred; Input files updated by another job: figures/kajikawa_2022_StatesRipples/pdffigures2, figures/kajikawa_2022_StatesRipples/online; Code has changed since last execution
+    wildcards: key=kajikawa_2022_StatesRipples
+    resources: tmpdir=/tmp
+Shell command: 
+        dest="figures/kajikawa_2022_StatesRipples/preferred"
+        online="figures/kajikawa_2022_StatesRipples/online"
+        pdf="figures/kajikawa_2022_StatesRipples/pdffigures2"
+
+        rm -rf "$dest"
+        mkdir -p "$(dirname "$dest")"
+
+        if find "$online/figs" -maxdepth 1 -type f -print -quit >/dev/null 2>&1; then
+          ln -s "$online" "$dest"
+        else
+          ln -s "$pdf" "$dest"
+        fi
+        
+Waiting at most 5 seconds for missing files:
+figures/kajikawa_2022_StatesRipples/preferred (missing locally)
+MissingOutputException in rule merge_figures in file "/home/arash/Documents/Science/Research/Projects/pixecog/bib/Snakefile", line 91:
+Job 4  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+figures/kajikawa_2022_StatesRipples/preferred (missing locally, parent dir contents: preferred, online, pdffigures2)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Fri Nov 21 14:47:35 2025]
+Error in rule merge_figures:
+    message: None
+    jobid: 4
+    input: figures/kajikawa_2022_StatesRipples/online, figures/kajikawa_2022_StatesRipples/pdffigures2
+    output: figures/kajikawa_2022_StatesRipples/preferred
+    shell:
+        
+        dest="figures/kajikawa_2022_StatesRipples/preferred"
+        online="figures/kajikawa_2022_StatesRipples/online"
+        pdf="figures/kajikawa_2022_StatesRipples/pdffigures2"
+
+        rm -rf "$dest"
+        mkdir -p "$(dirname "$dest")"
+
+        if find "$online/figs" -maxdepth 1 -type f -print -quit >/dev/null 2>&1; then
+          ln -s "$online" "$dest"
+        else
+          ln -s "$pdf" "$dest"
+        fi
+        
+        (command exited with non-zero exit code)
+Complete log(s): /home/arash/Documents/Science/Research/Projects/pixecog/bib/.snakemake/log/2025-11-21T144709.132734.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

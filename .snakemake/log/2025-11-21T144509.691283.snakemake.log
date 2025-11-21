@@ -1,0 +1,72 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+merge_figures        3
+total                4
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Research/Projects/pixecog/bib
+Execute 1 jobs...
+[Fri Nov 21 14:45:09 2025]
+localrule merge_figures:
+    input: figures/battaglia_2004_HippocampalSharp/online, figures/battaglia_2004_HippocampalSharp/pdffigures2
+    output: figures/battaglia_2004_HippocampalSharp/preferred
+    jobid: 1
+    reason: Code has changed since last execution
+    wildcards: key=battaglia_2004_HippocampalSharp
+    resources: tmpdir=/tmp
+Shell command: None
+Select jobs to execute...
+Traceback (most recent call last):
+
+  File "/home/arash/anaconda3/envs/cogpy/lib/python3.11/site-packages/snakemake/executors/local.py", line 232, in spawn_job
+    subprocess.check_call(cmd, shell=True)
+
+  File "/home/arash/anaconda3/envs/cogpy/lib/python3.11/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+
+subprocess.CalledProcessError: Command 'cd /home/arash/Documents/Science/Research/Projects/pixecog/bib && /home/arash/anaconda3/envs/cogpy/bin/python3.11 -m snakemake --snakefile '/home/arash/Documents/Science/Research/Projects/pixecog/bib/Snakefile' --target-jobs 'merge_figures:key=battaglia_2004_HippocampalSharp' --allowed-rules merge_figures --cores 1 --attempt 1 --force-use-threads  --force --target-files-omit-workdir-adjustment --max-inventory-time 0 --nocolor --notemp --no-hooks --nolock --ignore-incomplete --rerun-triggers params input software-env mtime code --conda-frontend 'conda' --shared-fs-usage sources input-output persistence software-deployment source-cache storage-local-copies --wrapper-prefix 'https://github.com/snakemake/snakemake-wrappers/raw/' --printshellcmds  --latency-wait 5 --scheduler 'ilp' --local-storage-prefix base64//LnNuYWtlbWFrZS9zdG9yYWdl --scheduler-solver-path '/home/arash/anaconda3/envs/cogpy/bin' --default-resources base64//dG1wZGlyPXN5c3RlbV90bXBkaXI= --quiet progress rules host --mode 'subprocess' --local-groupid 'local'' returned non-zero exit status 1.
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/home/arash/anaconda3/envs/cogpy/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/arash/anaconda3/envs/cogpy/lib/python3.11/site-packages/snakemake/executors/local.py", line 247, in cached_or_run
+    run_func(*args)
+
+  File "/home/arash/anaconda3/envs/cogpy/lib/python3.11/site-packages/snakemake/executors/local.py", line 234, in spawn_job
+    raise SpawnedJobError()
+
+snakemake.exceptions.SpawnedJobError
+
+[Fri Nov 21 14:45:15 2025]
+Error in rule merge_figures:
+    message: None
+    jobid: 1
+    input: figures/battaglia_2004_HippocampalSharp/online, figures/battaglia_2004_HippocampalSharp/pdffigures2
+    output: figures/battaglia_2004_HippocampalSharp/preferred
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Fri Nov 21 14:45:15 2025]
+Error in rule merge_figures:
+    message: None
+    jobid: 1
+    input: figures/battaglia_2004_HippocampalSharp/online, figures/battaglia_2004_HippocampalSharp/pdffigures2
+    output: figures/battaglia_2004_HippocampalSharp/preferred
+Complete log(s): /home/arash/Documents/Science/Research/Projects/pixecog/bib/.snakemake/log/2025-11-21T144509.691283.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

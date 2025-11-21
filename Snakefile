@@ -7,16 +7,6 @@ from code.figconfig import get_citekeys
 BIB =  "pixecog.bib"
 CONFIG_MD = "extract-figures.md"
 
-# !! Set this to where your jar actually lives:
-
-# ---------- Config-derived lists ----------
-
-# 1) Which citekeys to process (from figures.md)
-CITEKEYS = get_citekeys(CONFIG_MD)
-
-# 2) Parse BibTeX so we can map citekey -> PDF path (via 'file' field)
-bib_db = parse_file(str(BIB))
-
 def pdf_for_key(key: str) -> Path:
     """
     Look up the 'file' field for a BibTeX entry and return it as a Path.
@@ -34,11 +24,22 @@ def pdf_for_key(key: str) -> Path:
     # drop 'bib/' prefix if present
     if pdf_rel.parts[0] == "bib":
         pdf_rel = Path(*pdf_rel.parts[1:])
-    return  pdf_rel  # project root is one level up
+
+    return pdf_rel  # project root is one level up
+
+
+# ---------- Config-derived lists ----------
+
+# 1) Which citekeys to process (from figures.md)
+CITEKEYS = get_citekeys(CONFIG_MD)
+
+# 2) Parse BibTeX so we can map citekey -> PDF path (via 'file' field)
+bib_db = parse_file(str(BIB))
 
 rule all:
     input:
         "pixecog.bib",
+        expand("figures/{key}/online", key=CITEKEYS),
         expand("figures/{key}/pdffigures2", key=CITEKEYS)
         # We treat the whole pdffigures2 output dir as a "directory" target
     shell:
@@ -62,14 +63,6 @@ rule merge:
         "python code/merge.py"
 
 rule extract_figures:
-    """
-    Run pdffigures2 on the PDF associated with a given citekey.
-    Produces:
-      figures/{key}/pdffigures2/
-        figs/...
-        data_*.json
-        stats.json
-    """
     input:
         pdf=lambda wc: pdf_for_key(wc.key)
     output:
@@ -77,7 +70,7 @@ rule extract_figures:
     params:
         dpi=300
     shell:
-        """
+        r"""
         mkdir -p {output}/figs
 
         pdffigures \
@@ -87,3 +80,11 @@ rule extract_figures:
           -s {output}/stats.json \
           '{input.pdf}'
         """
+
+rule download_figures:
+    output:
+        out_dir = directory("figures/{key}/online"),
+    params: 
+        citekey = lambda wc: wc.key
+    shell:
+        "python code/download_figures.py {params.citekey} {output.out_dir}"
