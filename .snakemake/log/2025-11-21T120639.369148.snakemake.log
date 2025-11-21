@@ -1,0 +1,50 @@
+Assuming unrestricted shared filesystem usage.
+host: gamma2
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+fetch        1
+merge        1
+total        3
+
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Nov 21 12:06:39 2025]
+localrule fetch:
+    input: metadata
+    output: pdfs
+    jobid: 2
+    reason: Forced execution
+    resources: tmpdir=/tmp
+[Fri Nov 21 12:06:40 2025]
+Finished jobid: 2 (Rule: fetch)
+1 of 3 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Nov 21 12:06:40 2025]
+localrule merge:
+    input: pdfs
+    output: pixecog.bib
+    jobid: 1
+    reason: Forced execution
+    resources: tmpdir=/tmp
+[Fri Nov 21 12:06:40 2025]
+Finished jobid: 1 (Rule: merge)
+2 of 3 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Nov 21 12:06:40 2025]
+localrule all:
+    input: pixecog.bib
+    jobid: 0
+    reason: Forced execution
+    resources: tmpdir=/tmp
+[Fri Nov 21 12:06:40 2025]
+Finished jobid: 0 (Rule: all)
+3 of 3 steps (100%) done
+Complete log(s): /storage2/arash/data/proj-pixecog/pixecog/bib/.snakemake/log/2025-11-21T120639.369148.snakemake.log

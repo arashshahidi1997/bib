@@ -1,0 +1,15 @@
+No PDF: battaglia_2004_HippocampalSharp	/home/arash/Documents/Science/Zotero Files/Battaglia et al_2004_Hippocampal sharp wave bursts coincide with neocortical “up-state” transitions.pdf
+No PDF: battaglia_2011_HippocampusHub	/home/arash/Documents/Science/Zotero Files/Battaglia et al_2011_The hippocampus.pdf
+No PDF: he__SelfSupervised	/home/arash/snap/zotero-snap/common/Zotero/storage/KI7LXZ2K/He et al. - Self supervised learning for in vivo localization of microelectrode arrays using raw local field pot.pdf
+No PDF: isomura_2006_IntegrationSegregation	/home/arash/Documents/Science/Zotero Files/Isomura et al_2006_Integration and Segregation of Activity in Entorhinal-Hippocampal Subregions by.pdf
+No PDF: kajikawa_2022_StatesRipples	/home/arash/snap/zotero-snap/common/Zotero/storage/7FDTARSV/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf
+No PDF: maingret_2016_HippocampocorticalCoupling	/home/arash/Documents/Science/Zotero Files/Maingret et al_2016_Hippocampo-cortical coupling mediates memory consolidation during sleep.pdf
+No PDF: pedrosa_2022_HippocampalGamma	/home/arash/snap/zotero-snap/common/Zotero/storage/CQDGXQM4/Pedrosa et al. - 2022 - Hippocampal gamma and sharp waveripples mediate bidirectional interactions with cortical networks d.pdf
+No PDF: pedrosa_2024_HippocampalRipples	/home/arash/snap/zotero-snap/common/Zotero/storage/SHY2ACR6/Pedrosa et al. - 2024 - Hippocampal ripples coincide with “up-state” and spindles in retrosplenial cortex.pdf
+No PDF: peyrache_2011_InhibitionRecruitment	/home/arash/snap/zotero-snap/common/Zotero/storage/R78H6NCI/Peyrache et al. - 2011 - Inhibition recruitment in prefrontal cortex during sleep spindles and gating of hippocampal inputs.pdf
+No PDF: siapas_1998_CoordinatedInteractions	/home/arash/Documents/Science/Zotero Files/Siapas_Wilson_1998_Coordinated Interactions between Hippocampal Ripples and Cortical Spindles.pdf
+No PDF: sirota_2003_CommunicationNeocortex	/home/arash/Documents/Science/Zotero Files/Sirota et al_2003_Communication between neocortex and hippocampus during sleep in rodents.pdf
+No PDF: sirota_2008_EntrainmentNeocortical	/home/arash/Documents/Science/Zotero Files/Sirota et al_2008_Entrainment of Neocortical Neurons and Gamma Oscillations by the Hippocampal.pdf
+No PDF: swanson_2025_TopographyPutative	/home/arash/snap/zotero-snap/common/Zotero/storage/GPPVPVF3/Swanson et al. - 2025 - Topography of putative bi-directional interaction between hippocampal sharp-wave ripples and neocort.pdf
+No PDF: tuyisenge_2018_AutomaticBad	/home/arash/snap/zotero-snap/common/Zotero/storage/CFNE97LQ/Tuyisenge et al_2018_Automatic bad channel detection in intracranial electroencephalographic.pdf
+No PDF: wierzynski_2009_StateDependentSpikeTiming	/home/arash/snap/zotero-snap/common/Zotero/storage/WFNL9W7A/Wierzynski et al. - 2009 - State-Dependent Spike-Timing Relationships between Hippocampal and Prefrontal Circuits during Sleep.pdf

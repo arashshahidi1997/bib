@@ -21,6 +21,7 @@ PDF_DIR.mkdir(exist_ok=True)
 
 MISSING_LOG = ROOT / "missing_pdfs.txt"
 MANIFEST_FILE = ROOT / ".pdf_manifest.json"
+PDF_FETCHED_LOG = PDF_DIR / "fetched_pdfs.txt"
 
 # ---------- helpers ----------
 
@@ -72,6 +73,10 @@ def main():
 	if MISSING_LOG.exists():
 		MISSING_LOG.unlink()
 
+	if PDF_FETCHED_LOG.exists():
+		PDF_FETCHED_LOG.unlink()
+		PDF_FETCHED_LOG.touch()
+
 	# ---------- main ----------
 	for bibfile in sorted(METADATA_DIR.glob("*.bib")):
 		print(f"📘 Processing {bibfile.name}...")
@@ -113,7 +118,8 @@ def main():
 			else:
 				shutil.copy(source, target)
 				print(f"  ✅ Copied: {target.name}")
-
+				with open(PDF_FETCHED_LOG, "a", encoding="utf-8") as f:
+					f.write(f"{target.name}\n")
 			manifest[target.name] = src_hash
 
 
