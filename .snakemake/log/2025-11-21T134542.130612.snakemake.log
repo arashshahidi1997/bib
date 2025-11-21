@@ -1,0 +1,66 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+extract_figures        3
+total                  4
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Research/Projects/pixecog/bib
+Execute 1 jobs...
+[Fri Nov 21 13:45:42 2025]
+localrule extract_figures:
+    input: pdfs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics.pdf
+    output: figures/kajikawa_2022_StatesRipples/pdffigures2
+    jobid: 2
+    reason: Missing output files: figures/kajikawa_2022_StatesRipples/pdffigures2; Code has changed since last execution
+    wildcards: key=kajikawa_2022_StatesRipples
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Fri Nov 21 13:45:55 2025]
+Finished jobid: 2 (Rule: extract_figures)
+1 of 4 steps (25%) done
+Execute 1 jobs...
+[Fri Nov 21 13:45:55 2025]
+localrule extract_figures:
+    input: pdfs/Battaglia et al_2004_Hippocampal sharp wave bursts coincide with neocortical “up-state” transitions.pdf
+    output: figures/battaglia_2004_HippocampalSharp/pdffigures2
+    jobid: 1
+    reason: Missing output files: figures/battaglia_2004_HippocampalSharp/pdffigures2
+    wildcards: key=battaglia_2004_HippocampalSharp
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Fri Nov 21 13:46:00 2025]
+Finished jobid: 1 (Rule: extract_figures)
+2 of 4 steps (50%) done
+Execute 1 jobs...
+[Fri Nov 21 13:46:00 2025]
+localrule extract_figures:
+    input: pdfs/Sirota et al_2003_Communication between neocortex and hippocampus during sleep in rodents.pdf
+    output: figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    jobid: 3
+    reason: Missing output files: figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    wildcards: key=sirota_2003_CommunicationNeocortex
+    resources: tmpdir=/tmp
+[Fri Nov 21 13:46:03 2025]
+Finished jobid: 3 (Rule: extract_figures)
+3 of 4 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Nov 21 13:46:03 2025]
+localrule all:
+    input: pixecog.bib, figures/battaglia_2004_HippocampalSharp/pdffigures2, figures/kajikawa_2022_StatesRipples/pdffigures2, figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    jobid: 0
+    reason: Input files updated by another job: figures/battaglia_2004_HippocampalSharp/pdffigures2, figures/kajikawa_2022_StatesRipples/pdffigures2, figures/sirota_2003_CommunicationNeocortex/pdffigures2
+    resources: tmpdir=/tmp
+[Fri Nov 21 13:46:03 2025]
+Finished jobid: 0 (Rule: all)
+4 of 4 steps (100%) done
+Complete log(s): /home/arash/Documents/Science/Research/Projects/pixecog/bib/.snakemake/log/2025-11-21T134542.130612.snakemake.log

@@ -4,12 +4,10 @@ import re
 from pybtex.database import parse_file
 from code.figconfig import get_citekeys
 
-PROJECT = Path(__file__).resolve().parent   # pixecog/bib
-BIB = PROJECT / "pixecog.bib"
-CONFIG_MD = PROJECT / "figures.md"
+BIB =  "pixecog.bib"
+CONFIG_MD = "extract-figures.md"
 
 # !! Set this to where your jar actually lives:
-PDFFIGURES_JAR = str(Path.home() / "pdffigures2.jar")
 
 # ---------- Config-derived lists ----------
 
@@ -33,7 +31,10 @@ def pdf_for_key(key: str) -> Path:
     # If you have Zotero-style 'file = {path:stuff:pdf}', you'd parse here.
     # Your example is just 'bib/pdfs/...', so this is enough:
     pdf_rel = Path(file_field)
-    return PROJECT.parent / pdf_rel  # project root is one level up
+    # drop 'bib/' prefix if present
+    if pdf_rel.parts[0] == "bib":
+        pdf_rel = Path(*pdf_rel.parts[1:])
+    return  pdf_rel  # project root is one level up
 
 rule all:
     input:
@@ -74,16 +75,15 @@ rule extract_figures:
     output:
         directory("figures/{key}/pdffigures2")
     params:
-        jar=PDFFIGURES_JAR,
         dpi=300
     shell:
-        r"""
+        """
         mkdir -p {output}/figs
 
-        java -jar {params.jar} \
+        pdffigures \
           -i {params.dpi} \
           -m {output}/figs/ \
           -d {output}/data_ \
           -s {output}/stats.json \
-          {input.pdf}
+          '{input.pdf}'
         """

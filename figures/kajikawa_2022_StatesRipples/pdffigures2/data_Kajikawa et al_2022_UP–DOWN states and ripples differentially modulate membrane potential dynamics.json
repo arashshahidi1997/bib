@@ -1,0 +1,161 @@
+[{
+  "caption": "Figure 3. Entorhinal input to dentate gyrus (DG) is negatively correlated with slow Vm shifts in CA3 in contrast to DG and CA1. (A1) DG current source density (CSD) activity (black) and slow component (<1 Hz) of subthreshold Vm (red) for an example DG granule cell. Gray vertical stripes and green stairstep trace mark periods classified as UP states. Ripples are marked by the blue dots. Notice that the Vm slow component is modulated in lockstep with the DG CSD. (A2) (Top) Cross- covariance between the slow Vm component of the example cell above and DG CSD activity. (Bottom) Crosscovariances are computed over 30 s sliding windows and displayed as a pseudocolor image. (A3) (Top) Population average cross- covariance of all recorded DG granule cells. Bands around the mean curves show the standard error of the mean (SEM). Dots mark the peak (red) or trough (blue) lag and amplitude of individual cells’ cross- covariance extrema. (Bottom) Cross- covariances for all DG granule cells stacked vertically and displayed as a pseudocolor image. Notice that most traces are peaked near zero lag. In all figures cells are ordered by their ripple- triggered average response (RTA) rank (Figure 6), unless stated otherwise. (B) Same as (A), but for CA3 pyramidal neurons. Notice that the example cell in (B1, B2) and the population overall (B3) have membrane potentials that are anti- correlated with DG CSD activity. (C) Same as (A) and (B), but for CA1 pyramidal neurons. The Vm of many CA1 neurons is positively correlated with DG CSD activity, but the Vm (red) leads the DG CSD (black) as in (C1), so correlation peaks occur at negative lags (C3). A subset of CA1 neurons exhibits negative correlations at positive lags.",
+  "captionBoundary": {
+    "x1": 36.502899169921875,
+    "x2": 565.0409545898438,
+    "y1": 384.5879821777344,
+    "y2": 510.3999938964844
+  },
+  "figType": "Figure",
+  "imageText": ["Figure", "supplement", "1.", "Strength", "and", "direction", "of", "the", "correlation", "between", "Vm", "slow", "component", "and", "dentate", "gyrus", "(DG)", "current", "source", "density", "(CSD)", "activity.", "Source", "data", "1.", "Cross", "correlation", "between", "the", "slow", "Vm", "component", "and", "dentate", "CSD", "activity", "for", "each", "neuron.", "The", "online", "version", "of", "this", "article", "includes", "the", "following", "source", "data", "and", "figure", "supplement(s)", "for", "figure", "3:"],
+  "name": "3",
+  "page": 5,
+  "regionBoundary": {
+    "x1": 36.0,
+    "x2": 575.04,
+    "y1": 518.16,
+    "y2": 573.12
+  },
+  "renderDpi": 300,
+  "renderURL": "figures/kajikawa_2022_StatesRipples/pdffigures2/figs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics-Figure3-1.png"
+}, {
+  "caption": "Figure 8. Model of UP and DOWN states (UDS) control of CA3 network excitability. (A) Idealized model of entorhinal cortex (EC) and CA3 adapting recurrent neural populations. EC activity provides net inhibition to the CA3 population via I ( rec ) , possibly due to feedforward inhibition or indirect influence via DG, and modulates the strength of CA3 recurrent excitation via w ( aac ) , modeling the effects of UDS- dependent shifts in cholinergic tone on CA3 synaptic transmission. (B) Probability density of the simulated CA3 population rate rca3 during EC UP and DOWN states. Notice that the median CA3 population rate is higher in the DOWN than the UP state (black and orange dots) despite the presence of population bursts (rate values near 1) restricted only to the UP state. (C) Example model simulation demonstrating that the EC population exhibits UP and DOWN dynamics while the CA3 population produces transient population bursts (‘ripples’) restricted to the UP state (gray segments). The slow component of the CA3 rate is magnified in the middle to show that mean CA3 activity is higher during the DOWN state and lower during the UP state when population bursts occur. (D–F) Phase plane plots of the model dynamics. The model evolution is governed by the velocity fields displayed as arrows. The model stable (filled circles) and unstable (open circles) fixed points occur at the intersections of the population rate (black) and adaptation (blue) nullclines. Model trajectories are plotted in purple and orange. (D) EC dynamics exhibit two stable fixed points (black circles) corresponding to the UP and DOWN states with noise fluctuations driving transitions between them. (E) CA3 dynamics in the EC DOWN state exhibit a single stable fixed point (black circle) and are not excitable, i.e., noise fluctuations cannot trigger a spike in the population rate. (F) CA3 dynamics in the EC UP state exhibit a single stable fixed point (black circle) at a lower population rate level than in the DOWN state (E), but are excitable, i.e., noise fluctuations can trigger population spikes (‘ripples’).",
+  "captionBoundary": {
+    "x1": 168.5260009765625,
+    "x2": 572.8331298828125,
+    "y1": 407.7314758300781,
+    "y2": 610.5474853515625
+  },
+  "figType": "Figure",
+  "imageText": ["Source", "data", "1.", "Model", "output", "time", "series.", "The", "online", "version", "of", "this", "article", "includes", "the", "following", "source", "data", "for", "figure", "8:"],
+  "name": "8",
+  "page": 14,
+  "regionBoundary": {
+    "x1": 168.0,
+    "x2": 575.04,
+    "y1": 618.24,
+    "y2": 648.0
+  },
+  "renderDpi": 300,
+  "renderURL": "figures/kajikawa_2022_StatesRipples/pdffigures2/figs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics-Figure8-1.png"
+}, {
+  "caption": "Figure 4. Entorhinal input differentially modulates slow Vm shifts across hippocampal subfields. (A1) Each row of the pseudocolor image shows the step response of a linear transfer model describing the effect of dentate gyrus (DG) current source density (CSD) activity on the slow Vm component for a given DG cell. The vertical interrupted line marks the onset of the input step. (A2) Each row shows the impulse responses of the corresponding models in (A1). The vertical interrupted line marks the onset of the impulse. Notice that the majority of DG cells exhibit causal behavior, i.e., the impulse response is near zero for negative lags. (B) Same as (A), but for CA3 pyramidal neurons. Notice that the majority of CA3 neurons hyperpolarize in response to entorhinal cortex (EC) input and some cells exhibit non- causal impulse responses, i.e., some impulse responses have non- zero (positive) values at negative lags. (C) Same as (A) and (B), but for CA1 pyramidal neurons. Notice that some CA1 cells also exhibit non- causal impulse responses. (D) Area- specific population average step response (D1) and impulse response (D2) color- coded by brain area. Bands around the mean curves show the SEM. Notice the distinct responses across hippocampal subfields.",
+  "captionBoundary": {
+    "x1": 377.76031494140625,
+    "x2": 573.7515258789062,
+    "y1": 344.1454772949219,
+    "y2": 601.95751953125
+  },
+  "figType": "Figure",
+  "imageText": ["Step", "Impulse", "CA1", "CA3", "DG", "V)", "(", "m", "V", "m", "5", "0", "-5", "-0.5", "0", "0.5", "1", "1.5", "Lag", "(sec)", "D2", "l", "C", "el", "-0.5", "0", "0.5", "1", "1.5", "Lag", "(sec)", "C2", "l", "C", "el", "-0.5", "0", "0.5", "1", "1.5", "Lag", "(sec)", "B2", "l", "C", "el", "-0.5", "0", "0.5", "1", "1.5", "Lag", "(sec)", "A2", "V)", "(", "m", "V", "m", "1", "0", "-1", "0", "1", "2", "3", "Lag", "(sec)", "D1", "l", "C", "el", "0", "1", "2", "3", "Lag", "(sec)", "C1", "l", "C", "el", "0", "1", "2", "3", "Lag", "(sec)", "B1", "-2", "0", "2", "l", "C", "el", "0", "1", "2", "3", "Lag", "(sec)", "A1"],
+  "name": "4",
+  "page": 6,
+  "regionBoundary": {
+    "x1": 376.8,
+    "x2": 575.04,
+    "y1": 54.0,
+    "y2": 335.03999999999996
+  },
+  "renderDpi": 300,
+  "renderURL": "figures/kajikawa_2022_StatesRipples/pdffigures2/figs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics-Figure4-1.png"
+}, {
+  "caption": "Figure 6. Inhibition marks slow and fast Vm responses near ripples in CA3, unlike dentate gyrus (DG) or CA1. (A1) Mean slow Vm component triggered on ripple onset for each DG granule cell displayed as a row in the pseudocolor image. Interrupted vertical line marks ripple onset. (A2) Transfer model predicted ripple- triggered slow Vm component as in (A1). (A3) Mean fast Vm components triggered on ripple onset and displayed as in (A1). Notice the two depolarizing peaks at –100 ms and right after ripple onset. Cells in panels (A1−3) are ordered by the first principal component coefficient of the (A3) image matrix (ripple- triggered average [RTA] rank). (A4) Spiking response to ripple onset for DG cells normalized by baseline firing rate. (B) Same as (A), but for CA3 pyramidal neurons. Notice the prominent hyperpolarization for most CA3 neurons present in both the slow and fast Vm component responses. (C) Same as (A) and (B), but for CA1 pyramidal neurons. Notice the prominent depolarization for most CA1 neurons. (D) Area- specific population average slow Vm response (D1), transfer model predicted slow Vm responses (D2), fast Vm response (D3), and spiking response (D4) colorcoded by brain area. Bands around the mean curves show the SEM. Notice that modulation by UP and DOWN states (UDS) accounts for the shape of the ripple- triggered Vm response on the timescale of seconds (compare [D1] and [D2]).",
+  "captionBoundary": {
+    "x1": 36.499786376953125,
+    "x2": 567.39013671875,
+    "y1": 406.4091796875,
+    "y2": 511.5011901855469
+  },
+  "figType": "Figure",
+  "imageText": ["Figure", "supplement", "3.", "Intrinsic", "properties", "and", "UP", "and", "DOWN", "state", "(UDS)", "modulation", "of", "CA3", "cells", "that", "depolarize", "during", "ripples.", "Figure", "supplement", "2—source", "data", "1.", "Vm", "and", "spiking", "responses", "triggered", "on", "ripple", "peak", "power", "for", "each", "neuron.", "Figure", "supplement", "2.", "Ripple", "modulation", "around", "ripple", "peak", "power.", "Figure", "supplement", "1.", "Resting", "potential", "and", "proximodistal", "location", "as", "predictors", "of", "ripple", "modulation.", "Source", "data", "1.", "Vm", "and", "spiking", "responses", "triggered", "on", "ripple", "onset", "for", "each", "neuron.", "The", "online", "version", "of", "this", "article", "includes", "the", "following", "source", "data", "and", "figure", "supplement(s)", "for", "figure", "6:"],
+  "name": "6",
+  "page": 9,
+  "regionBoundary": {
+    "x1": 36.0,
+    "x2": 575.04,
+    "y1": 517.92,
+    "y2": 626.16
+  },
+  "renderDpi": 300,
+  "renderURL": "figures/kajikawa_2022_StatesRipples/pdffigures2/figs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics-Figure6-1.png"
+}, {
+  "caption": "Figure 1. Simultaneous multisite extracellular and whole- cell recordings across hippocampal subfields. (A) Schematic of setup for simultaneous intracellular and extracellular recordings from awake head- fixed mice free to run on a spherical treadmill. (B) Typical penetration paths of multisite probe for local field potential (LFP) recordings and micropipette (targeting CA3 in this example for the neuron shown in D) for whole- cell recordings. Histological sections were stained for biocytin (green), calbindin (blue), and parvalbumin (red). (C) Examples of histology and recordings. Top: Recorded dentate gyrus (DG) granule cells are labeled with biocytin and their location and morphology is visualized with fluorescence microscopy. Bottom: Membrane potential (Vm) of a DG granule cell together with simultaneous LFP recordings spanning both CA1 and DG. The blue trace marks the pyramidal cell layer of CA1 where ripples are detected and marked by the gray vertical shading. Notice that the cell fires right before the onset of a ripple. The magenta bars indicate 200 ms and 20 mV, and the baseline Vm is reported next to the trace (–60 mV). The vertical spacing between LFP traces is 1 mV. (D) Same as (C), but for a pyramidal neuron in CA3. Notice that the cell is hyperpolarized following the ripple onset. (E) Same as (C), but for a pyramidal neuron in CA1. Notice that the cell fires inside one of two nearby ripples.",
+  "captionBoundary": {
+    "x1": 36.49970245361328,
+    "x2": 574.88134765625,
+    "y1": 401.3683776855469,
+    "y2": 505.1803894042969
+  },
+  "figType": "Figure",
+  "imageText": ["Figure", "supplement", "4.", "Properties", "of", "recorded", "cells.", "Figure", "supplement", "3.", "Proximodistal", "locations", "of", "recorded", "neurons.", "Figure", "supplement", "2.", "Bursting", "in", "recorded", "neurons.", "Figure", "supplement", "1.", "Morphology", "of", "recorded", "neurons.", "Source", "data", "1.", "Spiking", "and", "membrane", "properties", "of", "recorded", "neurons.", "The", "online", "version", "of", "this", "article", "includes", "the", "following", "source", "data", "and", "figure", "supplement(s)", "for", "figure", "1:"],
+  "name": "1",
+  "page": 2,
+  "regionBoundary": {
+    "x1": 36.0,
+    "x2": 575.04,
+    "y1": 512.88,
+    "y2": 599.04
+  },
+  "renderDpi": 300,
+  "renderURL": "figures/kajikawa_2022_StatesRipples/pdffigures2/figs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics-Figure1-1.png"
+}, {
+  "caption": "Figure 7. Fast Vm inhibitory responses to ripples scale with CA3 population burst size. (A1) Mean fast Vm components of dentate gyrus (DG) granule cells triggered on ripples with small (below average) sharp- wave (SPW) amplitudes. (A2) Same as (A1), but for ripples with big (above average) SPW amplitudes. (A3) Comparison of the DG population average response to small and big SPW ripples. Bands around the mean curves show the SEM. Responses to big ripples are shown in darker blue and overlap the responses to small ripples for most time lags. For significant differences the responses to big ripples are highlighted in black (paired t- test, p<0.01). (B) Same as (A), but for CA3 pyramidal neurons. (C) Same as (A) and (B), but for CA1 pyramidal neurons. (D) Area- specific population average responses to small (D1) and big (D2) SPW ripples. Bands around the mean curves show the SEM. (D3) Horizontal bars mark the onset and duration of significant differences between responses to small and big SPW ripples within each area (paired t- test, p<0.01).",
+  "captionBoundary": {
+    "x1": 168.52471923828125,
+    "x2": 571.6687622070312,
+    "y1": 407.455078125,
+    "y2": 511.26708984375
+  },
+  "figType": "Figure",
+  "imageText": ["Figure", "supplement", "2—source", "data", "1.", "Fast", "Vm", "components", "triggered", "on", "the", "onset", "of", "isolated", "ripples", "and", "ripple", "doublets", "for", "each", "neuron.", "Figure", "supplement", "2.", "Subthreshold", "ripple", "modulation", "around", "isolated", "ripples", "and", "ripple", "doublets.", "Figure", "supplement", "1—source", "data", "1.", "Fast", "Vm", "components", "triggered", "on", "peak", "ripple", "power", "of", "ripples", "with", "small", "and", "large", "amplitudes.", "Figure", "supplement", "1.", "Fast", "Vm", "inhibitory", "responses", "to", "ripples", "scale", "with", "CA3", "population", "burst", "size.", "Source", "data", "1.", "Fast", "Vm", "components", "triggered", "on", "onset", "of", "ripples", "with", "small", "and", "large", "amplitudes.", "The", "online", "version", "of", "this", "article", "includes", "the", "following", "source", "data", "and", "figure", "supplement(s)", "for", "figure", "7:"],
+  "name": "7",
+  "page": 11,
+  "regionBoundary": {
+    "x1": 168.0,
+    "x2": 576.0,
+    "y1": 519.12,
+    "y2": 638.16
+  },
+  "renderDpi": 300,
+  "renderURL": "figures/kajikawa_2022_StatesRipples/pdffigures2/figs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics-Figure7-1.png"
+}, {
+  "caption": "Figure 5. Hippocampal subfields exhibit distinct activity profiles over the UP and DOWN states (UDS) cycle. (A1) Vm mean as a function of UDS phase for each dentate gyrus (DG) granule cell displayed as a row in the pseudocolor image. Cells are ordered by the first principal component coefficient of the image matrix (UDS rank). (A2) Fast Vm component standard deviation as a function of UDS phase for DG granule cells. (A3) Observed spiking probability for all DG granule cells displayed as a pseudocolor image. Grayed out rows correspond to cells that fired fewer than 100 spikes. (B) Same as (A), but for CA3 pyramidal neurons. Notice that CA3 neurons are maximally hyperpolarized and have lowest firing probability at the end of the UP phase when the rate of ripple occurrence is highest (Figure 2E). (C) Same as (A) and (B), but for CA1 pyramidal neurons. (D) Area- specific population averages color- coded by brain area. (D1) Population average Vm means. (D2) Population average fast Vm component standard deviations. (D3) Population average spiking probability. Bands around the mean curves show the SEM.",
+  "captionBoundary": {
+    "x1": 168.523193359375,
+    "x2": 569.4562377929688,
+    "y1": 405.7290954589844,
+    "y2": 520.5411376953125
+  },
+  "figType": "Figure",
+  "imageText": ["Figure", "supplement", "5.", "Statistical", "differences", "in", "Vm", "mean,", "fast", "Vm", "variance,", "and", "firing", "rate", "across", "UP", "and", "DOWN", "states", "(UDS).", "Figure", "supplement", "4.", "Resting", "potential", "and", "proximodistal", "location", "as", "predictors", "of", "UP", "and", "DOWN", "state", "(UDS)", "modulation.", "Figure", "supplement", "3—source", "data", "1.", "Vm", "fluctuations", "as", "a", "function", "of", "UDS", "phase", "for", "each", "neuron.", "Figure", "supplement", "3.", "UP", "and", "DOWN", "state", "(UDS)", "modulation", "of", "Vm", "fluctuations.", "Figure", "supplement", "2—source", "data", "1.", "Slow", "Vm", "and", "transfer", "model", "responses", "to", "UDS", "transitions", "for", "each", "neuron.", "Figure", "supplement", "2.", "Vm", "and", "transfer", "model", "responses", "at", "UP", "and", "DOWN", "state", "(UDS)", "transitions.", "Figure", "supplement", "1—source", "data", "1.", "Vm", "and", "spiking", "responses", "to", "UDS", "transitions", "for", "each", "neuron.", "Figure", "supplement", "1.", "Vm", "and", "spiking", "responses", "to", "UP", "and", "DOWN", "states", "(UDS)", "transitions", "reveal", "ordering", "in", "subfield", "activation.", "Source", "data", "1.", "Vm", "and", "spiking", "responses", "across", "UP", "and", "DOWN", "states", "for", "each", "neuron.", "The", "online", "version", "of", "this", "article", "includes", "the", "following", "source", "data", "and", "figure", "supplement(s)", "for", "figure", "5:", "Kajikawa", "et al.", "eLife", "2022;11:e69596.", "DOI:", "https://doi.org/10.7554/eLife.69596", "9", "of", "25"],
+  "name": "5",
+  "page": 8,
+  "regionBoundary": {
+    "x1": 36.96,
+    "x2": 575.04,
+    "y1": 528.24,
+    "y2": 756.9599999999999
+  },
+  "renderDpi": 300,
+  "renderURL": "figures/kajikawa_2022_StatesRipples/pdffigures2/figs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics-Figure5-1.png"
+}, {
+  "caption": "Figure 2. UP and DOWN states modulate slow Vm shifts and ripple occurrence. (A) Image of current source density (CSD) derived from the local field potential (LFP) traces (gray). Ripples, high- frequency oscillations indicated by the black arrows, are associated with current sinks (red) in stratum radiatum (sr) below the pyramidal cell layer (stratum pyramidale, sp). The bottom third of the image shows large current sources (blue) and sinks (red) within the molecular layers (mol) of dentate gyrus (DG). (B) Top: Image of the CSD on a longer timescale reveals alternating periods of high and low CSD activity. The two interrupted black lines mark the vertical extent of the suprapyramidal molecular layer of DG. The Vm of a CA3 neuron is superimposed in green. Notice that periods of low DG CSD activity (light colors) are associated with Vm depolarization. Bottom: DG CSD activity (black), quantified by averaging the rectified CSD over the molecular layer of DG and smoothing, normalized to a z- score. Subthreshold Vm (gray) for the CA3 neuron and its slow component (red) plotted as z- scores. Notice that the black and red traces are anti- correlated. The green stairstep trace marks epochs of elevated DG CSD activity (UP states) and decreased DG CSD activity (DOWN states). Ripples (blue dots) occur in the UP state. (C) Distribution of DG CSD activity fitted with a two component gaussian mixture. DG CSD activity at ripples (blue dots) and eye blinks (magenta), show preferential association with the UP and DOWN components, respectively. (D) Hidden Markov model (HMM) state detection based on DG CSD activity (black). DG CSD activity is high in the UP state (gray stripes), while the pupil (diameter in magenta) dilates at the onset of the DOWN state and then gradually constricts in the course of the UP state. Ripples and eye blinks are marked by blue and magenta dots, respectively. Horizontal scale bar is 3 s long. (E) (Top) Population average probability density of ripple occurrence as a function of UP and DOWN states (UDS) phase. Notice that ripples occur almost exclusively in the UP state. (Bottom) Rows in the pseudocolor image show the density of ripple occurrence for each dataset (n=86). Densities are replotted over two UDS cycles.",
+  "captionBoundary": {
+    "x1": 36.50299835205078,
+    "x2": 574.4782104492188,
+    "y1": 405.830078125,
+    "y2": 564.64208984375
+  },
+  "figType": "Figure",
+  "imageText": ["Figure", "supplement", "8.", "Comparison", "of", "large-", "amplitude", "irregular", "activity/small", "irregular", "activity", "(LIA/SIA)", "and", "UP/DOWN", "transitions.", "Figure", "supplement", "7.", "Rectified", "current", "source", "density", "(CSD)", "triggered", "on", "UP/DOWN", "transitions", "and", "ripples.", "Figure", "supplement", "6.", "Ripple-", "triggered", "average", "current", "source", "density", "(CSD).", "Figure", "supplement", "5.", "Decomposing", "membrane", "potential", "traces", "into", "slow", "and", "fast", "components.", "Figure", "supplement", "4.", "UP", "and", "DOWN", "epoch", "durations.", "Figure", "supplement", "3.", "Pupil", "diameter", "around", "UP", "and", "DOWN", "transitions.", "Figure", "supplement", "2.", "UP", "and", "DOWN", "state", "(UDS)", "modulation", "of", "ripple", "and", "blink", "occurrence.", "Figure", "supplement", "1.", "Coherence", "between", "rectified", "dentate", "gyrus", "(DG)", "current", "source", "density", "(CSD)", "and", "Vm.", "Source", "data", "1.", "Probability", "density", "of", "ripple", "occurrence", "as", "a", "function", "of", "UDS", "phase", "for", "each", "recording.", "The", "online", "version", "of", "this", "article", "includes", "the", "following", "source", "data", "and", "figure", "supplement(s)", "for", "figure", "2:", "Kajikawa", "et al.", "eLife", "2022;11:e69596.", "DOI:", "https://doi.org/10.7554/eLife.69596", "5", "of", "25"],
+  "name": "2",
+  "page": 4,
+  "regionBoundary": {
+    "x1": 36.48,
+    "x2": 575.04,
+    "y1": 572.4,
+    "y2": 756.9599999999999
+  },
+  "renderDpi": 300,
+  "renderURL": "figures/kajikawa_2022_StatesRipples/pdffigures2/figs/Kajikawa et al_2022_UP–DOWN states and ripples differentially modulate membrane potential dynamics-Figure2-1.png"
+}]
