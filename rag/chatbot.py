@@ -22,12 +22,15 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.chat_models import ChatOllama
 from langchain_core.messages import SystemMessage, HumanMessage
 
+import uuid
+import getpass
+from datetime import datetime
 
 HERE = Path(__file__).resolve().parent
 PROJECT_ROOT = HERE.parents[1]          # adjust if needed
 CONFIG_PATH = HERE / "index_config.yaml"
 CHROMA_DIR = HERE / "chroma_db"
-
+LOGS_DIR = HERE / "logs"
 
 # ---------- Config & stores ----------
 
@@ -111,6 +114,35 @@ def format_sources_markdown(docs):
     return "\n".join(lines)
 
 
+def save_markdown_safely(content: str) -> Path:
+    """
+    Save markdown content into bib/rag/logs in a multi-user and
+    concurrency-safe way.
+
+    Layout:
+      bib/rag/logs/<username>/YYYY-MM-DD/HHMMSS-<rand>.md
+    """
+    username = getpass.getuser() or "unknown_user"
+    date_folder = datetime.now().strftime("%Y-%m-%d")
+
+    base_dir = LOGS_DIR / username / date_folder
+    base_dir.mkdir(parents=True, exist_ok=True)
+
+    ts = datetime.now().strftime("%H%M%S")
+    unique = uuid.uuid4().hex[:8]
+    filename = f"{ts}-{unique}.md"
+
+    full_path = base_dir / filename
+    temp_path = full_path.with_suffix(".tmp")
+
+    # Atomic-ish write: write to .tmp then move
+    with temp_path.open("w", encoding="utf-8") as f:
+        f.write(content)
+
+    temp_path.replace(full_path)
+    return full_path
+
+
 # ---------- Main chat loop ----------
 
 def main():
@@ -170,11 +202,22 @@ def main():
             response = llm.invoke([system_msg, user_msg])
 
             # 5) Print answer + sources
-            print("## Answer\n")
-            print(response.content.strip())
-            print()
-            print(format_sources_markdown(docs))
+            answer_md = (
+                "## Question\n\n"
+                + query.strip()
+                + "\n\n"
+                + "## Answer\n\n"
+                + response.content.strip()
+                + "\n\n"
+                + format_sources_markdown(docs)
+            )
+
+            print(answer_md)
             print("\n" + "-" * 60 + "\n")
+
+            save_path = save_markdown_safely(answer_md)
+            print(f"[saved] {save_path}\n")
+
 
     except KeyboardInterrupt:
         print("\n[exit]")
