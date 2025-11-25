@@ -1,0 +1,40 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+merge        1
+total        2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Nov 25 10:10:58 2025]
+localrule merge:
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    output: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/neuropy.bib
+    jobid: 1
+    reason: Missing output files: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/neuropy.bib
+    resources: tmpdir=/tmp
+Shell command: python -m bib.merge
+[Tue Nov 25 10:10:58 2025]
+Finished jobid: 1 (Rule: merge)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Nov 25 10:10:58 2025]
+localrule all:
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/neuropy.bib
+    jobid: 0
+    reason: Rules with a run or shell declaration but no output are always executed.
+    resources: tmpdir=/tmp
+Shell command: echo 'All done!'
+[Tue Nov 25 10:10:58 2025]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Complete log(s): /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/.snakemake/log/2025-11-25T101058.390397.snakemake.log

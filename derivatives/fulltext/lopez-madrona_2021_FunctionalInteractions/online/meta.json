@@ -1,0 +1,28 @@
+{
+  "source": "online",
+  "doi": "10.3390/biology10080692",
+  "pmcid": null,
+  "used_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/",
+  "tried_urls": [
+    "https://doi.org/10.3390/biology10080692",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=10.3390/biology10080692",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/"
+  ],
+  "trace": [
+    {
+      "url": "https://doi.org/10.3390/biology10080692",
+      "final_url": null,
+      "ctype": "unknown"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=10.3390/biology10080692",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/34439925/",
+      "ctype": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/",
+      "ctype": "text/html; charset=utf-8"
+    }
+  ]
+}

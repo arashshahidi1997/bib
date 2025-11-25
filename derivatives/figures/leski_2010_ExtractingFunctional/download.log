@@ -1,0 +1,13 @@
+[online] citekey=leski_2010_ExtractingFunctional, doi=10.1007/s10827-009-0203-1, pmcid=None
+[online] initial URL candidates:
+  - https://doi.org/10.1007/s10827-009-0203-1
+  - https://pubmed.ncbi.nlm.nih.gov/?term=10.1007/s10827-009-0203-1
+[online] GET https://doi.org/10.1007/s10827-009-0203-1 -> 200, content-type=text/html; charset=utf-8, final=https://link.springer.com/article/10.1007/s10827-009-0203-1
+[online] 6 candidate image URLs from https://link.springer.com/article/10.1007/s10827-009-0203-1
+[online] https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig1_HTML.gif -> derivatives/figures/leski_2010_ExtractingFunctional/online/figs/figure_1.gif
+[online] https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig2_HTML.gif -> derivatives/figures/leski_2010_ExtractingFunctional/online/figs/figure_2.gif
+[online] https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig3_HTML.gif -> derivatives/figures/leski_2010_ExtractingFunctional/online/figs/figure_3.gif
+[online] https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig4_HTML.gif -> derivatives/figures/leski_2010_ExtractingFunctional/online/figs/figure_4.gif
+[online] https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig5_HTML.gif -> derivatives/figures/leski_2010_ExtractingFunctional/online/figs/figure_5.gif
+[online] https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig6_HTML.gif -> derivatives/figures/leski_2010_ExtractingFunctional/online/figs/figure_6.gif
+[online] total figures downloaded for leski_2010_ExtractingFunctional: 6

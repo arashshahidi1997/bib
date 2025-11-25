@@ -1,0 +1,8 @@
+[online] citekey=korovaichuk_2010_MinorContribution, doi=10.1152/jn.00297.2010, pmcid=None
+[online] initial URL candidates:
+  - https://doi.org/10.1152/jn.00297.2010
+  - https://pubmed.ncbi.nlm.nih.gov/?term=10.1152/jn.00297.2010
+[online] GET https://doi.org/10.1152/jn.00297.2010 -> 403, content-type=text/html; charset=utf-8, final=https://journals.physiology.org/doi/10.1152/jn.00297.2010
+[online] GET https://pubmed.ncbi.nlm.nih.gov/?term=10.1152/jn.00297.2010 -> 200, content-type=text/html; charset=utf-8, final=https://pubmed.ncbi.nlm.nih.gov/20463202/
+[online] 0 candidate image URLs from https://pubmed.ncbi.nlm.nih.gov/20463202/
+[online] no usable figures found for korovaichuk_2010_MinorContribution

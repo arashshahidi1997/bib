@@ -1,0 +1,28 @@
+{
+  "source": "online",
+  "doi": "10.7554/eLife.57313",
+  "pmcid": null,
+  "used_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7413668/",
+  "tried_urls": [
+    "https://doi.org/10.7554/eLife.57313",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=10.7554/eLife.57313",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7413668/"
+  ],
+  "trace": [
+    {
+      "url": "https://doi.org/10.7554/eLife.57313",
+      "final_url": "https://elifesciences.org/articles/57313",
+      "ctype": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=10.7554/eLife.57313",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/32687054/",
+      "ctype": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7413668/",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7413668/",
+      "ctype": "text/html; charset=utf-8"
+    }
+  ]
+}

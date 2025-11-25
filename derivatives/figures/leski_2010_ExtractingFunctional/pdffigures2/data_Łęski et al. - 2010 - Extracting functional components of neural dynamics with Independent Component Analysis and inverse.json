@@ -1,0 +1,101 @@
+[{
+  "caption": "Fig. 5 Experimental data from Rat 7. Two independent components (A, B) with current sinks in somatosensory thalamus. The first component (A) is located at the border of VPM and Po, the second, stronger component (B) is located in more lateral part of the dorsal VPM. The locations match the expected positions of ‘heads’ and ‘cores’ of barreloids, see text",
+  "captionBoundary": {
+    "x1": 306.15728759765625,
+    "x2": 544.2823486328125,
+    "y1": 405.23602294921875,
+    "y2": 460.3244934082031
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "5",
+  "page": 10,
+  "regionBoundary": {
+    "x1": 304.8,
+    "x2": 544.0799999999999,
+    "y1": 53.76,
+    "y2": 392.88
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2/figs/Łęski et al. - 2010 - Extracting functional components of neural dynamics with Independent Component Analysis and inverse-Figure5-1.png"
+}, {
+  "caption": "Fig. 4 Examples of components typically obtained with temporal and spatial ICA (Rat 1). (A) Temporal ICA, α = 0. Note that the time-course of the activation is not related to the stimulation (0 ms). It is also hard to interpret the observed spatial pattern in physiological terms. (B) Spatial ICA, α = 1. The spatial component has a clear, physiologically meaningful organization (localized activity in VPM). Before stimulation this component is not active. Two waves of activation (4–6 ms and 20–30 ms) may be interpreted as incoming sensory activation and the activation of cortico-thalamic feedback, respectively. The spatial profiles are shown at times of maximum of the temporal counterparts, vertical lines in the lower panels of (A), (B)",
+  "captionBoundary": {
+    "x1": 306.158935546875,
+    "x2": 544.295166015625,
+    "y1": 601.264892578125,
+    "y2": 716.349853515625
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "4",
+  "page": 9,
+  "regionBoundary": {
+    "x1": 304.8,
+    "x2": 544.0799999999999,
+    "y1": 251.76,
+    "y2": 589.92
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2/figs/Łęski et al. - 2010 - Extracting functional components of neural dynamics with Independent Component Analysis and inverse-Figure4-1.png"
+}, {
+  "caption": "Fig. 2 Comparison of spatial components obtained with ICA applied to either LFP signals or reconstructed CSD. (A) Original (model) spatial component. (B) Spatial component recovered using spatial ICA on CSD. (C) Spatial component recovered using spatial ICA on LFP (decomposition followed by iCSD). (D) Time-course of the original component is faithfully recovered with both methods",
+  "captionBoundary": {
+    "x1": 51.03514099121094,
+    "x2": 289.1601867675781,
+    "y1": 457.2380065917969,
+    "y2": 522.3250732421875
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "2",
+  "page": 7,
+  "regionBoundary": {
+    "x1": 49.92,
+    "x2": 289.2,
+    "y1": 53.76,
+    "y2": 444.96
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2/figs/Łęski et al. - 2010 - Extracting functional components of neural dynamics with Independent Component Analysis and inverse-Figure2-1.png"
+}, {
+  "caption": "Fig. 6 Experimental data from Rat 1. (A, C) Full CSD reconstruction and (B, D) sum of the CSD contained in the ‘head’ and ‘core’ components extracted using spatial ICA. (E) The time course of the two extracted components, black line represents the component placed at the border of VPM and Po, gray line—at VPM core). The time after stimulation is 3.6 ms in (A, B), and 5.2 ms in (C, D), marked with vertical lines on the temporal plot, (E). See text for details",
+  "captionBoundary": {
+    "x1": 51.035980224609375,
+    "x2": 544.2748413085938,
+    "y1": 360.73101806640625,
+    "y2": 395.8206787109375
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "6",
+  "page": 11,
+  "regionBoundary": {
+    "x1": 49.92,
+    "x2": 544.0799999999999,
+    "y1": 53.76,
+    "y2": 344.88
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2/figs/Łęski et al. - 2010 - Extracting functional components of neural dynamics with Independent Component Analysis and inverse-Figure6-1.png"
+}, {
+  "caption": "Table 1 Peak latencies for ’core’ and ’head’ components in all rats",
+  "captionBoundary": {
+    "x1": 51.0359992980957,
+    "x2": 289.1609191894531,
+    "y1": 603.8660278320312,
+    "y2": 618.9484252929688
+  },
+  "figType": "Table",
+  "imageText": ["1", "4.0", "5.2", "2", "4.1", "5.0", "3", "4.6", "5.8", "4", "5.1", "5.9", "5", "4.2", "5.1", "6", "–", "4.8", "(small", "amplitude)", "7", "3.6", "4.7", "‘heads’", "‘cores’"],
+  "name": "1",
+  "page": 11,
+  "regionBoundary": {
+    "x1": 50.879999999999995,
+    "x2": 290.15999999999997,
+    "y1": 623.76,
+    "y2": 750.0
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2/figs/Łęski et al. - 2010 - Extracting functional components of neural dynamics with Independent Component Analysis and inverse-Table1-1.png"
+}]

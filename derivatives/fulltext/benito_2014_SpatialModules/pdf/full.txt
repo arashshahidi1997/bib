@@ -1,0 +1,4225 @@
+Cerebral Cortex July 2014;24:1738–1752
+doi:10.1093/cercor/bht022
+Advance Access publication February 8, 2013
+
+Spatial Modules of Coherent Activity in Pathway-Speciﬁc LFPs in the Hippocampus Reﬂect
+Topology and Different Modes of Presynaptic Synchronization
+
+N. Benito1, A. Fernández-Ruiz1, V.A. Makarov2, J. Makarova1, A. Korovaichuk1 and O. Herreras1
+
+1Department of Systems Neuroscience, Cajal Institute, CSIC, Madrid 28002, Spain and 2Department of Applied Mathematics,
+Faculty of Mathematics, Universidad Complutense de Madrid, Madrid 28040, Spain
+
+N.B. and A.F.-R. have contributed equally to this work.
+
+Address correspondence to Oscar Herreras, Cajal Institute, CSIC, Av. Dr. Arce 37, Madrid 28002, Spain. Email: herreras@cajal.csic.es
+
+Ongoing network activity often manifests as irregular ﬂuctuations
+in local ﬁeld potentials (LFPs), a complex mixture of multicellular
+synaptic currents of varying locations and extensions. Among other
+conditions, for synchronously ﬁring presynaptic units to generate
+sizable postsynaptic LFPs, their axonal territories should overlap.
+We have taken advantage of anatomical regularity of the rat hippo-
+campus and combined multiple linear recordings and spatial dis-
+crimination techniques to separate pathway-speciﬁc LFPs with
+enough spatial resolution to discriminate postsynaptic regions of
+varying activation, and to investigate their presynaptic origin,
+chemical nature, and spatial extension. We identiﬁed 6 main excit-
+atory and inhibitory LFP generators with different synaptic terri-
+tories in principal cells and hippocampal subﬁelds matching
+anatomical pathways. Some recognized pathways did not contribute
+notably to LFPs. Each showed different septo-temporal spatial
+modules over which the ﬁeld potential ﬂuctuations were synchro-
+nous. These modules were explained by either the strong overlap of
+synaptic territories of coactivated afferent neurons (e.g., CA3 clus-
+ters for CA1 Schaffer LFPs), or widespread coalescence of postsyn-
+aptic territories (granule cell somatic inhibition). We also show
+evidence that distinct modes of afferent synchronization generate
+stereotyped spatial patterns of synchronous LFPs in one pathway.
+Thus, studying spatial coherence of pathway-speciﬁc LFPs provides
+remote access to the dynamics of afferent populations.
+
+Keywords: correlated activity, independent component analysis, LFP
+generators, ongoing activity, spatial modules
+
+Introduction
+Correlated ﬁring of neurons is often associated with shared
+synaptic inputs (Diesmann et al. 1999), which manifest as
+ﬂuctuations of the local ﬁeld potential (LFP; Bach and Kruger
+1986; Arieli et al. 1995). This mesoscopic variable is mostly
+contributed by the postsynaptic currents (Purpura 1959; Elul
+1972; Nunez and Srinivasan 2006), and as such LFP constitu-
+tes a link between the ongoing activity of afferent populations
+(distant and/or local) and the induced spatially distributed
+ﬁring of postsynaptic neurons (Belitski et al. 2008; Fernández-
+Ruiz, Makarov, Benito, et al. 2012).
+
+It has long been hypothesized that spontaneous macro-
+scopic ﬁeld potentials have a multifoci origin made up by the
+group of currents injected in the extracellular space by syn-
+chronously activated synapses, so called “elementary synaptic
+units” (Elul 1972). Such groups of coactivated synapses are
+located on multiple postsynaptic neurons according to axonal
+branching and topology, making up multineuron sources of
+complex geometry. Whereas the theoretical foundations de-
+scribing how the spread of currents in a volume conductor
+
+© The Author 2013. Published by Oxford University Press. All rights reserved.
+For Permissions, please e-mail: journals.permissions@oup.com
+
+raise ﬁeld potentials of different magnitude and polarity are
+long established (Lorente de Nó 1947; Woodbury 1960;
+Plonsey 1969; Gloor 1985; Nunez and Srinivasan 2006), it was
+soon recognized that the geometrical complexity of these
+sources would be a handicap to decipher the cellular origins
+of LFP ﬂuctuations. If axonal
+territories of synchronously
+ﬁring presynaptic units overlap in the target postsynaptic
+region, the synaptic currents will have a chance to sum and
+raise sizable LFPs. However, due to variation in the spatial
+coverage of coactivated multineuron sources, the LFPs re-
+corded at 2 nearby sites may be matched or different. The
+spatial extension, amplitude, and polarity of LFPs are inﬂu-
+enced by a combination of factors including the patterns of
+synaptic territories of converging pathways, the topology of
+connections, and the time-dependent mixture of synaptic cur-
+rents. We take the advantage of regular cytoarchitecture of the
+rat hippocampus, high-density recordings, and spatially dis-
+criminating analysis techniques (Bell and Sejnowski 1995;
+Choi et al. 2005) to address the pathway composition of
+ongoing LFPs and the time-varying spatial coverage of each
+component.
+
+The hippocampus exhibits multiple naturally oscillating
+ﬁeld potentials, including those displaying theta and gamma
+patterns (Buzsáki et al. 1983). These oscillations probably
+involve the synchronous activity of one or few synaptic path-
+ways and have been widely used to study synaptic plasticity
+and the neuronal correlates of behavior (Paulsen and Moser
+1998; Traub et al. 1998; Reichinnek et al. 2010). However, the
+physiological spectrum of ongoing LFPs contains a much
+wider collection of “irregular” activities that have been poorly
+studied and may provide valuable details as to the information
+arriving from multiple afferent populations to hippocampal
+principal neurons.
+
+As it was demonstrated by the laminar analysis of evoked
+potentials (Andersen et al. 1971), the stratiﬁcation of synaptic
+inputs into the discrete domains of postsynaptic cells pro-
+duces distinct laminar ﬁeld potential proﬁles upon activation
+of each afferent pathway (laminar dipoles). The difference
+between evoked and ongoing activities is in spatial extension
+of the activated postsynaptic region, occupying entirely, or in
+part, the synaptic territory of such input. We here asked
+whether the large irregular LFPs in the hippocampus arise as
+occasional spatiotemporal concurrence of synaptic currents
+from multiple independent presynaptic origins or they contain
+topographically determined modules of activity.
+these
+modules exist, they should be related to anatomical pathways.
+Thus, we explored the existence of such spatial modules
+for different pathway-speciﬁc inputs (here termed as LFP gen-
+erators) during ongoing activity by analyzing multiple
+
+If
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+simultaneous recordings of the target populations in 3 steps.
+First, we determine all principal synaptic pathways that contrib-
+ute to ongoing LFPs by separating their mixed contributions
+using multiarray linear recordings and analytical techniques,
+including independent component analysis (ICA; Makarov et al.
+2010; Makarova et al. 2011). Secondly, we study their chemical
+nature and the neuronal populations of origin using local
+pharmacology and chemical manipulation of presynaptic
+nuclei. Finally, we explore their spatial coherence by compar-
+ing the time activations of each LFP generator in multiple sites
+along the septo-temporal axis and checked their stability upon
+different levels of presynaptic synchronization.
+
+The results provide empirical evidence of
+
+the varying
+spatial extension of postsynaptic LFP generators brought
+about by the variable synchronization of presynaptic units.
+We found 6 main excitatory and inhibitory LFP generators in
+different subﬁelds of the hippocampus, each corresponding
+to the postsynaptic activity elicited in distinct synaptic terri-
+tories of principal pyramidal or granule cells by speciﬁc local
+and extrinsic afferent pathways. The septo-temporal extension
+over which each LFP generator was synchronous varied con-
+tinuously during ongoing irregular LFP activity, reﬂecting the
+varying activation of presynaptic units with topographic pro-
+jections. In some pathways such as the CA3 Schaffer input to
+CA1, we recognized different spatial patterns of synchronous
+postsynaptic activity that corresponded to stereotyped modes
+of presynaptic ﬁring. Thus, the availability of spatial modules
+of pathway-speciﬁc activity allows the recognizable modes of
+functional organization to be identiﬁed in different segments
+of hippocampal networks.
+
+Materials and Methods
+
+Experimental Procedures
+All experiments were performed in accordance with European Union
+guidelines (86/609/EU) and Spanish regulations (BOE 67/8509-12,
+1988) regarding the use of laboratory animals, and the experimental
+protocols were approved by the Research Committee of the Cajal In-
+stitute. Adult female Sprague-Dawley rats were anesthetized with ur-
+ethane (1.2 g/kg, intraperitoneally) and placed in a stereotaxic device.
+Surgical and stereotaxic procedures were performed as described pre-
+viously (Herreras et al. 1988; Canals et al. 2005). Concentric stimulat-
+ing electrodes were placed in one or more of the following sites in
+order to activate speciﬁc pathways and subﬁelds: Ipsilateral CA3
+region, and medial and lateral perforant pathways. Multisite silicon
+probes (Neuronexus, Ann Arbor, MI, USA) of 16 or 32 linear record-
+ing sites organized in 1 or 2 shanks were used to record in multiple
+tracks at steps of 50 or 100 μm parallel to the main axis of the CA1
+pyramidal cell region, also spanning the dentate gyrus (DG)/CA3
+regions. In experiments using multiple shanks, these were located
+along the long axis of the dorsal portion of the hippocampus, roughly
+parallel to the midline (AP, 4.5–6.5 and L, 2.6–3.5 mm). In a subset of
+experiments, additional glass pipettes were used to simultaneously
+record from multiple points at more lateral and ventral levels guided
+by evoked potentials. Linear probes were soaked in 1,1′-dioctadecyl-
+3,3,3',3'-tetramethylindocarbocyanine perchlorate (DiI) before inser-
+tion (Molecular Probes, Invitrogen, Carlsbad, CA, USA) to assess their
+placement in histological sections postmortem. A silver chloride wire
+implanted in the skin of the neck served as a reference for recordings.
+Signals were ampliﬁed and acquired using MultiChannel System (Reu-
+tlingen, Germany), and Axon (Molecular Devices, Sunnyvale, CA,
+USA) hardware and software were used for multisite and glass pipette
+recordings (50 and 20 kHz sampling rate, respectively).
+
+The excitatory/inhibitory chemical nature of LFP generators was
+studied by the local application of neurotransmitter blockers via glass
+
+recording pipettes (7–10 µm at the tip). These were introduced at a
+10° angle from the vertical and targeted loci within 300–500 µm of
+a linear probe at different strata of the CA1/DG subﬁelds. Microdrops
+(50–100 pL) were pressure injected by a Picospritzer (General Valve,
+Fairﬁeld, NJ, USA) and adjusted to limit drug effects to within 500 µm,
+as determined by the selective modulation of evoked potentials in the
+desired group of recording sites (Canals et al. 2005). Bicuculline
+methiodide (BIC; Sigma, St. Louis, MO, USA) or 6,7-dinitro-quinoline-
+2,3-dione (DNQX; Tocris, Bristol, UK) were loaded into the pipettes to
+block gamma amino butyric acid-A (GABA-A) and non-n-Methyl-D-
+Aspartate (NMDA) Glu receptors, respectively. Drugs were dissolved
+in artiﬁcial cerebrospinal ﬂuid at concentrations of approximately
+50 times higher than those usually employed in vitro. A single injec-
+tion ensured stable effects of the drug for at least 60 s. In some exper-
+iments requiring longer drug actions, successive microdrops were
+injected at 5-min intervals, resulting in reasonable long-term stability
+witnessed by the steady effect on evoked potentials. In one set of
+experiments, BIC was injected from larger pipettes (10–12 µm at the
+tip)
+to achieve spatially extended hypersynchronous activity in
+neuronal populations projecting to recording loci (i.e., the afferent
+populations originating LFP components).
+
+In a subset of experiments, recordings were obtained from awake
+animals implanted with a multishank device (92 recording sites in
+6 parallel
+linear arrays). These data were obtained in the lab of
+G. Buzsáki using procedures for animal handling, surgery, and record-
+ing described previously (Montgomery et al. 2009).
+
+At the end of each experiment, the animals were perfused through
+the abdominal aorta with phosphate buffer saline containing heparin
+(0.1%) followed by paraformaldehyde (4%), and the brains were
+processed for microscopic inspection. Sagittal sections (80 µm) were
+stained with bis-benzimide and examined by ﬂuorescence microscopy
+for the assessment of the electrode positioning (Supplementary Fig. 1).
+
+Independent Component and Current Source-Density Analyses
+of LFPs
+ICA is routinely used to elucidate functional connectivity either in
+multisite scalp recordings or
+in functional magnetic resonance
+imaging, and it provides spatially stable components of coherent
+activity (Makeig et al. 1997; Van de Ven et al. 2004; Congedo et al.
+2010; Hutchison et al. 2010). While the attribution of these ICA com-
+ponents to their source populations and pathways is difﬁcult when
+recording from a distance, the in-source recording of intrahippocam-
+pal LFPs allows the thorough spatial inspection of active neurons
+down to the subcellular deﬁnition, and direct matching with the
+evoked potential proﬁles (Korovaichuk et al. 2010).
+
+Detailed procedures have been previously described (Makarov
+et al. 2010; Fernández-Ruiz, Makarov, Benito, et al. 2012), and both
+the mathematical validation and the interpretation of ICA components
+in laminated structures were performed using realistic LFP modeling
+(Makarova et al. 2011). Brieﬂy, M simultaneously recorded LFP
+signals were represented as the weighted sum of the activities of N
+neuronal sources or LFP generators:
+
+umðtÞ ¼
+
+XN
+
+n¼1
+
+VmnsnðtÞ;
+
+where {Vmn} is the mixing matrix composed of the so-called voltage
+loadings or spatial distributions of all LFP generators and sn(t), the
+time course of the nth LFP generator. Thus, the raw LFP observed at
+the kth electrode tip is a linear mixture of the electrical activity of
+several
+independent LFP generators describing transmembrane
+current source densities (CSDs) in principal cells. Then, the CSD
+loading for the nth LFP generator is given by In = −σΔVn, where σ is
+the conductivity of the extracellular space (Makarov et al. 2010). As
+the location of recording sites is known, the joint curve of spatial
+weights of an LFP generator equals to instant depth proﬁles of pro-
+portional voltage among sites, as during the laminar recording of
+standard pathway-speciﬁc evoked potentials. To perform the ICA, we
+employed the kernel density ICA algorithm (Chen 2006), which
+returns the activations sn(t) and spatial weights Vn of up to N LFP
+
+Cerebral Cortex July 2014, V 24 N 7 1739
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+generators. Usually, few generators (4–7) exhibited signiﬁcant ampli-
+tudes and distinct spatial distributions in the hippocampus (Korovai-
+chuk et al. 2010). The spatial stability of LFP generators within and
+across animals was estimated using the cluster analysis of spatial
+curves as in Makarov et al. (2010) (Supplementary Fig. 2), whereas
+their landmarks (e.g., maxima or zero crossings) were matched to
+anatomical boundaries using electrophysiological correlates (unit
+ﬁring at cell body layers and evoked potentials) and histological veri-
+ﬁcation. The mixing matrix can be made with any number of simul-
+taneous recordings, whether belonging to a single or multiple parallel
+arrays. Although, in the latter case, sn(t) represents spatially averaged
+activity, the combined spatial curve of weights is fully reliable and
+was used to evaluate the relative power of a given LFP generator in
+different hippocampal sites. The temporal accuracy of LFP generators
+can be cross-checked by analyzing the same LFP epochs using differ-
+ent number of contiguous electrodes (Supplementary Fig. 3). This
+procedure also served to increase the relative variance of an LFP gen-
+erator by discarding the recordings where other generators intro-
+duced heavy variance, hence increasing the temporal accuracy by
+minimizing cross-contamination (Makarova et al. 2011). Once ex-
+tracted from the raw LFPs, each LFP generator can be analyzed inde-
+pendently by reconstructing virtual LFPs produced by a single
+generator, uj(t) = Vjsj(t) and then evaluating the current density
+created by this generator, the spatial proﬁle of which allows compari-
+son with proﬁles obtained during speciﬁc activation of known path-
+ways (Makarova et al. 2011).
+
+Current source-density analysis (Freeman and Nicholson 1975;
+Rappelsberger et al. 1981) determines the magnitude and location of
+transmembrane current generated by neuronal elements
+the net
+within a small
+tissue. Accordingly, we used the
+1-dimensional approach, which calculates the CSD from the voltage
+gradients along the cells axis (Herreras 1990):
+
+region of
+
+CSD ¼ (cid:2)sDu ¼ (cid:2)s
+
+uk(cid:2)1ðtÞ (cid:2) 2ukðtÞ þ ukþ1ðtÞ
+h2
+
+;
+
+where h is the distance between recording sites. Admittedly, the
+spatial extent of current sources may not be large enough to fulﬁll the
+criterion of homogeneous activation in the XZ plane parallel to ana-
+tomical strata or laminae during asynchronous synaptic bombard-
+ment, thus tangential currents may introduce error in the amplitude
+estimate of sinks and sources (Leung 1979). Conveniently, the spatial
+distortion introduced by unbalanced tangential currents is effectively
+canceled out by time averaging of myriads microscopic currents as if
+they all were synchronously activated (Makarova et al. 2011). Thus,
+the curve of spatial weights for each LFP generator is accurate to the
+subcellular level. Although there is also a notable heterogeneity of
+tissue resistivity at the level of the st. pyramidale (López-Aguado et al.
+2001), it introduces a negligible spatial distortion of depth proﬁles
+when active currents are located in distant dendritic loci. Thus, we
+have assumed homogeneous resistivity and used arbitrary units
+instead of CSD. In addition, we note that instant estimation of CSD
+along the entire anatomy of a cell generator (e.g., the CA1 pyramidal
+cell) does not render the balanced amount of inward and outward
+currents, while the CSD of reconstructed virtual LFPs for separated
+generators does (cf. in Fig. 1 of Fernández-Ruiz, Makarov, Benito,
+et al. 2012). This is a valuable side effect of the ICA when applied to
+laminar proﬁles covering the entire anatomy of cell generators: The
+separated components necessarily contain spatially coherent activity
+at any instant. Thus, for “in-source” recordings, the ICA acts as a rejec-
+tion device for volume-conducted currents (Makarov et al. 2010; these
+may, however, come up in other ICA components). Consequently, the
+second spatial derivative of the curve of spatial weights of LFP com-
+ponents extracted for ongoing activity matches to that of the CSD,
+which was veriﬁed for excitatory pathways using the corresponding
+evoked potentials (Korovaichuk et al. 2010).
+
+(t) is the virtual LFP at the electrode with maximal power and H, the
+appropriately scaled square kernel of the length Δ. The mean power
+is then deﬁned for Δ extended to the complete time interval (∼10 min
+in our experiments).
+
+The spatial extent of LFP generators was determined by estimating
+the cross-correlation index of the time envelopes or activations (10
+min epochs) obtained for each LFP generator in different recording
+shanks (simultaneous recordings). We applied an ICA separately over
+each shank and then evaluated the pairwise cross-correlation index
+over time activations of the same LFP generator in different shanks.
+
+The macroscopic spatial boundaries of each LFP generator across
+the hippocampal subﬁelds were visualized by contour plots that built
+from the spatial curves of LFP generators separated through a joint
+analysis of all 96 simultaneous recordings arranged in 6 parallel linear
+shanks, that is, using a single loading matrix with all recordings that
+rendered a unique set of LFP generators. In this case, the unique time
+activation obtained for each generator is averaged over large exten-
+sions and, thus, it may not reﬂect local activity, although this was irre-
+levant when determining the spatial distributions. Faulty recording
+sites can be eliminated without signiﬁcant performance loss of the
+ICA.
+
+In a subset of experiments, the dynamic changes in the spatial
+extent of the LFP generators were examined by comparing the ﬁne
+temporal details (activity) of a single generator in up to 4 different
+locations. For simplicity, we chose the excitatory Schaffer input from
+CA3 to CA1 that we had previously analyzed in depth (Fernández-
+Ruiz, Makarov, Benito, et al. 2012; Fernández-Ruiz, Makarov, Herreras
+2012). The baseline activity of this generator is composed of a series
+of discrete ﬁeld events or micro-ﬁeld excitatory postsynaptic potentials
+(µ-fEPSPs). These are rhythmic excitatory packages in the gamma fre-
+quency that can be retrieved and quantiﬁed. We used the Wavelet
+Transform of v(t):
+
+ð
+
+W ða; bÞ ¼ 1ﬃﬃﬃ
+p
+a
+
+vðtÞc
+
+(cid:3)
+
+(cid:4)
+
+t (cid:2) b
+a
+
+dt;
+
+where ψ is the Haar mother wavelet (well suited for the detection of
+short pulses in a signal), a the time scale, and b the localization in
+time. We then rectiﬁed the wavelet coefﬁcients using the following
+equation:
+
+Cða; bÞ ¼ 1ﬃﬃﬃ
+a
+
+p max½(cid:2)W ða; bÞ; 0(cid:3);
+
+The 2-dimensional (2D) surface obtained (Supplementary Fig. 4) de-
+scribes the local linear ﬁt of the Schaffer-speciﬁc LFP by the pulse-like
+function (Haar) at scale a and localization b. Large absolute values of C
+(a,b) at a given time instant and scale correspond to abrupt pulse-like
+transitions in v(t). Thus, we can associate such points in the (b,a)-plane
+with singular LFP events. Consequently, the local maxima of C(a,b)
+evaluated as maxima over a set of small enough domains {ωk}
+
+ðak; bkÞ ¼ arg max
+ða;bÞ[vk
+
+½Cða; bÞ(cid:3);
+
+deﬁne the time instants of µ-fEPSPs (given by tk = bk − ak/2), their dur-
+ation (given by ak), and amplitudes (given by Ak = C(ak,bk)).
+
+We next cross-correlated the µ-fEPSPs separately obtained in 2
+locations and deﬁned matching quanta for a time-window of ±2 ms
+(Supplementary Fig. 5). The amplitudes of paired µ-fEPSPs in differ-
+ent shanks were further plotted and cross-correlated evaluating the
+index: r ¼ c12=
+
+, where {Cij} is the covariance matrix.
+
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+c11c22
+
+p
+
+Spectral coherence of the activity of an LFP generator in 2 different
+
+spatial positions was calculated by:
+
+Cxyð f Þ ¼
+
+jPxyð f Þj2
+Pxxð f ÞPyyð f Þ
+
+;
+
+Quantiﬁcations of LFP Generators
+The evolution of the power of an LFP generator over time is described
+H ðt (cid:2) tÞv2ðtÞdt; where v
+(in mV2) by the following equation: PðtÞ ¼
+
+Ð
+
+where {Pij(f)} is the matrix of crosspower spectral density. To deter-
+mine the level of signiﬁcance, we used the surrogate data test (Schrei-
+ber and Schmitz, 2000). Randomizing phase relations and keeping
+
+1740 Spatial Modules of Activity of LFP Generators
+
+(cid:129) Benito et al.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+other ﬁrst order characteristics intact, we obtained surrogate time
+series from the original signals. For each experiment, we generated
+1000 surrogates, and we evaluated spectral coherence. The signiﬁ-
+cance level (at α = 0.05) was then calculated for each frequency value
+and coherence above this level was considered statistically signiﬁcant.
+
+Results
+
+Subcellular and Regional Extension of Main
+Hippocampal LFP Generators
+To answer the generic question of why LFPs recorded nearby
+match or differ we need to know which anatomical pathways
+make synaptic contact near recording points, when each one
+becomes active, and the geometry of the current sources. Con-
+veniently, several anatomical pathways arrive in stratiﬁed
+domains of principal cells, and their activation produces
+spatially stable synaptic currents and potentials that are
+pathway speciﬁc (Andersen et al. 1971; Leung 1979; Herreras
+1990; Golarai and Sutula 1996), producing laminar spatial dis-
+tribution of ongoing LFPs. These can be isolated by spatially
+discriminating techniques. Figure 1 illustrates the problem
+under study and the methodological approach. LFPs were re-
+corded simultaneously along 2 parallel tracks spanning the
+CA1 and DG of the dorsal hippocampus (16 recording sites
+each, 100 µm apart, 500 µm between shanks). Recording sites
+within a linear array parallel to the main axis of principal pyr-
+amidal or granule cells explore different domains of nearby
+neurons. Recordings sites in different arrays serve to explore
+the multicellular (longitudinal) coverage of inputs by compar-
+ing recordings at similar dendritic levels. LFPs recorded in
+nearby electrodes may be very similar or differ signiﬁcantly
+
+(Fig. 1A). In the illustrated example, while LFPs in the middle
+of the st. radiatum are nearly identical within and among
+arrays, those near the hippocampal ﬁssure (hf ) differ both in
+the vertical direction (i.e. different dendritic domains of
+nearby neurons), and in the horizontal plane (i.e. produced at
+the same dendritic level of multiple neurons in distant sites).
+Thus, the mixture of synaptic currents may already be hinted
+more complex and spatially restricted in some regions and
+neuron domains than in the others.
+
+By inspecting multiple contiguous sites, bouts of activity of
+variable duration in stable spatial bands can be appreciated
+by the naked eye (Fig. 1B, boxed fragments). The stability of
+the group of electrodes showing similar activity indicates
+stable dendritic sites of synaptic activation by homogeneous
+afferent populations in accordance with anatomical data
+(Lorente de Nó 1934; Hjorth-Simonsen 1973). However, these
+bouts are usually overlapping in time and also in space,
+making unfeasible to ascribe LFP ﬂuctuations to postsynaptic
+currents generated in one or another dendritic band. The site-
+speciﬁc LFP activities can be disentangled by the ICA into
+spatially stable independent LFP components or generators
+(Makarov et al. 2010; Korovaichuk et al. 2010; Makarova et al.
+2011; Fernández-Ruiz, Makarov, Benito,
+al. 2012;
+Fernández-Ruiz, Makarov, Herreras 2012; see Materials and
+Methods). The effectiveness of spatial separation can be
+appreciated by comparing the time courses of the raw LFPs
+with the activity of the ﬁrst 3 LFP generators (Fig. 1B vs. C).
+Note that LFP ﬂuctuations in the same group of electrodes at
+different moments were captured in the same LFP generator.
+Importantly, different procedures can prioritize either the
+spatial or temporal accuracy for speciﬁc components (see
+
+et
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+Figure 1. Hippocampal LFPs present laminar distribution and their multiple sources can be separated in domain-speciﬁc synaptic components. (A) Sketch of linear parallel 2 × 16
+arrays spanning the CA1 and DG subﬁelds, and examples of fragments of raw LFPs recorded in nearby positions (black or gray coding indicates the electrode positions and
+corresponding traces). LFPs can match or differ signiﬁcantly at different positions and time points. The degree of similarity varies along the same vertical track (top panel) and
+within the same dendritic domain (bottom panel). For example, recordings from the CA1 stratum radiatum are strongly correlated in contiguous electrodes of the same array and
+between arrays, while signiﬁcant differences are observed near the hf in both vertical and horizontal directions. Thus, the mixture of synaptic currents appears to be more complex
+and spatially restricted in some regions and neuronal domains than in others. (B) Representative recording of ongoing LFPs. Inset shows the location of the electrode array. Some
+bouts of activity spanning different groups of contiguous electrodes are shown in boxes to facilitate visual inspection. The spatial stability observed in the groups of electrodes
+with correlated activity indicates stable dendritic domains of the ongoing synaptic current sources. (C) Activity of 3 LFP generators separated by ICA from the LFP fragment shown
+in B. The effectiveness of the separated generators can be appreciated by visual comparison of the boxed bouts with their corresponding LFPs in B. If bouts in different generators
+overlap, then LFPs represent their weighted sum.
+
+Cerebral Cortex July 2014, V 24 N 7 1741
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Materials and Methods), while the biophysical bases and limit-
+ations of the ICA when analyzing hippocampal LFPs have
+been thoroughly described elsewhere (Makarov et al. 2010;
+Makarova et al. 2011).
+We ﬁrst set out
+
+to deﬁne all primary stable dendritic
+domains of laminar LFPs. Except when indicated all results
+refer to anesthetized animals. We always chose epochs of irre-
+gular (nontheta) LFP activity for analysis as they contain a
+more balanced contribution of different synaptic inputs than
+macroscopic rhythms, in which one or few pathways may
+take most variance. We showed earlier that dominance of one
+input over others raises laminar LFPs that require additional
+signal handling as it reduces ICA performance on the weaker
+generators (Makarova et al. 2011).
+
+We detected 6 main LFP generators that contained >99% of
+total variance in CA1/DG proﬁles and were stable in both an-
+esthetized and awake animals (Figs 2 and 3). Gross classiﬁ-
+cation was achieved by the cluster analysis of their curves of
+spatial weight obtained in 4–6 segments of 1 min in each
+animal (128–192 LFP components/animal; n = 29 animals in
+all experimental series; Methods and Supplementary Fig. 2).
+Only the generators that exhibited relative variance >1% in
+the complete CA1/DG (or CA1/CA3) proﬁles were examined,
+and the smaller generators that were detected but which ex-
+hibited very small or occasional activity were excluded from
+the analysis. Figure 2A shows raw LFPs along the axis of prin-
+cipal cells and the corresponding CSD proﬁles from a sample
+experiment. When generator-speciﬁc LFP (virtual) proﬁles
+were reconstructed (see Materials and Methods), each pre-
+sented maximum activity in distinct dendritic domains of prin-
+cipal cells (4 sample generators are shown in Fig. 2A) and
+displayed only 1 maximum in a smooth spatial conﬁguration.
+The LFP generators, G1 and G2, exhibited maximum power
+in the st. radiatum and lacunosum-moleculare (LM) of the
+CA1, respectively, although G2 also extended across the hip-
+pocampal ﬁssure into the upper blade of the DG. Three more
+LFP generators (G3–G5) were located in the DG and their
+activity was strongest in the hilar region. Finally, an additional
+generator (G6) exhibited maximum variance in and around
+the CA3 pyramidal layer. Of all these generators the strongest
+were those located around the hippocampal ﬁssure and
+dentate hilus (see population data for the relative variance
+and absolute power in Table 1).
+
+The subcellular domains of each LFP generator can be ap-
+proached by alignment of their respective spatial distributions
+to additional electrical landmarks, such as, for example, the
+population spikes in cell body layers. However, as LFPs
+extend beyond their current sources through volume conduc-
+tion (Lorente de Nó 1947), we reﬁned the subcellular location
+of active membranes by the CSD analysis of the depth proﬁles
+of LFPs that minimize the contribution of distant currents to
+recorded ﬁeld potentials. This technique returns a spatial map
+of the transmembrane currents along the main axis of princi-
+pal cells, which for the activation of a single pathway pro-
+duces the laminated distribution of balanced inward (sinks)
+and outward currents (sources) circumscribed to the anatomy
+of the cell generator (Freeman and Nicholson 1975; Herreras
+1990; see Materials and Methods). Due to the coactivation of
+multiple pathways, applying CSD to raw LFPs rendered an
+intricate mixture of currents (Fig. 2A). In contrast, the CSD ob-
+tained from the reconstructed generator-speciﬁc virtual LFPs
+(see Materials and Methods) rendered clean spatial maps with
+
+1742 Spatial Modules of Activity of LFP Generators
+
+(cid:129) Benito et al.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+Figure 2. The subcellular localization of hippocampal LFP generators matches the
+termination zones of stratiﬁed synaptic pathways in discrete domains of principal cells.
+(A) Representative example of raw LFPs in a single electrode 1 × 32 array (left) and the
+corresponding CSD proﬁle (right). The track spans from the CA1 soma layer to the inferior
+GC soma layer (pyramidal and granule cell dummies are represented to the left for spatial
+reference). Current sources are shown in red/yellow and sinks in blue. hf: hippocampal
+ﬁssure. (B) Virtual LFP proﬁles and corresponding spatial weights reconstructed from
+ICA-separated LFP generators extend through discrete bands or strata with precise
+subcellular localizations. The CSD for each generator is restricted to a single cellular
+generator (CA1 or CA3 pyramidal cells, or granule cells). Except in one case (G2, in the
+CA1 st. lacunosum-moleculare; LM), all generators presented ﬁnite bands of inward or
+outward currents (no alternation in time) and smooth spatial proﬁles with only one
+maximum. Virtual CSD maps were obtained from virtual LFPs, and CSD weights (more
+noisy) are second spatial derivative of voltage weight curves. Hatched areas denote the
+dendritic bands where active (synaptic) currents were localized by local pharmacology
+(Fig. 4). CSD scale is in nonproportional arbitrary units to facilitate the visualization of
+weak currents. (C) Electric stimulation of major excitatory pathways produced evoked
+ﬁeld EPSPs whose activity was selectively captured by the temporal activations of the
+respective LFP generators (scaled in proportional arbitrary units). Sch, medial perforant
+pathway (MPP), and lateral perforant pathway (LPP) stand for the Schaffer, medial and
+respectively. GCsom: granule cell soma generator.
+lateral perforant path generators,
+Colored triangles indicate stimulation times of the ipsilateral CA3, and the medial and
+lateral portions of the angular bundle. Note the negligible cross-contamination among
+generators. The vertical scale is shown in proportional arbitrary units.
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+Figure 3. The regional distribution of LFP generators matches anatomical boundaries and hippocampal subﬁelds. (A) Geometry of multiarray (r1–r6) chronic device showing the
+location of the recording shanks in hippocampal subﬁelds (faulty electrodes are marked in red). (B) Representation of unfolded hippocampal subﬁelds showing the spatial
+reconstruction of the relative weights corresponding to each isolated LFP generator. Note the repetitive spatial patterns and gradual shift of landmarks, such as the maxima or
+zero crossings, that remain at equivalent dendritic levels following the natural curvature of hippocampal layers. Black arrows indicate volume-conducted activity introduced in one
+subﬁeld (CA1 or DG) by generators with active synaptic currents in distal dendritic domains of the other (LM, LPP). Generators with active currents in nondistal portions, such as
+the GCsom and MPP in the DG, generate little activity in remote areas (asterisks in CA1). Similar spatial proﬁles of some generators (GCsom and MPP) are efﬁciently discriminated
+by the abrupt shift in the spatial demarcation of the corresponding maxima (arrowhead) in the molecular layer of the DG. (C) Two-dimensional representation of virtual
+pathway-speciﬁc LFPs in hippocampal subﬁelds indicating regional coverage, relative strength, and polarity (except for the LM generator in which polarity is unreliable). The active
+synaptic currents (identiﬁed by local pharmacology, see next ﬁgure) are deﬁned by yellow or white lines, and the small squares indicate the zones of poor deﬁnition due to faulty
+electrodes.
+
+Table 1
+Relative variance and absolute power of ICA-separated LFP generators
+
+LFP generator
+
+Relative variance (%)
+
+Mean power (mV2)
+
+Schaffer
+Lac-Mol
+MPP
+LPP
+GCsom
+CA3
+
+10 ± 2
+23 ± 2
+7 ± 3
+32 ± 5
+25 ± 5
+3 ± 1
+
+0.036 ± 0.01
+0.086 ± 0.02
+0.022 ± 0.01
+0.149 ± 0.04
+0.116 ± 0.03
+0.017 ± 0.01
+
+Note: The relative variance is measured as the percentage contribution among studied LFP
+generators found in proﬁles spanning the CA1 and DG. The mean power is estimated from
+reconstructed generator-speciﬁc LFP (virtual) proﬁles at the point of maximum weight in each
+generator. Values represent mean ± SEM.
+
+characteristic smooth and simple laminar distributions of cur-
+rents circumscribed to either the CA1 pyramidal cells (G1 and
+G2), granule cells (G3–G5), or CA3 pyramidal cells (G6). The
+hatched areas in the curves of spatial weights for the CSD indi-
+cate the active synaptic zones as determined by local pharma-
+cology (Fig. 2B, see below). LFP generators in the DG were
+duplicated in both the upper and lower blades with a mirrored
+spatial distribution, and they exhibited no current in the hilus
+(except for errors created by spatial smoothing of discrete re-
+cording points). These spatial proﬁles were consistent with
+standard potential and CSD proﬁles of evoked synaptic acti-
+vation in granule cells (McNaughton 1980; Golarai and Sutula
+1996; Canning and Leung 1997; Korovaichuk et al. 2010). The
+so-called Schaffer generator (G1), with a characteristic spatial
+pattern of excitatory current sinks in the st. radiatum, was pre-
+viously identiﬁed as the excitatory input from CA3 to CA1
+
+(Korovaichuk et al. 2010; Fernández-Ruiz, Makarov, Benito,
+et al. 2012). The other CA1 LFP generator (G2 or LM genera-
+tor), which extended across the hippocampal ﬁssure, exhib-
+ited a temporal succession of current sinks and sources
+restricted to the st. LM. All 3 DG generators presented current
+sources in both granule cell layers and sinks in the corre-
+sponding molecular layers, albeit with distinct intensities and
+subcellular distribution. Thus, G3 (termed as GCsom generator)
+had strong sources in the granule cell layer, while G4 and G5
+were characterized by strong narrow sinks in the medial and
+outer third of the molecular layer, respectively, and they were
+identiﬁed as the excitatory medial and lateral perforant path
+inputs to granule cells (medial perforant pathway [MPP] and
+lateral perforant pathway [LPP] generators; see distinct spatial
+curves in Fig. 3A) through the selective activation of the
+medial and lateral portions of the angular bundle, respectively
+(Fig. 2C). The LFP generator G6 was associated with strong
+current sources in the soma layer of CA3, and it was sur-
+rounded by sinks in both dendritic trees.
+
+Next, we examined the regional extension of LFP genera-
+tors. If LFP generators represent postsynaptic activity elicited
+by activity in distinct afferent populations, then each should
+exhibit regionalization in hippocampal subﬁelds consistent
+with the spatial pattern of the axonal termination of that
+population. Therefore, we investigated the regional extension
+of the LFP generators in 2 awake animals in which multiarray
+electrodes were implanted (6 parallel shanks separated by
+500 µm, Fig. 3A), and in 4 additional animals using single-
+in anesthetized
+array electrodes, plus numerous
+animals. In awake animals, we analyzed recordings obtained
+
+tracks
+
+Cerebral Cortex July 2014, V 24 N 7 1743
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+during nontheta behaviors (while still alert, as well as during
+consummatory tasks and slow-wave sleep), and spatially
+stable LFP generators across 6-shank arrays (Fig. 3A) were ob-
+tained by building a single matrix for analysis covering differ-
+ent dendritic levels and hippocampal subﬁelds (77 of 96
+useful channels in the experiment of Fig. 3). Analysis of the
+multiple segments of LFPs revealed identical sets of main gen-
+erators to those found in multiple recording tracks in anesthe-
+tized animals. By representing the relative weights at each
+recording site we obtained combined spatial curves for all the
+arrays that revealed distinct spatial patterns ﬁtting the anatom-
+ical boundaries of the hippocampal subﬁelds. Each generator
+featured landmarks such as maxima and zero crossings that
+gradually shifted within the recording sites in parallel arrays
+matching the curved anatomy of the hippocampus such that
+they coincided at the same dendritic level (Fig. 3B, and see
+the 2D spatial conﬁguration of the LFP generators illustrated
+in Fig. 3C). Note that LM and LPP generators whose active sy-
+naptic domains are located in the distal dendrites of CA1 pyr-
+amidal and granule cells, respectively, entered notable ﬁeld
+potential into the adjacent subﬁeld by volume conduction
+(Fig. 3B, black arrows), while this was not observed for MPP
+and GCsom generators (asterisks). It was also notable that
+there were dominant positive ﬁeld potentials in the DG gen-
+erators in the hilus generated through the volume conduction
+of currents from granule cell membranes. Despite the appar-
+ent similarity between MPP, LPP, and GCsom generators, these
+were readily discriminated by a persistent spatial shift in their
+the st. moleculare-granule cell
+respective distributions at
+border (e.g., arrowheads in r3, Fig. 3B; see additional evi-
+dence below).
+
+Excitatory and Inhibitory LFP Generators
+Using selective stimulation of principal extrinsic and associa-
+tional pathways, we previously obtained data supporting the
+presynaptic origin of some excitatory LFP generators (Koro-
+vaichuk et al. 2010; see also Fig. 2C). Further evidence of the
+excitatory/inhibitory nature of all LFP generators was
+achieved by a local blockade of non-NMDA or GABA-A synap-
+tic receptors using DNQX and BIC, respectively. As both
+excitatory and inhibitory synaptic inputs produce the loops of
+transmembrane currents with clearly discernible subcellular
+inward (sinks) and outward (sources) domains, we searched
+for the active bands (the site of synaptic contacts) by pharma-
+cologically targeting each input. This was achieved by releas-
+ing a microdrop (50 nL) containing DNQX (1 mM) and DiI
+(4%) in the vicinity of the caudal shank of a 2-shank probe at
+the level of the CA1 st. radiatum (Fig. 4A). The Glu-R blocker
+selectively reduced the Schaffer-evoked fEPSP in the caudal
+shank, whereas no effects were observed on the rostral shank
+located 500 µm away, in concordance with the extension of
+the dye. The spatially localized effect of the drug can be also
+appreciated in the curves of the spatial weights that reﬂect a
+selective decrease of variance at the Schaffer terminal zone in
+the group of electrodes associated with the caudal shank.
+Moreover, DNQX only reduced Schaffer-evoked fEPSPs and
+ongoing Sch-LFPs when administered in the st. radiatum, but
+not in the soma layer or st. oriens (Supplementary Fig. 6).
+This procedure allows the synaptic areas and chemical nature
+of all 6 LFP generators to be identiﬁed.
+
+1744 Spatial Modules of Activity of LFP Generators
+
+(cid:129) Benito et al.
+
+Accordingly, the mean power for each virtual LFP was esti-
+mated over 200-s segments before and after drug adminis-
+tration in the following regions: The CA1 st. radiatum and
+lac.-mol for the Sch and LM generators, respectively;
+the
+st. moleculare of the DG for the MPP and LPP generators, the
+granule cell layer for the GCsom generator, and the CA3 pyra-
+midal cell
+layer for the CA3 generator (see representative
+results and the population data for the effective sites in
+Fig. 4B,C, respectively). DNQX dramatically dampened the
+activity of the Sch, MPP, and LPP generators (29.2 ± 9.9%;
+15.7 ± 6.5%; 7.5 ± 3.0%; P < 0.01, Student’s t-test), whereas the
+LM, GCsom, and CA3som generators were affected by both BIC
+and DNQX, although a signiﬁcant decrease in the GCsom gen-
+erator was only observed in response to DNQX (n = 4,
+**P < 0.01, Student’s t-test: Fig. 4C). While the antagonistic
+effect of BIC indicates a GABAergic origin, the reduction in
+power observed in the same LFP generator following Glu-R
+blockade indicates either a combination of 2 synaptic LFP
+generators (1 excitatory and 1 inhibitory), or a reduction in
+the excitatory drive of a single inhibitory pathway from local
+interneurons with somatodendritic bodies and axonal projec-
+tions in the same spatial domain. The narrow domains of the
+active synaptic (outwards) currents produced by LM and
+GCsom generators are suggestive of inputs from subpopu-
+lations of interneurons with axon terminals at distal apical
+dendrites of CA1 pyramidal cells and granule cell somata,
+respectively.
+
+Minimum Spatial Modules of Correlation for
+Pathway-Speciﬁc LFPs
+The spatial correlation of LFPs (Fig. 1B) indicates the simi-
+larity of the time envelopes of postsynaptic currents at distinct
+loci. We ﬁrst sought evidence of anatomical determinants that
+might underlie the spatial correlation by searching for the
+minimum modules in which pathway-speciﬁc LFPs remain in-
+variant. For this purpose, we recorded LFPs simultaneously
+using 2 double-shank probes that were relocated in successive
+sessions (Fig. 5A). We then estimated the mean correlation
+coefﬁcient between the temporal envelopes of the same LFP
+generator (1 min epochs) measured separately at different
+locations in a rostro-caudal gradient. For this purpose, we
+analyzed 2 excitatory (Sch and MPP) and 2 inhibitory (LM and
+GCsom) LFP generators.
+
+As expected, the spatial correlation of all LFP generators di-
+minished over distance, although at marked generator-speciﬁc
+rates. Superimposed fragments following GCsom activation
+(Fig. 5B) show a close correlation, even for distant
+loci
+( points 1 vs. 6), which contrasted with the strong divergence
+evident for the MPP generator ( points 3 vs. 4), even at short
+distances (see the population data in Fig. 5C, n = 3–10
+animals). At a distance of 1 mm, a strong spatial correlation
+was observed for the inhibitory LFP generators in both the
+CA1 (LM) and DG (GCsom), with a mean correlation of
+0.6 ± 0.01 (n = 4) and 0.8 ± 0.01 (n = 4), respectively. A very
+strong correlation was maintained for the excitatory Sch gen-
+erator at distances of up to 1.5 mm (0.75 ± 0.1, n = 5: Exclud-
+ing sharp-wave (SPW) events, the correlation never fell <0.9),
+and this decayed gradually as the distances augmented. In
+contrast, a strong correlation was only observed for the MPP
+generator at 200 µm (0.89 ± 0.1; n = 4), which fell abruptly at
+distances ≥500 µm (0.33 ± 0.1; n = 7).
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+(A)
+
+LFP generators.
+
+Figure 4. Chemical nature of
+Electrode
+hippocampal
+arrangement and experimental procedure (left panel). Two-shank linear devices
+recorded in tracks 500 µm apart, and a recording/injecting pipette was used to inject
+different neurotransmitter blockers within 500 µm of one of the shanks at the desired
+dendritic level and subﬁeld. The position of the recording arrays was veriﬁed by the
+DiI tracks revealed after histological processing, as well as the extent of injected
+volume in the st. radiatum of the CA1 ﬁeld (right panel). The local effects of DiI were
+restricted to one of the arrays, with no effects observed at the second array. Note
+the selective reduction of Schaffer-evoked fEPSP in the caudal shank (bottom
+subplot). (B) Representative experiment showing the sustained and selective effect
+of BIC on 1 of the 2 LFP generators extracted from the same vertical proﬁle (left).
+The plots correspond to time envelopes of the mean power at the site of maximal
+activity (sliding window of 0.5 s) for the Schaffer (upper) and LM (lower) generators.
+The effects of DNQX and BIC on the activation of different LFP generators are shown
+on the right. The vertical scale is shown in arbitrary units. (C) Population data
+showing the effect of neurotransmitter blockade on LFP generators. The data
+(mean ± standard error of the mean [SEM]) represent the percentage of power in
+the drug-affected array relative to the unaffected array. N = 4–10 animals, except for
+CA3 generator (n = 2); Student’s t-test: *P < 0.05, **P < 0.005, ***P < 0.001.
+
+The decay rate of the spatial correlation for the 4 selected
+LFP generators was studied (Fig. 5D, left) and, although the
+hippocampal curvature complicates the correct placement of
+the arrays in central and ventral positions, we could obtain
+long-distance correlations for the Sch generator by using
+single-channel raw LFPs recorded by a micropipette in a
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+Figure 5. LFP generators show pathway-speciﬁc modules of spatial coherence. (A)
+Scheme showing the insertion points (left, dorsal view and right, lateral view) of parallel
+linear arrays (2 two-shank arrays inserted simultaneously) spanning the CA1 and DG
+(points 1–6), and the additional recording points in the CA1 st. radiatum (7–10).
+Two-shank arrays are enclosed in ovals. (B) Superimposed sample traces in 2 different
+arrays for the GCsom (left) and the MPP (right) generators. Note that distant positions (1
+and 6) in the former exhibit nearly identical time courses, while nearby positions (3 and
+4) in the latter differ signiﬁcantly. (C) Cross-correlation coefﬁcients for different LFP
+generators in positions roughly parallel to the midline (points 1–6; scale in absolute mm
+from bregma). Inner white circles represent the standard errors. (D) Left, comparative
+view of the degree of the spatial correlation for different LFP generators in loci parallels
+to the midline in a representative animal. Data are pooled according to the distances
+between the paired recording points (points 1–6). Right, additional comparisons for the
+Schaffer generator between the array at point 3 and single points in distinct
+ventro-lateral positions (data pooled from 3 animals). (E) Rotating the relative positions
+of the parallel arrays (500 µm separation) with respect to the midline does not
+noticeably modify the correlation. The data correspond to individual comparisons for the
+GCsom (black circles) and MPP (gray circles) generators pooled from 4 animals.
+
+Cerebral Cortex July 2014, V 24 N 7 1745
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+limited band in the st. radiatum in which we assessed that
+Sch-LFPs are poorly contaminated by distal LM sources (Sup-
+plementary Fig. 7). Thus, raw LFPs in these Schaffer-speciﬁc
+sites (Fig. 5A, right) were correlated with the time activation
+of the Sch generator in dorsal arrays (Fig. 5D, right). The cor-
+relation fell <0.2 for distances >2 mm and approached zero
+over longer distances, suggesting the existence of separate
+groups of activating presynaptic cells in the CA3 population.
+
+In a separate set of experiments, we checked for the poss-
+ible inﬂuence of diverse geometry and orientation of axonal
+terminal ﬁelds (Ishizuka et al. 1990; Somogyi and Klausberger
+2005) by rotating 2-shank probes respect
+to the midline
+(Fig. 5E1). At least for the short distance tested (0.5 mm
+between shanks), we found identical high and low correlation
+for both the Sch (Fig. 5E, right, black circles) and MPP gen-
+erators (gray circles), respectively (n = 3 animals).
+
+Globally, these results indicate pathway-speciﬁc structural
+(anatomical) modules of invariant LFPs, which are largest for
+the granule cell somatic inhibitory input, very small for the
+excitatory MPP generator, and very large for the excitatory
+Schaffer generator only within strips parallel to the midline
+but decaying gradually along the longitudinal axis of the
+hippocampus.
+
+The Match/Mismatch of Activity in LFP Generators
+Reveals Speciﬁc Topology and the Dynamics of
+Afferent Populations
+A spatial module of correlated LFPs may be created by the
+synchronous ﬁring of presynaptic units whose synaptic terri-
+tories overlap heavily, or by joint modulation of the ﬁring rate
+of presynaptic units whose projections do not necessarily
+overlap. We studied both these possibilities in the 2 LFP gen-
+erators exhibiting large modules of strong spatial correlation,
+the excitatory Sch input to CA1, and the inhibitory GCsom
+input to DG, comparing the ﬁne temporal structure of the
+ﬂuctuations of each generator in site pairs (Fig. 6A1).
+
+Time envelopes, estimated as instant variations in power,
+exhibited near identical patterns for the Schaffer generator at
+any 2 sites parallel to the midline (Fig. 6A2, points 1–2: Corre-
+lation 0.93 ± 0.02, positions 4–4.5 mm posterior to bregma,
+n = 7 measurements in 4 animals), and this correlation only
+dropped signiﬁcantly when distant sites were compared in
+which one of the recordings was near the subicular border
+( points 1–6: 0.35 ± 0.07; n = 4). This decrease was induced
+largely by the dissimilar spatial coverage of SPWs occurring at
+low rates in periods of irregular nontheta activity (common
+and site-speciﬁc SPWs are indicated with ﬁlled and empty tri-
+angles and arrows, respectively: Fig. 6A2, see the sample
+cluster of SPWs in Fig. 6A3). Cross-correlation between Schaf-
+fer activations in dorso-medial ( points 2–3) and latero-ventral
+positions ( points 7–8) fell to negligible values, irrespective of
+the SPWs (0.13 ± 0.02, n = 6 comparisons in 2 animals: sample
+in Fig. 6A2, points 3 and 8), indicating that different groups
+of presynaptic CA3 cells project to laterally shifted (i.e., septo-
+temporal) CA1 sites.
+
+Baseline Schaffer activity consisted of a gamma sequence
+of discrete ﬁeld events in CA1 or µ-fEPSPs elicited by the
+sequential ﬁring of CA3 neuronal assemblies (Fernández-Ruiz,
+Makarov, Benito, et al. 2012; Fernández-Ruiz, Makarov, Her-
+reras 2012). These excitatory quanta exhibited a steady rostro-
+caudal delay of 2.0 ± 0.22 m/s (n = 9) that roughly approached
+
+1746 Spatial Modules of Activity of LFP Generators
+
+(cid:129) Benito et al.
+
+the conduction velocity of Schaffer collaterals measured by
+evoked potentials (Andersen et al. 1971). In addition, there
+was a strong covariation in the amplitude of elementary
+µ-fEPSPs at sites parallel to the midline (Fig. 6B1), denoting a
+common set of presynaptic units (or functional assembly) that
+each generated a µ-fEPSP. The covariation index was esti-
+mated by linear regression between paired series of µ-fEPSPs
+independently obtained for each linear array and was
+0.92 ± 0.3 between pairs of CA1 sites lying 4–6 mm posterior
+to the bregma (see sample in Fig. 6A1,A2, n = 11 measure-
+ments pooled from 4 animals), although it dropped to non-
+signiﬁcant values as one of the recordings shifted laterally
+and ventrally (r = 0.17 ± 0.02, n = 6 measurements pooled
+from 3 animals; Fig. 6B3). The percentage of paired µ-fEPSPs
+also dropped from 74.1 ± 3.1% to 46 ± 0.8% (∼20–30% of non-
+paired events
+see
+Materials and Methods). Finally, we evaluated the spectral co-
+herence between pairs of recordings taken at different dis-
+tances within the spatially correlated modules (see Materials
+and Methods). Analysis of 36 epochs (1 min each) in 4
+animals rendered a smooth repeatable frequency proﬁle in
+which the coherence was >0.8 for frequencies up to approxi-
+mately 50 Hz and that decayed gradually to become nonsigni-
+ﬁcant beyond approximately 100 Hz (Fig. 6C, upper row).
+
+corresponded to noise-level events;
+
+When the GCsom was compared with the Sch generator,
+there were both similarities and notable differences within
+their respective modules of coherence. Both exhibited a
+dominant gamma succession of events (Figs 5B and 6B),
+although the GCsom exhibited no signiﬁcant delay of paired
+elementary events recorded in different sites (0.09 ± 0.11 ms;
+n = 16 measurements pooled from 4 animals), indicating that
+spike conduction through the axonal arborization of presyn-
+aptic cells reached postsynaptic targets more synchronously.
+Furthermore, despite the strong global correlation between
+distant sites (up to 2.5 mm: Fig. 5C), the proﬁles of spectral
+coherence for the GCsom generator were more irregular
+between animals and varied in different epochs analyzed in
+the same animal (Fig. 6C, Experiment 3). Thus, while the
+spatial module of the coherence of the GCsom is compatible
+with a joint modulation of the ﬁring rate of multiple presyn-
+aptic units projecting over the granule cell population (Whit-
+tington et al. 1995), the individual synaptic territories may not
+overlap signiﬁcantly, permitting independent contributions to
+local LFPs according to processing demands.
+
+Varying Synchronization of Presynaptic Units also
+Determines the Extent of Spatial Coherence
+The aforementioned results indicate that anatomical con-
+straints (e.g. overlapped postsynaptic territories of different
+Schaffer axons) may determine spatial coherence over large
+postsynaptic regions. However, naturally occurring variations
+in the synchronization of presynaptic units also determine the
+extent of spatial coherence. One such case is evident in the
+spatial coverage of basal and SPW activities in the Schaffer
+generator. Unlike elementary µ-fEPSPs, different SPW events
+covered variable portions of the dorsal CA1 (Fig. 6A3).
+
+To further test this issue, we devised a functional test to ex-
+ternally modify the synchronization of ﬁring in the afferent
+population/s. We checked 2 LFP generators with both high
+and low spatial coherence, the Schaffer and MPP excitatory
+generators, the activity of which is driven by the ipsilateral
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+Figure 6. The ﬁne temporal details within the modules of high spatial coherence indicate distinct mechanisms for the synchronous activation in different generators. (A) (1)
+Schematic showing the insertion points (dorsal view) of parallel linear arrays. (2) Time envelopes of instant power (sliding window of 0.1 s) for the Schaffer generator in different
+arrays, recording from loci parallel to the midline. Superimposed traces 1, 2 and 1, 6 belong to the same LFP epoch. The large bouts of activity correspond to SPWs. The spatial
+coverage of SPWs varied signiﬁcantly, some reached the rostral end, while others did not (3). (B) Elementary µ-fEPSPs within the gamma frequency vary markedly within the
+series, but maintained proportional amplitude along large strips parallel to the midline, indicating a common origin and local substrate. The rostro-caudal delay matches spike
+conduction in Schaffer collaterals (vertical dashes indicate peak time and sequential activation). As recordings become more distant from one another (subplots 1–3), some of
+the quanta begin to exhibit amplitude differences (arrows), while the time course of SPWs differs normally. Comparisons between rostro-medial and ventro-lateral activations (3)
+are totally discrepant. The plots below show the amplitude covariation of paired quanta between arrays, where r is the cross-correlation coefﬁcient for the paired data. These
+data indicate a heavy overlap of activated presynaptic axons as the substrate for the modules of high spatial coherence. (C) Comparative spectral coherence of 1 min epochs for
+the Schaffer (upper row) and GCsom (lower row) generators between pairs of electrode arrays separated by 0.5 mm in different experiments and epochs. Gray shading indicates
+the level of statistical signiﬁcance (surrogate test). The Schaffer generator exhibits similar spectral proﬁles in all and for similar frequency ranges, while the GCsom inhibitory
+generator varied considerably even in different epochs of the same animal (t1 and t2 of Experiment 3). This discrepancy suggests the existence of different mechanisms
+underlying the high spatial coherence.
+
+CA3, and medial entorhinal cortex, respectively. The average
+degree of ongoing synchronous ﬁring in presynaptic units
+was enhanced by GABA blockade via local BIC administration
+
+through a recording pipette (Fig. 7A). Epileptic spikes devel-
+oped locally at sites in the afferent population (open arrows
+in traces of Fig. 7B) that evoked fEPSPs in postsynaptic sites
+
+Cerebral Cortex July 2014, V 24 N 7 1747
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+in control conditions. We examined postsynaptic sites 500 µm
+apart, and the instants of epileptic spikes were excluded.
+When BIC was injected into the CA3 (Fig. 7B, Experiment 1),
+local epileptic spikes developed in the raw LFP at the site of
+injection ( pre-CA3 in Fig. 7B) that produced large fEPSPs in
+the postsynaptic CA1. Following ICA, these appeared selec-
+tively in the Schaffer LFP generator ( post-CA1). The ongoing
+postsynaptic Schaffer gamma activity that was strongly corre-
+lated between pairs of sites in control conditions became dis-
+torted following the administration of BIC (enlarged traces
+below), although the intersite correlation remained high
+(0.88 ± 0.02 and 0.84 ± 0.01 in control and BIC conditions,
+respectively, n = 6 epochs). However, when BIC was injected
+into the medial entorhinal cortex (MEC; Fig. 7B, Experiment
+2), the spatial correlation of the MPP generator obtained in
+pairs of postsynaptic DG sites increased notably (0.5 ± 0.02
+and 0.77 ± 0.03 in control and BIC conditions, respectively).
+
+Discussion
+In general, it is difﬁcult to interpret LFPs and their zonal di-
+vergence in situations where synaptic currents of different
+presynaptic origins combine. Using spatially discriminating
+techniques in the hippocampus, we have separated and ana-
+lyzed up to 6 stable laminar LFP generators, each with distinct
+synaptic territories in speciﬁc domains of principal cells and
+hippocampal subﬁelds, these matching known terminations
+of local and extrinsic presynaptic populations. LFP synaptic
+generators feature the minimum modules of spatial coherence
+that at least in one case (Schaffer) was modular-like and deter-
+mined by the common topology of presynaptic units. Others
+are less regionalized and can be better explained by wide-
+spread coalescence of synaptic territories from presynaptic
+individual cell’s axons, for example, the somatic inhibitory
+input to granule cells. We have shown that, for distant record-
+ings separated more than the size of structural modules, the
+pathway-speciﬁc LFPs reﬂect the independent activity of dis-
+tinct groups of units in the same presynaptic population, such
+that different modes of functional presynaptic ﬁring can be
+recognized by the distinct spatial coverage of postsynaptic
+generators.
+
+There is a general consensus that LFPs arise from synchro-
+nous currents in multicellular sources. While the theoretical
+bases of LFPs have been well described (Lorente de Nó 1947;
+Elul 1972; Klee and Rall 1977; Gloor 1985; Varona et al. 2000),
+there exists certain lag in their experimental application over
+involved neuronal structures. While data contingent with
+speciﬁc LFP events (e.g., unitary activity, intracellular record-
+ings: Buzsáki et al. 1983) provides valuable hint on their cellu-
+lar sources, the detailed information on the geometry and
+arrangement of unitary neuronal sources and activating inputs
+is required for a reliable and unambiguous identiﬁcation. The
+ongoing activity involves the activation of individual cells or
+cell assemblies that may project to different parts of postsyn-
+aptic regions. Hence, the LFP activity generated by input from
+a single presynaptic population is not synchronous all over.
+Besides, different extrinsic and local populations have dissim-
+ilar axonal coverage of the dendritic domains in target cells,
+thus generating LFPs of different spatial distribution. The
+optimization of spatially discriminating techniques such as
+ICA enables the separation of LFPs in the hippocampus into
+individual generators with a constant spatial distribution
+
+Figure 7. Spatial coherence of LFPs also depends on the synchrony of afferent
+(A) The arrangement used for the experimental modulation of the
+populations.
+spontaneous ﬁring synchronism in presynaptic neurons that gives rise to hippocampal
+LFP generators. The Schaffer and MPP generators were obtained independently from
+LFP proﬁles in 2 parallel arrays (r1 and r2; 0.5 mm apart). Stimulating electrodes (S1
+and S2) were placed in the ipsilateral CA3 and the medial portion of the angular
+bundle for the test activation of studied pathways. One injecting/recoding pipette
+ﬁlled with BIC was placed in either the CA3 somatic layer (Experiment 1) or the
+MEC. MEC-evoked responses to the right were recorded from the injecting pipette
+and guided placement. (B) The long traces correspond to raw LFPs recorded by
+injecting pipettes at afferent populations ( pre), and to simultaneous time activation of
+the LFP generators in postsynaptic regions ( post). Upon microdrop injection of a
+GABA blocker (BIC), epileptic spikes developed locally in both experiments (open
+raw LFPs), which produced large synaptic
+arrows in CA3 and MEC traces of
+envelopes in LFP generators (arrows in Sch and MPP traces). However,
+the
+correlation of baseline activity in periods between epileptic spikes only increased in
+the MPP generator. Although increased synchrony occurred in both afferent
+populations, it is only reﬂected in the LFP generator whose minimal module of spatial
+coherence is smaller than the recording interdistance (the MPP). Thus, while the
+temporal pattern of Schaffer activities may change, the correlation between loci
+activated by the same axons is unaffected, if it was already synchronous in control
+conditions.
+
+(closed arrows), ensuring topological connection between the
+2 regions. If our hypothesis is correct, there should be no
+variation in the correlation of LFP generators between pairs of
+postsynaptic sites that already had a strong correlation due to
+structural constraints, while increased afferent synchroniza-
+tion would be expected when there is low spatial coherence
+
+1748 Spatial Modules of Activity of LFP Generators
+
+(cid:129) Benito et al.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(Korovaichuk et al. 2010). By deﬁnition, pathway-speciﬁc gen-
+erators exhibit full laminar coherence (as evoked potentials),
+which eliminates the inherent problems of varying polarity
+and amplitude when recording from different levels or strata.
+Accordingly, the time activation of the LFP generators can be
+used to establish their spatial extension by simple correlation
+of the activities recorded at different loci.
+
+Most LFP Generators are Pathway Speciﬁc, but not all
+Synaptic Pathways Produce Observable LFPs
+Like the evoked potential proﬁles generated by the speciﬁc
+activation of anatomical pathways (Andersen et al. 1971),
+ongoing LFP generators have smooth spatial distributions
+with a single maximum and a spatial distribution of inward/
+outward currents conﬁned to the cellular axis of either the
+pyramidal or granule cells. Thus, the Schaffer, MPP, and LPP
+excitatory generators have active sinks in both the CA1 st.
+radiatum and the middle as well as outer thirds of the molecu-
+lar layer, respectively. As expected, the activity of all these
+generators is selectively depressed by blocking glutamate re-
+ceptors. In turn, the sink/source proﬁles for the GCsom and
+CA3som generators matched well with the expected proﬁles of
+somatic/perisomatic inhibitory synapses, and their activities
+were selectively abolished by GABA-R blockade. Therefore,
+these generators most likely correspond to basket-cell type
+inputs in each subﬁeld. We obtained conﬂicting results for the
+strong LM generator, which was partially depressed by both
+Glu and GABA-A receptor blockades, and that displayed a
+temporal succession of sinks and sources. This dendritic
+domain may generate active sinks from perforant path acti-
+vation (Leung and Peloquin, 2010) and active sources from
+Or-lac interneurons. One possible explanation is that the LM
+generator is a combination of 2 inputs that are difﬁcult to sep-
+arate by ICA, 1 excitatory and 1 inhibitory, which converge on
+the same dendritic domain at the distal tuft (Brankacˇk et al.
+1993). The stability of all the LFP generators identiﬁed was
+conﬁrmed by chronic recordings revealing the essentially
+identical subcellular and regional spatial distributions. Thus,
+we consider each LFP generator as a pathway-speciﬁc LFP
+component with populations of origin in the ipsilateral CA3,
+medial and lateral entorhinal cortices, and 3 different local
+inhibitory subnetworks: 2 of the basket type in CA3 and GC,
+and a distal-projecting subnetwork in the CA1 ﬁeld.
+
+It is noteworthy that the anatomical connections whose
+synchronous activation produce measurable evoked ﬁeld
+potentials outnumber the hippocampal LFP generators de-
+scribed here. Among the unrepresented inputs are those from
+the septum, the contralateral (commissural) inputs to the CA1
+and CA3, and a number of local inhibitory inputs in all sub-
+ﬁelds (Andersen et al. 1961; Amaral 1978; Buzsaki and Eidel-
+berg 1982; Somogyi and Klausberger 2005). However, not all
+synaptic currents contribute signiﬁcantly to macroscopic
+LFPs, rather only those that conform to the appropriate spatial
+structure and temporal pattern (Elul 1972; Makarova et al.
+2011; Ho et al. 2012). Thus, poor laminar segregation of
+axonal arborization, or extreme levels of activity (too scarce
+or too frequent), would not generate a sufﬁcient extracellular
+current or the required time ﬂuctuation, but they are still
+essential for information processing and postsynaptic output.
+
+et
+
+al.
+
+(Fernández-Ruiz, Makarov, Benito,
+
+Functional Implications of Pathway-Speciﬁc Structural
+Boundaries of LFP Coherence
+The CA1 Schaffer and the MPP entorhinal inputs exhibit sig-
+niﬁcantly different modules of spatial coherence in spite of
+the similar temporal structure of their respective ongoing
+activities with dominant excitatory quanta in gamma frequen-
+cies
+2012;
+Fernández-Ruiz, Makarov, Herreras 2012). For these inputs,
+presynaptic neurons project axons that branch out and leave
+multiple buttons en passage, which should produce near-
+synchronous LFPs over an extended postsynaptic area. There-
+fore, the differential minimal spatial modules are probably
+due to additional anatomical factors, such as the degree of the
+spatial overlap of axonal territories of individual cells. Schaf-
+fer LFPs are highly coherent within 2 × 0.5 mm sheets that lie
+roughly parallel to the midline in the dorsal hippocampus,
+which is approximately the extension of a single CA3 pyrami-
+dal cell axonal arborization in the CA1 (Ishizuka et al. 1990),
+although they fall off sharply in the lateral direction beyond
+0.5 mm. The covariance of the amplitude and the character-
+istic rostro-caudal delay of elementary µ-fEPSPs can only be
+explained by near-synchronous activation of multiple CA1
+pyramidal cells by axons with dominant rostro-caudal orien-
+tation and a similar topology originating in groups of simul-
+taneously ﬁring CA3 pyramidal cells (Hjorth-Simonsen 1973;
+Li et al. 1994; Fig. 8A). For recording positions separated lat-
+erally by larger distances, the increasing divergence of Schaf-
+fer LFPs reﬂects the independent activity of distinct subsets of
+presynaptic CA3 neurons. Thus, the basal activity of the Schaf-
+fer generator is reminiscent of the lamellar concept proposed
+by Andersen et al. (1971), at least for this segment of the hip-
+pocampal network. However, the longitudinal CA3–CA1 com-
+munication that is also present (Li et al. 1994) may not be
+based on functional assemblies with overlapping topological
+projections. The Schaffer SPWs represent a notable nonlamel-
+lar exception that cover much larger and more variable zones
+of the CA1, which is slowly activated in spatial sequence
+without an apparent preferred direction, and that can stop
+suddenly at different sites. These features are compatible with
+a slow avalanche-like longitudinal activation of CA3 units over
+extended septo-temporal levels, possibly through the local re-
+current network (e.g., Vincent et al. 2012). Thus, the differen-
+tial spatial coverage of SPWs and µ-fEPSPs reﬂect 2 modes
+and degrees of synchronization in presynaptic CA3 units.
+
+In turn, the extremely low spatial correlation of LFPs pro-
+duced by the MPP is indicative of highly localized clusters of
+postsynaptic activity. Such a pattern may result from the
+spatial divergence of individual perforant pathway axons,
+while the strong curvature of the DG could further minimize
+extracellular clustering of synaptic currents, even for synchro-
+nous events (Fig. 8B). This implies that the use of different
+recording sites permits a more topological reading of the
+ongoing activity of presynaptic entorhinal cells. The obvious
+impractical consequence is that one-site recordings of the
+activity of the MPP generator cannot be taken as a representa-
+tive of entorhinal population activity.
+
+We have demonstrated that inhibitory inputs can act as
+strong LFP generators. Notably the inhibitory plexuses of indi-
+vidual interneurons extend over distances shorter than the
+size of coherent modules (Somogyi and Klausberger 2005).
+To reconcile these ﬁndings, we may suppose that multiple
+
+Cerebral Cortex July 2014, V 24 N 7 1749
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 8. Proposed structural and functional determinants of spatial coherence for some hippocampal LFP generators. (A) Excitatory Schaffer input to CA1. Each CA3 pyramidal
+neuron sends axon that leaves multiple collaterals in CA1 with dominant parallel orientation (1) leaving synaptic buttons en passant (2) on numerous CA1 pyramidal cells.
+Functional CA3 pyramidal cell assemblies have similar axonal territories (3) and their joint activation produces near-synchronous synaptic currents on a narrow dendritic band of
+CA1 pyramidal cells (4) that conforms a strip-like spatial module of coherent LFP activity. The width of the strip is thus deﬁned by the average coverage of individual cell’s axon
+and the common topology of a functional CA3 assembly. Note that the same spatial module can be “occupied” by different CA3 assemblies as long as they have similar
+topology (e.g., sequence of µ-fEPSPs). The apparent “lamellar” organization (5) manifests at different septo-temporal
+levels of the CA1, but is broken up when afferent ﬁring
+synchrony organizes differently, as during SPWs in which coﬁring CA3 neurons extend over widespread septo-temporal levels. (B) Perforant path input. The LFP activity is poorly
+correlated in nearby sites, possibly because of the fanning of axon branches (1) and reduced spatial overlap of synchronous synaptic currents caused by excessive curvature. (C)
+Granule cell somatic inhibition (GCsom generator). The axonal plexus of basket-cell interneurons (in gray) may produce inhibitory currents in the somata of the large number of
+granule cells (in black). (2, 3) Synchronous modulation of basket-cell subpopulation produces the coalescence of basket-cell synaptic territories, thus spatial coherence of the
+GCsom generator extends much more than the extension of one cell’s axonal plexus.
+
+homogeneous interneurons forming functional subnetworks
+are jointly modulated by an external driver or are mutually
+synchronized. Accordingly, the inhibitory currents produced
+by axons from individual interneurons merge in large steady
+modules (Fig. 8C). This concept coincides with functional
+results that propose correlated activity in interneuron subnet-
+works (Whittington et al. 1995; Fukuda and Kosaka, 2000; Ho
+et al. 2012). Interestingly, we observed variations in the spec-
+tral coherence between 2 readings of the GCsom inhibitory
+generator despite a steady strong global correlation. We
+propose that this may be a manifestation of functional coup-
+ling/decoupling mechanisms of the units in the subnetwork
+according to the information-processing demands.
+
+We presented evidence demonstrating that the more pre-
+synaptic neurons ﬁre synchronously (as witnessed by the oc-
+currence of local epileptic spikes following disinhibition), the
+greater the spatial correlation of LFPs in the postsynaptic
+region, presumably by blending together coactivated postsyn-
+aptic territories. As expected, this only occurs for the medial
+entorhinal cortex projections in the DG that normally exhibit
+low spatial correlation, but not for the Schaffer input to CA1
+that has full coherence, at least within longitudinal strips. This
+result provides empirical evidence supporting the notion that
+territories) and temporal
+both spatial (overlap of axonal
+factors (their synchronous activation) play an important role
+in the generation of LFPs. Moreover, our ﬁndings highlight
+the peculiar transformation of synchronization in presynaptic
+units into postsynaptic coherence,
+into
+spatial features of activity, which is essential to interpret zonal
+LFP differences. Thus, ﬁring synchronization of all afferent
+ﬁbers in a pathway, as by electric shocks, produces the com-
+plete and nearly synchronous activation of the entire postsyn-
+aptic region, that is, full spatial coherence of the recorded
+ﬁeld potential activity. However, during ongoing activity, only
+groups of afferent neurons ﬁre correlated spikes, and their
+axons activate varying portions of the postsynaptic region ac-
+cording to the topology of connections; hence, spatial coher-
+ence of LFPs decreases. Since LFPs are the reﬂection of
+the found
+spiking activity in presynaptic populations,
+
+temporal
+
+that
+
+is,
+
+1750 Spatial Modules of Activity of LFP Generators
+
+(cid:129) Benito et al.
+
+stereotyped spatial patterns of LFP coherence, as seen in
+Schaffer µ-fEPSPs, or inhibitory GCsom potentials, denote the
+speciﬁc temporal patterns of the activation of presynaptic
+units.
+
+The physiological relevance of spatial coherence is that it
+helps us discerning when 2 recording sites are capturing the
+same information from afferent neuron populations. Matching
+LFPs is either due to overlapping axonal territories of presyn-
+aptic units (whether ﬁring synchronously or not) or to the
+synchronous ﬁring of presynaptic cells (whether their axons
+overlap in target regions). However, differing LFPs necessarily
+indicates varying activity in presynaptic units. Naturally, this
+is only applicable to pathway-speciﬁc LFPs. In conclusion, the
+ﬁnding of pathway-speciﬁc modules of LFP activity serves not
+only to reveal the topology of connections, but also explains
+LFP differences in nearby recordings. This represents a
+necessary ﬁrst step to mapping their temporal changes in
+activity and their correlations with full understanding of their
+biophysical bases.
+
+can be found at: http://www.cercor.
+
+Supplementary Material
+
+Supplementary material
+oxfordjournals.org/.
+
+Funding
+
+This work was supported by the former Spanish Ministry of
+Science
+and
+FIS2010-20054).
+
+(BFU2010-19192/BFI
+
+Innovation
+
+and
+
+Notes
+
+We thank S. Montgomery and G. Buzsáki for providing LFP record-
+ings in awake animals, C. Dotti and G. Martín-Vázquez for helpful
+comments, R. Núñez and J. Delgado for technical assistance and help
+with graph art, and M. Sefton at BiomedRed for editorial support.
+Conﬂict of Interest: None declared.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+References
+
+Amaral DG. 1978. A Golgi study of cell types in the hilar region of the
+
+hippocampus in the rat. J Comp Neurol. 182:851–914.
+
+Andersen P, Bliss TVP, Skrede KK. 1971. Lamellar organization of hip-
+
+pocampal excitatory pathways. Exp Brain Res. 13:222–238.
+
+Andersen P, Bruland H, Kaada BR. 1961. Activation of the ﬁeld CA-1
+of the hippocampus by septal stimulation. Acta Physiol Scand.
+51:29–40.
+
+Arieli A, Shoham D, Hildesheim R, Grinvald A. 1995. Coherent spatio-
+temporal patterns of ongoing activity revealed by real-time optical
+imaging coupled with single-unit recording in the cat visual
+cortex. J Neurophysiol. 73:2072–2093.
+
+Bach M, Krüger J. 1986. Correlated neuronal variability in monkey
+visual cortex revealed by a multi-microelectrode. Exp Brain Res.
+61:451–456.
+
+Belitski A, Gretton A, Magri C, Murayama Y, Montemurro MA, Lo-
+gothetis NK, Panzeri S. 2008. Low-frequency local ﬁeld potentials
+and spikes in primary visual cortex convey independent visual
+information. J Neurosci. 28:5696–5709.
+
+Bell A, Sejnowski T. 1995. An information-maximization approach to
+blind separation and blind deconvolution. Neural Comput.
+7:1129–1159.
+
+Brankacˇk J, Stewart M, Fox SE. 1993. Current source density analysis
+of the hippocampal theta rhythm: associated sustained potentials
+and candidate synaptic generators. Brain Res. 615:310–327.
+
+Buzsáki G, Eidelberg E. 1982. Convergence of associational and com-
+missural pathways on CA1 pyramidal cells of the rat hippocampus.
+Brain Res. 237:283–295.
+
+Buzsáki G, Leung LS, Vanderwolf CH. 1983. Cellular bases of hippo-
+
+campal EEG in the behaving rat. Brain Res. 287:139–171.
+
+Canals S, López-Aguado L, Herreras O. 2005. Synaptically-recruited
+apical currents are required to initiate axonal and apical spikes in
+hippocampal pyramidal cells: modulation by inhibition. J Neuro-
+physiol. 93:909–918.
+
+Canning KJ, Leung LS. 1997. Lateral entorhinal, perirhinal, and
+amygdale-entorhinal transition projections to hippocampal CA1
+and dentate gyrus in the rat: a current source density study. Hippo-
+campus. 7:643–655.
+
+Chen A. 2006. Fast kernel density independent component analysis.
+
+Lecture Notes Comput Sci. 3889:24–31.
+
+Choi S, Cichocki A, Park HM, Lee SY. 2005. Blind source separation
+and independent component analysis: a review. Neur Inf Process
+Let Rev. 6:1–57.
+
+Congedo M, John RE, De Ridder D, Prichep L. 2010. Group indepen-
+dent component analysis of resting state EEG in large normative
+samples. Int J Psychophysiol. 78:89–99.
+
+Diesmann M, Gewaltig MO, Aertsen A. 1999. Stable propagation of
+spiking in cortical neural networks. Nature.
+
+synchronous
+402:529–533.
+
+Elul R. 1972. The genesis of the EEG. Int Rev Neurobiol. 15:228–272.
+Fernández-Ruiz A, Makarov VA, Benito N, Herreras O. 2012. Schaffer-
+speciﬁc local ﬁeld potentials reﬂect discrete excitatory events at
+gamma-frequency that may ﬁre postsynaptic hippocampal CA1
+units. J Neurosci. 32:5165–5176.
+
+Fernández-Ruiz A, Makarov VA, Herreras O. 2012. Sustained increase
+of spontaneous input and spike transfer in the CA3-CA1 pathway
+following long term potentiation in vivo. Front Neural Circuits.
+6:71.
+
+Freeman JA, Nicholson C. 1975. Experimental optimization of current
+source-density technique for anuran cerebellum. J Neurophysiol.
+38:369–382.
+
+Fukuda T, Kosaka T. 2000. Gap junctions linking the dendritic
+network of GABAergic interneurons in the hippocampus. J Neuro-
+sci. 20:1519–1528.
+
+Gloor P. 1985. Neuronal generators and the problem of localization in
+electroencephalography: application of volume conductor theory
+to electroencephalography. J Clin Neurophysiol. 2:327–354.
+
+Golarai G, Sutula TP. 1996. Bilateral organization of parallel and serial
+pathways in the dentate gyrus demonstrated by current-source
+density analysis in the rat. J Neurophysiol. 75:329–342.
+
+Herreras O. 1990. Propagating dendritic action potential mediates sy-
+naptic transmission in CA1 pyramidal cells in situ. J Neurophysiol.
+64:1429–1441.
+
+Herreras O, Solís JM, Muñoz MD, Martín del Río R, Lerma J. 1988.
+Sensory modulation of hippocampal transmission. I. Opposite
+effects on CA1 and dentate gyrus
+synapsis. Brain Res.
+451:290–302.
+
+Hjorth-Simonsen A. 1973. Some intrinsic connections of the hippo-
+campus in the rat: an experimental analysis. J Comp Neurol.
+147:145–162.
+
+Ho ECY, Strüber M, Bartos M, Zhang L, Skinner FK. 2012. Inhibitory
+networks of fast-spiking interneurons generate slow population
+activities due to excitatory ﬂuctuations and network multistability.
+J Neurosci. 32:9931–9946.
+
+Hutchison RM, Mirsattari SM, Jones CK, Gati JS, Leung LS. 2010. Func-
+tional networks in the anesthetized rat brain revealed by indepen-
+dent component analysis of resting-state fMRI. J Neurophysiol.
+103:3398–3406.
+
+Ishizuka N, Weber J, Amaral DG. 1990. Organization of intrahippo-
+campal projections originating from CA3 pyramidal cells in the rat.
+J Comp Neurol. 295:580–623.
+
+Klee M, Rall W. 1977. Computed potentials of cortically arranged
+
+populations of neurons. J Neurophysiol. 40:647–666.
+
+Korovaichuk A, Makarova J, Makarov VA, Benito N, Herreras O. 2010.
+Minor contribution of principal excitatory pathways to hippocam-
+pal LFPs in the anesthetized rat: a combined independent com-
+ponent and current
+J Neurophysiol.
+104:484–497.
+
+source density study.
+
+Leung LS. 1979. Potentials evoked by alvear tract in hippocampal CA
+J Neurophysiol.
+
+II. Spatial ﬁeld analysis.
+
+1 region in rats.
+42:1571–1589.
+
+Leung LS, Péloquin P. 2010. Cholinergic modulation differs between
+basal and apical dendritic excitation of hippocampal CA1 pyrami-
+dal cells. Cereb Cortex. 20:1865–1877.
+
+Li XG, Somogyi P, Ylinen A, Buzsáki G. 1994. The hippocampal CA3
+network: an in vivo intracellular labeling study. J Comp Neurol.
+339:181–208.
+
+López-Aguado L, Ibarz JM, Herreras O. 2001. Activity-dependent
+changes of tissue resistivity in the CA1 region in vivo are layer-
+speciﬁc: modulation
+evoked potentials. Neuroscience.
+108:249–262.
+
+of
+
+Lorente de Nó R. 1947. Analysis of the distribution of action currents of
+nerves in volume conductors. In: A study of nerve physiology.
+part 2, vol. 132. New York: The Rockefeller Institute, p. 384–477.
+Lorente de Nó R. 1934. Studies on the structure of the cerebral cortex.
+II. Continuation of the study of the ammonic system. J Psychol
+Neurol. 46:113–177.
+
+Makarov VA, Makarova J, Herreras O. 2010. Disentanglement of local
+ﬁeld potential sources by independent component analysis.
+J Comp Neurosci. 29:445–457.
+
+Makarova J, Ibarz JM, Makarov VA, Benito N, Herreras O. 2011. Paral-
+lel readout of pathway-speciﬁc inputs to laminated brain struc-
+tures. Front Syst Neurosci. 5:77.
+
+Makeig S, Jung TP, Bell AJ, Ghahremani D, Sejnowski TJ. 1997. Blind
+separation of auditory event-related brain responses into indepen-
+dent components. Proc Natl Acad Sci USA. 94:10979–10984.
+
+McNaughton BL. 1980. Evidence for two physiologically distinct per-
+
+forant pathways to the fascia dentata. Brain Res. 199:1–19.
+
+Montgomery SM, Betancur MI, Buzsáki G. 2009. Behavior-dependent
+coordination of multiple theta dipoles in the hippocampus. J
+Neurosci. 29:1381–1394.
+
+Nunez PL, Srinivasan R. 2006. Electric ﬁelds of the brain: the neuro-
+
+physics of EEG. 2nd ed. New York: Oxford University Press.
+
+Paulsen O, Moser EI. 1998. A model of hippocampal memory encod-
+ing and retrieval: GABAergic control of synaptic plasticity. Trends
+Neurosci. 21:273–278.
+
+Plonsey R. 1969. Bioelectric phenomena. New York: McGraw-Hill.
+Purpura DP. 1959. Nature of electrocortical potentials and synaptic
+organizations in cerebral and cerebellar cortex. Int Rev Neurobiol.
+1:47–163.
+
+Cerebral Cortex July 2014, V 24 N 7 1751
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+van de Ven VG, Formisano E, Prvulovic D, Roeder CH, Linden DEJ.
+2004. Functional connectivity as revealed by spatial independent
+component analysis of
+fMRI measurements during rest. Hum
+Brain Mapp. 22:165–178.
+
+Varona P, Ibarz JM, López-Aguado L, Herreras O. 2000. Macroscopic
+and subcellular factors shaping CA1 population spikes. J Neuro-
+physiol. 83:2192–2208.
+
+Vincent K, Tauskela JS, Thivierge JP. 2012. Extracting functionally
+feedforward networks from a population of spiking neurons.
+Front Comput Neurosci. 6:86.
+
+Whittington MA, Traub RD, Jefferys JGR. 1995. Synchronized oscil-
+lations in interneuron networks driven by metabotropic glutamate
+receptor activation. Nature. 373:612–615.
+
+Woodbury JW. 1960. Potentials in a volume conductor. In: Ruch TC,
+Fulton JF, editors. Medical physiology and biophysics. Philadel-
+phia and London: WB Saunders Co. p. 83–91.
+
+l
+
+D
+o
+w
+n
+o
+a
+d
+e
+d
+
+f
+r
+o
+m
+h
+
+t
+t
+
+p
+s
+:
+/
+/
+
+i
+
+l
+
+/
+
+a
+c
+a
+d
+e
+m
+c
+.
+o
+u
+p
+.
+c
+o
+m
+/
+c
+e
+r
+c
+o
+r
+/
+a
+r
+t
+i
+c
+e
+2
+4
+7
+1
+7
+3
+8
+2
+9
+1
+6
+7
+3
+b
+y
+L
+u
+d
+w
+g
+-
+M
+a
+x
+m
+
+/
+
+/
+
+/
+
+i
+
+i
+
+i
+l
+i
+
+a
+n
+s
+-
+U
+n
+v
+e
+r
+s
+i
+t
+
+i
+
+a
+e
+
+t
+
+M
+u
+e
+n
+c
+h
+e
+n
+(
+L
+M
+U
+
+)
+u
+s
+e
+r
+o
+n
+2
+4
+N
+o
+v
+e
+m
+b
+e
+r
+2
+0
+2
+5
+
+Rappelsberger P, Pockeberger H, Petsche H. 1981. Current source
+density analysis: methods and application to simultaneously re-
+corded ﬁeld potentials of the rabbit’s visual cortex. Pﬂuegers
+Arch. 389:159–170.
+
+Reichinnek S, Künsting T, Draguhn A, Both M. 2010. Field potential
+signature of distinct multicellular activity patterns in the mouse
+hippocampus. J Neurosci. 30:15441–15449.
+
+Schreiber T, Schmitz A. 2000. Surrogate time series. Physica D.
+
+142:646–652.
+
+Somogyi P, Klausberger T. 2005. Deﬁned types of cortical interneur-
+one structure space and spike timing in the hippocampus.
+J Physiol. 562:9–26.
+
+Traub RD, Spruston N, Soltesz I, Konnerth A, Whittington MA, Jefferys
+GR. 1998. Gamma-frequency oscillations: a neuronal population
+phenomenon, regulated by synaptic and intrinsic cellular processes,
+and inducing synaptic plasticity. Prog Neurobiol. 55:563–575.
+
+1752 Spatial Modules of Activity of LFP Generators
+
+(cid:129) Benito et al.
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

@@ -1,0 +1,41 @@
+{
+  "source": "online",
+  "doi": "10.3390/biology10080692",
+  "pmcid": null,
+  "figures": [
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/a70a/8389192/763e38bd387e/biology-10-00692-g001.jpg",
+      "file": "figure_1.jpg"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/a70a/8389192/89b69407ef04/biology-10-00692-g002.jpg",
+      "file": "figure_2.jpg"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/a70a/8389192/422a83793bdb/biology-10-00692-g003.jpg",
+      "file": "figure_3.jpg"
+    }
+  ],
+  "tried_urls": [
+    "https://doi.org/10.3390/biology10080692",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=10.3390/biology10080692",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/"
+  ],
+  "trace": [
+    {
+      "url": "https://doi.org/10.3390/biology10080692",
+      "final_url": null,
+      "status": "no_html"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=10.3390/biology10080692",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/34439925/",
+      "status": "html"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/",
+      "status": "html"
+    }
+  ]
+}

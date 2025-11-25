@@ -1,0 +1,2910 @@
+J Neurophysiol 104: 484 – 497, 2010.
+First published May 12, 2010; doi:10.1152/jn.00297.2010.
+
+Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs
+in the Anesthetized Rat: A Combined Independent Component and Current
+Source Density Study
+
+A. Korovaichuk,1,* J. Makarova,1,* V. A. Makarov,2,* N. Benito,1 and O. Herreras1
+1Department of Systems Neuroscience, Cajal Institute–Consejo Superior de Investigaciones Cientíﬁcas, Madrid; and 2Department
+of Applied Mathematics, Faculty of Mathematics, Universidad Complutense of Madrid, Madrid, Spain
+
+Submitted 26 March 2010; accepted in ﬁnal form 6 May 2010
+
+Korovaichuk A, Makarova J, Makarov VA, Benito N, Herreras
+O. Minor contribution of principal excitatory pathways to hippocam-
+pal LFPs in the anesthetized rat: A combined independent component
+and current source density study. J Neurophysiol 104: 484 – 497,
+2010. First published May 12, 2010; doi:10.1152/jn.00297.2010.
+Analysis of local ﬁeld potentials (LFPs) helps understand the function
+of the converging neuronal populations that produce the mixed syn-
+aptic activity in principal cells. Recently, using independent compo-
+nent analysis (ICA), we resolved ongoing hippocampal activity into
+several major contributions of stratiﬁed LFP-generators. Here, using
+pathway-speciﬁc LFP reconstruction, we isolated LFP-generators that
+describe the activity of Schaffer-CA1 and Perforant-Dentate excita-
+tory inputs in the anesthetized rat. First, we applied ICA and current
+source density analysis to LFPs evoked by electrical subthreshold
+stimulation of the pathways. The results showed that pathway speciﬁc
+activity is selectively captured by individual components or LFP-
+generators. Each generator matches the known distribution of axonal
+terminal ﬁelds in the hippocampus and recovers the speciﬁc time
+course of their activation. Second, we use sparse weak electrical
+stimulation to prime ongoing LFPs with activity of a known origin.
+Decomposition of ongoing LFPs yields a few signiﬁcant LFP-gener-
+ators with distinct spatiotemporal characteristics for the Schaffer and
+Perforant inputs. Both pathways convey an irregular temporal pattern
+in bouts of population activity of varying amplitude. Importantly, the
+contribution of Schaffer and Perforant inputs to the power of raw
+LFPs in the hippocampus is minor (7 and 5%, respectively). The
+results support the hypothesis on a sparse population code used by
+excitatory populations in the entorhino-hippocampal system, and they
+validate the separation of LFP-generators as a powerful tool to explore
+the computational function of neuronal circuits in real time.
+
+I N T R O D U C T I O N
+
+Multiple neuronal populations form a complex system of
+local circuits and global networks whose activity constitutes
+the basis for information processing in the brain. The electrical
+transmembrane currents produced by working neurons are
+mixed together and generate local ﬁeld potentials (LFPs), a
+macroscopic variable that reﬂects the information processing at
+mesoscopic scales. Thus the decoding of LFPs may help us
+understand the principles of information handling. To date,
+resolving the electrical activity of converging neuronal popu-
+lations into the original informative sources remains problem-
+atic (Mitzdorf 1985; Nunez and Srinivasan 2006).
+
+* A. Korovaichuk, J. Makarova, and V. A. Makarov contributed equally to
+
+this work.
+
+Address for reprint requests and other correspondence: O. Herreras, Cajal
+Inst.-CSIC, Av. Dr. Arce 37, Madrid 28002, Spain (E-mail: herreras@cajal.
+csic.es).
+
+Approaches are emerging to analyze LFPs, such as spectral
+coherence, principal components, and laminar population anal-
+ysis, and these have proven useful to identify important fea-
+tures in mixed deep electrical sources (for example, see
+Einevoll et al. 2007; Kocsis et al. 1999). Recently we imple-
+mented a blind source separation strategy (Makarov et al.
+2010) that takes advantage of the spatial immobility of elec-
+trical brain sources in the LFP’s time scale. This structural
+feature arises from the ﬁxed location of the synaptic afferents
+to target cells, producing transmembrane currents whose ex-
+tracellular part is circumscribed to the postsynaptic cell. The
+approach uses independent component analysis (ICA) to sep-
+arate the informative sources (Bell and Sejnowski 1995;
+Makeig et al. 2004; Stone 2004), and it allowed us to disen-
+tangle intracerebral LFPs recorded in the hippocampal CA1
+region into the contributions of a few major LFP-generators
+(Makarov et al. 2010). In this study, we present a special
+technique that permits the unequivocal association of the LFP-
+generators isolated with the presynaptic neuronal populations
+and its application to quantify the independent contribution of
+Schaffer and Perforant inputs to the total hippocampal LFP.
+Thus we have obtained a tool for the parallel readout of the
+discrete activities of the working neuronal populations from
+standard LFPs.
+
+ICA is a widely used approach to extract spatially distinct
+independent sources of activity from mixed signals (for review,
+see Choi et al. 2005). Simultaneous multisite recordings are
+required to estimate the different impact of several spatially
+localized and distant generators into each sensor. This method
+has been successfully applied to surface EEG recordings,
+whereby deep strongly synchronized neural sources can be
+discriminated (Jung et al. 2005), but their spatial localization is
+only poorly assessed and it lacks cellular correlates. These
+problems are signiﬁcantly diminished when using intracerebral
+local recordings, because the signals are generated in the
+volume surrounding the array of recording sensors. The paral-
+lel arrangement of principal cells and the pronounced stratiﬁ-
+cation of inputs in the hippocampus also favor the application
+of ICA and interpretation of the results obtained.
+
+Our recent application of ICA to LFPs in the rat CA1
+showed several dominant generators of LFPs, producing a
+subcellular deﬁnition of their spatial localizations that was
+constant across animals (Makarov et al. 2010). A causal rela-
+tion between the ﬁring of local units and the activity of speciﬁc
+LFP-generators was also shown. This result suggests that each
+isolated LFP-generator may have a neuronal origin with dif-
+
+484
+
+0022-3077/10 Copyright © 2010 The American Physiological Society
+
+www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025.EXCITATORY GENERATORS OF HIPPOCAMPAL LFPS
+
+485
+
+ferent functionality. Indeed, one may expect that the activity of
+an afferent input to a restricted dendritic ﬁeld in the principal
+cells may be associated with a single LFP-generator disentan-
+gled by ICA from the complete LFPs. To test this hypothesis,
+here we have used selective electrical stimulation of known
+hippocampal pathways such as the Schaffer input to CA1 and
+the perforant path (PP) input
+to the dentate gyrus (DG).
+Selective stimulation elicits evoked LFPs whose well-known
+spatial maps are used to crosscheck the ICA-derived LFP-
+generators in the ﬁrst part of the study.
+
+Hippocampal evoked potentials are regularly used to explore
+the functional properties of neuronal populations. Experimen-
+tal and theoretical studies show they are reliable population
+indices of the corresponding membrane events in single neu-
+rons (Andersen et al. 1971; López-Aguado et al. 2002; Varona
+et al. 2000). Evoked synaptic inputs produce inward and
+outward currents covering the entire morphology of principal
+cells with pathway speciﬁc spatial distribution that can be
+precisely determined by current-source density (CSD) analysis
+(Freeman and Nicholson 1975; Lorente de Nó 1947). As a ﬁrst
+step, we assessed the spatial and temporal performance of the
+ICA, as well as its capacity to discriminate different sources
+using evoked LFPs of known origin.
+
+Subsequently, we studied spontaneous LFPs primed by ran-
+dom sparse subthreshold evoked activity to identify the disen-
+tangled components. The presence of evoked and well-known
+spontaneous events speciﬁc for each pathway in the raw LFPs,
+and in a single LFP-generator, guarantees its correct unequiv-
+ocal identiﬁcation. We further quantiﬁed the speciﬁc contribu-
+tion of LFP-generators to the global signal during irregular
+LFP patterns. Interestingly, the two major excitatory pathways,
+Schaffer and PP, contribute little to ongoing LFPs, producing
+scarce and irregular bouts of activity.
+
+M E T H O D S
+
+Experimental methods
+
+Female Sprague-Dawley rats (200 –220 g) were anesthetized with
+urethane (1.2 g/kg, ip) and fastened to a stereotaxic device, maintain-
+ing their body temperature at 37°C with a heated blanket. The surgical
+and stereotaxic procedures performed were described elsewhere (Ca-
+nals et al. 2005; Makarova et al. 2008). Concentric bipolar stimulating
+electrodes were placed in at least two of the following locations: the
+alveus for antidromic activation (from bregma, midline, and cortical
+surface AP: (cid:1)5.5, L: 2.6, V: (cid:1)1.8 mm), the ipsilateral CA3 (septal
+pole) for orthodromic activation of the CA1 region (AP: (cid:1)3.2, L: 2.6,
+V: (cid:1)3.3 mm), and the angular bundle (AP: (cid:1)8, L: 4 –5, V: 3.5– 4 mm)
+for orthodromic activation of the granule cell population in the DG.
+These points were approached at a 30° angle in the sagittal plane.
+Stimuli (0.07– 0.1 ms square pulses, 0.1– 0.8 mA) were applied to
+elicit the characteristic evoked potentials, which were used to guide
+the placement of recording probes. Linear multisite probes (models:
+A1x16-5mm50-177 and A1x32-6mm50-413, Neuronexus Technolo-
+gies, Ann Arbor, MI) were lowered into the hippocampus (AP:
+4.5–5.5, L: 2–3 mm) and connected to a multiple high-impedance
+headstage. The 16-site probes were used to record along the main axis
+of CA1 pyramidal cells, whereas the 32-site probes spanned both CA1
+and DG/CA3 regions. A silver chloride wire in the neck skin served
+as a reference for recording, and the signals were ampliﬁed and
+acquired using low-noise MultiChannel System (Reutlingen, Ger-
+many) recording hardware and software (50 kHz sampling rate). All
+the experiments were performed in accordance with European Union
+
+guidelines (86/609/EU) and Spanish regulations (BOE 67/8509-12
+1988) regarding the use of laboratory animals.
+
+Histology
+
+Silicon probes were labeled with DiI (Molecular Probes, Invitro-
+gen, Carisbad, CA) by soaking in a 1% solution of N-N-dimethyl-
+formamide (Sigma-Aldrich, St. Louis, MO). At the end of the exper-
+iment, animals were perfused transcardially with saline/heparine and
+paraformaldehyde (4%). Coronal cryostat sections (15 (cid:1)m) were
+obtained and labeled with bis-benzimide (Sigma), and they were
+examined under a ﬂuorescence microscope (560 – 610 nm) to identify
+the probe position (see example in the Supplementary Fig. S1).1
+
+Independent component and current source density analyses
+of LFPs
+
+The mathematical procedure and detailed signal treatment of the
+ICA were described elsewhere (Makarov et al. 2010). Brieﬂy, 16 or 32
+LFP signals u(cid:1)t(cid:2) (cid:2) (cid:3)uk
+recorded simultaneously can be repre-
+sented as the weighted sum of the activities of N neuronal sources or
+LFP-generators2
+
+K
+k(cid:2)1
+
+(cid:1)t(cid:2)(cid:4)
+
+N
+
+u(t) (cid:2) (cid:5)
+n(cid:2)1
+
+Vnsn(t) (cid:3) (cid:4)(cid:5)Vn
+
+(cid:2) In
+
+∀ n (cid:1) [1, N]
+
+(1)
+
+(cid:1)t(cid:2)(cid:4)
+
+N
+n(cid:2)1
+
+where V (cid:2) [V1, V2 . . .,Vn]T is the mixing matrix composed of the
+so-called voltage loadings or spatial weights of all LFP-generators;
+are the time courses or activations of the LFP-generators; (cid:4)
+(cid:3)sn
+is the conductivity of the extracellular space; and (cid:3)In
+are the CSD
+loadings. Thus the raw LFP observed at the kth electrode tip is a linear
+mixture of the electrical activity of several independent LFP-genera-
+tors describing transmembrane currents in principle cells.
+
+(cid:4)
+N
+n(cid:2)1
+
+Figure 1A shows an example of (evoked) LFPs recorded in the CA1
+by a 16-site probe along the pyramidal neuron axis. The raw LFPs can
+be used to evaluate CSD maps by approximating the Laplace operator
+by 1D ﬁnite differences (Fig. 1B)
+
+CSD (cid:2) (cid:3)
+
+1
+(cid:4)
+
+(cid:5)u (cid:2) (cid:3)
+
+uk(cid:3)1(t) (cid:3) 2uk(t) (cid:6) uk(cid:6)1(t)
+(cid:4)h2
+
+(2)
+
+where h (cid:2) 50 (cid:1)m is the intersite distance. The CSD shows the
+characteristic Schaffer-evoked pattern, where several neuronal events
+can be appreciated overlapping in space and time, such as generation
+of a propagating population spike.
+
+(cid:1)t(cid:2)(cid:4)
+
+N
+n(cid:2)1
+
+The ICA of u(t) returns the generator’s activation (cid:3)sn
+
+(Fig.
+1C) and the mixing matrix V (Fig. 1D) for (cid:7)16 LFP-generators.
+Usually only a few of them (G1–G6 in the ﬁgure) have signiﬁcant
+amplitude and different spatial distributions (voltage loadings). We
+noticed that, because of the ambiguity of the ICA (fortunately insig-
+niﬁcant for our study), the voltage loadings and activations are given
+in arbitrary units (i.e., we can arbitrarily scale the loadings but we
+must simultaneously apply inverse scaling to the activations). Once
+LFP-generators have been extracted from the raw LFPs, we can
+analyze them as if they were active alone. For example, we can
+construct virtual LFPs produced by a single generator, say kth, from
+its voltage loading and activation
+
+1 The online version of this article contains supplemental data.
+2 Clariﬁcation of terminology. The term source is used with different
+implications in ICA and CSD analysis. In the former, source is used in a
+comprehensive manner to denote active brain regions (i.e., large zones of
+neural activity). Here a source in the ICA sense refers to each of the individual
+coherent components of the LFPs. Neither of these should be confounded with
+the formal notation of outward transmembrane currents or current sources used
+in CSD analysis. For the sake of simplicity, we maintain the latter and adopt
+the term LFP-generator for the ICA-derived sources.
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025.486
+
+KOROVAICHUK ET AL.
+
+raw LFPs
+
+A 
+
+1
+
+8
+
+#
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+16
+
+generator activations
+
+ raw CSD
+
+CSD analysis
+
+B
+
+2
+
+8
+
+15
+
+10 ms
+
+5 mV
+
+ICA
+
+D
+voltage loadings 
+1
+
+10 ms 50 (cid:0)m
+
+E
+
+CSD loadings 
+
+e
+d
+o
+r
+t
+c
+e
+e
+f
+o
+#
+
+l
+
+8
+
+nd2    
+derivative
+
+10 ms 8 a.u.
+
+16
+
+-1
+
+0
+
+1
+
+ (a.u.)
+
+-0.5
+
+0
+
+ (a.u.)
+
+0.5
+
+C
+
+G1
+
+G8
+
+G16
+
+F 
+
+#
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+1
+
+8
+
+16
+
+virtual LFPs from G6
+
+CSD for reconstructed LFPs 
+
+CSD analysis
+
+G
+
+2
+
+8
+
+15
+
+10 ms 5 mV
+
+10 ms
+
+50 µm
+
+FIG. 1. General strategy of local ﬁeld potential (LFP) decomposition and the identiﬁcation of generators. The diagram shows the sequential steps from an
+LFP spatial map recorded along the CA1 axis containing evoked responses to a twin pulse in the ipsilateral CA3 (Schaffer response). A similar procedure is
+followed for spontaneous LFPs. The simultaneous recording of 16 sites along the main axis of the principal cell (pyramidal neurons) (A) is analyzed by
+current-source density (CSD) (B) to obtain the map of inward and outward population currents (sinks are in blue and sources in yellow-red). Multiple membrane
+events overlap spatiotemporally. The LFP proﬁle is also analyzed by an independent component analysis (ICA) that provides a set of 16 generators each with
+a temporal activation (C) and spatial distribution (D). Of the 16 generators, only a few (1– 6 in the example) have a signiﬁcant variance, whereas the others are
+rejected for analysis. The second spatial derivative of the spatial weight curves (or voltage loadings) provides the CSD loadings (E), a spatial index that reﬂects
+the distribution of membrane currents along the conductor. Because the ICA does not ensure the correct polarity or absolute values of amplitude, we reconstructed
+the LFP for each generator isolated (F). Such partial LFPs regain the correct polarity and true amplitude. A CSD can be applied to the reconstructed LFP, which
+provides simpliﬁed spatiotemporal maps of inward/outward currents for unique spatially coherent membrane events (G). These maps can be compared with the
+CSD of raw LFPs (curved dashed arrow) to ﬁnd speciﬁc membrane events buried within the mixed CSD (closed dashed white lines). It can be shown that the
+spatial proﬁles of partial CSDs (E) match the spatial proﬁle of the CSD loadings (small dashed arrow) and hence their true polarity is assessed. Arrowheads mark
+the time of stimulus (artifacts have been removed for analysis). a.u., arbitrary units.
+
+uGk
+
+(t) (cid:2) Vksk(t)
+
+(3)
+
+Figure 1F shows LFPs contributed by G6 only. Note that the ICA
+ambiguity does not affect the virtual LFPs, i.e.: the reconstructed
+LFPs are dimensional. The virtual LFPs can be used to evaluate the
+CSD created by a single generator (Fig. 1G shows the CSD of G6),
+and thus the raw and generator-based CSDs can be compared (Fig. 1,
+B and G). We also noticed that, using Eqs. 1–3, the CSD related to the
+kth generator can be evaluated by CSDGk
+
+For the ICA, we made use of the infomax algorithm proposed by
+Bell and Sejnowski (1995) and further modiﬁed by Amari et al. (1996)
+and Lee et al. (1999). The algorithm is implemented in the EEGLAB
+Matlab toolbox (Delorme and Makeig 2004).
+
+(cid:2) Iksk
+
+(cid:1)t(cid:2).
+
+LFP-generators corresponding to the same population of presynaptic
+neurons. Thus to deﬁne a measure of similarity between a pair (k, m)
+of LFP-generators, we used the distance measure between their
+voltage loadings (Makarov et al. 2010)
+
+d(Vk, Vm) (cid:2) 1 (cid:3)
+
+(cid:6)Vk, Vm
+
+(cid:8)(cid:6)Vk, Vm
+(cid:7)(cid:8)
+(cid:8)Vk
+(cid:8)
+(cid:8) (cid:8) Vm
+(cid:7) (cid:2) (cid:9)(cid:9) VkVm
+(cid:6) (cid:10)(cid:11) Vk
+(cid:11) Vm
+(cid:5)Vmdx, (cid:8) Vk
+(cid:6) (cid:10)2(cid:5)Vk
+
+(4)
+
+(cid:8)2 (cid:2) (cid:6)Vk, Vk
+where (cid:10) (cid:2) 0.05 mm2 is the dimensional constant. The distance
+measure is bounded 0 (cid:7) d (cid:7) 1 and d (cid:2) 1 for two orthogonal
+(completely different) loadings, whereas d (cid:2) 0 for two equivalent
+(identical) loadings.
+
+(cid:7)
+
+Comparison of LFP-generators: Distance measure
+
+Each application of the ICA on LFPs, to either different recordings
+or for different time windows, provides several LFP-generators, and
+thus we need a method to compare and classify them. Each generator
+is characterized by its activation sk(t) and spatial loading Vk (Fig. 1, C
+and D). Activations are time speciﬁc and therefore they cannot be
+used for comparison. In contrast, the loadings depend on the spatial
+distribution of an axon’s terminals and hence they must be similar for
+
+To partition a set of voltage loadings into disjointed clusters, we use
+hierarchical clustering based on the introduced distance measure with
+the average-linkage algorithm.
+
+Identiﬁcation of stable LFP-generators
+
+An ICA may theoretically isolate as many LFP-generators as the
+number of LFP signals (16 or 32 in these experiments), yet obviously,
+only a few of them will be statistically signiﬁcant and stable. For
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025. 
+ 
+ 
+ 
+EXCITATORY GENERATORS OF HIPPOCAMPAL LFPS
+
+487
+
+example, in Fig. 1C, the ﬁrst 6 generators have high amplitude and
+they are clearly related to the stimulus, whereas the other 10 may
+capture noise and therefore they may vary strongly from one record-
+ing to another. In our former study (Makarov et al. 2010), we
+considered those LFP-generators contributing (cid:3)5% to the total LFP
+variance (power) as statistically signiﬁcant. The number of reliable
+components that can be extracted in practice depends on many factors
+such as the particular region under study, the signal to noise ratio, and
+the relative strength and spatial extension of active components. Some
+neuronal populations (e.g., hippocampal pyramidal cells) ﬁre very
+the
+rarely (Ranck 1973; Thompson and Best 1989) and hence,
+postsynaptic activity of their targets may contribute little to the total
+LFPs. In this study, we consider an isolated LFP-generator with the
+variance contribution (cid:4)5% to be signiﬁcant, as long as it is unequiv-
+ocally related to a known pathway and provides a clean CSD spatial
+map (low noise and a ﬂat baseline). To identify the most stable
+LFP-generators in spontaneous LFPs, we used the two-step algorithm
+(Makarov et al. 2010). First, we identiﬁed “global” generators through
+an ICA of a sufﬁciently long recording (tens of seconds). Second, we
+divided the same recording into short-term contiguous epochs (each 1
+s long), and we applied an ICA to each of these segments. We expect
+that stable strong LFP-generators should be presented in all epochs,
+whereas noisy, unstable, temporal or weak generators will ﬂuctuate,
+and hence, their spatial loading will differ from epoch to epoch. We
+identiﬁed those that are most stable over time by calculating the
+similarity measure (4) between the “global” and “local” generators.
+
+the same spatial distribution as deﬁned by the axon’s terminals. Thus
+two types of LFPs with the same spatial characteristics must be
+captured by one and the same LFP-generator, and hence the presence
+of evoked responses in the activation of the LFP-generator sk(t) assists
+in its identiﬁcation. In preliminary experiments, we found that sub-
+threshold ((cid:4)0.5 (cid:5) threshold) stimuli delivered at an average rate of 1
+Hz do not signiﬁcantly change the variance of the total signal. We also
+found that strong (near threshold and suprathreshold) evoked re-
+sponses produce a complex mixture of components when analyzed by
+ICA/CSD (see Fig. 1). Apparently such phenomena are not present in
+the low-amplitude events of ongoing LFPs, and thus we chose low
+stimulus intensities to prevent the generation of PS components (i.e.,
+we achieve vanishing recruitment of intrinsic currents into ﬁeld
+excitatory postsynaptic potentials (fEPSPs) during synchronous acti-
+vation, Herreras 1990). For Schaffer activation, we chose stimuli that
+produced fEPSPs of (cid:7)0.5 mV in the stratum radiatum, and for the PP
+input, the intensity was adjusted to raise a positive ﬁeld in the Hilus
+(cid:7)1 mV (below 0.5 mV in the DG molecular layer). To analyze the
+LFPs, we used a two-epoch recording: 1) spontaneous and 2) spon-
+taneous plus evoked activities. Thus we can examine whether evoked
+activity modiﬁes the level of spontaneous activity on the same or
+another LFP-generator. In accordance with the stability analysis of the
+LFP-generators (Makarov et al. 2010), we found that mixing sparse
+subthreshold evoked activity into ongoing LFPs neither modiﬁes their
+characteristics nor affects the spatial proﬁles of the LFP-generators, as
+long as the probe array remained in place.
+
+Power of LFP-generators
+
+Reconstruction of LFPs for speciﬁc pathways
+
+Using Eq. 3, we reconstructed virtual LFPs corresponding to the
+generator Gk, and we deﬁned the mean power of Gk (measured in
+mV2) as
+
+PGk
+
+(cid:2) max
+m(cid:1)[1,K]
+
+2 (t)dt(cid:11)
+
+um
+
+(cid:10) 1
+
+T
+
+T
+
+(cid:9)
+
+0
+
+(5)
+
+where T is the time interval for averaging (about a few minutes in our
+experiments). To evaluate the evolution of the power of the genera-
+tor’s activations over time, we use the convolution with the appropri-
+ately scaled square kernel H
+
+(t) (cid:2) (cid:9) H(t (cid:3) (cid:12))sk
+
+2((cid:12))d(cid:12)
+
+PGk
+
+(6)
+
+Analysis of evoked LFPs
+
+Evoked LFPs were recorded for a series of stimuli of varying
+intensity (short, 0.1 ms, square pulses at a rate of 0.1–1 Hz), from a
+low subthreshold to supramaximal [i.e., producing maximal popula-
+tion spike (PS)]. The stimulus intensity was measured in units of the
+threshold intensity to evoke a PS and stimulus artifacts were removed,
+except where indicated. Each series of evoked LFPs was analyzed as
+one long signal containing either all stimuli or selected groups of
+evoked responses. Only the period of interest (40 –50 ms) immediately
+after the stimulus was analyzed for each proﬁle, and thus intermediate
+periods were removed off-line and the time windows containing
+responses were concatenated into a continuous unique signal. This
+procedure does not affect the applicability of ICA but rather improves
+its efﬁciency by increasing the relative variance of the signal of
+interest.
+
+Priming of LFPs with evoked activity
+
+To identify the presynaptic populations corresponding to LFP-
+generators, we stimulated known afferent pathways with random
+sparse subthreshold pulses. The rationale was that the minimal electric
+activation of a pathway emulates its spontaneous excitation. Therefore
+the evoked and spontaneous activities of a given pathway must have
+
+Reconstructed LFPs recover the correct polarity and provide a good
+quantitative estimate of the pathway-speciﬁc variance and power. The
+power was calculated in the electrode that showed maximum ampli-
+tude during irregular LFP patterns (i.e., excluding theta periods) over
+a total of 3 min of 20 s randomly chosen segments within 1 h. A major
+advantage of pathway-speciﬁc LFPs is that they provide simpliﬁed
+CSD maps describing a unique spatial structure of inward and out-
+ward currents. These can easily be matched to those obtained from
+customary hippocampal evoked ﬁelds, whose uncomplicated nature
+and well-deﬁned distribution along the anatomy of principal cells
+assist path identiﬁcation (Herreras 1990; Herreras et al. 1987; Leung
+et al. 1995; Lømo 1971).
+
+R E S U L T S
+
+We ﬁrst tested the spatial and temporal performance of the
+ICA on evoked LFPs obtained by activation of the Schaffer-
+CA1 and PP-dentate inputs. Subsequently, we used the path-
+way speciﬁcity of the ICA-derived LFP-generators to explore
+the spontaneous population activity of these pathways in on-
+going LFPs.
+
+Spatial and temporal precision of pathway-speciﬁc
+LFP-generators
+
+SEPARATION OF ARTIFACTS AND NEURAL ACTIVITY. The capacity
+of the ICA to suppress EEG artifacts is well established (see
+Castellanos and Makarov 2006; Vigario et al. 2000 and refer-
+ences therein), and thus we assess here its applicability to
+isolate stimulus artifacts (caused by electric shock) in deep
+brain recordings. We antidromically stimulated the CA1 pyra-
+midal population from the alveus (Fig. 2A, cartoon inset), and
+the electric shock produced a large negative spike-like poten-
+tial ((cid:3)40 mV, truncated at the black dot in Fig. 2Aa) that may
+reverse polarity outside the hippocampal tissue. This artifact
+was followed by evoked LFPs with the characteristic proﬁle of
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025.KOROVAICHUK ET AL.
+
+488
+
+A
+
+1
+
+8
+
+#
+
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+16
+
+2
+
+8
+
+15
+
+d
+
+G1
+
+G2
+
+B a
+
+0.6
+
+0.4
+
+0.2
+
+y
+t
+i
+r
+a
+
+l
+i
+
+i
+
+m
+s
+s
+d
+
+i
+
+a
+
+raw LFP
+
+c
+
+volt. loadings
+
+b
+
+CSD for raw LFP
+
+G2
+
+G1
+
+5
+m
+V
+
+0
+
+1
+2
+(a.u.)
+
+3
+
+9
+
+0
+
+-9
+1 ms
+
+activations
+
+e
+
+expl. variance
+
+1.0
+
+clustering of generators
+
+0.5
+
+0.0
+
+40
+1
+(a.u.)
+
+G1 G2
+
+G3-G16
+
+b
+
+mean v. loadings
+
+-0.25
+
+)
+
+m
+m
+
+(
+h
+t
+p
+e
+d
+
+0
+
+0.25
+
+G2
+
+G1
+
+0.5
+
+-1
+
+0
+
+1
+2
+(a.u.)
+
+3
+
+0
+
+2a 4a 3a 5a 6a 7a 1a1b 2b 5b 6b 7b 4b 3b 1c
+
+FIG. 2. Segregation of artifacts and neural activity by the ICA. The ﬁgure
+corresponds to the analysis of an LFP obtained during antidromic activation of
+the CA1 ﬁeld. The alvear electric shock produced a large voltage artifact (dot
+in Aa) followed by an antidromic population spike. The artifact is nearly
+deleted in the corresponding CSD (Ab) while locally generated active sink and
+passive sources are visible. The ICA showed only 2 signiﬁcant generators (Bb).
+G1 contains the stimulus artifact (Ba) that enters all electrodes with similar
+weight (ﬂat voltage loading in Ab). G2 contains all
+the neural activity,
+displaying a bell-shaped voltage loading curve spanning the activated soma-
+todendritic domains (Ac). B: the cluster analysis of all voltage loading curves
+obtained in 7 animals establishes 2 groups (blue and green) corresponding to
+the artifacts and population spikes, respectively. The average spatial loading
+curves is shown in Bb (mean (cid:6) SD).
+
+the antidromic PS (Varona et al. 2000). The corresponding
+CSD map (Fig. 2Ab) shows the somatodendritic sink (blue,
+electrodes 7–11) surrounded by passive sources (yellow/red).
+The polarity of currents reverses in the ensuing slower tail, as
+expected for somatic recurrent inhibition (active somatic cur-
+rents ﬂanked by passive basal and apical dendritic currents).
+The ICA successfully isolated the artiﬁcial potential as a
+single generator, G1, that was devoid of neuronal activity (Fig.
+2, Ac and Ad, blue curves). We noted that the spatial voltage
+loading of the artiﬁcial generator is essentially ﬂat (Fig. 2Ac,
+blue line). Such a generator, which enters all electrodes at the
+same strength or with a linear decay, has a null CSD (Eq. 2),
+which means that its origin lies outside the recording zone and
+that the generator is volume propagated, as expected. The
+second strongest LFP-generator, G2, contains the main part of
+the neuronal activity, including the PS and inhibitory currents.
+The LFP variance explained by the remaining G3–G16 is (cid:4)5%
+
+(Fig. 2Ae). Thus when evoked LFPs contain a large artifact, the
+resolution of the mixed neuronal activity signiﬁcantly deterio-
+rates. Hence, in subsequent analysis, we routinely cut off the
+stimulus artifacts before applying the ICA.
+
+We found that the results shown in Fig. 2A were stable in all
+animals, and the clustering analysis of voltage loadings of all
+the LFP-generators in the seven animals provided a well-
+deﬁned partition into two groups (Fig. 2Ba; intracluster dis-
+tance (cid:4)0.15, intercluster distance (cid:3)0.5). This is evident in Fig.
+2Bb, which shows the mean (cid:6) SD spatial loadings for the
+artiﬁcial G1 and neuronal G2 generators averaged over load-
+ings belonging to the corresponding cluster (n (cid:2) 7).
+
+SUBTHRESHOLD ACTIVATION OF AN AFFERENT PATHWAY IS CAP-
+TURED BY A SINGLE LFP-GENERATOR WITH PRECISE SPATIOTEMPO-
+RAL DEFINITION. Let us now examine the ICA performance on
+LFPs evoked by activation of Schaffer-CA1 and PP-DG inputs
+(a detailed description of evoked LFPs and their CSD analysis
+can be found in the Supplementary Fig. S1). We ﬁrst studied
+the excitatory Schaffer input to the CA1 that was activated by
+subthreshold (0.5 (cid:5) threshold) stimuli to minimize the second-
+ary intrinsic currents (Herreras 1990). Figure 3A shows raw
+proﬁles of evoked LFPs and the corresponding CSD map. It
+can be appreciated a single active sink centered in the st.
+radiatum, surrounded by two passive current sources in the
+soma region and distal apical dendrites.
+
+Application of the ICA identiﬁed 16 LFP-generators, and
+only 1 of them, G1, had statistically signiﬁcant amplitude (Fig.
+3B). The activation of G1 matches the time course of the raw
+LFP at the site of maximum amplitude (electrode 9 in Fig.
+3Aa). G1 has a bell-shaped spatial distribution (Fig. 3Bc, blue
+curve) that is maximal in the apical dendrites, and its polarity
+reverses in the soma layer, in close correspondence to the
+spatial proﬁle of LFPs calculated for the time instant marked
+by the arrow in Fig. 3Aa (Fig. 3Bc, black line). The spatiotem-
+poral dynamics of the CSD obtained from the LFPs recon-
+structed from G1 matched the CSD map calculated from the
+raw LFP proﬁle (Fig. 3, Be vs. Ab). We noticed that the
+three-layered source-sink-source distribution caused by excita-
+tory synaptic and return currents was not decomposed by the
+ICA into three different components, but rather, it was ex-
+plained by the single G1 LFP-generator. The transmembrane
+source/sink loop of current raised by a discrete patch of active
+membranes is contained within the shape of the spatial weights
+of the ICA-isolated LFP-generator (loading vector V1 in Eq. 1).
+Similar results were repeatedly obtained in ﬁve animals, and
+in a clustering analysis of the loading curves obtained in
+different experiments, the interloading distance was (cid:4)0.1 for
+all generators (Fig. 3Ca). In one experiment, we obtained two
+signiﬁcant generators: one of them (2a in Fig. 3Ca) had a
+similar voltage loading as that described above (Fig. 3Bc),
+whereas the other (2b in Fig. 3Ca) was signiﬁcantly different.
+Hence, in this experiment, it would seem that some spontane-
+ous LFP event of a different origin overlapped with the evoked
+activity, which was isolated into a separate LFP-generator. The
+mean (cid:6) SD voltage loading for the Schaffer synaptic input
+averaged over n (cid:2) 5 experiments is shown in Fig. 3Cb.
+
+In a representative experiment that examines PP-DG evoked
+responses (Fig. 4), subthreshold (0.5 (cid:5) threshold) activation of
+the PP produced the expected negative LFP in the molecular
+layer of both blades and a strong positive potential across the
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025. 
+ 
+ 
+EXCITATORY GENERATORS OF HIPPOCAMPAL LFPS
+
+489
+
+raw LFPs
+
+b
+
+raw CSD 
+
+c
+volt. loading 
+1
+
+d
+CSD loading
+
+e
+
+0
+
+G1
+
+G1-G13
+
+CSD for G1
+
+A
+
+a
+
+1
+
+8
+
+#
+
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+16
+
+B
+
+a
+
+activation of G1
+
+5 mV
+
+2 ms
+
+0.3 (a.u.)
+
+8
+
+#
+
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+16
+
+a
+
+C
+
+G1
+
+LFP
+
+0
+
+4
+(a.u.)
+
+8
+
+-1
+
+0
+1
+(a.u.)
+
+2
+
+clustering of generators
+
+y
+t
+i
+r
+a
+
+l
+i
+
+i
+
+m
+s
+s
+d
+
+i
+
+0.6
+
+0.4
+
+0.2
+
+0
+
+1a 5a
+
+2a
+
+3a
+
+4a
+
+2b
+
+0.8
+
+0
+
+-0.8
+2 ms
+
+explained variance
+
+b
+
+1
+
+0.5
+
+0.8
+
+0
+
+-0.8
+2 ms
+
+b
+
+mean voltage loading
+
+-0.25
+
+)
+
+m
+m
+
+(
+h
+t
+p
+e
+d
+
+0
+
+0.25
+
+0.5
+-3
+
+0
+
+3
+(a.u.)
+
+6
+
+9
+
+FIG. 3. Precise spatial and temporal performance of ICA on LFPs produced
+during subthreshold activation of the Schaffer input to CA1. A: an electric
+shock in the ipsilateral CA3 evoked a negative potential in the apical dendritic
+tree (a). The schematic neuron indicates the approximate recording position.
+The CSD reveals inward currents (sinks) centered in stratum radiatum ﬂanked
+by passive sources in the soma layer and stratum lacunosum (b). B: the ICA
+applied to the LFP proﬁle shows a unique signiﬁcant component (b) with a
+temporal course matching the voltage change in central electrodes (a). C: the
+voltage and CSD loadings (blue plots) coincide with the spatial proﬁles of the
+raw LFP and CSD (black plots; measured at the instant marked by the small
+arrows in A). The CSD calculated for the reconstructed LFP for G1 (c) is
+similar to the raw CSD (Ab). D: cluster analysis for voltage loadings obtained
+in 4 animals show a unique group (a). The average voltage loading (mean (cid:6)
+SE) shown in b was built using the st. pyramidale as a spatial reference.
+
+Hilus (Fig. 4A). The CSD map showed strong sinks in both
+molecular layers (sk1, sk2) and a weaker sink (sk3) produced
+by CA1 pyramidal cells in the st. lacunosum, in close corre-
+spondence to the known anatomical
+terminations of these
+ﬁbers. Passive sources (return currents) appeared in the GCL
+(cartoon in Fig. 4A, right). The ICA of LFPs again rendered
+only 1 signiﬁcant LFP-generator, G1 (activation in Fig. 4Ba
+and loading in Fig. 4Bd), whereas the other 15 were negligible
+(Fig. 4Bb). The CSD map of the virtual LFPs reconstructed for
+this unique generator (Eq. 3) matches the CSD of the raw
+signal (Figs. 4, Bc vs. A). Likewise the voltage and CSD
+loading curves (Fig. 4Bd) match the spatial proﬁles for the raw
+
+signals. Thus one ICA-isolated LFP-generator may contain
+synaptic activity from several separate populations, as long as
+they are simultaneously activated by a common input.
+
+Qualitatively,
+
+the same results were observed when we
+repeated this analysis in ﬁve animals. However, since the
+separation between the GC layers varies because of the curved
+arrangement of this population, the anatomical normalization
+of the recording tracks across animals is not ideal. This pre-
+cludes direct comparison of spatial loadings obtained in dif-
+ferent experiments. Supplementary Fig. S2 shows the results
+from the other four experiments.
+
+SEPARATION OF THE ACTIVITY EVOKED BY MULTIPLE PATHWAYS. Be-
+cause of the volume propagation of extracellular currents, a
+LFP may contain activity from several domains within the
+same neurons or even from different distant populations and at
+a distance from the recording electrode. Thus we tested
+whether the ICA can decompose LFPs with a contribution from
+two pathways into the original Schaffer and PP inputs to the
+CA1 and DG, respectively.
+
+Conveniently, the pyramidal and granule cell populations
+are spatially segregated, and they can be covered by different
+groups of electrodes in the 32-site linear probe. In the two
+representative experiments shown in Fig. 5, a series of sub-
+threshold paired pulses of stimuli were delivered at a rate of 0.2
+Hz rate to the Schaffer and PP pathways. These pathways were
+either stimulated with a 100 ms delay or simultaneously (left
+and right columns in Fig. 5, respectively). The stimulus inten-
+sity was maintained constant for the Schaffer input, whereas
+for the PP input, it increased over time for noncoincident pairs
+of stimuli (Fig. 5A) and decreased for the coincident pairs (Fig.
+5B), yet always remained below a 0.5 (cid:5) threshold. The LFPs
+recorded for the two stimulus conﬁgurations by the 32-site
+linear probe extended from the CA1 st. oriens to the lower
+GCL can be seen in Fig. 5A (see Supplementary Fig. S1 for
+greater detail).
+
+NONCOINCIDENT STIMULI. An electric shock in the ipsilateral
+CA3 produces the Schaffer fEPSP in CA1, as well as a local
+multiphasic ﬁeld in the CA3/DG. The CSD map shows the
+characteristic source-sink-source distribution of currents along
+the CA1 pyramidal cell axis and a local source-sink dipole
+(Fig. 5B, Sch). This latter dipole contains a mixture of the
+antidromic sink in the area of the granule cell and of the local
+recurrent orthodromic fEPSPs in CA3 (this local response may
+contain PP activation in other experiments, depending on the
+position of the stimulating electrode). Activation of the PP
+pathway produced an excitatory sink in the molecular layer
+(100 (cid:1)m above the CA3 sink), as well as the corresponding
+somatic sources in both GCLs (Fig. 5B, PP). A weaker sink
+was also observed in the st. lacunosum of the CA1 region.
+
+The ICA of the LFPs yielded three signiﬁcant LFP-genera-
+tors, G1–G3, with little if any cross-contamination (Fig. 5C).
+Noticeably, the time course of G1 activation shows increasing
+pulses in agreement with the increasing amplitude of the PP
+stimuli. In addition, the beginning of the G1 pulses coincides
+with the onset of the stimuli in this pathway. The other two
+LFP-generators, G2 and G3, exhibit pulses of constant ampli-
+tude (as for the Schaffer stimulation), whose onset coincide
+with the beginning of the stimulation to the Schaffer input.
+Thus the LFP-generator G1 exclusively represents the activity
+in the molecular layer of the DG (cf. Fig. 4), whereas the
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025. 
+ 
+ 
+490
+
+A
+
+e28
+
+#
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+2
+
+10
+
+20
+
+30
+
+KOROVAICHUK ET AL.
+
+1.0
+
+0.5
+
+0.0
+
+explained variance
+
+G1
+
+G2-G16
+
+CSD loadings
+
+volt. loadings
+
+B
+
+a
+
+1 mV
+
+1 (a.u.)
+
+G1
+
+c
+
+1
+A
+C
+
+CSD for G1
+
+GCL
+
+GCL
+
+G
+D
+
+raw CSD
+
+sk3
+sk1
+
+sk2
+
+b
+
+d
+
+2
+
+0
+
+-2
+
+10 ms
+
+-0.8
+
+0
+(a.u.)
+
+0.8
+
+0
+
+4
+
+2
+(a.u)
+
+FIG. 4. Precise spatial and temporal performance of the
+ICA on LFPs produced during subthreshold activation of the
+entorhinal input to the dentate gyrus (DG). A: an electric shock
+in the ipsilateral perforant path (PP) evoked a negative poten-
+tial in both molecular layers of the DG. A sample record from
+electrode 13 of a 32-site probe is shown in a. The raw CSD (b)
+shows active sinks in both molecular layers (sk1 and sk2) and
+a weaker sink in the st. lacunosum of the CA1 (sk3). Passive
+sources can be appreciated in the granule cell layers (GCL).
+The schematic neurons show the approximate site of record-
+ings. B: the ICA applied to the LFP proﬁle shows a unique
+signiﬁcant component (b) with a temporal course matching the
+voltage change in the molecular layer (a). The CSD calculated
+for the reconstructed LFP for G1 (c) is similar to the raw CSD
+(Ab). The voltage and CSD loadings (d) coincide with the
+spatial proﬁles of the raw LFP and CSD. Note that a unique
+ICA component captures coherent activity in physically sepa-
+rated cell generators as long as they are synaptically activated
+by a common input.
+
+CA3-evoked LFPs were decomposed into two generators: G2
+responsible for the Schaffer-mediated CA1 excitation (cf. Fig.
+3) and G3 corresponding to the local CA3/DG activation. The
+CSD maps of the virtual LFPs reconstructed from each of the
+isolated generators (Fig. 5D) also conﬁrm the pathway and
+population speciﬁc nature of the LFP-generators. Therefore
+ICA provides an accurate decomposition of multiple inputs that
+are not temporally coincident.
+
+In principle, the tight temporal coinci-
+COINCIDENT STIMULI.
+dence of multiple sources decreases the efﬁciency of ICA to
+separate them. Thus we checked its performance on two
+precisely synchronized different inputs. When the stimuli were
+delivered simultaneously to the Schaffer and perforant path-
+ways (Fig. 5, right column), there seemed to be a complex
+mixture of the sources and sinks in the raw CSD map. Notably,
+the proximity of the CA3 and GC layers led to fusion of their
+respective sinks into a unique slightly drifting sink (Fig. 5B),
+which made the sinks indistinguishable and complicated its
+direct interpretation.
+
+Even in this case, the ICA still rendered three signiﬁcant
+LFP-generators. Each of the generators had voltage loadings
+similar to those found in the noncoincident case (Fig. 5C, left
+vs. right), although their separation was less effective. As such,
+the strongest LFP-generator, G1, responsible for the PP input,
+introduced some contamination into the other two. This cross-
+contamination could be appreciated by comparing the loading
+curves in the left and right columns. We noticed that in the
+lower part of the loading curve (DG/hilus) for the Schaffer G2
+(arrow pointing to red curve), there was a spatial weighting
+analogous (disregard the polarity) to that of the PP-speciﬁc G1
+generator (arrow pointing to blue curve). The CSD maps for
+the reconstructed LFPs (Fig. 5D) show that
+the Schaffer-
+speciﬁc G2 generator contains some current belonging to the
+CA3 and FD regions (left vs. right columns in Fig. 5D).
+Nevertheless, even in this extreme case of the perfect time
+coincidence of different inputs, the speciﬁc activations of the
+LFP-generators conﬁrm an adequate separation. Indeed, only
+G1 exhibits decaying amplitude of activation in agreement
+with the decaying intensity of the stimulus applied to the PP
+input, whereas G2 has stationary amplitude in agreement with
+constant stimulation of the Schaffer pathway. All these results
+were reproduced in four additional animals.
+
+Schaffer and PP population activity in ongoing LFPs
+
+We showed that ICA can separate Schaffer and PP evoked
+activities mixed in LFPs, and we described their spatiotempo-
+ral characteristics. Neither of the spatial weight curves (load-
+ings) for these pathways matched those found in our former
+study, which described the most powerful generators in spon-
+taneous LFPs (Makarov et al. 2010). This observation suggests
+that the LFP-generators describing the activity induced by the
+excitatory pathway may contribute weakly to the spontaneous
+LFPs. Thus we sought after the LFP-generators for the Schaf-
+fer and PP inputs in ongoing LFPs by mixing in subthreshold
+stimuli that facilitate the identiﬁcation of the generators.
+
+IDENTIFICATION OF SCHAFFER AND PP POPULATION ACTIVITIES IN
+ONGOING LFPS. A fragment of ongoing LFPs was analyzed
+during which both pathways were activated in a random-like
+manner at an average rate of 1 Hz each (Fig. 6A). The vertical
+dashed red and blue lines mark the onset of the Schaffer and PP
+stimuli, respectively. Because of the weak intensity of the
+electrical stimulation, the evoked responses are hardly discern-
+ible in the raw LFPs. By applying an ICA, we found ﬁve main
+LFP-generators (Fig. 6, B and C), two of which exclusively
+contain the evoked responses to the Schaffer (G2) and PP (G4)
+stimuli (Fig. 6C). We noticed that the activations of the other
+LFP-generators (G1, G3, and G5) did not correlate with the
+onset of the stimulus, indicating that there was little if any
+cross-contamination between these generators. The remarkable
+speciﬁcity of the activities contained within G2 and G4 (Fig.
+6B) was proof that both are truly independent and well-isolated
+LFP-generators responsible for the Schaffer and PP inputs,
+respectively. The shape of the voltage loadings (spatial weight
+curves) for G2 and G4 are essentially identical to those found
+in experiments where only evoked activity was assessed (cf.
+Fig. 6C, red and blue curves to Figs. 3Bc and 4Bd, respectively,
+and also to Fig. 5C, red and blue curves). The portion of the
+variance explained by the two primed pathways (bars in red
+and blue) is small ((cid:4)5%; Fig. 6D). This reduced contribution
+of the Schaffer and perforant pathways to LFPs makes their
+identiﬁcation in ongoing spontaneous LFPs extremely difﬁcult.
+As such, LFP-generators containing their activities fall below
+the level of signiﬁcance and hence they can be overlooked.
+
+RECONSTRUCTION OF PATHWAY-SPECIFIC LFPS AND THEIR SUBCEL-
+LULAR SPECIFICATION. Disentangling the raw LFPs into LFP-
+generators enables the reconstruction of virtual LFPs produced
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025. 
+EXCITATORY GENERATORS OF HIPPOCAMPAL LFPS
+
+491
+
+by a speciﬁc pathway during ongoing activity and their sepa-
+rate analysis. An example is shown in Fig. 7 for an LFP
+fragment containing three evoked (subthreshold) pulses (ap-
+plied to Sch or PP pathways; the onset of each is marked by a
+dashed line in Fig. 7A). The LFP was recorded from the
+pyramidal/oriens border in CA1 to the lower blade of the DG.
+The corresponding CSD map shows a confusion of sources and
+sinks produced by the ongoing spatiotemporal activity of
+different origins (Fig. 7B).
+
+The ICA of the LFP fragment rendered ﬁve LFP-generators
+(Fig. 7C), and their spatial loadings and time course of activa-
+tion can now be used to identify pathway-speciﬁc evoked
+activity. By searching for the evoked responses among all
+
+A
+
+1
+
+non-coincident
+
+coincident
+
+#
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+10
+
+20
+
+30
+
+B
+
+#
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+2
+
+10
+
+20
+
+30
+
+C
+
+G1
+G2
+G3
+
+.
+
+. .
+
+. .
+
+. .
+
+.
+
+.
+
+. .
+
+. .
+
+. .
+
+* *
+
+.
+. .
+0.2 s
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+*
+
+.
+0.05 s
+
+V
+m
+5
+
+PP
+
+raw CSD
+
+Sch
+
+raw CSD
+
+PP + Sch
+
+raw CSD
+
+sk2
+sk1
+
+sk3
+
+sk4
+
+activations
+
+GCL
+H
+GCL
+
+5 ms
+
+1
+A
+C
+
+G
+D
+
+sk6
+
+sk5
+
+5 ms
+
+activations
+
+-4
+
+x10
+8
+
+0
+
+-8
+
+.
+
+. .
+
+. .
+
+. .
+
+.
+
+*
+
+.
+
+*
+
+. .
+
+. .
+
+.
+. .
+. .
+2 (a.u.)
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+*
+
+.
+
+.
+1 (a.u.)
+
+1
+
+10
+
+20
+
+#
+
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+30
+
+D
+
+2
+
+10
+
+20
+
+30
+2
+
+10
+
+20
+
+#
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+30
+2
+
+10
+
+20
+
+30
+
+volt. loadings
+
+CSD loadings
+
+volt. loadings
+
+CSD loadings
+
+0
+
+4
+
+2
+(a.u.)
+
+-0.4
+
+0.4
+
+0
+(a.u.)
+
+-4
+
+0
+4
+(a.u.)
+
+8
+
+-1
+
+0
+1
+(a.u.)
+
+2
+
+G1 (PP)
+
+G1 (PP)
+
+sk1
+
+sk2
+
+sk1
+
+sk2
+
+G2 (Sch)
+
+sk3
+
+G2 (Sch)
+
+sk3
+
+G3 (CA3)
+
+-4
+
+x10
+4
+
+G3 (CA3)
+
+sk4
+
+0
+
+-4
+
+5 ms
+
+sk4
+
+5 ms
+
+generators and comparing their activations and voltage load-
+ings to those shown in Fig. 6, B and C, respectively, we
+identiﬁed G2 and G4 as responsible for the Schaffer and
+perforant inputs, respectively. Because of the ambiguity of the
+ICA (see METHODS), the time course of the activations is given
+in arbitrary units and is not directly comparable. However, we
+can reconstruct the virtual LFPs created by each single gener-
+ator. Figure 7D shows LFPs reconstructed for the Schaffer
+generator (G2). The spontaneous population activity and two
+of the evoked events can be tracked down in the raw signal.
+The reconstructed evoked potential proﬁle shows no difference
+to its raw counterpart, as expected (see the ellipses in Fig. 7, A
+and D, ampliﬁed in the right insets). By visual inspection of the
+raw and Schaffer reconstructed LFPs, it is patent that ongoing
+raw LFPs are most prominent in the hilus of the DG (lower
+electrodes), whereas Schaffer mediated activity is more con-
+spicuous in the CA1. Also some activity in the CA3/DG region
+that is probably caused by recurrent excitation of presynaptic
+pyramidal cells in the CA3 region.
+
+As further conﬁrmation of the speciﬁcity of the Schaffer
+generator (G2) identiﬁed, we compared its activation (Fig.
+7B, G2) with the high-frequency activity ((cid:7)100 –200 Hz)
+associated to sharp waves, an electrographic event known to
+be caused by synchronous activation of the CA3 region (i.e.,
+Schaffer-mediated: Buzsáki et al. 1983). Indeed, the speciﬁc
+bouts of activity contained within the Schaffer G2 generator
+were coherent with ripple-like fast activity in the CA1
+perisomatic LFPs (black top trace in Fig. 7B; band-pass:
+100 –500 Hz).
+
+To obtain the precise localization and magnitude of the
+underlying transmembrane currents, we evaluated the CSD of
+the reconstructed LFPs (Fig. 7E). As expected, the Schaffer
+population activity presented a main sink in the st. radiatum
+surrounded by passive sources (return currents) in the st.
+pyramidale and lacunosum, matching the locations of the
+well-known CSD map for evoked Schaffer activity (Fig. 3).
+The CSD maps of isolated pathway-speciﬁc LFPs contrasted
+with those obtained for the mixed signal (cf. Fig. 7, B and E).
+It is worth mentioning that the temporal activation of isolated
+components corresponds to that of the population synaptic
+currents (e.g., compare the evolution of the CSD map at
+
+FIG. 5. Discrimination of multiple evoked synaptic inputs in mixed LFPs.
+Subthreshold stimuli were applied to both the ipsilateral CA3 (Schaffer) and
+the PP, either as paired pulses (100 ms delay, left column) or synchronously
+(right column). PP stimuli were modulated in intensity, whereas CA3 stimuli
+were constant. A: raw LFPs recorded along a track spanning the CA1 and
+CA3/DG up to the lower GCL. B: CSD maps for a sample response (raw CSD)
+to either the PP, the CA3 (Sch), or both. Schematic neurons between panels
+show the approximate locus of recording. PP produced a main sink in the st.
+moleculare (sk1) and a weaker sink in the CA1 st. lacunosum (sk2). CA3
+activation raised a sink in the CA1 st. radiatum (sk3) and a local sink (sk4).
+Combined stimuli produced a complex sink in the DG (sk5) and the Schaffer
+sink in CA1 (sk6). C: the ICA yielded 3 signiﬁcant generators in both cases. G1
+and G2 correspond to the PP and Schaffer generators, respectively, whereas G3
+corresponds to local activity in the CA3/DG. The top traces show the time
+activation and the bottom traces show the corresponding spatial voltage and
+CSD loadings. Note that activations vary in G1 with successive stimuli,
+whereas they remain constant in G2, precisely reﬂecting the intensity applied
+in each case. The spatial loadings for G1 and G2 were identical as when each
+pathway was stimulated alone. A small contaminant appeared during coinci-
+dent stimulation (small arrows). D: virtual CSD maps for sample responses of
+each separate generator. Note the spatial coincidence of the separate virtual
+sinks with those in the raw LFPs.
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025. 
+ 
+ 
+ 
+ 
+492
+
+KOROVAICHUK ET AL.
+
+A
+
+1
+
+raw LFPs
+
+1 s
+
+5 mV
+
+voltage loadings
+
+C
+
+1
+A
+C
+
+#
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+10
+
+20
+
+30
+
+B
+
+G1
+
+G2
+
+G3
+
+G4
+
+G5
+
+Schaffer
+
+Perforant
+
+GCL
+
+G
+D
+
+/
+
+H
+3
+A
+C
+
+GCL
+
+D
+
+-0.2
+
+0
+
+0.2
+(a.u.)
+
+0.4
+
+explained variance
+
+0.5
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0
+
+40 ms
+
+2 (a.u)
+
+G1 - G5 G6 - G11
+
+FIG. 6.
+
+Identiﬁcation of the Schaffer and PP population activities in ongoing LFPs. A: segment of raw LFPs recorded from the CA1 st. pyramidale to the lower
+GCL in the DG. LFPs were primed with subthreshold stimuli applied in a random manner to the CA3 (Sch) and PP. The vertical dashed lines mark the timing
+of stimulation (blue for PP and red for CA3). Evoked potentials are short and small, and hence, they do not introduce much variance in the raw signals (they
+are hardly discernible over this time scale). B–D: the ICA yielded 5 principal generators, 2 of which speciﬁcally contain the activation corresponding to the
+evoked potentials for the Schaffer (G2) and the PP (G4). B: an ampliﬁcation of the responses after each stimulus. Note the pathway speciﬁc segregation of evoked
+responses in the corresponding generators. The spatial loadings shown in C match those found for nonprimed LFPs (G1, G3, G5) or for separately stimulated
+pathways (G2, G4). D: relative variance of the generators isolated.
+
+electrodes 8 –9 in Fig. 7E to the corresponding activation in
+Fig. 7C, red trace). Thus LFP-generators isolated by the ICA
+enable the population-speciﬁc transmembrane current density
+to be examined, rejecting contamination of the other inputs in
+ongoing LFPs.
+
+MINOR CONTRIBUTION OF EXCITATORY PATHWAYS TO HIPPOCAM-
+PAL LFPS. The Schaffer and PP generators (G2 and G4) iden-
+tiﬁed that describe the activation of the corresponding path-
+ways enabled the spontaneous activity of these pathways to be
+studied and quantiﬁed (i.e., the presynaptic CA3 and entorhinal
+afferent populations, respectively). In general, we found that
+the spontaneous activity (during irregular LFPs) of both the
+Schaffer and PP generators represents an irregular pattern of
+short bouts over a rather ﬂat baseline. These can be appreciated
+in a sample epoch in Fig. 8A along with their respective
+wavelet spectra. They lasted a few hundred milliseconds, had
+variable amplitude and occurred at (cid:4)1 Hz rate. Smaller and
+shorter events can also be appreciated, which may be physio-
+logically relevant. The main frequency content of the activity
+concentrates in the 0.5– 4 Hz range for both generators. To
+track the evolution of the generator’s power over time, we
+calculated time envelopes of this activity (see METHODS and Eq.
+6), where large events and baseline activity can be better
+distinguished (Fig. 8B).
+
+The dimensional power (measured in mV2) that contributed
+to the ongoing LFPs for each synaptic pathway can be esti-
+mated from the virtual LFPs reconstructed from the corre-
+
+sponding LFP-generators (see METHODS and Eqs. 3 and 5). The
+Schaffer and PP inputs produce 0.045 and 0.031 mV2 on
+average (7 and 5% of the total power), respectively (Fig. 8C),
+whereas the contributions of the other generators ranged be-
+tween 0.13 and 0.24 mV2 in four animals. This result corrob-
+orates the relatively small contribution of the excitatory path-
+ways into the total LFP variance observed above (Fig. 6D), but
+now excluding the evoked activity. We also noticed that the
+powers of the Schaffer and PP generators have smaller SE
+relative to the powers of G1, G3, and G5, which suggests that
+the Schaffer and PP inputs described are more stationary in
+time and between different animals than the other three
+LFP-generators.
+
+D I S C U S S I O N
+
+Studying the mechanisms of neural information processing
+requires certain knowledge of the circuitry and of the causal
+and functional associations between activities of different neu-
+ronal groups. Here, we showed that an ICA can effectively
+separate standard LFPs in the hippocampus into pathway-
+speciﬁc isolated activities, called LFP-generators, describing
+the inputs of multiple presynaptic populations. The main req-
+uisite for the separation is the different spatial distribution of
+transmembrane currents along the somatodendritic axis of
+principal cells, whereas the temporal pattern of the pathway’s
+activation is less important (e.g., they can be rhythmic or
+irregular).
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025. 
+EXCITATORY GENERATORS OF HIPPOCAMPAL LFPS
+
+493
+
+Using selective subthreshold electrical activation of major
+excitatory synaptic pathways, such as the Schaffer and PP
+inputs, we described spatiotemporal features of LFP-generators
+speciﬁc to each. Subsequently, the Schaffer and PP generators
+
+raw LFPs
+
+0.2 s
+
+20 ms
+
+1
+A
+C
+
+*
+
+GCL
+H
+/
+3
+A
+C
+GCL
+
+5 mV
+
+raw CSD
+
+2 mV
+
+0.25
+
+0
+
+-0.25
+
+LFP [100-500 Hz]
+
+V
+m
+1
+.
+0
+
+volt. loadings
+
+A
+
+1
+
+#
+
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+10
+
+20
+
+30
+
+2
+
+10
+
+20
+
+30
+
+B
+
+#
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+C
+
+activations
+
+Schaffer
+
+Perforant
+
+G1
+
+G2
+
+G3
+
+G4
+
+G5
+
+D
+
+#
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+E
+
+#
+
+e
+d
+o
+r
+t
+c
+e
+e
+
+l
+
+5(a.u.)
+virtual LFPs reconstructed from G2
+1
+
+-0.4
+
+0
+(a.u.)
+
+0.4
+
+10
+
+20
+
+30
+
+CSD for Schaffer LFP-generator (G2)
+
+5 mV
+
+2 mV
+
+2
+
+10
+
+20
+
+30
+
+0.25
+
+0
+
+-0.25
+
+found were used to quantify the pathway-speciﬁc contribution
+to ongoing LFPs. Hence we have consistently shown in all
+studied animals that the contribution of the major excitatory
+pathways to the power of ongoing LFP signals is minor ((cid:7)7
+and 5%, respectively). We also showed that both Schaffer and
+perforant pathways have irregular temporal patterns, with
+bouts of population activity of varying amplitude and with the
+frequency concentrated in the 0.5– 4 Hz range.
+
+Methodological considerations
+
+A critical consideration regarding the ICA is that the com-
+ponents found may have little functional relevance unless
+accurate information on their anatomical basis is provided. All
+the same, ICA can efﬁciently separate signals coming from
+distant point sources (Choi et al. 2005). There are few studies
+on ICA of deep brain recordings (Makarov et al. 2010; Tans-
+kanen et al. 2005). In deep recordings, the signals generated in
+the volume surrounding the electrode array (i.e., the sources or
+LFP-generators) are essentially extended spatially, and their
+spatial scales may be larger than the interelectrode distance.
+However, the same mathematical principles are applicable to
+LFP recordings (Makarov et al. 2010). Disentangling such
+LFP-generators is based 1) on the coincident activation of
+individual homologous ﬁbers over the millisecond time scale
+and 2) on their different spatial distributions. The ﬁrst condi-
+tion provides the necessary synchronization of homologous
+axons to raise signiﬁcant macroscopic synaptic ﬁeld potentials,
+the main contributors to normal LFPs (Mitzdorf 1985; Nunez
+and Srinavasan 2006). The second condition is ensured by the
+distinct distributions of afferent axons from different afferent
+populations. The accuracy of the spatial resolution is therefore
+optimized to the subcellular level of the active neurons. We
+showed that the spatial CSD-loading curves of the Schaffer and
+PP LFP-generators match the conﬁguration of the inward and
+outward currents for known membrane events (Andersen et al.
+1971; Herreras 1990; Kandel et al. 1961). Admittedly, some
+factors can modify the expected spatial pattern of ﬁeld poten-
+tials, such as the heterogeneous electrical properties of the
+conducting medium, spatial cancellation, and frequency scal-
+ing of currents in the volume conductor (Bédard et al. 2004;
+López-Aguado et al. 2001; Makarova et al. 2008). In earlier
+
+FIG. 7. Characterization of pathway-speciﬁc activity in ongoing LFPs.
+A: segment of raw LFPs recorded from the CA1 st. pyramidale to the lower GCL
+in the DG. The CA3 and the PP were stimulated to prime LFPs with Schaffer and
+PP evoked activity (instants marked by red and blue dashed lines, respectively).
+The ellipse marks a Schaffer evoked response enlarged to the right. Note the
+subthreshold ﬁeld excitatory postsynaptic potential (fEPSP) in the st. radiatum
+(electrodes 3–10, asterisk). B: CSD map estimated for the raw LFPs. Note the
+complex mixture of currents. The Schaffer sink in the evoked response is appre-
+ciated in the ampliﬁcation on the right (small arrow). C: ongoing activities of the
+5 main generators separated by the ICA. G2 and G4 correspond to the Schaffer and
+PP generators, respectively. Note the characteristic spatial voltage loadings on the
+right. The top (black) trace corresponds to the ﬁltered (100 –500 Hz band-pass)
+LFP recorded from the CA1 soma layer. Note that epochs of fast oscillations
+coincide with the bouts of activity in the Schaffer generator (G2), matching the
+features of sharp wave events. D: reconstruction of the Schaffer-speciﬁc LFP. This
+virtual LFP now contains only the virtual LFP corresponding to ongoing activation
+of the CA3 to CA1 input. The ampliﬁcation on the right shows the virtual fEPSP
+for a sample Schaffer response. Note that all evoked and spontaneous activity
+undergo changes of identical polarity for a given electrode. E: virtual CSD map for
+the ongoing Schaffer activity. Schaffer evoked sinks and sources are now like the
+standard evoked responses (compare. with the raw CSD in B).
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025. 
+ 
+ 
+ 
+ 
+494
+
+KOROVAICHUK ET AL.
+
+A
+
+)
+z
+H
+
+(
+
+y
+c
+n
+e
+u
+q
+e
+r
+f
+
+B
+
+32
+
+8
+
+2
+
+0.5
+
+Schaffer 
+
+(G2
+)
+
+5 (a.u.)
+
+Perforant (
+
+)G4
+
+C
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+0.0
+
+)
+2
+
+V
+m
+
+(
+
+r
+e
+w
+o
+P
+
+5 s
+
+0.2 (a.u)
+
+r
+e
+f
+f
+a
+h
+c
+S
+
+t
+n
+a
+r
+o
+f
+r
+e
+P
+
+G1 G2 G3 G4 G5
+
+2 (a.u.)
+
+FIG. 8. Minor contribution of the excitatory generators to the hippocampal LFPs. A: frequency content of the ongoing Schaffer (G2) and PP (G4) generators
+during irregular activity in the raw LFP. The spectrogram shows dominant activity (cid:4)2–3 Hz. The white trace shows the temporal activation of the generators
+(ampliﬁed above). The speciﬁc activity of spontaneous pathways was in both cases sparse and highly irregular. B: time envelopes of activity (1 s time window).
+C: average power of reconstructed LFPs for speciﬁc generators in 6 animals (mean (cid:6) SE) during irregular activity in the raw LFP. Note the small global
+contribution of excitatory generators.
+
+experimental and modeling work, we reported some particular
+cases where some of these may be relevant (López-Aguado et
+al. 2001, 2002; Makarova et al. 2008; Varona et al. 2000). Such
+studies cannot easily be extrapolated on the distribution of
+LFP-generators. Because this analysis was performed on lo-
+cally recorded LFPs, we speculate that the factor potentially
+most relevant is the mutual spatial cancellation between indi-
+vidual synaptic inputs when these are scattered through ex-
+tended dendritic domains (Makarova et al. 2010). The excita-
+tory Schaffer and PP inputs are strongly stratiﬁed; hence we
+would not expect a strong bias introduced by this factor either.
+This approach is not dependent on the presence of rhythmic
+activity or stereotyped LFP events, and hence it can be applied to
+a wide variety of behaviors. Indeed, all the examples shown in this
+report were chosen among epochs of irregular activity, whose
+behavioral correlates are very rich (Jarosiewicz and Skaggs 2004).
+In neuroscience, ICA is frequently used to suppress artifacts in
+EEG recordings (Castellanos and Makarov 2006). We showed
+that artifacts caused by electric shocks within brain tissue can also
+be isolated and suppressed by the ICA. However, strong artifacts
+((cid:7)100 times higher than the neuronal activity) decrease the
+efﬁciency of the ICA for the simultaneous separation of other
+mixed components of neuronal origin. Hence we suggest that
+artifacts should be removed before performing an ICA.
+
+The weak contribution of the Schaffer and perforant pathways
+to ongoing LFPs makes their identiﬁcation extremely difﬁcult
+(i.e., LFP-generators can be overlooked). Therefore we used
+selective low-magnitude electrical stimulation of the known ex-
+citatory pathways to ensure the reliable identiﬁcation of LFP-
+generators describing the activity of these pathways. Thus the
+identiﬁcation was based on 1) a comparison of spatial voltage
+loadings of the LFP-generators found for evoked responses with
+those found for ongoing LFPs and 2) the recognition of evoked
+pulses in the time courses of LFP-generators obtained by ICA of
+composite epochs (i.e., a recording consisting of 2 epochs: spon-
+taneous LFPs and spontaneous plus a few evoked LFPs).
+
+The polarity of the CSD loading is essential to deﬁne whether
+an LFP-generator describes excitatory or inhibitory input. How-
+ever,
+the ICA cannot unequivocally determine this feature
+(Hyvärinen and Oja 2000). Although this problem is hard to solve
+for spontaneous LFPs and requires special biophysical assump-
+
+tions (Makarov et al. 2010), we found that mixing sparse sub-
+threshold evoked potentials in LFPs can be used to resolve the
+problem. The presence of evoked pulses in the time course of an
+LFP-generator is related to the stimulated neuronal population,
+and it helps identify the correct polarity. The subsequent applica-
+tion of CSD analysis on virtual LFPs reconstructed from a single
+generator enables the resultant partial CSD map to be directly
+compared with the raw CSD and with CSD maps of well-known
+evoked responses of speciﬁc pathways. It is worth noting that
+CSD map of isolated generators show no alternations in terms of
+the current’s sinks and sources, as expected for a speciﬁc synaptic
+input. In contrast, raw CSD maps may contain such alternations
+because of the spatiotemporal mixing of the activities of several
+generators and DC ﬁltering (Brankacˇk et al. 1993).
+
+When and what can an ICA discriminate in LFPs?
+
+To correctly interpret LFP-generators isolated by an ICA, it
+is relevant to ask whether each of them corresponds to postsyn-
+aptic activity from one or several neuron types. This problem
+is simpliﬁed greatly by the use of linear probes in the hip-
+pocampus where each subﬁeld has only one type of principal
+cell: namely pyramidal and granule cells. Each synaptic input
+produces loops of inward/outward currents with a different
+spatial distribution within the same core conductor. Typically
+the maximum potential is attained at the center of the synaptic
+contact made by the isolated pathway (Herreras 1990). How-
+ever, distant recording sites also contain activity, albeit of
+reduced magnitude. Therefore steadily correlated recording
+sites correspond to anatomical subdomains of one type of
+principal cell, whereas the subcellular precision can be
+achieved through a CSD analysis of the distribution of spatial
+weights in isolated generators. This procedure enables the
+separation of inputs into a single population according to
+known stratiﬁcation along the dendritic arbor.
+
+However, when linear recording probes extend through several
+subﬁelds (e.g., CA1 and DG/CA3), the interpretation may not be
+that trivial because of volume propagation of currents and/or the
+simultaneous activation of populations in both subﬁelds. The
+electrical ﬁelds created by two physically separated cells extend
+beyond their respective physical limits, mixing in local record-
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025. 
+ 
+EXCITATORY GENERATORS OF HIPPOCAMPAL LFPS
+
+495
+
+ings. This is not a handicap for this approach because the temporal
+activation for each generator has no spatial dimension (i.e., it
+contains the coherent activity of a group of electrodes regardless
+of their location). Accordingly, the CSD examination shows
+whether the activity can be circumscribed to one or several
+physically separated cell generators. In this study, we found that
+the two excitatory generators seem to have true activity in more
+than one region. Thus the activity of the entorhino-hippocampal
+pathway (PP) was contained in only one LFP-generator, but it was
+divided between both blades of the DG. The parsimonious expla-
+nation is that the presynaptic population activates two or more
+physically separate target populations through bifurcating axons,
+in agreement with anatomical and electrophysiological ﬁndings
+(Hjorth-Simonsen and Jeune 1972; Lømo 1971). Hence, activa-
+tion is identical and simultaneous in both blades, and thus it can be
+described by a single LFP-generator isolated by the ICA. With
+regard to the Schaffer generator, although CA3 activation ren-
+dered a single component in CA1 whose spatial loading curve
+matches the termination of Schaffer collaterals (Herreras 1990),
+prominent activity was also obtained near the stimulating
+electrode in the CA3/DG. The origin of this local activity
+varied somewhat in different experiments and was most
+commonly found in the molecular layers of the DG for
+evoked responses, probably because of backﬁring of the PP
+ﬁbers (Wu et al. 1998). During spontaneous LFPs,
+the
+CA3/DG activity associated to the Schaffer generator is less
+prominent, and it most likely reﬂects the synchronous ac-
+tivity of CA3 pyramidal cells because of recurrent excitation
+in this area (Miles and Wong 1987). Thus the CA3 pyrami-
+dal population is presynaptic for both CA1 and itself, and
+therefore the ongoing activity in the Schaffer generator
+should appear simultaneously in both regions, as happens to
+be the case.
+
+Excitatory currents contribute little to hippocampal LFPs
+
+Some LFP events and rhythmic oscillations have been studied
+intensively, and the neuronal circuits producing them have there-
+fore been clariﬁed. For example, sharp hippocampal waves are
+known to be mediated by the excitatory input from CA3 to CA1
+populations (Buzsáki et al. 1983). Here, we also observed a
+correlation between sharp waves and the ICA isolated Schaffer
+generator describing the synaptic activity produced by CA3 py-
+ramidal cells in CA1. Some LFP events, such as the theta rhythm,
+have a mainly inhibitory origin (Soltesz and Deschenes 1993),
+whereas others are still under study, such as gamma oscillations
+(Csicsvari et al. 2003; Mann et al. 2005), fast ripples (Ylinen et al.
+1995), and dentate spikes (Bragin et al. 1995). In light of the
+proportion of excitatory and inhibitory neurons in the hippocam-
+pus (Aika et al. 1994), the small contribution of the major
+excitatory pathways to hippocampal LFPs might seem unexpected
+(Schaffer and PP generators explain 7 and 5% of the power,
+respectively). The other three LFP-generators show a signiﬁcant
+phase-spike relationship, with (cid:7)60% of the putative interneurons
+in CA1 (Makarov et al. 2010), suggestive of their inhibitory nature
+(i.e., the corresponding synaptic currents are produced by local
+inhibitory circuits). Circumstantial data in the literature argue in
+favor of the dominance of inhibitory over excitatory currents in
+ongoing population activity (Hajos et al. 2000; Herreras et al.
+1988; Oren et al. 2010), although direct evidence is scarce. The
+dominance of inhibitory currents was found in synaptic noise
+
+recorded from membranes of cortical pyramidal cells (Rudolph et
+al. 2005; see also Anderson et al. 2000; Borg-Graham et al. 1998).
+Besides the ﬁring rate of several types of interneurons in the
+hippocampus is much higher than that of pyramidal cells (Somo-
+gyi and Klausberger 2005). Along with the functional coordina-
+tion of some interneuron networks (Whittington et al. 1995), the
+hypothesis that inhibition prevails over excitation in hippocampal
+LFPs becomes more plausible. Nonetheless, the precise percent-
+age of excitatory contribution to LFPs found here may vary in the
+freely moving animal, because anesthesia modiﬁes the overall
+pattern of LFPs (Brankacˇk et al. 1993; Buzsáki et al. 1986).
+
+In any case, the results presented here point to a very low output
+rate of CA3 pyramidal cells during irregular LFPs, in agreement
+with previous data (Ranck 1973; Thompson and Best 1989). In
+terms of the PP generator, the overall behavior was similar
+(occasional synchronous bouts of irregular activity), again indi-
+cating a low output rate from entorhino-hippocampal projection
+cells during irregular patterns of LFP. The presynaptic origin of
+this generator is suggested by the limited evoked responses after
+PP stimulation. The identity of the entorhinal projecting cells is
+not clearly established in the literature, and difﬁculties may arise
+from the fact that the entorhino-hippocampal projection is multi-
+farious. Unitary studies have not clariﬁed this issue, because most
+interest has focused on the relationship of entorhinal units with
+theta (Alonso and Llinás 1989; Chrobak and Buzsaki 1994;
+Frank et al. 2001). Thus stellate and pyramidal-like cells have
+been deemed candidates for this projection. Indeed, interesting
+functional data supporting the identity of the PP generator
+shown here is that the bouts of activity are not related to
+hippocampal sharp waves (Chrobak and Buzsaki 1994), which
+is consistent with the poor temporal correspondence between
+bouts of activity in the Schaffer and PP generators.
+
+To conclude, we propose the combined use of ICA and CSD
+as a high-resolution method for the subcellular identiﬁcation of
+LFP components in regular structures and for the quantiﬁcation
+of their ongoing activity.
+
+A C K N O W L E D G M E N T S
+
+We thank M. Sefton at BiomedRed for editorial support, S. Canals for
+critical reading and comments, and L. López-Mascaraque and N. Salvador for
+help with histological processing.
+
+G R A N T S
+
+This work was supported by Spanish Ministry of Education and Science
+Grants BFU2007-66621/BFI and FIS2007-65173 and Comunidad Autónoma
+de Madrid Grant S-SEM-0255-2006.
+
+D I S C L O S U R E S
+
+No conﬂicts of interest, ﬁnancial or otherwise, are declared by the author(s).
+
+R E F E R E N C E S
+
+Aika Y, Ren JQ, Kosaka K, Kosaka T. Quantitative analysis of GABA-like-
+immunoreactive and parvalbumin-containing neurons in the CA1 region of
+the rat hippocampus using a stereological method, the dissector. Exp Brain
+Res 99: 267–276, 1994.
+
+Alonso A, Llinás RR. Subthreshold Na(cid:8)-dependent theta-like rhythmicity in
+stellate cells of entorhinal cortex layer II. Nature 342: 175–177, 1989.
+Amari S, Cichocki A, Yang H. A new learning algorithm for blind source
+
+separation. Adv Neural Inform Process Syst 8: 757–763, 1996.
+
+Andersen P, Bliss TVP, Skrede KK. Lamellar organization of hippocampal
+
+excitatory pathways. Exp Brain Res 13: 222–238, 1971.
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025.496
+
+KOROVAICHUK ET AL.
+
+Anderson JS, Carandini M, Ferster D. Orientation tuning of input conduc-
+tance, excitation and inhibition in cat primary visual cortex. J Neurophysiol
+84: 909 –926, 2000.
+
+Kandel ER, Spencer WA, Brinley FJ Jr. Electrophysiology of hippocampal
+neurons. I. Sequential invasion and synaptic organization. J Neurophysiol
+24: 225–242, 1961.
+
+Bédard C, Kröger H, Destexhe A. Modeling extracellular ﬁeld potentials and
+the frequency-ﬁltering properties of extracellular space. Biophys J 86:
+1829 –1842, 2004.
+
+Kocsis B, Bragin A, Buzsáki G. Interdependence of multiple theta generators
+in the hippocampus: a partial coherence analysis. J Neurosci 19: 6200 –
+6212, 1999.
+
+Bell A, Sejnowski T. An information-maximization approach to blind sepa-
+
+ration and blind deconvolution. Neural Comput 7: 1129 –1159, 1995.
+
+Borg-Graham LJ, Monier C, Frégnac Y. Visual input evokes transient and
+strong shunting inhibition in visual cortical neurons. Nature 393: 369 –373,
+1998.
+
+Bragin A, Jandó G, Nádasdy Z, van Landeghem M, Buzsáki G. Dentate
+EEG spikes and associated interneuronal population bursts in the hippocam-
+pal hilar region of the rat. J Neurophysiol 73: 1691–1705, 1995.
+
+Brankacˇk J, Stewart M, Fox SE. Current source density analysis of the
+hippocampal theta rhythm: associated sustained potentials and candidate
+synaptic generators. Brain Res 615: 310 –327, 1993.
+
+Buzsáki G, Czopf J, Kondákor I, Kellényi L. Laminar distribution of
+hippocampal rhythmic slow activity (RSA) in the behaving rat: current-
+source density analysis, effects of urethane and atropine. Brain Res 365:
+125–137, 1986.
+
+Buzsáki G, Leung LS, Vanderwolf CH. Cellular bases of hippocampal EEG
+
+in the behaving rat. Brain Res 287: 139 –171, 1983.
+
+Canals S, López-Aguado L, Herreras O. Synaptically-recruited apical currents
+are required to initiate axonal and apical spikes in hippocampal pyramidal
+cells: modulation by inhibition. J Neurophysiol 93: 909 –918, 2005.
+
+Castellanos NP, Makarov VA. Recovering EEG brain signals: artifact sup-
+pression with wavelet enhanced independent component analysis. J Neuro-
+sci Methods 158: 300 –312, 2006.
+
+Choi S, Cichocki A, Park HM, Lee SY. Blind source separation and
+independent component analysis: a review. Neural Inform Process Lett Rev
+6: 1–57, 2005.
+
+Chrobak JJ, Buzsaki G. Selective activation of deep layer (V-VI) retrohip-
+pocampal cortical neurons during hippocampal sharp waves in the behaving
+rat. J Neurosci 14: 6160 – 6170, 1994.
+
+Csicsvari J, Jamieson B, Wise KD, Buzsáki G. Mechanisms of gamma
+oscillations in the hippocampus of the behaving rat. Neuron 37: 311–322,
+2003.
+
+Delorme A, Makeig S. EEGLAB: an open source toolbox for analysis of
+single trial EEG dynamics including independent component analysis. J
+Neurosci Methods 134: 9 –21, 2004.
+
+Einevoll GT, Pettersen KH, Devor A, Ulbert I, Halgren E, Dale AM.
+Laminar population analysis: estimating ﬁring rates and evoked synaptic
+activity from multielectrode recordings in rat barrel cortex. J Neurophysiol
+97: 2174 –2190, 2007.
+
+Frank LM, Brown EN, Wilson MA. A comparison of the ﬁring properties of
+putative excitatory and inhibitory neurons from CA1 and the entorhinal
+cortex. J Neurophysiol 86: 2029 –2040, 2001.
+
+Freeman JA, Nicholson C. Experimental optimization of current source-density
+
+technique for anuran cerebellum. J Neurophysiol 38: 369 –382, 1975.
+
+Hajos N, Katona I, Naiem SS, MacKie K, Ledent C, Mody I, Freund TF.
+Cannabinoids inhibit hippocampal GABAergic transmission and network
+oscillations. Eur J Neurosci 12: 3239 –3249, 2000.
+
+Herreras O. Propagating dendritic action potential mediates synaptic transmis-
+sion in CA1 pyramidal cells in situ. J Neurophysiol 64: 1429 –1441, 1990.
+Herreras O, Solís JM, Herranz AS, Martín del Río R, Lerma J. Sensory
+modulation of hippocampal transmission. II. Evidence for a cholinergic
+locus of inhibition in the Schaffer-CA1 synapse. Brain Res 451: 303–313,
+1988.
+
+Herreras O, Solís JM, Martín del Río R, Lerma J. Characteristics of CA1
+activation through the hippocampal trisynaptic pathway in the unanaesthe-
+tized rat. Brain Res 413: 75– 86, 1987.
+
+Hjorth-Simonsen A, Jeune B. Origin and termination of the hippocampal
+perforant path in the rat studied by silver impregnation. J Comp Neurol 144:
+215–232, 1972.
+
+Hyvärinen A, Oja E. Independent component analysis: algorithms and appli-
+
+cations Neural Netw 13: 411– 430, 2000.
+
+Jarosiewicz B, Skaggs WE. Level of arousal during the small irregular
+activity state in the rat hippocampal EEG. J Neurophysiol 91: 2649 –2657,
+2004.
+
+Jung KY, Kim JM, Kim DW, Chung CS. Independent component analysis
+of generalized spike-and-wave discharges: primary versus secondary bilat-
+eral synchrony. Clin Neurophysiol 116: 913–919, 2005.
+
+Lee T, Girolomi M, Sejnowski T. Independent component analysis using an
+extended infomax algorithm for mixed subgaussian and supergaussian
+sources. Neural Comput 11: 417– 441, 1999.
+
+Leung LS, Roth L, Canning KJ. Entorhinal inputs to hippocampal CA1 and
+dentate gyrus in the rat: a current-source-density study. J Neurophysiol 73:
+2392–2403, 1995.
+
+Lømo T. Patterns of activation in a monosynaptic cortical pathway: the
+perforant path input to the dentate area of the hippocampal formation. Exp
+Brain Res 12: 18 – 45, 1971.
+
+López-Aguado L, Ibarz JM, Herreras O. Activity-dependent changes of
+tissue resistivity in the CA1 region in vivo are layer-speciﬁc: modulation of
+evoked potentials. Neuroscience 108: 249 –262, 2001.
+
+López-Aguado L, Ibarz JM, Varona P, Herreras O. Structural inhomoge-
+neities differentially modulate action currents and population spikes initiated
+in the axon or dendrites. J Neurophysiol 88: 2809 –2820, 2002.
+
+Lorente de Nó R. Analysis of the distribution of action currents of nerves in
+volume conductors. In a study of nerve physiology. Stud Rockefeller Inst
+Med Res Repr 132: 384 – 477, 1947.
+
+Makarov VA, Makarova J, Herreras O. Disentanglement of local ﬁeld
+potential sources by independent component analysis. J Comput Neurosci In
+press.
+
+Makarova J, Gómez-Galán M, Herreras O. Layer speciﬁc changes in tissue
+resistivity and spatial cancellation of transmembrane currents shape the
+voltage signal during spreading depression in the CA1 vivo. Eur J Neurosci
+27: 444 – 456, 2008.
+
+Makarova J, Makarov VA, Herreras O. A model of sustained ﬁeld poten-
+tials based on gradients of polarization in single neurons. J Neurophysiol
+103: 2446 –2457, 2010.
+
+Makeig S, Debener S, Onton J, Delorme A. Mining event-related brain
+
+dynamics. Trends Cogn Sci 8: 204 –210, 2004.
+
+Mann EO, Radcliffe CA, Paulsen O. Hippocampal gamma-frequency oscil-
+lations: from interneurones to pyramidal cells, and back. J Physiol 562:
+55– 63, 2005.
+
+Miles R, Wong RK. Inhibitory control of local excitatory circuits in the
+
+guinea-pig hippocampus. J Physiol 388: 611– 629, 1987.
+
+Mitzdorf U. Current source-density method and application in cat cerebral
+cortex: investigation of evoked potentials and EEG phenomena. Physiol Rev
+65: 37–100, 1985.
+
+Nunez PL, Srinivasan R. Electric Fields of the Brain: The Neurophysics of
+
+EEG (2nd ed.). New York: Oxford, 2006.
+
+Oren I, Hajos N, Paulsen O. Identiﬁcation of the current generator underlying
+cholinergically induced gamma frequency ﬁeld potential oscillations in the
+hippocampal CA3 region. J Physiol 588: 785–797, 2010.
+
+Ranck JB Jr. Studies on single neurons in dorsal hippocampal formation and
+septum in unrestrained rats. Part 1. Behavioral correlates and ﬁring reper-
+toires. Exp Neurol 40: 462–531, 1973.
+
+Rudolph M, Pelletier JG, Paré D, Destexhe A. Characterization of synaptic
+conductances and integrative properties during electrically induced EEG-
+activated states in neocortical neurons in vivo. J Neurophysiol 94: 2805–
+2821, 2005.
+
+Soltesz I, Deschenes M. Low- and high-frequency membrane potential oscil-
+lations during theta activity in CA1 and CA3 pyramidal neurons of the rat
+hippocampus under ketamine-xylazine anesthesia. J Neurophysiol 70: 97–
+116, 1993.
+
+Somogyi P, Klausberger T. Deﬁned types of cortical interneurone structure
+space and spike timing in the hippocampus. J Physiol 562: 9 –26, 2005.
+Stone JV. Independent Component Analysis: A Tutorial Introduction. Cam-
+
+bridge, MA: MIT Press, 2004.
+
+Tanskanen JM, Mikkonen JE, Penttonen M. Independent component anal-
+ysis of neural populations from multielectrode ﬁeld potential measurements.
+J Neurosci Methods 145: 213–232, 2005.
+
+Thompson LT, Best PJ. Place cells and silent cells in the hippocampus of
+
+freely-behaving rats. J Neurosci 9: 2382–2390, 1989.
+
+Varona P, Ibarz JM, López-Aguado L, Herreras O. Macroscopic and
+subcellular factors shaping CA1 population spikes. J Neurophysiol 83:
+2192–2208, 2000.
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025.EXCITATORY GENERATORS OF HIPPOCAMPAL LFPS
+
+497
+
+Vigario R, Sarela J, Jousmaki V, Hamalainen M, Oja E. Independent
+component approach to the analysis of EEG and MEG recordings. IEEE
+Trans Biomed Eng 47: 589 –593, 2000.
+
+Whittington MA, Traub RD, Jefferys JGR. Synchronized oscillations in
+interneuron networks driven by metabotropic glutamate receptor activation.
+Nature 373: 612– 615, 1995.
+
+Wu K, Canning KJ, Leung LS. Functional interconnections between CA3
+and the dentate gyrus revealed by current source density analysis. Hip-
+pocampus 8: 217–230, 1998.
+
+Ylinen A, Bragin A, Nádasdy Z, Jandó G, Szabó I, Sik A, Buzsáki G. Sharp
+wave-associated high-frequency oscillation (200 Hz) in the intact hippocam-
+pus: network and intracellular mechanisms. J Neurosci 15: 30 – 46, 1995.
+
+J Neurophysiol • VOL 104 • JULY 2010 • www.jn.org
+
+Downloaded from journals.physiology.org/journal/jn (2001:4CA0:4FFF:0002:0003:0003:0001:0031) on November 24, 2025.

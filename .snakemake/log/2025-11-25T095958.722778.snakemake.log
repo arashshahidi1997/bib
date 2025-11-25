@@ -1,0 +1,51 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+fetch        1
+merge        1
+total        3
+
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Nov 25 09:59:58 2025]
+localrule fetch:
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/src
+    output: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    jobid: 2
+    reason: Missing output files: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    resources: tmpdir=/tmp
+Shell command: python code/fetch.py
+RuleException:
+CalledProcessError in file "/home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/Snakefile", line 55:
+Command 'set -euo pipefail;  python code/fetch.py' returned non-zero exit status 1.
+[Tue Nov 25 09:59:58 2025]
+Error in rule fetch:
+    message: None
+    jobid: 2
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/src
+    output: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    shell:
+        python code/fetch.py
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Tue Nov 25 09:59:58 2025]
+Error in rule fetch:
+    message: None
+    jobid: 2
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/src
+    output: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    shell:
+        python code/fetch.py
+        (command exited with non-zero exit code)
+Complete log(s): /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/.snakemake/log/2025-11-25T095958.722778.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

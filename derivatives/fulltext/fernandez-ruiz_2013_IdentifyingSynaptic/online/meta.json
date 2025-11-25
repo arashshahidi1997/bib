@@ -1,0 +1,28 @@
+{
+  "source": "online",
+  "doi": "10.3389/fncom.2013.00005",
+  "pmcid": null,
+  "used_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3569616/",
+  "tried_urls": [
+    "https://doi.org/10.3389/fncom.2013.00005",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=10.3389/fncom.2013.00005",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3569616/"
+  ],
+  "trace": [
+    {
+      "url": "https://doi.org/10.3389/fncom.2013.00005",
+      "final_url": "https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2013.00005/full",
+      "ctype": "text/html;charset=utf-8"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=10.3389/fncom.2013.00005",
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/23408586/",
+      "ctype": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3569616/",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3569616/",
+      "ctype": "text/html; charset=utf-8"
+    }
+  ]
+}

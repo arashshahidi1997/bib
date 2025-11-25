@@ -1,0 +1,13 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+MissingInputException in rule all in file "/home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/Snakefile", line 38:
+Missing input files for rule all:
+    affected files:
+        derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdf
+        derivatives/figures/lopez-madrona_2020_DifferentTheta/pdf
+        derivatives/figures/leski_2010_ExtractingFunctional/pdf
+        derivatives/figures/korovaichuk_2010_MinorContribution/pdf
+        derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/pdf
+        derivatives/figures/benito_2014_SpatialModules/pdf

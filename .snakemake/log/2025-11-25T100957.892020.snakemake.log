@@ -1,0 +1,64 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+fetch        1
+merge        1
+total        3
+
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Nov 25 10:09:57 2025]
+localrule fetch:
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/srcbib
+    output: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    jobid: 2
+    reason: Missing output files: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    resources: tmpdir=/tmp
+Shell command: python -m bib.fetch
+[Tue Nov 25 10:09:58 2025]
+Finished jobid: 2 (Rule: fetch)
+1 of 3 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Nov 25 10:09:58 2025]
+localrule merge:
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    output: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/neuropy.bib
+    jobid: 1
+    reason: Missing output files: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/neuropy.bib; Input files updated by another job: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    resources: tmpdir=/tmp
+Shell command: python -m bib.merge
+RuleException:
+CalledProcessError in file "/home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/Snakefile", line 63:
+Command 'set -euo pipefail;  python -m bib.merge' returned non-zero exit status 1.
+[Tue Nov 25 10:09:58 2025]
+Error in rule merge:
+    message: None
+    jobid: 1
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    output: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/neuropy.bib
+    shell:
+        python -m bib.merge
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Tue Nov 25 10:09:58 2025]
+Error in rule merge:
+    message: None
+    jobid: 1
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/logs/fetched_pdfs.txt
+    output: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/neuropy.bib
+    shell:
+        python -m bib.merge
+        (command exited with non-zero exit code)
+Complete log(s): /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/.snakemake/log/2025-11-25T100957.892020.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

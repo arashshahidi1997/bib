@@ -1,0 +1,161 @@
+[{
+  "caption": "FIG. 3. Precise spatial and temporal performance of ICA on LFPs produced during subthreshold activation of the Schaffer input to CA1. A: an electric shock in the ipsilateral CA3 evoked a negative potential in the apical dendritic tree (a). The schematic neuron indicates the approximate recording position. The CSD reveals inward currents (sinks) centered in stratum radiatum flanked by passive sources in the soma layer and stratum lacunosum (b). B: the ICA applied to the LFP profile shows a unique significant component (b) with a temporal course matching the voltage change in central electrodes (a). C: the voltage and CSD loadings (blue plots) coincide with the spatial profiles of the raw LFP and CSD (black plots; measured at the instant marked by the small arrows in A). The CSD calculated for the reconstructed LFP for G1 (c) is similar to the raw CSD (Ab). D: cluster analysis for voltage loadings obtained in 4 animals show a unique group (a). The average voltage loading (mean SE) shown in b was built using the st. pyramidale as a spatial reference.",
+  "captionBoundary": {
+    "x1": 44.18329620361328,
+    "x2": 296.2273254394531,
+    "y1": 477.1524963378906,
+    "y2": 598.616455078125
+  },
+  "figType": "Figure",
+  "imageText": ["LFP", "G1", "clustering", "of", "generators", "(a.u.)", "(a.u.)", "d", "a", "activation", "of", "G1", "2", "ms", "2", "ms", "CSD", "for", "G1", "0.5", "1", "G1", "G1-G13", "0", "explained", "variance", "2", "ms", "#", "tro", "de", "el", "ec", "a", "b", "e", "b", "c", "a", "b", "mean", "voltage", "loading", "#", "tro", "de", "el", "ec", "1", "16", "8", "1", "C", "B", "A", "0.6", "5", "mV", "raw", "LFPs", "raw", "CSD", "(a.u.)", "m", ")", "h", "(m", "de", "pt", "0.5", "-3", "0", "3", "6", "9", "0.25", "0", "-0.25", "rit", "y", "im", "ila", "di", "ss", "0.4", "0.2", "1a", "5a", "2a", "3a", "4a", "2b", "0", "0", "-0.8", "0.8", "0", "-0.8", "0.8", "-1", "0", "1", "2", "CSD", "loading", "16", "0", "4", "8", "8", "volt.", "loading", "0.3", "(a.u.)"],
+  "name": "3",
+  "page": 5,
+  "regionBoundary": {
+    "x1": 46.08,
+    "x2": 293.03999999999996,
+    "y1": 72.0,
+    "y2": 469.2
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/figs/Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs in the Anesthetized Rat A C-Figure3-1.png"
+}, {
+  "caption": "FIG. 8. Minor contribution of the excitatory generators to the hippocampal LFPs. A: frequency content of the ongoing Schaffer (G2) and PP (G4) generators during irregular activity in the raw LFP. The spectrogram shows dominant activity 2–3 Hz. The white trace shows the temporal activation of the generators (amplified above). The specific activity of spontaneous pathways was in both cases sparse and highly irregular. B: time envelopes of activity (1 s time window). C: average power of reconstructed LFPs for specific generators in 6 animals (mean SE) during irregular activity in the raw LFP. Note the small global contribution of excitatory generators.",
+  "captionBoundary": {
+    "x1": 44.184906005859375,
+    "x2": 560.2647705078125,
+    "y1": 233.1525115966797,
+    "y2": 273.61651611328125
+  },
+  "figType": "Figure",
+  "imageText": ["A", "5", "(a.u.)", "32", "8", "2", "0.5", "(H", "z)", "en", "cy", "fre", "qu", "5", "s", "G1", "G2", "G3", "G4", "G5", "nt", "fo", "ra", "P", "er", "r", "af", "fe", "S", "ch", ")", "2", "P", "ow", "er", "(m", "V", "0.4", "0.3", "0.2", "0.1", "0.0", "B", "Schaffer", ")(G2", "Perforant", "(", ")G4", "C", "2", "(a.u.)", "0.2", "(a.u)"],
+  "name": "8",
+  "page": 10,
+  "regionBoundary": {
+    "x1": 92.16,
+    "x2": 513.12,
+    "y1": 72.72,
+    "y2": 226.07999999999998
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/figs/Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs in the Anesthetized Rat A C-Figure8-1.png"
+}, {
+  "caption": "FIG. 4. Precise spatial and temporal performance of the ICA on LFPs produced during subthreshold activation of the entorhinal input to the dentate gyrus (DG). A: an electric shock in the ipsilateral perforant path (PP) evoked a negative potential in both molecular layers of the DG. A sample record from electrode 13 of a 32-site probe is shown in a. The raw CSD (b) shows active sinks in both molecular layers (sk1 and sk2) and a weaker sink in the st. lacunosum of the CA1 (sk3). Passive sources can be appreciated in the granule cell layers (GCL). The schematic neurons show the approximate site of recordings. B: the ICA applied to the LFP profile shows a unique significant component (b) with a temporal course matching the voltage change in the molecular layer (a). The CSD calculated for the reconstructed LFP for G1 (c) is similar to the raw CSD (Ab). The voltage and CSD loadings (d) coincide with the spatial profiles of the raw LFP and CSD. Note that a unique ICA component captures coherent activity in physically separated cell generators as long as they are synaptically activated by a common input.",
+  "captionBoundary": {
+    "x1": 368.18487548828125,
+    "x2": 560.2293701171875,
+    "y1": 71.90251922607422,
+    "y2": 238.36651611328125
+  },
+  "figType": "Figure",
+  "imageText": ["e28", "c", "d", "a", "b", "raw", "CSD", "CSD", "for", "G12", "10", "ms", "1", "sk3", "C", "A", "sk2", "sk1", "explained", "variance", "G2-G16", "1.0", "0.5", "G10.0", "0", "0", "20.8-0.8", "4", "(a.u.)", "(a.u)", "1", "(a.u.)", "B", "#", "tro", "de", "el", "ec", "GCL", "GCL", "D", "G", "A", "1", "mV", "CSD", "loadings", "30", "20", "10", "2", "volt.", "loadings", "0", "-2", "G1"],
+  "name": "4",
+  "page": 6,
+  "regionBoundary": {
+    "x1": 44.879999999999995,
+    "x2": 355.44,
+    "y1": 72.0,
+    "y2": 238.07999999999998
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/figs/Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs in the Anesthetized Rat A C-Figure4-1.png"
+}, {
+  "caption": "FIG. 7. Characterization of pathway-specific activity in ongoing LFPs. A: segment of raw LFPs recorded from the CA1 st. pyramidale to the lower GCL in the DG. The CA3 and the PP were stimulated to prime LFPs with Schaffer and PP evoked activity (instants marked by red and blue dashed lines, respectively). The ellipse marks a Schaffer evoked response enlarged to the right. Note the subthreshold field excitatory postsynaptic potential (fEPSP) in the st. radiatum (electrodes 3–10, asterisk). B: CSD map estimated for the raw LFPs. Note the complex mixture of currents. The Schaffer sink in the evoked response is appreciated in the amplification on the right (small arrow). C: ongoing activities of the 5 main generators separated by the ICA. G2 and G4 correspond to the Schaffer and PP generators, respectively. Note the characteristic spatial voltage loadings on the right. The top (black) trace corresponds to the filtered (100–500 Hz band-pass) LFP recorded from the CA1 soma layer. Note that epochs of fast oscillations coincide with the bouts of activity in the Schaffer generator (G2), matching the features of sharp wave events. D: reconstruction of the Schaffer-specific LFP. This virtual LFP now contains only the virtual LFP corresponding to ongoing activation of the CA3 to CA1 input. The amplification on the right shows the virtual fEPSP for a sample Schaffer response. Note that all evoked and spontaneous activity undergo changes of identical polarity for a given electrode. E: virtual CSD map for the ongoing Schaffer activity. Schaffer evoked sinks and sources are now like the standard evoked responses (compare. with the raw CSD in B).",
+  "captionBoundary": {
+    "x1": 308.18499755859375,
+    "x2": 560.2438354492188,
+    "y1": 552.555908203125,
+    "y2": 737.0198974609375
+  },
+  "figType": "Figure",
+  "imageText": ["Downloaded", "from", "journals.physiology.org/journal/jn", "(2001:4CA0:4FFF:0002:0003:0003:0001:0031)", "on", "November", "24,", "2025.", "J", "Neurophysiol", "•", "VOL", "104", "•", "JULY", "2010", "•", "www.jn.org"],
+  "name": "7",
+  "page": 9,
+  "regionBoundary": {
+    "x1": 69.84,
+    "x2": 503.03999999999996,
+    "y1": 736.8,
+    "y2": 778.56
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/figs/Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs in the Anesthetized Rat A C-Figure7-1.png"
+}, {
+  "caption": "FIG. 1. General strategy of local field potential (LFP) decomposition and the identification of generators. The diagram shows the sequential steps from an LFP spatial map recorded along the CA1 axis containing evoked responses to a twin pulse in the ipsilateral CA3 (Schaffer response). A similar procedure is followed for spontaneous LFPs. The simultaneous recording of 16 sites along the main axis of the principal cell (pyramidal neurons) (A) is analyzed by current-source density (CSD) (B) to obtain the map of inward and outward population currents (sinks are in blue and sources in yellow-red). Multiple membrane events overlap spatiotemporally. The LFP profile is also analyzed by an independent component analysis (ICA) that provides a set of 16 generators each with a temporal activation (C) and spatial distribution (D). Of the 16 generators, only a few (1–6 in the example) have a significant variance, whereas the others are rejected for analysis. The second spatial derivative of the spatial weight curves (or voltage loadings) provides the CSD loadings (E), a spatial index that reflects the distribution of membrane currents along the conductor. Because the ICA does not ensure the correct polarity or absolute values of amplitude, we reconstructed the LFP for each generator isolated (F). Such partial LFPs regain the correct polarity and true amplitude. A CSD can be applied to the reconstructed LFP, which provides simplified spatiotemporal maps of inward/outward currents for unique spatially coherent membrane events (G). These maps can be compared with the CSD of raw LFPs (curved dashed arrow) to find specific membrane events buried within the mixed CSD (closed dashed white lines). It can be shown that the spatial profiles of partial CSDs (E) match the spatial profile of the CSD loadings (small dashed arrow) and hence their true polarity is assessed. Arrowheads mark the time of stimulus (artifacts have been removed for analysis). a.u., arbitrary units.",
+  "captionBoundary": {
+    "x1": 44.18487548828125,
+    "x2": 560.248046875,
+    "y1": 378.1524963378906,
+    "y2": 490.6164855957031
+  },
+  "figType": "Figure",
+  "imageText": ["ICA", "15", "2", "8", "50", "µm10", "ms", "CSD", "for", "reconstructed", "LFPs", "raw", "CSD", "10", "ms", "50", "m", "nd2", "derivative", "CSD", "analysis", "virtual", "LFPs", "from", "G6", "CSD", "analysis", "D", "E", "G", "B", "voltage", "loadings", "16", "-1", "de", "ct", "ro", "e", "le", "#", "of", "1", "8", "0", "1", "(a.u.)", "15", "2", "8", "CSD", "loadings", "-0.5", "0.5", "(a.u.)0", "A", "raw", "LFPs", "de", "#", "ec", "tro", "5", "mV", "el", "1", "8", "10", "ms", "16", "10", "ms", "5", "mV", "F", "#", "tro", "de", "el", "ec", "1", "8", "16", "10", "ms", "8", "a.u.", "G1", "generator", "activations", "G8", "G16", "C"],
+  "name": "1",
+  "page": 2,
+  "regionBoundary": {
+    "x1": 121.67999999999999,
+    "x2": 481.2,
+    "y1": 72.72,
+    "y2": 371.03999999999996
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/figs/Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs in the Anesthetized Rat A C-Figure1-1.png"
+}, {
+  "caption": "FIG. 5. Discrimination of multiple evoked synaptic inputs in mixed LFPs. Subthreshold stimuli were applied to both the ipsilateral CA3 (Schaffer) and the PP, either as paired pulses (100 ms delay, left column) or synchronously (right column). PP stimuli were modulated in intensity, whereas CA3 stimuli were constant. A: raw LFPs recorded along a track spanning the CA1 and CA3/DG up to the lower GCL. B: CSD maps for a sample response (raw CSD) to either the PP, the CA3 (Sch), or both. Schematic neurons between panels show the approximate locus of recording. PP produced a main sink in the st. moleculare (sk1) and a weaker sink in the CA1 st. lacunosum (sk2). CA3 activation raised a sink in the CA1 st. radiatum (sk3) and a local sink (sk4). Combined stimuli produced a complex sink in the DG (sk5) and the Schaffer sink in CA1 (sk6). C: the ICA yielded 3 significant generators in both cases. G1 and G2 correspond to the PP and Schaffer generators, respectively, whereas G3 corresponds to local activity in the CA3/DG. The top traces show the time activation and the bottom traces show the corresponding spatial voltage and CSD loadings. Note that activations vary in G1 with successive stimuli, whereas they remain constant in G2, precisely reflecting the intensity applied in each case. The spatial loadings for G1 and G2 were identical as when each pathway was stimulated alone. A small contaminant appeared during coincident stimulation (small arrows). D: virtual CSD maps for sample responses of each separate generator. Note the spatial coincidence of the separate virtual sinks with those in the raw LFPs.",
+  "captionBoundary": {
+    "x1": 308.18487548828125,
+    "x2": 560.2312622070312,
+    "y1": 543.555908203125,
+    "y2": 737.0198974609375
+  },
+  "figType": "Figure",
+  "imageText": ["Downloaded", "from", "journals.physiology.org/journal/jn", "(2001:4CA0:4FFF:0002:0003:0003:0001:0031)", "on", "November", "24,", "2025.", "J", "Neurophysiol", "•", "VOL", "104", "•", "JULY", "2010", "•", "www.jn.org"],
+  "name": "5",
+  "page": 7,
+  "regionBoundary": {
+    "x1": 99.84,
+    "x2": 503.03999999999996,
+    "y1": 749.52,
+    "y2": 778.56
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/figs/Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs in the Anesthetized Rat A C-Figure5-1.png"
+}, {
+  "caption": "FIG. 6. Identification of the Schaffer and PP population activities in ongoing LFPs. A: segment of raw LFPs recorded from the CA1 st. pyramidale to the lower GCL in the DG. LFPs were primed with subthreshold stimuli applied in a random manner to the CA3 (Sch) and PP. The vertical dashed lines mark the timing of stimulation (blue for PP and red for CA3). Evoked potentials are short and small, and hence, they do not introduce much variance in the raw signals (they are hardly discernible over this time scale). B–D: the ICA yielded 5 principal generators, 2 of which specifically contain the activation corresponding to the evoked potentials for the Schaffer (G2) and the PP (G4). B: an amplification of the responses after each stimulus. Note the pathway specific segregation of evoked responses in the corresponding generators. The spatial loadings shown in C match those found for nonprimed LFPs (G1, G3, G5) or for separately stimulated pathways (G2, G4). D: relative variance of the generators isolated.",
+  "captionBoundary": {
+    "x1": 44.184906005859375,
+    "x2": 560.2168579101562,
+    "y1": 365.1524963378906,
+    "y2": 423.6164855957031
+  },
+  "figType": "Figure",
+  "imageText": ["Perforant", "Schaffer", "raw", "LFPs", "#", "tro", "de", "el", "ec", "D", "A", "C", "B", "1", "C", "A", "3/", "H", "C", "A", "GCL", "GCL", "DG", "-0.2", "0", "0.2", "0.4", "(a.u.)", "voltage", "loadings", "30", "20", "10", "1", "G5", "G4", "G3", "G2", "G1", "G1", "-", "G5", "G6", "-", "G11", "0.5", "explained", "variance", "0.4", "0.3", "0.2", "0.1", "0", "5", "mV1", "s", "2", "(a.u)40", "ms"],
+  "name": "6",
+  "page": 8,
+  "regionBoundary": {
+    "x1": 92.16,
+    "x2": 511.91999999999996,
+    "y1": 72.0,
+    "y2": 358.08
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/figs/Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs in the Anesthetized Rat A C-Figure6-1.png"
+}, {
+  "caption": "FIG. 2. Segregation of artifacts and neural activity by the ICA. The figure corresponds to the analysis of an LFP obtained during antidromic activation of the CA1 field. The alvear electric shock produced a large voltage artifact (dot in Aa) followed by an antidromic population spike. The artifact is nearly deleted in the corresponding CSD (Ab) while locally generated active sink and passive sources are visible. The ICA showed only 2 significant generators (Bb). G1 contains the stimulus artifact (Ba) that enters all electrodes with similar weight (flat voltage loading in Ab). G2 contains all the neural activity, displaying a bell-shaped voltage loading curve spanning the activated somatodendritic domains (Ac). B: the cluster analysis of all voltage loading curves obtained in 7 animals establishes 2 groups (blue and green) corresponding to the artifacts and population spikes, respectively. The average spatial loading curves is shown in Bb (mean SD).",
+  "captionBoundary": {
+    "x1": 44.184898376464844,
+    "x2": 296.20892333984375,
+    "y1": 427.1524963378906,
+    "y2": 539.616455078125
+  },
+  "figType": "Figure",
+  "imageText": ["-1", "3", "G2", "G1", "clustering", "of", "generators", "(a.u.)", "activations", "G2", "G1", "1", "ms", "9", "0", "-9", "2", "m", ")", "h", "(m", "de", "pt", "0.5", "0.25", "0", "-0.25", "(a.u.)", "0", "1", "#", "tro", "de", "el", "ec", "d", "e", "b", "a", "c", "B", "a", "b", "A", "15", "8", "2", "16", "8", "1", "(a.u.)", "3", "volt.", "loadings", "rit", "y", "im", "ila", "di", "ss", "0.6", "mean", "v.", "loadings", "0.4", "0.2", "2a", "4a", "3a", "5a", "6a", "7a", "1a1b", "2b", "5b", "6b", "7b", "4b", "3b", "1c", "0", "5", "m", "V", "CSD", "for", "raw", "LFP", "raw", "LFP", "1.0", "0.5", "G1", "G2", "G3-G16", "0.0", "expl.", "variance", "0", "1", "2", "G2", "40", "G1", "1"],
+  "name": "2",
+  "page": 4,
+  "regionBoundary": {
+    "x1": 47.04,
+    "x2": 293.76,
+    "y1": 72.0,
+    "y2": 419.03999999999996
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/figs/Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs in the Anesthetized Rat A C-Figure2-1.png"
+}]

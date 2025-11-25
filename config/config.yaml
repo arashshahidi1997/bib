@@ -1,0 +1,8 @@
+paths:
+  project_bib: "neuropy.bib"
+  extract_config: "config/extract_config.md"
+  bib_src_dir: "srcbib"
+  pdf_dir: "pdfs"
+  missing_log: "logs/missing_pdfs.txt"
+  manifest_file: "logs/.pdf_manifest.json"
+  pdf_fetched_log: "logs/fetched_pdfs.txt"

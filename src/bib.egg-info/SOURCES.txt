@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/bib/__init__.py
+src/bib/download_figures.py
+src/bib/download_fulltext.py
+src/bib/fetch-rename.py
+src/bib/fetch.py
+src/bib/load_config.py
+src/bib/merge.py
+src/bib/pdf_fulltext.py
+src/bib/repo_root.py
+src/bib.egg-info/PKG-INFO
+src/bib.egg-info/SOURCES.txt
+src/bib.egg-info/dependency_links.txt
+src/bib.egg-info/top_level.txt

@@ -2,10 +2,8 @@ from pathlib import Path
 import re
 
 from pybtex.database import parse_file
-from code.figconfig import get_citekeys
-
-BIB =  "pixecog.bib"
-CONFIG_MD = "extract-figures.md"
+from bib.load_config import get_citekeys, get_bib_paths
+bib_paths = get_bib_paths()
 
 def pdf_for_key(key: str) -> Path:
     """
@@ -13,6 +11,9 @@ def pdf_for_key(key: str) -> Path:
     Example file field: bib/pdfs/Kajikawa...pdf
     We resolve it relative to the project root (one level up from pixecog/bib).
     """
+    # Parse BibTeX so we can map citekey -> PDF path (via 'file' field)
+    bib_db = parse_file(str(bib_paths['project_bib']))
+
     entry = bib_db.entries[key]
     file_field = entry.fields.get("file")
     if not file_field:
@@ -31,15 +32,14 @@ def pdf_for_key(key: str) -> Path:
 # ---------- Config-derived lists ----------
 
 # 1) Which citekeys to process (from figures.md)
-CITEKEYS = get_citekeys(CONFIG_MD)
+CITEKEYS = get_citekeys(bib_paths['extract_config'])
 
-# 2) Parse BibTeX so we can map citekey -> PDF path (via 'file' field)
-bib_db = parse_file(str(BIB))
 
 rule all:
     input:
-        "pixecog.bib",
+        bib_paths['project_bib'],
         expand("derivatives/figures/{key}/online", key=CITEKEYS),
+        expand("derivatives/figures/{key}/pdffigures2", key=CITEKEYS),
         expand("derivatives/fulltext/{key}/online", key=CITEKEYS),
         expand("derivatives/fulltext/{key}/pdf", key=CITEKEYS)
         # expand("figures/{key}/pdffigures2", key=CITEKEYS)
@@ -49,20 +49,19 @@ rule all:
 
 rule fetch:
     input:
-        "metadata"
+        bib_paths['bib_src_dir']
     output:
-        "fetched_pdfs.txt"
+        bib_paths['pdf_fetched_log']
     shell:
-        "python code/fetch.py"
-    #LINK: ./code/fetch.py
+        "python -m bib.fetch"
 
 rule merge:
     input:
-        "fetched_pdfs"
+        bib_paths['pdf_fetched_log']
     output:
-        "pixecog.bib"
+        bib_paths['project_bib']
     shell:
-        "python code/merge.py"
+        "python -m bib.merge"
 
 rule extract_figures:
     input:
@@ -88,7 +87,7 @@ rule download_figures:
         out_dir = directory("derivatives/figures/{key}/online")
     log: "derivatives/figures/{key}/download.log"
     shell:
-        "python code/download_figures.py {wildcards.key} {output.out_dir} > {log} 2>&1"
+        "python -m bib.download_figures {wildcards.key} {output.out_dir} > {log} 2>&1"
 
 rule download_fulltext:
     output:
@@ -96,7 +95,7 @@ rule download_fulltext:
     shell:
         """
         mkdir -p {output}
-        python code/download_fulltext.py {wildcards.key} {output}
+        python -m bib.download_fulltext {wildcards.key} {output}
         """
 
 rule extract_fulltext_pdf:
@@ -105,5 +104,5 @@ rule extract_fulltext_pdf:
     shell:
         """
         mkdir -p {output}
-        python code/pdf_fulltext.py {wildcards.key} {output}
+        python -m bib.pdf_fulltext {wildcards.key} {output}
         """

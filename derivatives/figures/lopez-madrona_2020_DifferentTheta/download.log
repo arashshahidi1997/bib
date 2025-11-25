@@ -1,0 +1,14 @@
+[online] citekey=lopez-madrona_2020_DifferentTheta, doi=10.7554/eLife.57313, pmcid=None
+[online] initial URL candidates:
+  - https://doi.org/10.7554/eLife.57313
+  - https://pubmed.ncbi.nlm.nih.gov/?term=10.7554/eLife.57313
+[online] GET https://doi.org/10.7554/eLife.57313 -> 200, content-type=text/html; charset=utf-8, final=https://elifesciences.org/articles/57313
+[online] 7 candidate image URLs from https://elifesciences.org/articles/57313
+[online] https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig1-v3.tif/full/617,/0/default.jpg -> derivatives/figures/lopez-madrona_2020_DifferentTheta/online/figs/figure_1.jpg
+[online] https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig2-v3.tif/full/617,/0/default.jpg -> derivatives/figures/lopez-madrona_2020_DifferentTheta/online/figs/figure_2.jpg
+[online] https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig3-v3.tif/full/617,/0/default.jpg -> derivatives/figures/lopez-madrona_2020_DifferentTheta/online/figs/figure_3.jpg
+[online] https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig4-v3.tif/full/617,/0/default.jpg -> derivatives/figures/lopez-madrona_2020_DifferentTheta/online/figs/figure_4.jpg
+[online] https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig5-v3.tif/full/617,/0/default.jpg -> derivatives/figures/lopez-madrona_2020_DifferentTheta/online/figs/figure_5.jpg
+[online] https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig6-v3.tif/full/617,/0/default.jpg -> derivatives/figures/lopez-madrona_2020_DifferentTheta/online/figs/figure_6.jpg
+[online] https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig7-v3.tif/full/617,/0/default.jpg -> derivatives/figures/lopez-madrona_2020_DifferentTheta/online/figs/figure_7.jpg
+[online] total figures downloaded for lopez-madrona_2020_DifferentTheta: 7

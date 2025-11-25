@@ -1,0 +1,136 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+all                    1
+extract_figures        6
+total                  7
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib
+Execute 1 jobs...
+[Tue Nov 25 10:19:07 2025]
+localrule extract_figures:
+    input: pdfs/López-Madrona et al. - 2020 - Different theta frameworks coexist in the rat hippocampus and are coordinated during memory-guided a.pdf
+    output: derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2
+    jobid: 13
+    reason: Missing output files: derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2
+    wildcards: key=lopez-madrona_2020_DifferentTheta
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/figs
+
+        pdffigures           -i 300           -m derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/figs/           -d derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/data_           -s derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/stats.json           'pdfs/López-Madrona et al. - 2020 - Different theta frameworks coexist in the rat hippocampus and are coordinated during memory-guided a.pdf'
+        
+Select jobs to execute...
+[Tue Nov 25 10:19:21 2025]
+Finished jobid: 13 (Rule: extract_figures)
+1 of 7 steps (14%) done
+Execute 1 jobs...
+[Tue Nov 25 10:19:21 2025]
+localrule extract_figures:
+    input: pdfs/Fernández-Ruiz and Herreras - 2013 - Identifying the synaptic origin of ongoing neuronal oscillations through spatial discrimination of e.pdf
+    output: derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/pdffigures2
+    jobid: 10
+    reason: Missing output files: derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/pdffigures2
+    wildcards: key=fernandez-ruiz_2013_IdentifyingSynaptic
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/pdffigures2/figs
+
+        pdffigures           -i 300           -m derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/pdffigures2/figs/           -d derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/pdffigures2/data_           -s derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/pdffigures2/stats.json           'pdfs/Fernández-Ruiz and Herreras - 2013 - Identifying the synaptic origin of ongoing neuronal oscillations through spatial discrimination of e.pdf'
+        
+Select jobs to execute...
+[Tue Nov 25 10:19:27 2025]
+Finished jobid: 10 (Rule: extract_figures)
+2 of 7 steps (29%) done
+Execute 1 jobs...
+[Tue Nov 25 10:19:27 2025]
+localrule extract_figures:
+    input: pdfs/Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs in the Anesthetized Rat A C.pdf
+    output: derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2
+    jobid: 11
+    reason: Missing output files: derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2
+    wildcards: key=korovaichuk_2010_MinorContribution
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/figs
+
+        pdffigures           -i 300           -m derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/figs/           -d derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/data_           -s derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2/stats.json           'pdfs/Minor Contribution of Principal Excitatory Pathways to Hippocampal LFPs in the Anesthetized Rat A C.pdf'
+        
+Select jobs to execute...
+[Tue Nov 25 10:19:48 2025]
+Finished jobid: 11 (Rule: extract_figures)
+3 of 7 steps (43%) done
+Execute 1 jobs...
+[Tue Nov 25 10:19:48 2025]
+localrule extract_figures:
+    input: pdfs/López-Madrona and Canals - 2021 - Functional Interactions between Entorhinal Cortical Pathways Modulate Theta Activity in the Hippocam.pdf
+    output: derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdffigures2
+    jobid: 14
+    reason: Missing output files: derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdffigures2
+    wildcards: key=lopez-madrona_2021_FunctionalInteractions
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdffigures2/figs
+
+        pdffigures           -i 300           -m derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdffigures2/figs/           -d derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdffigures2/data_           -s derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdffigures2/stats.json           'pdfs/López-Madrona and Canals - 2021 - Functional Interactions between Entorhinal Cortical Pathways Modulate Theta Activity in the Hippocam.pdf'
+        
+Select jobs to execute...
+[Tue Nov 25 10:19:58 2025]
+Finished jobid: 14 (Rule: extract_figures)
+4 of 7 steps (57%) done
+Execute 1 jobs...
+[Tue Nov 25 10:19:58 2025]
+localrule extract_figures:
+    input: pdfs/Benito et al. - 2014 - Spatial Modules of Coherent Activity in Pathway-Specific LFPs in the Hippocampus Reflect Topology an.pdf
+    output: derivatives/figures/benito_2014_SpatialModules/pdffigures2
+    jobid: 9
+    reason: Missing output files: derivatives/figures/benito_2014_SpatialModules/pdffigures2
+    wildcards: key=benito_2014_SpatialModules
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/figures/benito_2014_SpatialModules/pdffigures2/figs
+
+        pdffigures           -i 300           -m derivatives/figures/benito_2014_SpatialModules/pdffigures2/figs/           -d derivatives/figures/benito_2014_SpatialModules/pdffigures2/data_           -s derivatives/figures/benito_2014_SpatialModules/pdffigures2/stats.json           'pdfs/Benito et al. - 2014 - Spatial Modules of Coherent Activity in Pathway-Specific LFPs in the Hippocampus Reflect Topology an.pdf'
+        
+Select jobs to execute...
+[Tue Nov 25 10:20:08 2025]
+Finished jobid: 9 (Rule: extract_figures)
+5 of 7 steps (71%) done
+Execute 1 jobs...
+[Tue Nov 25 10:20:08 2025]
+localrule extract_figures:
+    input: pdfs/Łęski et al. - 2010 - Extracting functional components of neural dynamics with Independent Component Analysis and inverse.pdf
+    output: derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2
+    jobid: 12
+    reason: Missing output files: derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2
+    wildcards: key=leski_2010_ExtractingFunctional
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2/figs
+
+        pdffigures           -i 300           -m derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2/figs/           -d derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2/data_           -s derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2/stats.json           'pdfs/Łęski et al. - 2010 - Extracting functional components of neural dynamics with Independent Component Analysis and inverse.pdf'
+        
+[Tue Nov 25 10:20:18 2025]
+Finished jobid: 12 (Rule: extract_figures)
+6 of 7 steps (86%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Nov 25 10:20:18 2025]
+localrule all:
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/neuropy.bib, derivatives/figures/benito_2014_SpatialModules/online, derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/online, derivatives/figures/korovaichuk_2010_MinorContribution/online, derivatives/figures/leski_2010_ExtractingFunctional/online, derivatives/figures/lopez-madrona_2020_DifferentTheta/online, derivatives/figures/lopez-madrona_2021_FunctionalInteractions/online, derivatives/figures/benito_2014_SpatialModules/pdffigures2, derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/pdffigures2, derivatives/figures/korovaichuk_2010_MinorContribution/pdffigures2, derivatives/figures/leski_2010_ExtractingFunctional/pdffigures2, derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2, derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdffigures2, derivatives/fulltext/benito_2014_SpatialModules/online, derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/online, derivatives/fulltext/korovaichuk_2010_MinorContribution/online, derivatives/fulltext/leski_2010_ExtractingFunctional/online, derivatives/fulltext/lopez-madrona_2020_DifferentTheta/online, derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/online, derivatives/fulltext/benito_2014_SpatialModules/pdf, derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/pdf, derivatives/fulltext/korovaichuk_2010_MinorContribution/pdf, derivatives/fulltext/leski_2010_ExtractingFunctional/pdf, derivatives/fulltext/lopez-madrona_2020_DifferentTheta/pdf, derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/pdf
+    jobid: 0
+    reason: Rules with a run or shell declaration but no output are always executed.
+    resources: tmpdir=/tmp
+Shell command: echo 'All done!'
+[Tue Nov 25 10:20:18 2025]
+Finished jobid: 0 (Rule: all)
+7 of 7 steps (100%) done
+Complete log(s): /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/.snakemake/log/2025-11-25T101906.859459.snakemake.log

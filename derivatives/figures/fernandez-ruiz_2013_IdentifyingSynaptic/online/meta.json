@@ -1,0 +1,22 @@
+{
+  "source": "online",
+  "doi": "10.3389/fncom.2013.00005",
+  "pmcid": null,
+  "figures": [
+    {
+      "url": "https://images-provider.frontiersin.org/api/ipx/s=366x408&fit=outside&f=jpg/https://brand.frontiersin.org/m/59ee6275cb9a849c/webimage-Impact-metrics-banner-for-article-pages.png",
+      "file": "figure_1.png"
+    }
+  ],
+  "tried_urls": [
+    "https://doi.org/10.3389/fncom.2013.00005",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=10.3389/fncom.2013.00005"
+  ],
+  "trace": [
+    {
+      "url": "https://doi.org/10.3389/fncom.2013.00005",
+      "final_url": "https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2013.00005/full",
+      "status": "html"
+    }
+  ]
+}

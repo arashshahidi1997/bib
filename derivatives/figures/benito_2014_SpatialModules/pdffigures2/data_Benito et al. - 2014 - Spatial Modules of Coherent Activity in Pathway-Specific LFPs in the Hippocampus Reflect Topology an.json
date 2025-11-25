@@ -1,0 +1,61 @@
+[{
+  "caption": "Table 1 Relative variance and absolute power of ICA-separated LFP generators",
+  "captionBoundary": {
+    "x1": 50.00310134887695,
+    "x2": 225.55149841308594,
+    "y1": 414.9761657714844,
+    "y2": 428.08837890625
+  },
+  "figType": "Table",
+  "imageText": ["Note:", "The", "relative", "variance", "is", "measured", "as", "the", "percentage", "contribution", "among", "studied", "LFP", "generators", "found", "in", "proﬁles", "spanning", "the", "CA1", "and", "DG.", "The", "mean", "power", "is", "estimated", "from", "reconstructed", "generator-speciﬁc", "LFP", "(virtual)", "proﬁles", "at", "the", "point", "of", "maximum", "weight", "in", "each", "generator.", "Values", "represent", "mean", "±", "SEM.", "Schaffer", "10", "±", "2", "0.036", "±", "0.01", "Lac-Mol", "23", "±", "2", "0.086", "±", "0.02", "MPP", "7", "±", "3", "0.022", "±", "0.01", "LPP", "32", "±", "5", "0.149", "±", "0.04", "GCsom", "25", "±", "5", "0.116", "±", "0.03", "CA3", "3", "±", "1", "0.017", "±", "0.01", "LFP", "generator", "Relative", "variance", "(%)", "Mean", "power", "(mV2)"],
+  "name": "1",
+  "page": 5,
+  "regionBoundary": {
+    "x1": 49.92,
+    "x2": 295.2,
+    "y1": 437.52,
+    "y2": 542.88
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/benito_2014_SpatialModules/pdffigures2/figs/Benito et al. - 2014 - Spatial Modules of Coherent Activity in Pathway-Specific LFPs in the Hippocampus Reflect Topology an-Table1-1.png"
+}, {
+  "caption": "Figure 7. Spatial coherence of LFPs also depends on the synchrony of afferent populations. (A) The arrangement used for the experimental modulation of the spontaneous firing synchronism in presynaptic neurons that gives rise to hippocampal LFP generators. The Schaffer and MPP generators were obtained independently from LFP profiles in 2 parallel arrays (r1 and r2; 0.5 mm apart). Stimulating electrodes (S1 and S2) were placed in the ipsilateral CA3 and the medial portion of the angular bundle for the test activation of studied pathways. One injecting/recoding pipette filled with BIC was placed in either the CA3 somatic layer (Experiment 1) or the MEC. MEC-evoked responses to the right were recorded from the injecting pipette and guided placement. (B) The long traces correspond to raw LFPs recorded by injecting pipettes at afferent populations (pre), and to simultaneous time activation of the LFP generators in postsynaptic regions (post). Upon microdrop injection of a GABA blocker (BIC), epileptic spikes developed locally in both experiments (open arrows in CA3 and MEC traces of raw LFPs), which produced large synaptic envelopes in LFP generators (arrows in Sch and MPP traces). However, the correlation of baseline activity in periods between epileptic spikes only increased in the MPP generator. Although increased synchrony occurred in both afferent populations, it is only reflected in the LFP generator whose minimal module of spatial coherence is smaller than the recording interdistance (the MPP). Thus, while the temporal pattern of Schaffer activities may change, the correlation between loci activated by the same axons is unaffected, if it was already synchronous in control conditions.",
+  "captionBoundary": {
+    "x1": 35.886600494384766,
+    "x2": 280.9267272949219,
+    "y1": 458.2629699707031,
+    "y2": 651.9700927734375
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "7",
+  "page": 10,
+  "regionBoundary": {
+    "x1": 37.92,
+    "x2": 275.03999999999996,
+    "y1": 58.8,
+    "y2": 448.08
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/benito_2014_SpatialModules/pdffigures2/figs/Benito et al. - 2014 - Spatial Modules of Coherent Activity in Pathway-Specific LFPs in the Hippocampus Reflect Topology an-Figure7-1.png"
+}, {
+  "caption": "Figure 4. Chemical nature of hippocampal LFP generators. (A) Electrode arrangement and experimental procedure (left panel). Two-shank linear devices recorded in tracks 500 µm apart, and a recording/injecting pipette was used to inject different neurotransmitter blockers within 500 µm of one of the shanks at the desired dendritic level and subfield. The position of the recording arrays was verified by the DiI tracks revealed after histological processing, as well as the extent of injected volume in the st. radiatum of the CA1 field (right panel). The local effects of DiI were restricted to one of the arrays, with no effects observed at the second array. Note the selective reduction of Schaffer-evoked fEPSP in the caudal shank (bottom subplot). (B) Representative experiment showing the sustained and selective effect of BIC on 1 of the 2 LFP generators extracted from the same vertical profile (left). The plots correspond to time envelopes of the mean power at the site of maximal activity (sliding window of 0.5 s) for the Schaffer (upper) and LM (lower) generators. The effects of DNQX and BIC on the activation of different LFP generators are shown on the right. The vertical scale is shown in arbitrary units. (C) Population data showing the effect of neurotransmitter blockade on LFP generators. The data (mean ± standard error of the mean [SEM]) represent the percentage of power in the drug-affected array relative to the unaffected array. N= 4–10 animals, except for CA3 generator (n= 2); Student’s t-test: *P<0.05, **P< 0.005, ***P< 0.001.",
+  "captionBoundary": {
+    "x1": 50.0023193359375,
+    "x2": 295.0440673828125,
+    "y1": 481.7905578613281,
+    "y2": 648.5684204101562
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "4",
+  "page": 7,
+  "regionBoundary": {
+    "x1": 80.88,
+    "x2": 263.03999999999996,
+    "y1": 58.8,
+    "y2": 471.12
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/benito_2014_SpatialModules/pdffigures2/figs/Benito et al. - 2014 - Spatial Modules of Coherent Activity in Pathway-Specific LFPs in the Hippocampus Reflect Topology an-Figure4-1.png"
+}]

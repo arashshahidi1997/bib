@@ -1,0 +1,1047 @@
+PERSPECTIVE ARTICLE
+published: 12 February 2013
+doi: 10.3389/fncom.2013.00005
+
+Identifying the synaptic origin of ongoing neuronal
+oscillations through spatial discrimination of electric ﬁelds
+
+Antonio Fernández-Ruiz and Oscar Herreras*
+
+Experimental and Computational Neurophysiology, Department of Systems Neuroscience, Cajal Institute - Consejo Superior de Investigaciones Cientíﬁcas,
+Madrid, Spain
+
+Edited by:
+Petra Ritter, Charité University
+Medicine Berlin, Germany
+
+Reviewed by:
+Todd Troyer, University of Texas,
+USA
+Katsunori Kitano, Ritsumeikan
+University, Japan
+
+*Correspondence:
+Oscar Herreras, Experimental and
+Computational Neurophysiology,
+Department of Systems
+Neuroscience, Cajal Institute -
+Consejo Superior de Investigaciones
+Cientíﬁcas, Av. Doctor Arce 37,
+Madrid 28002, Spain.
+e-mail: herreras@cajal.csic.es
+
+Although intracerebral ﬁeld potential oscillations are commonly used to study information
+processing during cognition and behavior, the cellular and network processes underlying
+such events remain unclear. The limited spatial resolution of standard single-point
+recordings does not clarify whether ﬁeld oscillations reﬂect the activity of one or many
+afferent presynaptic populations. However, multi-site recording devices now provide
+high-resolution spatial proﬁles of local ﬁeld potentials (LFPs) and when coupled to modern
+mathematical analyses that discriminate signals with distinct but overlapping spatial
+distributions, they open the door to better understand these potentials. Here we review
+recent insights that help disentangle certain pathway-speciﬁc activities. Accordingly, some
+oscillatory patterns can now be viewed as a periodic succession of synchronous synaptic
+currents that reﬂect the time envelope of spiking activity in given presynaptic populations.
+These analyses modify our concept of brain rhythms as abstract entities, molding them
+into mechanistic representations of network activity and allowing us to work in the time
+domain, reducing the loss of information inherent to data-chopping frequency treatment.
+
+Keywords: local ﬁeld potentials, gamma oscillations, spatial discrimination, independent component analysis,
+spontaneous activity
+
+FIELD POTENTIAL OSCILLATIONS: HOW MUCH DO WE
+KNOW?
+The incessant processing of information by neural circuits has
+been investigated using a variety of techniques, of which only a
+few have sufﬁcient spatial and temporal resolution to grasp the
+rapid changes in electrical activity associated with brain func-
+tion. Some record global activity in a non-invasive manner, such
+as EEG or magnetoencephalograms (MEG), while intracerebral
+approaches capture more local activity in particular regions, like
+local ﬁeld potentials (LFPs). In all cases, one can appreciate the
+conspicuous presence of repetitive wave-like patterns or oscil-
+lations. Despite constituting a small fraction of the total brain
+activity, oscillations have received much attention as they can be
+readily associated to cognitive and behavioral tasks. The ques-
+tion is: how much do we know about the identity of the neuron
+populations involved in their generation?
+
+Brain oscillations appeared well-suited for application of spec-
+tral analysis in order to quantify temporal patterns (Fourier
+analysis and its derivatives; Jenkins and Watts, 1968; Oppenheim
+and Schafer, 1989). Bioelectrical signals are usually ﬁltered in pre-
+deﬁned frequency bands of interest, a process that, it must be
+remembered, leads to the loss of a considerable amount of infor-
+mation. Such a jump from the time to the frequency domain
+summarizes temporal information and makes it handy to asso-
+ciate and compare with other measurements of a brain at work.
+Some paradigmatic cases are the identiﬁcation of phases in the
+sleep cycle by their spectral content (Dement and Kleitman,
+1957), the predictive character of hippocampal theta in terms of
+behavioral performance (Buzsáki et al., 1983), or the processing
+
+of visual stimuli contingent with cortical gamma activity (Gray
+et al., 1989).
+
+Importantly, whether oscillatory or irregular, LFPs are com-
+plex signals that vary not only in time but also in space, as they
+are raised by uneven summation of currents originated in dif-
+ferent sites, possibly even different oscillatory generators. Despite
+the practical advantages, frequency bands are not true physiolog-
+ical signals. All too frequently they are thought of and handled as
+if they were independent from each other, under a reductionist
+assumption that each constitutes a separate physiological entity.
+An increasing number of reports are now appearing in the liter-
+ature challenging, questioning or simply describing inconsistent
+frequency bands in different or even the same brain areas (Florian
+et al., 1998; Csicsvari et al., 2003; Schmidt et al., 2009; Ray and
+Maunsell, 2011). One notable example is the open dispute regard-
+ing the physiological role of gamma activity (e.g., Nunez and
+Srinivasan, 2010) as a temporal reference frame bringing together
+different features of a visual stimulus (Singer and Gray, 1995; Fries
+et al., 2007). Recent results challenge this view, arguing that visual
+stimuli generate gamma activity at different frequencies in sub-
+regions of the visual cortex (Ray and Maunsell, 2010). Others even
+questioned their very existence, alleging that the spectral prop-
+erties of the activity recorded are indistinguishable from ﬁltered
+noise (Burns and Xing, 2011).
+
+We are moving away from the old view of frequency bands as
+behavioral or cognitive ﬂags. We now admit that LFP oscillations
+are highly variable over time and they have a ﬂexible spec-
+trum (Rivas et al., 1996; Bullock et al., 2003; Ray and Maunsell,
+2010). However, it is uncertain what this means in terms of the
+
+Frontiers in Computational Neuroscience
+
+www.frontiersin.org
+
+February 2013 | Volume 7 | Article 5 | 1
+
+COMPUTATIONAL NEUROSCIENCEFernández-Ruiz and Herreras
+
+Spatial discrimination of ﬁeld oscillations
+
+afferent and target populations. For instance, oscillatory 40–50 Hz
+patterns in the visual cortex (Gray et al., 1989) or the hip-
+pocampus (Fernández-Ruiz et al., 2012a) are probably unrelated
+phenomena with different cellular mechanisms and having dis-
+tinct computational meaning within their respective networks.
+On the other hand, the activity of a population of neurons
+undergoes variable frequency modulation, even during the same
+behavioral state (Reich et al., 1997; Czurkó et al., 1999; Chang
+et al., 2012) and hence, the temporal structure of the synaptic
+currents they originate in target neurons would be expected to
+change accordingly.
+
+Indeed, when changes of spectral power of LFPs are inter-
+preted, it becomes evident that there is insufﬁcient knowledge
+on the scaling of unitary to macroscopic activities. The prob-
+lem is clear for recordings obtained with non-invasive techniques
+due to the inherent difﬁculties in identifying deep generators
+(Gloor, 1985; Baillet et al., 2001; Srinivasan et al., 2006). Even
+when recording at the physical location of the generating sources,
+there is signiﬁcant uncertainty. We can emphasize the dimension
+of the problem by considering a non-exhaustive list of possible
+causes that could lead to increased gamma power: (1) increased
+gamma-modulated excitation, (2) inhibition (3), or both; (4) the
+enhanced driving force of an unchanged rhythmic input by
+sustained changes in another input to the same neurons; (5) vari-
+ations in phase-locking of presynaptic neurons or (6) in the
+number of units recruited to ﬁring; (7) reduction of a con-
+comitant antiphase rhythm near the recording electrode; (8) the
+powering of a different in-phase generator or (9) the addition of
+new ones; (10) variation in resonant intrinsic currents, and so on.
+The possibilities are many, some of a unitary origin and others
+network based.
+
+Since the signals from multiple generators overlap spatially,
+customary measurements of frequency, phase and amplitude may
+be due to changes in a local or a distant source. These issues stress
+the importance of identifying the population/s contributing to a
+given ﬁeld potential oscillation as a necessary step to infer on its
+physiological and computational meaning.
+
+FINDING THE CURRENT SOURCES FOR LFPs: INSIGHTS
+FROM SPATIALLY DISCRIMINATING TECHNIQUES
+As indicated above, the problem of identifying the cellular
+origin of ﬁeld oscillations, or the inverse problem as it has
+become known, is a fundamental issue in Systems Neuroscience.
+In simple terms, given an experimental macroscopic signal the
+amplitude of which varies at different sites (e.g., LFP, EEG, MEG),
+how can the location and extension of the generating source
+be determined? To put this in more applicable terms, can we
+reconstruct the characteristics of the electric currents generated
+by myriads of scattered microscopic sources co-activated as one,
+if
+their number (hence their position) change constantly? We
+know from theory that multiple combinations of independent
+sources (groups of active neurons) may give rise to a recorded
+signal with the same spatial pattern. There is no unique solu-
+tion and in most cases, it is difﬁcult or impossible to conﬁrm
+the potential solutions experimentally. One would think the way
+out might be easier for LFPs that can be recorded at the site.
+However, whereas remote recordings lack necessary detail of the
+
+location and extension of current sources, the local recordings
+can’t discriminate between local and remote (volume propagated)
+contributions.
+
+A common feature of electric ﬁelds in the brain is that they
+vary spatially in a complex manner, on account of the shifting
+activation of neuron generators with irregular morphology and
+distribution. It is beyond the scope of this minireview to consider
+all the factors that are relevant to LFPs (see Elul, 1972 for a starting
+reading) and thus, we will focus on a few that are important for
+the discrimination of mixed LFP generators. Neurons with domi-
+nant axial geometry act as strong current dipoles (Lorente de No,
+1947) and as such are the main contributors to ﬁeld potentials.
+LFPs are contributed mostly by synaptic currents that, contrary
+to propagating spike currents, remain at the site of the synapse for
+their largest part (Varona et al., 2000; López-Aguado et al., 2002).
+It is intuitive that a common afferent input to one or another
+subcellular domain of the neuron population will give rise to dif-
+ferent ﬁeld potential proﬁles (Makarova et al., 2011). This fact
+underlies the laminar distribution of pathway-speciﬁc LFPs in
+regular structures (Korovaichuk et al., 2010). The problem arises
+when several pathways are co-activated, as is usually the case. In
+such circumstances the electric currents mix unevenly at different
+sites, and ﬁeld potential gradients become complex and variable.
+That is why stable oscillations with seemingly identical waves, one
+after another, appeared advantageous as they are more accessible
+to repeated experimental screening. However, they may still be
+contributed by several inputs with varying magnitude (Makarov
+et al., 2010; Fernández-Ruiz et al., 2012a). Thus, only high-density
+recordings simultaneously performed at several depths can cor-
+rectly map for spatial variations in successive waves originated by
+modulations in one or more of the contributing sources.
+
+Multisite linear recordings are well-suited to a method that
+has been employed to ﬁnd the current generators underlying
+ﬁeld potentials, known as current source density (CSD) analysis
+(Freeman and Nicholson, 1975). This approach has been very use-
+ful to determine the contributing cells and the location of synaptic
+membranes activated by afferent stimuli in laminar structures,
+such as the hippocampus or neocortex (Leung, 1979; Herreras,
+1990; Schroeder et al., 1998). However, while interpreting CSD
+maps is simple for voltage proﬁles elicited by stimulating only one
+afferent pathway (Figures 1A,B, right panels), their application
+to ongoing LFPs renders complex spatial maps of intermingled
+inward and outward currents (left panels), and in general it is not
+feasible to identify the multiple synaptic generators. Partial suc-
+cess has been obtained in a few stereotypic LFP patterns, such as
+sharp-waves (SPWs: Ylinen et al., 1995), or the theta (Brankaˇck
+et al., 1993) and gamma rhythms (Csicsvari et al., 2003) in the
+hippocampus. But not even in these cases has it been possi-
+ble to unequivocally determine whether one or several inputs
+contribute to the ﬁeld oscillation due to unavoidable technical
+artifacts.
+
+Amongst the approaches used to address the mixed contribu-
+tion of inputs to macroscopic patterns, some sought the selective
+manipulation of parts of a network, such as the activation or the
+silencing of speciﬁc pathways or neuron types through electrical,
+optogenetic, or pharmacological intervention (Wu et al., 1998;
+Happel et al., 2010; Kuki et al., 2012). Other approaches pursued
+
+Frontiers in Computational Neuroscience
+
+www.frontiersin.org
+
+February 2013 | Volume 7 | Article 5 | 2
+
+Fernández-Ruiz and Herreras
+
+Spatial discrimination of ﬁeld oscillations
+
+FIGURE 1 | Application of ICA to disentangle pathway-speciﬁc
+hippocampal LFPs. (A) Ongoing raw LFPs across the CA1 and CA3 ﬁelds
+(black and gray traces, respectively). The dashed red line marks the time of a
+subthreshold stimulus applied to the ipsilateral CA3. The evoked ﬁeld
+potential is ampliﬁed in the right inset. (B) CSD of the evoked potential (right)
+yields the standard distribution of inward (blue) and outward (yellow-red)
+currents across the CA1 region, while that of ongoing LFPs (left) renders a
+complex poorly informative mixture. (C) ICA of LFPs provides four main LFP
+generators, each deﬁned by the curve of spatial weights (top panel) and a
+
+time course (bottom traces). Note that only the Schaffer generator (G4)
+captures the Schaffer-evoked activity (arrows). (D) Reconstructed (virtual)
+Schaffer LFPs for the raw LFP segment and evoked potential analyzed. The
+pronounced activity at electrodes 5–10 in the second half of the segment
+corresponds to a complex of sharp waves. (E) CSD of the virtual Schaffer
+LFPs provides precise spatiotemporal maps of inward/outward currents for
+unique spatially coherent membrane events. Note how clean the map of
+currents is after the concomitant activity elicited by other inputs is eliminated.
+(Modiﬁed from Fernández-Ruiz et al., 2012a).
+
+the disentanglement of LFPs into their original generators by
+applying statistical tools and algorithms (Di et al., 1990; Kocsis
+et al., 1999; Montgomery et al., 2009; Makarov et al., 2010). Blind
+source separation techniques, like the independent component
+analysis (ICA: Comon, 1994; Choi et al., 2005), appear to be the
+best suited by their capacity to ﬁnd stable groups of sensors pick-
+ing up a signal whose origin is stationary in the space, a feature
+that can be assumed for electrical ﬁelds generated by synaptic
+currents.
+
+INDEPENDENT COMPONENT ANALYSIS AS A TOOL TO
+REVEAL THE CELLULAR GENERATORS OF BRAIN
+OSCILLATIONS
+ICA is employed routinely in scalp EEG, MEG, and fMRI to ﬁnd
+spatially stable patterns of coherent activity (Makeig et al., 1997;
+Tang et al., 2002; Kalcher et al., 2012). Recordings distant from the
+sources are highly sensitive to a variety of distortions in the path
+of the electrical currents (López-Aguado et al., 2001). Thus, they
+are limited to a coarse localization of large electrical sources of
+unknown cellular origin. The disturbing factors are less relevant
+in intracerebral recordings where electrodes can be placed directly
+on the generating sources, thereby minimizing the path of the cur-
+rents to the recording electrode. The ICA operates on multiple
+simultaneously recorded signals and discriminates the contribut-
+ing sources on the basis of their distinct spatial distribution. It
+is important to note that these components may be temporally
+correlated (Bell and Sejnowski, 1995; Makarova et al., 2011).
+
+We have developed an implementation based on the ICA
+to separate the different synaptic pathways converging on hip-
+pocampal neurons on the evidence that each produces ﬁeld
+potentials of stable and distinct spatial distribution (Makarov
+et al., 2010). The procedure is illustrated in Figure 1, in which
+each LFP component or generator is deﬁned by two elements:
+a curve of spatial weights and the time course of the activity
+over the period analyzed (Figure 1C). We found that only a few
+macroscopic pathway-speciﬁc generators account for most of the
+LFP variance. Some are easy to identify by the characteristic pro-
+ﬁle of spatial weights, such as the excitatory Schaffer input from
+CA3 to CA1 that match the customary proﬁles of Schaffer-evoked
+fEPSPs (blue trace). This LFP generator exclusively captures all
+the activity elicited by this pathway, whether irregular or oscil-
+latory, ongoing (SPWs) or stimulus evoked (Korovaichuk et al.,
+2010). Once disentangled from native LFPs, a given generator
+can be reconstructed in isolation and the virtual pathway-speciﬁc
+LFPs subjected to CSD analysis (Figures 1D,E).
+
+A MECHANISTIC USE FOR NEURAL OSCILLATIONS
+Spike activity of a given presynaptic population elicits postsynap-
+tic currents in target regions that if spatially appropriate, may
+set rhythmic, irregular, and more commonly, behaviorally modu-
+lated periods of different LFP patterns. As a case in point, the CA3
+input to CA1 pyramidal cells is responsible for (1) low amplitude
+steady or (2) theta modulated gamma activity, and (3) iso-
+lated hyper-synchronous SPWs (Ylinen et al., 1995; Penttonen
+
+Frontiers in Computational Neuroscience
+
+www.frontiersin.org
+
+February 2013 | Volume 7 | Article 5 | 3
+
+Fernández-Ruiz and Herreras
+
+Spatial discrimination of ﬁeld oscillations
+
+et al., 1998; Fernández-Ruiz et al., 2012a). The separation of
+the Schaffer activity from concomitant inputs allowed a detailed
+study of its time course. A small LFP epoch is presented in
+Figure 2 to show the independent activity of three different LFP
+generators. One is very irregular, while another presents high
+amplitude slow-waves and the third corresponds to the ongo-
+ing Schaffer input. In anesthetized animals, whereas epochs of
+gamma activity can be found in all LFP generators (Makarov
+et al., 2010) it only has a steady presence in the Schaffer input.
+Traditionally, gamma activity in the hippocampus was assumed
+
+to be mainly inhibitory (Mann and Paulsen, 2007; Buzsáki and
+Wang, 2012), in compliance with the observations of interneu-
+rons ﬁring at that rate. But in phase ﬁring of units to LFPs does
+not establish cause or effect, as the LFPs may reﬂect compound
+synaptic currents generated by spiking in unrecorded distant neu-
+rons. In fact, our ﬁndings refuted that view, as the gamma activity
+in the CA1 Schaffer generator is made up of small wave-like
+LFP events (∼120 μV, ∼16 ms long) that were speciﬁcally time
+locked with monosynaptic latency to the spikes of CA3 pyrami-
+dal cells but not interneurons. Indeed, the CSD analysis of the
+
+FIGURE 2 | CA3 to CA1 gamma input is a succession of elementary
+µ-fEPSPs that link pre- and postsynaptic units. (A) Representative
+example of time courses of LFP generators and ﬁring of a CA3 pyramidal
+cell. The baseline activity of the Schaffer LFP generator (in blue) is formed
+by a temporal succession of small wavelets or μ-fEPSP (enlargements at
+the bottom) in a global gamma pattern exclusive for this input. The
+presence of occasional sharp-waves (SPWs) is highlighted (in cyan).
+Autocorrelations (ACF) of the time courses of the generators are shown in
+the right inset. (B) (1) Fragment of Schaffer-LFP. Note the striking
+non-overlapping succession of wavelets. (2) The CSD analysis reveals a
+succession of currents with a spatial distribution matching that of Schaffer
+evoked potentials and SPWs. (3) The Schaffer-LFP in the wavelet domain.
+High magnitude (color coded from black to yellow) at given time instant
+
+and scale (cyan dots mark maxima) corresponds to the presence of
+μ-fEPSPs. (4) The width and height of the bar codify the duration and
+amplitude of detected μ-fEPSPs, respectively. (C) Using the excitatory
+quanta composing the baseline activity of Schaffer-LFPs (μ-fEPSPs) allows
+discriminating synaptically connected CA3 and CA1 units. The illustration of
+point processes in the left represents (from top to bottom) the spike train
+of a presynaptic CA3 pyramidal cell, the temporal series of μ-fEPSP events
+and a spike train of a postsynaptic CA1 pyramidal cell. Plausible
+monosynaptic coincidences are color coded as follows: Type I, green
+(in-cluster spikes); Type II, blue (Schaffer spikes); Type III, magenta
+(efﬁcient spike transfer). Examples of these correlations are shown in right
+insets. (A and B) Modiﬁed from Fernández-Ruiz et al. (2012a); (C) modiﬁed
+from Fernández-Ruiz et al. (2012b).
+
+Frontiers in Computational Neuroscience
+
+www.frontiersin.org
+
+February 2013 | Volume 7 | Article 5 | 4
+
+Fernández-Ruiz and Herreras
+
+Spatial discrimination of ﬁeld oscillations
+
+disentangled Schaffer-speciﬁc LFPs returns gamma sequence of
+current sinks in the CA1 stratum radiatum with a spatial distri-
+bution that tightly matched that of SPW events and CA3-evoked
+fEPSPs (Figure 2B2). These wavelets were blocked by pharmaco-
+logically silencing the CA3 or blockade of glutamate receptors in
+the CA1. Thus, the gamma rhythm recorded in this stratum of
+the CA1 region is a periodic succession of micro (μ)-fEPSPs trig-
+gered in CA1 pyramidal cells by CA3 assemblies ﬁring in gamma
+sequence. This is probably the clearest demonstration of the cel-
+lular nature of a ﬁeld oscillation in the intact brain presented
+to date.
+
+The demonstration that Schaffer-LFPs are succession of quan-
+tal excitatory packages elicited by synchronous ﬁring of func-
+tional assemblies of presynaptic units opens several possibilities.
+For instance, one may identify pairs of monosynaptically con-
+nected CA3 and CA1 neurons, enabling the ongoing spike transfer
+between pairs of cells of different populations and their plas-
+tic modulations to be studied in vivo (Fernández-Ruiz et al.,
+2012a,b). This was done by correlating pre- (CA3) and postsynap-
+tic (CA1) spikes with the time series of Schaffer μ-fEPSPs. Also,
+several CA3 units ﬁre synchronously and time-locked to Schaffer
+μ-fEPSPs in CA1, thus forming a functional assembly. We found
+that CA3 assemblies are not rigid constructs, as the neurons that
+comprise them may belong to different clusters and they do not
+always ﬁre together, rather just a proportion of them (ca. 20%).
+In the CA1, we found that all pyramidal cells ﬁred a fraction
+of their spikes time locked to Schaffer μ-fEPSPs. We term these
+as Schaffer-spikes, emphasizing the origin of the synaptic input
+that triggers them. The sorting of CA1 spikes by their synaptic
+drive opens the possibility to investigate the inﬂuence of different
+inputs to the elaboration of the output code of individual neu-
+rons. We also found triple coincidences, i.e., a presynaptic CA3
+spike elicits a μ-fEPSP that in turn ﬁres a postsynaptic spike. We
+call this as an effective spike transfer between two nodes in a net-
+work. Thus, pairs of pre- and postsynaptic spikes can be selected
+by their time-locking to a common μ-fEPSP, revealing temporal
+correlations that would normally remain buried in standard dual
+correlations of spike trains.
+
+Another practical example of the use of pathway-speciﬁc
+LFPs is to study ongoing correlates of plastic phenomena. Thus,
+
+following induction of LTP by CA3 stimulation we found a mod-
+erate increase in the gamma power of raw LFPs in the CA1,
+but a large speciﬁc increase in the power of the ICA-separated
+Schaffer generator (while other components of the LFP remained
+unchanged: Fernández-Ruiz et al., 2012b). Hence, the ongoing
+modulations of a given synaptic pathway may not be discernible
+in raw mixed LFPs, whereas they can be observed, quantiﬁed
+and compared with other activities after their separation into
+pathway-speciﬁc LFP generators.
+
+CONCLUDING REMARKS
+By studying the wide band time course of ICA-isolated LFP gen-
+erators we gain much more information on network dynamics
+than by chopping LFPs into narrow frequency bands and analyz-
+ing them separately. Hence, we consider that the entity with true
+physiological meaning coming out of LFPs is the LFP generator,
+rather than a particular temporal pattern in native LFPs that may
+still be a composite signal.
+
+The example used here of the CA3 gamma input to CA1 may
+be generalized to other oscillatory and irregular patterns. The
+use of pathway-speciﬁc LFPs eliminates important concern as
+to the possibility of an LFP oscillation being a mixture of two
+or more inputs, and allows a direct interpretation of their ﬂuc-
+tuations as time envelopes of synaptic currents with a precise
+identiﬁcation of the populations of origin and destination. Thus,
+we may be close to determining which oscillations are periodic
+successions of excitatory or inhibitory postsynaptic potentials.
+The reconstruction of pre- and postsynaptic time sequences rep-
+resents a step toward a mechanistic understanding of information
+transfer in identiﬁed segments of a network. For these reasons,
+it may be the moment to recover a feeling for the temporal and
+spatial domains, so as to complement and extend the spectral
+characterization of oscillatory patterns.
+
+ACKNOWLEDGMENTS
+The authors thank A. Oliva, G. Martín-Vazquez, and J. Makarova
+for useful discussion Mark Sefton at BiomedRed for editorial sup-
+port. This work was supported by the Spanish Ministry of Science
+and Innovation (BFU2010-19192/BFI).
+
+REFERENCES
+Baillet, S., Mosher, J. C., and Leahy,
+R. M. (2001). Electromagnetic brain
+mapping. IEEE Signal. Process. Mag.
+18, 14–30.
+
+Bell, A., and Sejnowski, T. (1995).
+information-maximization
+An
+approach
+separation
+and blind deconvolution. Neural
+Comput. 7, 1129–1159.
+
+blind
+
+to
+
+Brankaˇck, J., Stewart, M., and Fox, S.
+E. (1993). Current source density
+analysis of the hippocampal theta
+rhythm: associated sustained poten-
+tials and candidate synaptic genera-
+tors. Brain Res. 615, 310–327.
+
+Bullock, T. H., McClune, M. C.,
+and Enright, J. T. (2003). Are the
+
+electroencephalograms
+mainly
+rhythmic? Assessment of period-
+series.
+icity in wide-band time
+Neuroscience 121, 233–252.
+
+Burns, S. P., and Xing, D. (2011). Is
+gamma-band activity in the local
+ﬁeld potential of V1 cortex a “clock”
+or ﬁltered noise? J. Neurosci. 31,
+9658–9664.
+
+Buzsáki, G., Leung, L. W.,
+
+and
+Vanderwolf, C. H. (1983). Cellular
+bases of hippocampal EEG in
+the behaving rat. Brain Res. 287,
+139–171.
+
+Buzsáki, G., and Wang, X. J. (2012).
+Mechanisms of gamma oscilla-
+tions. Annu. Rev. Neurosci. 35,
+203–225.
+
+Chang, M. H., Armstrong, K. M., and
+Moore, T. (2012). Dissociation of
+response variability from ﬁring rate
+effects in frontal eye ﬁeld neurons
+during visual stimulation, working
+memory, and attention. J. Neurosci.
+32, 2204–2216.
+
+Choi, S., Cichocki, A., Park, H.
+M., and Lee, S. Y. (2005). Blind
+source separation and independent
+component
+review.
+analysis:
+Neural
+Inf. Process. Lett. Rev. 6,
+1–57.
+
+a
+
+Comon, P. (1994). Independent com-
+ponent analysis. A new concept?
+Signal Process. 138, 287–314.
+
+Csicsvari,
+
+Jamieson, B., Wise,
+K. D., and Buzsáki, G. (2003).
+
+J.,
+
+Mechanisms of gamma oscillations
+in the hippocampus of the behaving
+rat. Neuron 37, 311–322.
+
+Czurkó, A., Hirase, H., Csicsvari, J.,
+and Buzsáki, G. (1999). Sustained
+activation of hippocampal pyrami-
+dal cells by ‘space clamping’ in a
+running wheel. Eur. J. Neurosci. 11,
+344–352.
+
+Dement, W., and Kleitman, N. (1957).
+Cyclic variations in EEG during
+relation to eye
+sleep and their
+movements, body motility
+and
+dreaming. Electroencephalogr. Clin.
+Neurophysiol. 9, 673–690.
+
+Di, S., Baumgartner, C., and Barth,
+(1990). Laminar analysis
+extracellular ﬁeld potentials
+
+D. S.
+of
+
+Frontiers in Computational Neuroscience
+
+www.frontiersin.org
+
+February 2013 | Volume 7 | Article 5 | 5
+
+Fernández-Ruiz and Herreras
+
+Spatial discrimination of ﬁeld oscillations
+
+rat
+
+in
+J. Neurophysiol. 63, 832–840.
+
+vibrissa/barrel
+
+cortex.
+
+Elul, R. (1972). The genesis of the EEG.
+Int. Rev. Neurobiol. 15, 228–272.
+Fernández-Ruiz, A., Makarov, V.
+A., Benito, N., and Herreras, O.
+(2012a). Schaffer-speciﬁc local ﬁeld
+potentials reﬂect discrete excitatory
+events at gamma-frequency that
+may ﬁre postsynaptic hippocam-
+pal CA1 units.
+J. Neurosci. 32,
+5165–5176.
+
+Fernández-Ruiz, A., Makarov, V. A.,
+and Herreras, O. (2012b). Sustained
+increase of spontaneous input and
+spike transfer in the CA3-CA1 path-
+way following long term potentia-
+tion in vivo. Front. Neural Circuits
+6:71. doi: 10.3389/fncir.2012.00071
+and
+Andrew,
+(1998). Do
+Pfurtscheller, G.
+changes
+always
+reﬂect changes in functional cou-
+pling?
+Clin.
+Electroencephalogr.
+Neurophysiol. 106, 87–91.
+
+Florian, G.,
+
+coherence
+
+C.,
+
+in
+
+Freeman,
+
+J. A., and Nicholson, C.
+(1975). Experimental
+optimiza-
+source-density
+tion of
+technique for anuran cerebellum.
+J. Neurophysiol. 38, 369–382.
+
+current
+
+Fries, P., Nikolic, D., and Singer, W.
+(2007). The gamma cycle. Trends
+Neurosci. 30, 309–316.
+
+Gloor, P. (1985). Neuronal generators
+and the problem of
+localization
+in electroencephalography: applica-
+tion of volume conductor theory
+to electroencephalography. J. Clin.
+Neurophysiol. 2, 327–354.
+
+Gray, C. M., König, P., Engel, A. K.,
+and Singer, W. (1989). Oscillatory
+responses in cat visual cortex exhibit
+synchronization
+inter-columnar
+stimulus
+global
+reﬂects
+which
+properties. Nature 338, 334–337.
+Happel, M. F., Jeschke, M., and Ohl,
+F. W.
+integra-
+(2010). Spectral
+tion in primary auditory cortex
+attributable to temporally precise
+convergence of thalamocortical and
+intracortical input. J. Neurosci. 30,
+11114–11127.
+
+Herreras, O.
+
+(1990). Propagating
+dendritic action potential mediates
+synaptic transmission in CA1 pyra-
+midal cells in situ. J. Neurophysiol.
+64, 1429–1441.
+
+Jenkins, G. M., and Watts, D. G.
+(1968). Spectral Analysis and its
+Applications. San Francisco, CA:
+Holden-Day.
+
+Kalcher, K., Huf, W., Boubela, R.
+N., Filzmoser, P., Pezawas, L.,
+Biswal, B., et al.
+(2012). Fully
+exploratory network independent
+
+the 1000
+component analysis of
+functional connectomes database.
+Front. Hum. Neurosci. 6:301. doi:
+10.3389/fnhum.2012.00301
+
+Kocsis, B., Bragin, A., and Buzsáki, G.
+(1999). Interdependence of multiple
+theta generators in the hippocam-
+pus: a partial coherence analysis.
+J. Neurosci. 19, 6200–6212.
+
+Korovaichuk,
+
+A., Makarova,
+
+J.,
+Makarov, V. A., Benito, N., and
+Herreras, O. (2010). Minor con-
+tribution of principal excitatory
+pathways
+to hippocampal LFPs
+in the anesthetized rat: a com-
+bined
+component
+and current source density study.
+J. Neurophysiol. 104, 484–497.
+
+independent
+
+Kuki, T., Ohshiro, T., Ito, S., Ji, Z. G.,
+Fukazawa, Y., Matsuzaka, Y., et al.
+Frequency-dependent
+(2012).
+neocortical
+entrainment
+repeated
+slow
+optogenetic
+stimulation in the
+anesthetized rat. Neurosci. Res.
+doi:
+10.1016/j.neures.2012.10.007.
+[Epub ahead of print].
+
+oscillation
+
+of
+
+to
+
+tract
+
+Leung, L. S. (1979). Potentials evoked
+by alvear
+in hippocampal
+CA 1 region in rats. II. Spatial
+ﬁeld analysis. J. Neurophysiol. 42,
+1571–1589.
+
+Ibarz,
+
+López-Aguado, L., Ibarz, J. M., and
+(2001). Activity-
+Herreras, O.
+dependent
+tissue
+of
+changes
+resistivity in the CA1 region in vivo
+are layer-speciﬁc: modulation of
+evoked potentials. Neuroscience 108,
+249–262.
+L.,
+J. M.,
+López-Aguado,
+Varona, P.,
+and Herreras, O.
+(2002). Structural inhomogeneities
+differentially modulate
+action
+and population spikes
+currents
+initiated in the axon or dendrites.
+J. Neurophysiol. 88, 2809–2820.
+Lorente de No, R. (1947). Analysis of
+the distribution of the action cur-
+rents of nerve in volume conduc-
+tors. Stud. Rockefeller Inst. Med. Res.
+Repr. 132, 384–477.
+
+O.
+
+J.,
+Makarov, V. A., Makarova,
+(2010).
+and
+Herreras,
+local ﬁeld
+Disentanglement
+potential sources by independent
+component
+J. Comp.
+analysis.
+Neurosci. 29, 445–457.
+
+of
+
+Makarova, J., Ibarz, J. M., Makarov,
+V. A., Benito, N., and Herreras, O.
+(2011). Parallel readout of pathway-
+speciﬁc inputs to laminated brain
+structures. Front. Syst. Neurosci.
+5:77. doi: 10.3389/fnsys.2011.00077
+Makeig, S., Jung, T. P., Bell, A. J.,
+Ghahremani, D., and Sejnowski, T.
+
+J. (1997). Blind separation of audi-
+tory event-related brain responses
+into
+components.
+Proc. Natl. Acad. Sci. U.S.A. 94,
+10979–10984.
+
+independent
+
+Mann, E. O., and Paulsen, O. (2007).
+Role of GABAergic inhibition in
+hippocampal network oscillations.
+Trends Neurosci. 30, 343–349.
+
+Montgomery, S. M., Betancur, M. I.,
+and Buzsáki, G. (2009). Behavior-
+dependent coordination of multiple
+theta dipoles in the hippocampus.
+J. Neurosci. 29, 1381–1394.
+
+Nunez, P. L., and Srinivasan, R. (2010).
+Scale and frequency chauvinism in
+brain dynamics: too much emphasis
+on γ band oscillations. Brain Struct.
+Funct. 215, 67–71.
+
+Oppenheim, A. V., and Schafer, R.
+W.
+(1989). Discrete-Time Signal
+Processing. Englewood Cliffs, NJ:
+Prentice Hall.
+
+Penttonen, M., Kamondi, A., Acsády,
+L., and Buzsáki, G. (1998). Gamma
+frequency oscillation in the hip-
+pocampus of the rat: intracellular
+analysis in vivo. Eur. J. Neurosci. 10,
+718–728.
+
+in gamma
+
+Ray, S., and Maunsell, J. H. R. (2010).
+Differences
+frequen-
+cies across visual cortex restrict
+their possible use in computation.
+Neuron 67, 885–896.
+
+Ray, S., and Maunsell, J. H. R. (2011).
+Network rhythms inﬂuence the rela-
+tionship between spike-triggered
+and func-
+local ﬁeld potential
+tional connectivity. J. Neurosci. 31,
+12674–12682.
+Reich, D. S., Victor,
+
+J. D., Knight,
+B. W., Ozaki, T., and Kaplan, E.
+(1997). Response variability and
+timing precision of neuronal spike
+trains in vivo. J. Neurophysiol. 77,
+2836–2841.
+
+Rivas, J., Gaztelu, J. M., and García-
+Austt, E. (1996). Changes in hip-
+pocampal cell discharge patterns
+and theta rhythm spectral proper-
+ties as a function of walking velocity
+in the guinea pig. Exp. Brain Res.
+108, 113–118.
+
+Schmidt, R., Diba, K., Leibold, C.,
+and
+Single-
+precession in the
+29,
+
+Schmitz, D., Buzsáki, G.,
+Kempter,
+R.
+trial
+hippocampus.
+13232–13241.
+
+J. Neurosci.
+
+(2009).
+
+phase
+
+Schroeder, C. E., Mehta, A. D., and
+Givre, S. J. (1998). A spatiotempo-
+ral proﬁle of visual system activation
+revealed by current source density
+analysis
+in the awake macaque.
+Cereb. Cortex 8, 575–592.
+
+feature
+
+Singer, W., and Gray, C. M. (1995).
+Visual
+integration and
+the temporal correlation hypoth-
+esis. Annu. Rev. Neurosci.
+18,
+555–586.
+
+Srinivasan, R., Willian, R. W., and
+Nunez, P. L. (2006). Source analy-
+sis of EEG oscillations using high-
+resolution EEG and MEG. Prog.
+Brain Res. 159, 29–42.
+
+(2002).
+
+Tang, A. C., Pearlmutter, B. A.,
+Malaszenko, N. A., and Phung, D.
+B.
+Independent compo-
+nents of magnetoencephalography:
+single-trial
+time.
+Neuroimage 17, 1773–1789.
+
+response onset
+
+Varona, P., Ibarz, J. M., López-Aguado,
+L.,
+(2000).
+and Herreras, O.
+Macroscopic and subcellular factors
+shaping CA1 population spikes.
+J. Neurophysiol. 83, 2192–2208.
+Wu, K., Canning, K. J., and Leung, L.
+S. (1998). Functional interconnec-
+tions between CA3 and the den-
+tate gyrus revealed by current source
+density analysis. Hippocampus 8,
+217–230.
+
+Sharp
+
+Ylinen, A., Bragin, A., Nádasdy, Z.,
+Jandó, G., Szabó, I., Sik, A., et al.
+(1995).
+wave-associated
+high-frequency oscillation (200 Hz)
+in the intact hippocampus: network
+intracellular mechanisms.
+and
+J. Neurosci. 15, 30–46.
+
+the
+
+that
+
+Conﬂict of Interest Statement: The
+research
+authors declare
+was conducted in the absence of any
+commercial or ﬁnancial relationships
+that could be construed as a potential
+conﬂict of interest.
+
+A
+
+7:5.
+
+Identifying
+
+Fernández-Ruiz
+
+Received: 30 November 2012; paper
+pending published: 31 December 2012;
+accepted: 26 January 2013; published
+online: 12 February 2013.
+and
+Citation:
+Herreras O (2013)
+the
+synaptic origin of ongoing neuronal
+oscillations through spatial discrimina-
+tion of electric ﬁelds. Front. Comput.
+10.3389/fncom.
+doi:
+Neurosci.
+2013.00005
+Copyright © 2013 Fernández-Ruiz
+and Herreras. This is an open-access
+article distributed under the terms of the
+Creative Commons Attribution License,
+which permits use, distribution and
+reproduction in other forums, provided
+the original authors and source are
+credited and subject to any copyright
+notices
+third-party
+graphics etc.
+
+concerning
+
+any
+
+Frontiers in Computational Neuroscience
+
+www.frontiersin.org
+
+February 2013 | Volume 7 | Article 5 | 6
+
+

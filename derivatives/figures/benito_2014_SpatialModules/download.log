@@ -1,0 +1,8 @@
+[online] citekey=benito_2014_SpatialModules, doi=10.1093/cercor/bht022, pmcid=None
+[online] initial URL candidates:
+  - https://doi.org/10.1093/cercor/bht022
+  - https://pubmed.ncbi.nlm.nih.gov/?term=10.1093/cercor/bht022
+[online] GET https://doi.org/10.1093/cercor/bht022 -> 403, content-type=text/html; charset=utf-8, final=https://academic.oup.com/cercor/article-lookup/doi/10.1093/cercor/bht022
+[online] GET https://pubmed.ncbi.nlm.nih.gov/?term=10.1093/cercor/bht022 -> 200, content-type=text/html; charset=utf-8, final=https://pubmed.ncbi.nlm.nih.gov/23395845/
+[online] 0 candidate image URLs from https://pubmed.ncbi.nlm.nih.gov/23395845/
+[online] no usable figures found for benito_2014_SpatialModules

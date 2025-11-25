@@ -1,0 +1,61 @@
+[{
+  "caption": "Figure 1. Activity of the pathway-specific LFPs during familiar vs. novelty explorations. (a) Example of one video frame acquired during the exploration of familiar (top) and novel (bottom) environments. (b) Decomposition of the hippocampal LFPs in their sources using ICA. Left: LFP traces recorded along the dorsal hippocampus (or, stratum oriens; pyr, pyramidal layer; rad, stratum radiatum; lm, stratum lacunosum-moleculare; gc, granule cell layer; hil, hilus.). Middle: Voltage and current source density (CSD) loadings of the independent components (IC) of the LFP (IC-LFPs), which represent the contribution of the sources to each LFP channel. Note that one LFP channel may be contributed by several sources. Right: IC-LFPs obtained for the represented LFPs. (c) Scheme of the main hippocampal regions. The dashed line represents the location of the electrode. Color lines identify the pathways associated to the IC-LFPs: Schaffer collateral in blue, temporoammonic pathway (EC-III efferences to CA1) in red and perforant pathway (EC-II efferences to DG) in yellow. (d) Averaged power spectrum across subjects (n = 5) for each signal in control (black) and novelty (color; mean ± s.e.m.). (e) Difference between the power in novelty versus control at different frequency bands (mean across subjects ± s.e.m.; ** p < 0.01, n = 5).",
+  "captionBoundary": {
+    "x1": 166.968994140625,
+    "x2": 560.8466186523438,
+    "y1": 510.4358215332031,
+    "y2": 682.6619873046875
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "1",
+  "page": 6,
+  "regionBoundary": {
+    "x1": 166.79999999999998,
+    "x2": 549.12,
+    "y1": 258.71999999999997,
+    "y2": 502.08
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdffigures2/figs/López-Madrona and Canals - 2021 - Functional Interactions between Entorhinal Cortical Pathways Modulate Theta Activity in the Hippocam-Figure1-1.png"
+}, {
+  "caption": "Figure 2. Directed functional connectivity. (a–f): PDC analysis between IC-LFPs in control (blue) vs. novelty (red) conditions for each pair of IC-LFPs and in both directions (mean across subjects ± s.e.m.; * p < 0.05, ** p < 0.01, n = 5). Arrows indicate the directionality of the interaction. (g,h): Time evolution of the PDC at theta frequency during the tasks for the two pairs of IC-LFPs showing significant differences in panels (a,h).",
+  "captionBoundary": {
+    "x1": 166.968994140625,
+    "x2": 560.8413696289062,
+    "y1": 367.7007751464844,
+    "y2": 424.530029296875
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "2",
+  "page": 7,
+  "regionBoundary": {
+    "x1": 166.79999999999998,
+    "x2": 481.2,
+    "y1": 94.8,
+    "y2": 359.03999999999996
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdffigures2/figs/López-Madrona and Canals - 2021 - Functional Interactions between Entorhinal Cortical Pathways Modulate Theta Activity in the Hippocam-Figure2-1.png"
+}, {
+  "caption": "Figure 3. Functional connectivity in the hippocampus based on Information Theory. (a) PTE analysis between IC-LFPs during the control and novelty session (mean value across subjects, n = 5). Each value represents the connectivity from the sender in the y-axis to the receiver indicated in the x-axis. (b) Difference between PTE matrices in novelty minus control data (* p < 0.05). (c) Time evolution of the PTE during the tasks for the two pairs of IC-LFPs showing significant differences in PDC and/or PTE.",
+  "captionBoundary": {
+    "x1": 166.968994140625,
+    "x2": 560.84521484375,
+    "y1": 375.87078857421875,
+    "y2": 445.5220031738281
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "3",
+  "page": 8,
+  "regionBoundary": {
+    "x1": 166.79999999999998,
+    "x2": 509.03999999999996,
+    "y1": 157.68,
+    "y2": 366.96
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/lopez-madrona_2021_FunctionalInteractions/pdffigures2/figs/López-Madrona and Canals - 2021 - Functional Interactions between Entorhinal Cortical Pathways Modulate Theta Activity in the Hippocam-Figure3-1.png"
+}]

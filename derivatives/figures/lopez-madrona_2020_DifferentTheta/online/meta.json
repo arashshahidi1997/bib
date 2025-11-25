@@ -1,0 +1,46 @@
+{
+  "source": "online",
+  "doi": "10.7554/eLife.57313",
+  "pmcid": null,
+  "figures": [
+    {
+      "url": "https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig1-v3.tif/full/617,/0/default.jpg",
+      "file": "figure_1.jpg"
+    },
+    {
+      "url": "https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig2-v3.tif/full/617,/0/default.jpg",
+      "file": "figure_2.jpg"
+    },
+    {
+      "url": "https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig3-v3.tif/full/617,/0/default.jpg",
+      "file": "figure_3.jpg"
+    },
+    {
+      "url": "https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig4-v3.tif/full/617,/0/default.jpg",
+      "file": "figure_4.jpg"
+    },
+    {
+      "url": "https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig5-v3.tif/full/617,/0/default.jpg",
+      "file": "figure_5.jpg"
+    },
+    {
+      "url": "https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig6-v3.tif/full/617,/0/default.jpg",
+      "file": "figure_6.jpg"
+    },
+    {
+      "url": "https://iiif.elifesciences.org/lax/57313%2Felife-57313-fig7-v3.tif/full/617,/0/default.jpg",
+      "file": "figure_7.jpg"
+    }
+  ],
+  "tried_urls": [
+    "https://doi.org/10.7554/eLife.57313",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=10.7554/eLife.57313"
+  ],
+  "trace": [
+    {
+      "url": "https://doi.org/10.7554/eLife.57313",
+      "final_url": "https://elifesciences.org/articles/57313",
+      "status": "html"
+    }
+  ]
+}

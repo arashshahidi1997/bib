@@ -1,0 +1,306 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: arash-XPS-13-9310
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                     count
+--------------------  -------
+all                         1
+download_figures            6
+download_fulltext           6
+extract_fulltext_pdf        6
+total                      19
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: Pulp: cannot execute cbc cwd: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib
+Execute 1 jobs...
+[Tue Nov 25 10:16:33 2025]
+localrule extract_fulltext_pdf:
+    output: derivatives/fulltext/leski_2010_ExtractingFunctional/pdf
+    jobid: 18
+    reason: Missing output files: derivatives/fulltext/leski_2010_ExtractingFunctional/pdf
+    wildcards: key=leski_2010_ExtractingFunctional
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/leski_2010_ExtractingFunctional/pdf
+        python -m bib.pdf_fulltext leski_2010_ExtractingFunctional derivatives/fulltext/leski_2010_ExtractingFunctional/pdf
+        
+Select jobs to execute...
+[Tue Nov 25 10:16:35 2025]
+Finished jobid: 18 (Rule: extract_fulltext_pdf)
+1 of 19 steps (5%) done
+Execute 1 jobs...
+[Tue Nov 25 10:16:35 2025]
+localrule download_fulltext:
+    output: derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/online
+    jobid: 10
+    reason: Missing output files: derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/online
+    wildcards: key=fernandez-ruiz_2013_IdentifyingSynaptic
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/online
+        python -m bib.download_fulltext fernandez-ruiz_2013_IdentifyingSynaptic derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/online
+        
+Select jobs to execute...
+[Tue Nov 25 10:16:39 2025]
+Finished jobid: 10 (Rule: download_fulltext)
+2 of 19 steps (11%) done
+Execute 1 jobs...
+[Tue Nov 25 10:16:39 2025]
+localrule download_figures:
+    output: derivatives/figures/benito_2014_SpatialModules/online
+    log: derivatives/figures/benito_2014_SpatialModules/download.log
+    jobid: 3
+    reason: Missing output files: derivatives/figures/benito_2014_SpatialModules/online
+    wildcards: key=benito_2014_SpatialModules
+    resources: tmpdir=/tmp
+Shell command: python -m bib.download_figures benito_2014_SpatialModules derivatives/figures/benito_2014_SpatialModules/online > derivatives/figures/benito_2014_SpatialModules/download.log 2>&1
+Select jobs to execute...
+[Tue Nov 25 10:16:42 2025]
+Finished jobid: 3 (Rule: download_figures)
+3 of 19 steps (16%) done
+Execute 1 jobs...
+[Tue Nov 25 10:16:42 2025]
+localrule extract_fulltext_pdf:
+    output: derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/pdf
+    jobid: 20
+    reason: Missing output files: derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/pdf
+    wildcards: key=lopez-madrona_2021_FunctionalInteractions
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/pdf
+        python -m bib.pdf_fulltext lopez-madrona_2021_FunctionalInteractions derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/pdf
+        
+Select jobs to execute...
+[Tue Nov 25 10:16:44 2025]
+Finished jobid: 20 (Rule: extract_fulltext_pdf)
+4 of 19 steps (21%) done
+Execute 1 jobs...
+[Tue Nov 25 10:16:44 2025]
+localrule download_figures:
+    output: derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/online
+    log: derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/download.log
+    jobid: 4
+    reason: Missing output files: derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/online
+    wildcards: key=fernandez-ruiz_2013_IdentifyingSynaptic
+    resources: tmpdir=/tmp
+Shell command: python -m bib.download_figures fernandez-ruiz_2013_IdentifyingSynaptic derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/online > derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/download.log 2>&1
+Select jobs to execute...
+[Tue Nov 25 10:16:46 2025]
+Finished jobid: 4 (Rule: download_figures)
+5 of 19 steps (26%) done
+Execute 1 jobs...
+[Tue Nov 25 10:16:46 2025]
+localrule download_fulltext:
+    output: derivatives/fulltext/lopez-madrona_2020_DifferentTheta/online
+    jobid: 13
+    reason: Missing output files: derivatives/fulltext/lopez-madrona_2020_DifferentTheta/online
+    wildcards: key=lopez-madrona_2020_DifferentTheta
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/lopez-madrona_2020_DifferentTheta/online
+        python -m bib.download_fulltext lopez-madrona_2020_DifferentTheta derivatives/fulltext/lopez-madrona_2020_DifferentTheta/online
+        
+Select jobs to execute...
+[Tue Nov 25 10:16:49 2025]
+Finished jobid: 13 (Rule: download_fulltext)
+6 of 19 steps (32%) done
+Execute 1 jobs...
+[Tue Nov 25 10:16:49 2025]
+localrule download_figures:
+    output: derivatives/figures/lopez-madrona_2021_FunctionalInteractions/online
+    log: derivatives/figures/lopez-madrona_2021_FunctionalInteractions/download.log
+    jobid: 8
+    reason: Missing output files: derivatives/figures/lopez-madrona_2021_FunctionalInteractions/online
+    wildcards: key=lopez-madrona_2021_FunctionalInteractions
+    resources: tmpdir=/tmp
+Shell command: python -m bib.download_figures lopez-madrona_2021_FunctionalInteractions derivatives/figures/lopez-madrona_2021_FunctionalInteractions/online > derivatives/figures/lopez-madrona_2021_FunctionalInteractions/download.log 2>&1
+Select jobs to execute...
+[Tue Nov 25 10:16:53 2025]
+Finished jobid: 8 (Rule: download_figures)
+7 of 19 steps (37%) done
+Execute 1 jobs...
+[Tue Nov 25 10:16:53 2025]
+localrule extract_fulltext_pdf:
+    output: derivatives/fulltext/benito_2014_SpatialModules/pdf
+    jobid: 15
+    reason: Missing output files: derivatives/fulltext/benito_2014_SpatialModules/pdf
+    wildcards: key=benito_2014_SpatialModules
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/benito_2014_SpatialModules/pdf
+        python -m bib.pdf_fulltext benito_2014_SpatialModules derivatives/fulltext/benito_2014_SpatialModules/pdf
+        
+Select jobs to execute...
+[Tue Nov 25 10:16:56 2025]
+Finished jobid: 15 (Rule: extract_fulltext_pdf)
+8 of 19 steps (42%) done
+Execute 1 jobs...
+[Tue Nov 25 10:16:56 2025]
+localrule download_fulltext:
+    output: derivatives/fulltext/leski_2010_ExtractingFunctional/online
+    jobid: 12
+    reason: Missing output files: derivatives/fulltext/leski_2010_ExtractingFunctional/online
+    wildcards: key=leski_2010_ExtractingFunctional
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/leski_2010_ExtractingFunctional/online
+        python -m bib.download_fulltext leski_2010_ExtractingFunctional derivatives/fulltext/leski_2010_ExtractingFunctional/online
+        
+Select jobs to execute...
+[Tue Nov 25 10:16:58 2025]
+Finished jobid: 12 (Rule: download_fulltext)
+9 of 19 steps (47%) done
+Execute 1 jobs...
+[Tue Nov 25 10:16:58 2025]
+localrule extract_fulltext_pdf:
+    output: derivatives/fulltext/korovaichuk_2010_MinorContribution/pdf
+    jobid: 17
+    reason: Missing output files: derivatives/fulltext/korovaichuk_2010_MinorContribution/pdf
+    wildcards: key=korovaichuk_2010_MinorContribution
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/korovaichuk_2010_MinorContribution/pdf
+        python -m bib.pdf_fulltext korovaichuk_2010_MinorContribution derivatives/fulltext/korovaichuk_2010_MinorContribution/pdf
+        
+Select jobs to execute...
+[Tue Nov 25 10:17:12 2025]
+Finished jobid: 17 (Rule: extract_fulltext_pdf)
+10 of 19 steps (53%) done
+Execute 1 jobs...
+[Tue Nov 25 10:17:12 2025]
+localrule download_fulltext:
+    output: derivatives/fulltext/benito_2014_SpatialModules/online
+    jobid: 9
+    reason: Missing output files: derivatives/fulltext/benito_2014_SpatialModules/online
+    wildcards: key=benito_2014_SpatialModules
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/benito_2014_SpatialModules/online
+        python -m bib.download_fulltext benito_2014_SpatialModules derivatives/fulltext/benito_2014_SpatialModules/online
+        
+Select jobs to execute...
+[Tue Nov 25 10:17:13 2025]
+Finished jobid: 9 (Rule: download_fulltext)
+11 of 19 steps (58%) done
+Execute 1 jobs...
+[Tue Nov 25 10:17:13 2025]
+localrule extract_fulltext_pdf:
+    output: derivatives/fulltext/lopez-madrona_2020_DifferentTheta/pdf
+    jobid: 19
+    reason: Missing output files: derivatives/fulltext/lopez-madrona_2020_DifferentTheta/pdf
+    wildcards: key=lopez-madrona_2020_DifferentTheta
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/lopez-madrona_2020_DifferentTheta/pdf
+        python -m bib.pdf_fulltext lopez-madrona_2020_DifferentTheta derivatives/fulltext/lopez-madrona_2020_DifferentTheta/pdf
+        
+Select jobs to execute...
+[Tue Nov 25 10:17:18 2025]
+Finished jobid: 19 (Rule: extract_fulltext_pdf)
+12 of 19 steps (63%) done
+Execute 1 jobs...
+[Tue Nov 25 10:17:18 2025]
+localrule download_fulltext:
+    output: derivatives/fulltext/korovaichuk_2010_MinorContribution/online
+    jobid: 11
+    reason: Missing output files: derivatives/fulltext/korovaichuk_2010_MinorContribution/online
+    wildcards: key=korovaichuk_2010_MinorContribution
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/korovaichuk_2010_MinorContribution/online
+        python -m bib.download_fulltext korovaichuk_2010_MinorContribution derivatives/fulltext/korovaichuk_2010_MinorContribution/online
+        
+Select jobs to execute...
+[Tue Nov 25 10:17:21 2025]
+Finished jobid: 11 (Rule: download_fulltext)
+13 of 19 steps (68%) done
+Execute 1 jobs...
+[Tue Nov 25 10:17:21 2025]
+localrule download_figures:
+    output: derivatives/figures/korovaichuk_2010_MinorContribution/online
+    log: derivatives/figures/korovaichuk_2010_MinorContribution/download.log
+    jobid: 5
+    reason: Missing output files: derivatives/figures/korovaichuk_2010_MinorContribution/online
+    wildcards: key=korovaichuk_2010_MinorContribution
+    resources: tmpdir=/tmp
+Shell command: python -m bib.download_figures korovaichuk_2010_MinorContribution derivatives/figures/korovaichuk_2010_MinorContribution/online > derivatives/figures/korovaichuk_2010_MinorContribution/download.log 2>&1
+Select jobs to execute...
+[Tue Nov 25 10:17:23 2025]
+Finished jobid: 5 (Rule: download_figures)
+14 of 19 steps (74%) done
+Execute 1 jobs...
+[Tue Nov 25 10:17:23 2025]
+localrule download_fulltext:
+    output: derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/online
+    jobid: 14
+    reason: Missing output files: derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/online
+    wildcards: key=lopez-madrona_2021_FunctionalInteractions
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/online
+        python -m bib.download_fulltext lopez-madrona_2021_FunctionalInteractions derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/online
+        
+Select jobs to execute...
+[Tue Nov 25 10:17:25 2025]
+Finished jobid: 14 (Rule: download_fulltext)
+15 of 19 steps (79%) done
+Execute 1 jobs...
+[Tue Nov 25 10:17:25 2025]
+localrule download_figures:
+    output: derivatives/figures/leski_2010_ExtractingFunctional/online
+    log: derivatives/figures/leski_2010_ExtractingFunctional/download.log
+    jobid: 6
+    reason: Missing output files: derivatives/figures/leski_2010_ExtractingFunctional/online
+    wildcards: key=leski_2010_ExtractingFunctional
+    resources: tmpdir=/tmp
+Shell command: python -m bib.download_figures leski_2010_ExtractingFunctional derivatives/figures/leski_2010_ExtractingFunctional/online > derivatives/figures/leski_2010_ExtractingFunctional/download.log 2>&1
+Select jobs to execute...
+[Tue Nov 25 10:17:29 2025]
+Finished jobid: 6 (Rule: download_figures)
+16 of 19 steps (84%) done
+Execute 1 jobs...
+[Tue Nov 25 10:17:29 2025]
+localrule extract_fulltext_pdf:
+    output: derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/pdf
+    jobid: 16
+    reason: Missing output files: derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/pdf
+    wildcards: key=fernandez-ruiz_2013_IdentifyingSynaptic
+    resources: tmpdir=/tmp
+Shell command: 
+        mkdir -p derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/pdf
+        python -m bib.pdf_fulltext fernandez-ruiz_2013_IdentifyingSynaptic derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/pdf
+        
+Select jobs to execute...
+[Tue Nov 25 10:17:31 2025]
+Finished jobid: 16 (Rule: extract_fulltext_pdf)
+17 of 19 steps (89%) done
+Execute 1 jobs...
+[Tue Nov 25 10:17:31 2025]
+localrule download_figures:
+    output: derivatives/figures/lopez-madrona_2020_DifferentTheta/online
+    log: derivatives/figures/lopez-madrona_2020_DifferentTheta/download.log
+    jobid: 7
+    reason: Missing output files: derivatives/figures/lopez-madrona_2020_DifferentTheta/online
+    wildcards: key=lopez-madrona_2020_DifferentTheta
+    resources: tmpdir=/tmp
+Shell command: python -m bib.download_figures lopez-madrona_2020_DifferentTheta derivatives/figures/lopez-madrona_2020_DifferentTheta/online > derivatives/figures/lopez-madrona_2020_DifferentTheta/download.log 2>&1
+[Tue Nov 25 10:17:35 2025]
+Finished jobid: 7 (Rule: download_figures)
+18 of 19 steps (95%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Nov 25 10:17:35 2025]
+localrule all:
+    input: /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/neuropy.bib, derivatives/figures/benito_2014_SpatialModules/online, derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/online, derivatives/figures/korovaichuk_2010_MinorContribution/online, derivatives/figures/leski_2010_ExtractingFunctional/online, derivatives/figures/lopez-madrona_2020_DifferentTheta/online, derivatives/figures/lopez-madrona_2021_FunctionalInteractions/online, derivatives/fulltext/benito_2014_SpatialModules/online, derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/online, derivatives/fulltext/korovaichuk_2010_MinorContribution/online, derivatives/fulltext/leski_2010_ExtractingFunctional/online, derivatives/fulltext/lopez-madrona_2020_DifferentTheta/online, derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/online, derivatives/fulltext/benito_2014_SpatialModules/pdf, derivatives/fulltext/fernandez-ruiz_2013_IdentifyingSynaptic/pdf, derivatives/fulltext/korovaichuk_2010_MinorContribution/pdf, derivatives/fulltext/leski_2010_ExtractingFunctional/pdf, derivatives/fulltext/lopez-madrona_2020_DifferentTheta/pdf, derivatives/fulltext/lopez-madrona_2021_FunctionalInteractions/pdf
+    jobid: 0
+    reason: Rules with a run or shell declaration but no output are always executed.
+    resources: tmpdir=/tmp
+Shell command: echo 'All done!'
+[Tue Nov 25 10:17:35 2025]
+Finished jobid: 0 (Rule: all)
+19 of 19 steps (100%) done
+Complete log(s): /home/arash/Documents/Science/Uni/NeuroPy/NeuroPySeminar/bib/.snakemake/log/2025-11-25T101632.936819.snakemake.log

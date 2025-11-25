@@ -1,0 +1,42 @@
+{
+  "source": "online",
+  "doi": "10.1007/s10827-009-0203-1",
+  "pmcid": null,
+  "figures": [
+    {
+      "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig1_HTML.gif",
+      "file": "figure_1.gif"
+    },
+    {
+      "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig2_HTML.gif",
+      "file": "figure_2.gif"
+    },
+    {
+      "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig3_HTML.gif",
+      "file": "figure_3.gif"
+    },
+    {
+      "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig4_HTML.gif",
+      "file": "figure_4.gif"
+    },
+    {
+      "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig5_HTML.gif",
+      "file": "figure_5.gif"
+    },
+    {
+      "url": "https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs10827-009-0203-1/MediaObjects/10827_2009_203_Fig6_HTML.gif",
+      "file": "figure_6.gif"
+    }
+  ],
+  "tried_urls": [
+    "https://doi.org/10.1007/s10827-009-0203-1",
+    "https://pubmed.ncbi.nlm.nih.gov/?term=10.1007/s10827-009-0203-1"
+  ],
+  "trace": [
+    {
+      "url": "https://doi.org/10.1007/s10827-009-0203-1",
+      "final_url": "https://link.springer.com/article/10.1007/s10827-009-0203-1",
+      "status": "html"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+[online] citekey=lopez-madrona_2021_FunctionalInteractions, doi=10.3390/biology10080692, pmcid=None
+[online] initial URL candidates:
+  - https://doi.org/10.3390/biology10080692
+  - https://pubmed.ncbi.nlm.nih.gov/?term=10.3390/biology10080692
+[online] GET https://doi.org/10.3390/biology10080692 -> 403, content-type=text/html, final=https://www.mdpi.com/2079-7737/10/8/692
+[online] GET https://pubmed.ncbi.nlm.nih.gov/?term=10.3390/biology10080692 -> 200, content-type=text/html; charset=utf-8, final=https://pubmed.ncbi.nlm.nih.gov/34439925/
+[online] found PMC links on https://pubmed.ncbi.nlm.nih.gov/34439925/:
+        https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/
+[online] 0 candidate image URLs from https://pubmed.ncbi.nlm.nih.gov/34439925/
+[online] GET https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/ -> 200, content-type=text/html; charset=utf-8, final=https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/
+[online] 3 candidate image URLs from https://pmc.ncbi.nlm.nih.gov/articles/PMC8389192/
+[online] https://cdn.ncbi.nlm.nih.gov/pmc/blobs/a70a/8389192/763e38bd387e/biology-10-00692-g001.jpg -> derivatives/figures/lopez-madrona_2021_FunctionalInteractions/online/figs/figure_1.jpg
+[online] https://cdn.ncbi.nlm.nih.gov/pmc/blobs/a70a/8389192/89b69407ef04/biology-10-00692-g002.jpg -> derivatives/figures/lopez-madrona_2021_FunctionalInteractions/online/figs/figure_2.jpg
+[online] https://cdn.ncbi.nlm.nih.gov/pmc/blobs/a70a/8389192/422a83793bdb/biology-10-00692-g003.jpg -> derivatives/figures/lopez-madrona_2021_FunctionalInteractions/online/figs/figure_3.jpg
+[online] total figures downloaded for lopez-madrona_2021_FunctionalInteractions: 3

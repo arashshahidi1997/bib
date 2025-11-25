@@ -1,0 +1,8 @@
+[online] citekey=fernandez-ruiz_2013_IdentifyingSynaptic, doi=10.3389/fncom.2013.00005, pmcid=None
+[online] initial URL candidates:
+  - https://doi.org/10.3389/fncom.2013.00005
+  - https://pubmed.ncbi.nlm.nih.gov/?term=10.3389/fncom.2013.00005
+[online] GET https://doi.org/10.3389/fncom.2013.00005 -> 200, content-type=text/html;charset=utf-8, final=https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2013.00005/full
+[online] 1 candidate image URLs from https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2013.00005/full
+[online] https://images-provider.frontiersin.org/api/ipx/s=366x408&fit=outside&f=jpg/https://brand.frontiersin.org/m/59ee6275cb9a849c/webimage-Impact-metrics-banner-for-article-pages.png -> derivatives/figures/fernandez-ruiz_2013_IdentifyingSynaptic/online/figs/figure_1.png
+[online] total figures downloaded for fernandez-ruiz_2013_IdentifyingSynaptic: 1

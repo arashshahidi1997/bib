@@ -1,0 +1,141 @@
+[{
+  "caption": "Figure 2. Different theta frameworks coexist in the dorsal hippocampus. (a) Schematic representation of virus injections (left), implantation of optic fibers and multichannel electrode (middle) and experimental setup and stimulation protocol (right). (b) Representative images of coronal sections confirming the specificity of ChR2 infection in PV interneurons in dorsal CA3. Left, low magnification image showing overlapped DAPI staining (blue), PV + immunostaining (red) and ChR2-eYFP expression (green). Right, higher magnification images from the CA3 region showing PV+ immunostaining",
+  "captionBoundary": {
+    "x1": 37.019775390625,
+    "x2": 574.9662475585938,
+    "y1": 672.2200317382812,
+    "y2": 709.1146240234375
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "2",
+  "page": 5,
+  "regionBoundary": {
+    "x1": 36.96,
+    "x2": 507.12,
+    "y1": 52.8,
+    "y2": 660.0
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/figs/López-Madrona et al. - 2020 - Different theta frameworks coexist in the rat hippocampus and are coordinated during memory-guided a-Figure2-1.png"
+}, {
+  "caption": "Figure 7. Local theta-gamma CFC and theta synchronization change in parallel and associated with decision making in a T-maze task. (a) Example of running trajectories during the T-maze task. (b) Averaged movement velocity in the center and side arms (mean ± s.e.m. across all subjects). Only trials with similar speed in both conditions were considered for the analysis. (c) Ratio between the MI at the center of the maze and that at the sides (*p<0.05, paired t-test across subjects, averaging all selected trials for each animal, t = 3.61/4.03/3.54 for Sch-IC/lm-IC/PP-IC, N = 4). (d) ICPC values in the center and side arms showing the synchronization between the three IC-LFPs (*p<0.05, group level paired t-test, t = 4.79, N = 4). Differences withinsubject (color lines) were done with paired t-test using all correct trials (yellow line: p<0.0001, N = 114 trials; purple: p<0.05, N = 63; green: p<0.001, N = 151; blue: p=0.07, N = 69). (e) Representative example of ICPC values for different locations in one trial.",
+  "captionBoundary": {
+    "x1": 37.020301818847656,
+    "x2": 574.6735229492188,
+    "y1": 218.05299377441406,
+    "y2": 287.7729187011719
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "7",
+  "page": 14,
+  "regionBoundary": {
+    "x1": 36.96,
+    "x2": 572.16,
+    "y1": 52.8,
+    "y2": 206.16
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/figs/López-Madrona et al. - 2020 - Different theta frameworks coexist in the rat hippocampus and are coordinated during memory-guided a-Figure7-1.png"
+}, {
+  "caption": "Figure 4. Characterization of theta oscillations as a function of their synchronization. (a) Power spectrum of the IC-LFPs during high (blue, ICPC >0.95) and low (red, ICPC <0.8) theta synchronization epochs. A strong increase of the theta peak can be seen in all IC-LFPs during theta synchronization, together with a right-shift of the peak frequency for lm-IC and PP-IC. (b) Theta frequency correlated with ICPC in lm-IC and PP-IC (black lines represent statistically significant linear correlations; R = 0.94/0.92, p<0.05, respectively, surrogate test). Theta power correlated in all IC-LFPs with the",
+  "captionBoundary": {
+    "x1": 37.02020263671875,
+    "x2": 571.0344848632812,
+    "y1": 672.1640014648438,
+    "y2": 709.05859375
+  },
+  "figType": "Figure",
+  "imageText": ["López-Madrona", "et", "al.", "eLife", "2020;9:e57313.", "DOI:", "https://doi.org/10.7554/eLife.57313", "10", "of", "35", "Figure", "4", "continued", "on", "next", "page"],
+  "name": "4",
+  "page": 9,
+  "regionBoundary": {
+    "x1": 36.96,
+    "x2": 575.04,
+    "y1": 714.72,
+    "y2": 756.72
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/figs/López-Madrona et al. - 2020 - Different theta frameworks coexist in the rat hippocampus and are coordinated during memory-guided a-Figure4-1.png"
+}, {
+  "caption": "Figure 6. Local theta-gamma CFC and theta synchronization increase in parallel during mismatch novelty. (a) Scheme of known (left) and novel (right) open-field contexts. After the habituation period (control), the animals were exposed to a different floor (sand paper) located inside the familiar open field, providing a new tactile stimulus (novelty). (b) Time evolution of the dynamic ICPC between the three IC-LFPs (mean ± s.e.m. across all subjects) during exploration: before (blue) and after (red) the introduction of the novel tactile stimulus. Both conditions have a maximum ICPC value at the beginning of the task (t1), corresponding to the initial exploration, followed by a decay in control but not in novelty (t2, inset *p<0.05, paired t-test comparing the average ICPC in control vs. novelty for each time period separately, t = 3, N = 5). Both conditions decrease to the same ICPC level by the end of the exploration time (t3). (c) Averaged movement velocity of the animals during control and novelty. There were not significant differences between both conditions (paired t-test across subjects for each time period, N = 4). Color-lines represent the values of each subject. (d) Multiple linear regression with theta power, theta frequency, speed, session (control or novelty) and time as independent factors contributing to the ICPC between the three IC-LFPs. Bars represent the variance explained by each factor that cannot be accounted for by other variables. All contributions were significant (see Materials and methods) except for the theta frequency in Sch-IC and lm-IC. (e) CFC computed as the ratio between the averaged MI in the defined time window (t1, t2 and t3) in the novelty condition with respect to the control one (*p<0.05, paired t-test across subject, t = 2.95/5.65/2.92 for Sch-IC/ lm-IC/PP-IC in t2, N = 5). The online version of this article includes the following figure supplement(s) for figure 6:",
+  "captionBoundary": {
+    "x1": 37.01947021484375,
+    "x2": 574.7496337890625,
+    "y1": 525.4989624023438,
+    "y2": 671.9814453125
+  },
+  "figType": "Figure",
+  "imageText": ["c", "n.s.", "/s", ")", "c", "m", "d", "(", "e", "e", "S", "p", "t1", "t2", "t3", "Control", "Novelty", "0", "5", "10", "15", ")", "(", "%", "n", "c", "e", "ri", "a", "v", "a", "e", "d", "la", "in", "e", "x", "p", ")", "-P", "P", "-l", "m", "S", "c", "h", "C", "(", "IC", "P", "Sch-IC", "lm-IC", "PP-IC", "6", "4", "2", "0", "e", "e", "d", "N", "o", "v", "e", "lt", "y", "T", "im", "e", "S", "p", ".", "e", "q", "θ", "fr", "e", "r", "o", "w", "θ", "p", "e", "e", "d", "N", "o", "v", "e", "lt", "y", "T", "im", "e", "S", "p", ".", "e", "q", "θ", "fr", "e", "r", "o", "w", "θ", "p", "e", "e", "d", "N", "o", "v", "e", "lt", "y", "T", "im", "e", "S", "p", ".", "e", "q", "θ", "fr", "e", "r", "o", "w", "θ", "p", "Control", "Novelty", "e", "b", "d", "Control", "Novelty", "*", "***", "l)", "tr", "o", "o", "n", "lt", "y", "/", "C", "v", "e", "(N", "o", "1", "0M", "I", "2", "3", "t1", "t2", "t3", "4", "0.7", "0.9", "*", "t1", "t2", "t3", "Time", "(s)", "0", "100", "200", "300", "400", ")", "-P", "P", "-l", "m", "S", "c", "h", "C", "(", "IC", "P", "0.6", "0.7", "0.8", "0.9", "a", "t1", "t2", "t3"],
+  "name": "6",
+  "page": 12,
+  "regionBoundary": {
+    "x1": 36.96,
+    "x2": 575.04,
+    "y1": 90.96,
+    "y2": 513.12
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/figs/López-Madrona et al. - 2020 - Different theta frameworks coexist in the rat hippocampus and are coordinated during memory-guided a-Figure6-1.png"
+}, {
+  "caption": "Figure 3. Theta-gamma coupling reflects pathway-specific interactions. (a) Representative theta- and gamma-filtered traces of lm-IC showing how the gamma envelope is phase-locked at the trough of the theta oscillation recorded in the same IC-LFP (highlighted with dashed lines), but not with the oscillation recorded in the CA1 pyramidal layer (pyr CA1). (b) Modulation strength (color coded MI) of gamma amplitude (30–250 Hz) in the IC-LFPs and the theta phase recorded in the pyr CA1 LFP (upper panels) and the pathway-specific thetas in the corresponding IC-LFPs (lower panels). (c) Interregional CFC across all gamma and theta oscillations recorded in the three IC-LFPs and pyr CA1. Each rectangle represents the MI between the theta phase and the gamma amplitude at a single specific frequency (gamma reference: slow/medium/fast gamma for Sch-IC/lm-IC/PP-IC). The location and width of the rectangles indicate the theta phase at which gamma amplitude is coupled, and the color indicates the MI (color scales at the bottom of each column). Theta waveforms (black traces) are extracted as the average of all theta cycles in the corresponding signals. The highest CFC strength (red rectangle) was always found between theta and gamma oscillations of the same pathway. (d) Maximum theta-gamma CFC corresponds to oscillations recorded in the same IC-LFP, higher than any between-pathway combination. Left/middle/right panel represents the MI (mean ± s.e.m.) between slow/medium/fast gamma recorded from Sch-IC/lm-IC/PP-IC, and the theta phase of all IC-LFPs and the LFP from pyrCA1. Significantly stronger MI values were found in all cases when theta phases were calculated from the corresponding pathway-specific generators, in contrast to pyr CA1 LFP, and when theta and gamma oscillations had the same origin (*/**p<0.05/0.01, one-way ANOVA of repeated measurements between MI with the same theta reference, followed by Bonferroni correction, F(1.182, 4.729)=36.16/F(1.133, 4.531)=8.649/F(1.555, 6.219)=35.32 for Sch-IC/lm-IC/PP-IC as theta reference, N = 5). The online version of this article includes the following figure supplement(s) for figure 3:",
+  "captionBoundary": {
+    "x1": 37.020050048828125,
+    "x2": 573.5725708007812,
+    "y1": 454.1230163574219,
+    "y2": 622.545654296875
+  },
+  "figType": "Figure",
+  "imageText": ["0", "2.3", "0", "3.2", "0", "17", "**", "**", "*", "Sch-IC", "lm-IC", "PP-IC", "Theta", "reference", "Gamma", "reference", "0", "5", "10", "15", "20", "0", "1", "2", "3", "4", "5", "0", "0.5", "1", "1.5", "2", "2.5", "C", "A", "1", "S", "c", "h", "-I", "C", "lm", "-I", "C", "P", "P", "-", "I", "C", "p", "y", "r", "C", "A", "1", "S", "c", "h", "-I", "C", "lm", "-I", "C", "P", "P", "-I", "C", "p", "y", "r", "C", "A", "1", "S", "c", "h", "-", "I", "C", "lm", "-I", "C", "P", "P", "-I", "C", "p", "y", "r", "e", "n", "c", "fe", "re", "r", "e", "e", "ta", "T", "h", "Gamma", "reference", "Sch-IC", "lm-IC", "PP-IC", "1", "C", "A", "p", "y", "r", "-I", "C", "S", "c", "h", "-I", "C", "l", "m", "-I", "C", "P", "P", "MI", "(x10-3)", "-30", "95", "-30", "95", "-30", "95", "Time", "(ms)", "lm-IC(γ)", "lm-IC(θ)", "pyr", "CA1", "(θ)", "0", "0.5", "1", "z)", "e", "(H", "u", "d", "p", "lit", "a", "m", "fo", "r", "c", "y", "e", "n", "q", "u", "F", "re", "5", "10", "15", "5", "10", "15", "5", "10", "15", "Frequency", "for", "phase", "–", "pyr", "CA1", "(Hz)", "5", "10", "15", "5", "10", "15", "Sch-IC", "lm-IC", "PP-IC", "Sch-IC", "lm-IC", "PP-IC", "50", "100", "150", "200", "250", "5", "10", "15", "50", "100", "150", "200", "250", "c", "d", "Time", "(s)b", ".u", ".)", "(", "a", "d", "e", "lit", "u", "m", "p", "z)", "A", "e", "(H", "u", "d", "p", "lit", "a", "m", "fo", "r", "c", "y", "e", "n", "q", "u", "F", "re", "Frequency", "for", "phase", "–", "IC-LFP", "(Hz)", "MI", "(x10-3)", "0", "2.3", "0", "3.2", "0", "17", ")", "0", "-3", "x", "1", "x", "(", "d", "e", "n", "I", "n", "la", "ti", "o", "d", "u", "M", "o", "a"],
+  "name": "3",
+  "page": 7,
+  "regionBoundary": {
+    "x1": 36.96,
+    "x2": 572.16,
+    "y1": 53.76,
+    "y2": 442.08
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/figs/López-Madrona et al. - 2020 - Different theta frameworks coexist in the rat hippocampus and are coordinated during memory-guided a-Figure3-1.png"
+}, {
+  "caption": "Figure 1. Pathway-specific local field potentials (LFPs). (a) Depth profiles of the electrophysiological signals recorded in the dorsal hippocampus (32 recordings, sites spaced every 100 mm) evoked by an electric pulse stimulating the perforant pathway (left panel) or during resting activity (right panel). Black traces represent the LFPs and color maps the corresponding CSD. Evoked activity was used to consistently localize the electrodes during implantation. Or, stratum oriens; pyr, pyramidal layer; rad, stratum radiatum; lm, stratum lacunosum-moleculare; gc, granule cell layer; hil, hilus. (b and c) Examples of voltage- and CSD-loadings of the three pathway-specific LFPs extracted with the ICA, with maximum loadings overlapping the corresponding afferent layers in the str. radiatum (Sch-IC), lacunosum-moleculare (lm-IC) and the molecular layer of the dentate gyrus (PP-IC). (d) Position of the recording electrode (arrows) in one representative animal. The histological section is immunostained with GFAP antibodies. (e) The power spectra of the three IC-LFPs averaged across subjects show a clear peak at the theta frequency and a broadband gamma activity. (f) Distribution of gamma amplitude (mean ± s.e.m.) in IC-LFPs along the theta cycles of the LFP recorded in pyr CA1, where its trough and peak coincide with 0 and p radians, respectively. Black waves are an example of the theta oscillation. Color coded bars represent statistically significant values relative to the surrogate distribution in all animals (Materials and methods). (g) On the left panel, we plot the results of the coherence analysis comparing the IC-LFPs against the LFP recorded in pyr CA1. Black lines represent the statistical threshold. On the right panel, the coherence analysis between IC-LFPs (green lines) is compared to the coherence between raw LFP channels recorded at the layers with maximum contribution to each IC-LFP (dashed lines, **p<0.01, we used a two-way ANOVA to compare the theta coherence between pairs of IC-LFPs versus theta coherence between raw LFPs, followed by Bonferroni correction, F(1,12)=32.01, N = 5). (h) Theta phase difference between IC-LFPs and LFPs recorded in CA1 pyr layer. Gray lines represent individual theta wave’s phase relative to CA1 pyr theta trough (at 0/2p radians). Average phase is represented by the colored thick line. Length of the thick line represents ICPC. The online version of this article includes the following figure supplement(s) for figure 1:",
+  "captionBoundary": {
+    "x1": 37.0169677734375,
+    "x2": 574.6197509765625,
+    "y1": 473.51202392578125,
+    "y2": 663.81787109375
+  },
+  "figType": "Figure",
+  "imageText": [],
+  "name": "1",
+  "page": 3,
+  "regionBoundary": {
+    "x1": 36.96,
+    "x2": 572.16,
+    "y1": 52.8,
+    "y2": 461.03999999999996
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/figs/López-Madrona et al. - 2020 - Different theta frameworks coexist in the rat hippocampus and are coordinated during memory-guided a-Figure1-1.png"
+}, {
+  "caption": "Figure 5. CFD analysis reveals that gamma activity modulates the phase of theta. (a) CFD analysis of the pathway-specific signals demonstrates maximum negative values (APC) for those pairs of theta-gamma oscillations with the highest CFC (encircled area). These results suggested that gamma oscillations modulate the theta phase. (b) Example of gamma-to-theta coupling in the PP-IC. The time difference from the maximum of gamma activity to the theta peak is almost fixed (APC, blue arrows), while the distance from theta to gamma varies in each cycle (phase-amplitude coupling, PAC; red arrows). (c) Same CFD analysis as in (a) using the raw LFPs from different hippocampal layers confirmed the APC directionality. (d) Comparison between CFD values using IC-LFPs and LFPs showed convergent results, with IC-LFPs outperforming the raw signals (*p<0.05, paired t-test across subjects between IC and LFP values for each IC-LFP separately, t = 3.99/2.98/4.59 for Sch-IC/lm-IC/PP-IC, N = 5). The online version of this article includes the following figure supplement(s) for figure 5:",
+  "captionBoundary": {
+    "x1": 37.019195556640625,
+    "x2": 573.2821044921875,
+    "y1": 343.4010314941406,
+    "y2": 424.176025390625
+  },
+  "figType": "Figure",
+  "imageText": ["d", "CFD", "*", "*", "PP-IC", "hil-LFP", "lm-IC", "lm-LFP", "Sch-IC", "rad-LFP", "*", "-0.1", "-0.075", "-0.05", "-0.025", "0", "0.025", "b", "c", "D", "C", "F", "rad-LFP", "lm-LFP", "hil-LFP", "-0.025", "0.025", "-0.03", "0.03", "-0.08", "0.08", "Frequency", "for", "phase", "(Hz)", "50", "100", "150", "200", "250", "5", "10", "15", "5", "10", "15", "5", "10", "15", "5", "10", "15", "5", "10", "15", "5", "10", "15", "50", "100", "150", "200", "250", "r", "of", "y", "c", "n", "e", "u", "q", "e", "r", "F", "a", "m", "p", "lit", "u", "d", "e", "(", "H", "z)", "Sch-IC", "lm-IC", "PP-IC", "r", "of", "y", "c", "n", "e", "u", "q", "er", "F", "a", "m", "p", "lit", "u", "d", "e", "(", "H", "z)", "Frequency", "for", "phase", "(Hz)", "a", "APC", "100", "ms", "PAC", "PP-IC(γ)", "PP-IC(θ)", ".)", "a", ".u", "e", "(", "u", "d", "p", "lit", "A", "m", "PAC", "APC"],
+  "name": "5",
+  "page": 11,
+  "regionBoundary": {
+    "x1": 36.96,
+    "x2": 572.16,
+    "y1": 53.76,
+    "y2": 331.2
+  },
+  "renderDpi": 300,
+  "renderURL": "derivatives/figures/lopez-madrona_2020_DifferentTheta/pdffigures2/figs/López-Madrona et al. - 2020 - Different theta frameworks coexist in the rat hippocampus and are coordinated during memory-guided a-Figure5-1.png"
+}]
